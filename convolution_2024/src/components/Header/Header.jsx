@@ -10,15 +10,15 @@ function Header() {
             <ul className="flex flex-wrap justify-around">
               <a className="group  m-4 p-4 nav_text_li  transition duration-300 ">
                 Home
-                <span className="mt-1 mr-2 block max-w-0 group-hover:max-w-full transition-all duration-500 h-1 bg-orange-500 "></span>
+                <span className="mt-1 mr-2 block max-w-0 group-hover:max-w-full transition-all duration-500 h-1 bg-orange-500 rounded-full"></span>
               </a>
               <a className="group  m-4 p-4 nav_text_li  transition duration-300">
                 About
-                <span className="mt-1 mr-2 block max-w-0 group-hover:max-w-full transition-all duration-500 h-1 bg-orange-500 "></span>
+                <span className="mt-1 mr-2 block max-w-0 group-hover:max-w-full transition-all duration-500 h-1 bg-orange-500 rounded-full"></span>
               </a>
               <a className="group m-4 p-4 nav_text_li transition duration-300">
                 Events
-                <span className="mt-1 mr-2 block max-w-0 group-hover:max-w-full transition-all duration-500 h-1 bg-orange-500 "></span>
+                <span className="mt-1 mr-2 block max-w-0 group-hover:max-w-full transition-all duration-500 h-1 bg-orange-500 rounded-full"></span>
               </a>
             </ul>
           </div>
@@ -29,15 +29,15 @@ function Header() {
             <ul className="flex flex-wrap justify-around">
               <a className="group m-4 p-4 nav_text_li transition duration-300">
                 Timeline
-                <span className="mt-1 mr-2 block max-w-0 group-hover:max-w-full transition-all duration-500 h-1 bg-orange-500 "></span>
+                <span className="mt-1 mr-2 block max-w-0 group-hover:max-w-full transition-all duration-500 h-1 bg-orange-500 rounded-full"></span>
               </a>
               <a className="group m-4 p-4 nav_text_li transition duration-300">
                 Team
-                <span className="mt-1 mr-2 block max-w-0 group-hover:max-w-full transition-all duration-500 h-1 bg-orange-500 "></span>
+                <span className="mt-1 mr-2 block max-w-0 group-hover:max-w-full transition-all duration-500 h-1 bg-orange-500 rounded-full"></span>
               </a>
               <a className="group m-4 p-4 nav_text_li transition duration-300">
                 Contacts
-                <span className="mt-1 mr-2 block max-w-0 group-hover:max-w-full transition-all duration-500 h-1 bg-orange-500 "></span>
+                <span className="mt-1 mr-2 block max-w-0 group-hover:max-w-full transition-all duration-500 h-1 bg-orange-500 rounded-full"></span>
               </a>
             </ul>
           </div>
