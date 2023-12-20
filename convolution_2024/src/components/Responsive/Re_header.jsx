@@ -27,12 +27,12 @@ function Re_header() {
             <div className="absolute top-12 right-0 mt-2">
               <div className="bg-white-200/50 dropdown p-4 ">
                 <div className="dropdown-content" id="myDropdown">
-                  <a href="#">Home </a>
-                  <a href="#">About </a>
-                  <a href="#">Events</a>
-                  <a href="#">Timeline</a>
-                  <a href="#">Team</a>
-                  <a href="#">Contacts</a>
+                  <li className="list-none active"><a href="#">Home </a></li>
+                  <li className="list-none"><a href="#">About </a></li>
+                  <li className="list-none"><a href="#">Events</a></li>
+                  <li className="list-none"><a href="#">Timeline</a></li>
+                  <li className="list-none"><a href="#">Team</a></li>
+                  <li className="list-none"><a href="#">Contacts</a></li>
                 </div>
               </div>
             </div>
