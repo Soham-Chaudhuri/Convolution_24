@@ -6,7 +6,8 @@ import React, { useState, useEffect } from "react";
 
 import "./App.css";
 import Header from "./components/Header/Header";
-import Re_header from "./components/Responsive/Re_header";
+import Re_header from "./components/Responsive/Header/Re_header";
+import Hero from "./components/Body/Hero";
 
 function App() {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
@@ -25,7 +26,7 @@ function App() {
 
   return (
     <>
-      <div>{windowWidth >= 1000 ? <Header /> : <Re_header />}</div>
+      <div>{windowWidth >= 1000 ? (<><Header /></>) : (<><Re_header /></>)}</div>
     </>
   );
 }
