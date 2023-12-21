@@ -84,7 +84,11 @@
   box-shadow: 5px 5px 0px 0px #e9c462;
 }
 
-.hero_thunder_img{
+.hero_thunder_img {
   height: 409px;
   width: 409px;
+}
+
+.gapping {
+  gap: 5rem;
 }

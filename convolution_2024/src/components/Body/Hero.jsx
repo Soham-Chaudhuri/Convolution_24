@@ -1,14 +1,19 @@
+/* eslint-disable react/no-unescaped-entities */
 import React from "react";
 import "./Hero.css";
 import Hero_vd from "./Hero_vd";
 import thunder from "../assets/Thunder.png";
 import About from "./About";
+import Event from "./Event";
+// import Back from "./Back";
 function Hero() {
   return (
     <>
+      {/* <Back /> */}
+
       <div className="hero_bg p-4">
-        <div className="flex flex-col gap-3">
-          <div className="flex">
+        <div className="flex flex-col">
+          <div className="flex gapping">
             <div className="m-4 hero_heading_1_div flex flex-wrap flex-col">
               <span className="hero_heading_1 text-shadow-md">
                 JUEE STUDENTS' FORUM
@@ -30,6 +35,7 @@ function Hero() {
           </div>
           <Hero_vd />
           <About />
+          <Event/>
         </div>
       </div>
     </>
