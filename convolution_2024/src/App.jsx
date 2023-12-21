@@ -26,7 +26,7 @@ function App() {
 
   return (
     <>
-      <div>{windowWidth >= 1000 ? (<><Header /></>) : (<><Re_header /></>)}</div>
+      <div>{windowWidth >= 1000 ? (<><Header /><Hero /></>) : (<><Re_header /></>)}</div>
     </>
   );
 }

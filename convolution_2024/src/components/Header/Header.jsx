@@ -4,8 +4,8 @@ import "../Header/Header.css";
 function Header() {
   return (
     <>
-      <nav>
-        <div className="flex flex-wrap justify-around bg-black text-white text-center">
+      <nav className="sticky top-0 z-50">
+        <div className="flex flex-wrap justify-around bg-black text-white text-center ">
           <div className="justify-content-center my-auto">
             <ul className="flex flex-wrap justify-around">
               <a className="group  m-4 p-4 nav_text_li  transition duration-300 ">
