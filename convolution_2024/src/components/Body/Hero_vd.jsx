@@ -3,7 +3,7 @@ import "../Body/Hero_vd.css";
 function Hero_vd() {
   return (
     <>
-        <div className="mx-auto hero_video">
+        <div className=" hero_video">
         </div>
     </>
   );
