@@ -10,11 +10,11 @@ function Re_header() {
   };
   return (
     <>
-      <div class="navbar flex flex-wrap justify-around bg-black text-white text-center">
+      <div className="navbar flex flex-wrap justify-around bg-black text-white text-center">
         <div className="justify-content-center mt-3 mb-4  p-4 nav_text_logo">
           CONVOLUTION
         </div>
-        <div class="toggle_btn mt-3 mb-4 p-3" onClick={handleToggle}>
+        <div className="toggle_btn mt-3 mb-4 p-3" onClick={handleToggle}>
           <i
             className={`toggle_btn_icon fa-solid ${
               isOpen ? "fa-xmark" : "fa-bars"
