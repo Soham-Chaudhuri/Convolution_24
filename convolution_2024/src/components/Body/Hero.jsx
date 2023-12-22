@@ -7,6 +7,7 @@ import About from "./About";
 import Event from "./Event";
 import Timeline from "./Timeline";
 import Teams from "./Teams";
+import Contact from "./Contact";
 // import Back from "./Back";
 function Hero() {
   return (
@@ -40,6 +41,7 @@ function Hero() {
           <Event />
           <Timeline />
           <Teams/>
+          <Contact/>
         </div>
       </div>
     </>
