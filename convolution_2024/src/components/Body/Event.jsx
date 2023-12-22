@@ -1,7 +1,7 @@
 /* eslint-disable react/jsx-key */
 import React from "react";
 import "./Event.css";
-import picture from "../assets/event1.png";
+import picture from "../assets/decisia.png";
 
 const peopleData = [
   { id: 1, name: "John Doe", description: "Web Developer", imgSrc: "john.jpg" },
@@ -75,8 +75,8 @@ const Event = () => {
             // </div>
 
             <div key={person.id} className="boro-goal flex flex-wrap">
-              <div className="group-child-img" />
-              <div className="algomaniac">ALGOMANIAC</div>
+              <div className="group-child-img"><img src={picture} alt="" /></div>
+              <div className="algomaniac">DECISIA</div>
               <div className="lorem-ipsum-para">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua.

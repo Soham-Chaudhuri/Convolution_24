@@ -50,7 +50,9 @@
   top: 0;
   left: 0;
   border-radius: 50%;
-  background-color: #f76932;
+  /* background-color: #f76932; */
+  background-color: white;
+
   width: 204px;
   height: 204px;
   /* background-image: url(../assets/event1.png); */

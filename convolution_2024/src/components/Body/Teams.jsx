@@ -1,44 +1,48 @@
+/* eslint-disable react/no-unescaped-entities */
 import React from "react";
 import "./Teams.css";
-// import picture from "../assets/event1.png";
+import picture1 from "../assets/soham.png";
+import picture2 from "../assets/uttam.png";
+// import picture3 from "../assets/bodda.png";
+// import picture4 from "../assets/ayan.png";
 
 const peopleData = [
+  { id: 1, name: "Soham C", description: "Developer", imgSrc: picture1 },
+  {
+    id: 2,
+    name: "Uttam C",
+    description: "Designer",
+    imgSrc: picture2 ,
+  },
+  {
+    id: 3,
+    name: "Bodda",
+    description: "TOP G",
+    // imgSrc: picture3,
+  },
+  {
+    id: 4,
+    name: "Seyana",
+    description: "Production",
+    // imgSrc: picture4,
+  },
   { id: 1, name: "John Doe", description: "Web Developer", imgSrc: "john.jpg" },
   {
     id: 2,
     name: "Jane Smith",
-    description: "Graphic Designer",
+    description: "Designer",
     imgSrc: "jane.jpg",
   },
   {
     id: 3,
     name: "Bob Johnson",
-    description: "Data Scientist",
+    description: "Scientist",
     imgSrc: "bob.jpg",
   },
   {
     id: 4,
     name: "Alice Williams",
-    description: "UX/UI Designer",
-    imgSrc: "alice.jpg",
-  },
-  { id: 1, name: "John Doe", description: "Web Developer", imgSrc: "john.jpg" },
-  {
-    id: 2,
-    name: "Jane Smith",
-    description: "Graphic Designer",
-    imgSrc: "jane.jpg",
-  },
-  {
-    id: 3,
-    name: "Bob Johnson",
-    description: "Data Scientist",
-    imgSrc: "bob.jpg",
-  },
-  {
-    id: 4,
-    name: "Alice Williams",
-    description: "UX/UI Designer",
+    description: "Designer",
     imgSrc: "alice.jpg",
   },
 ];
@@ -74,8 +78,8 @@ const Teams = () => {
             // </div>
 
             <div key={person.id} className="boro-goal-teams flex flex-wrap">
-              <div className="group-child-img-teams" />
-              <div className="algomaniac-teams">NAME XYZ</div>
+              <div className="group-child-img-teams"><img src={person.imgSrc} alt={person.name} /></div>
+              <div className="algomaniac-teams">{person.description}</div>
               <div className="lorem-ipsum-para-teams flex flex-col gap-2">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 <div className="flex gap-2">
