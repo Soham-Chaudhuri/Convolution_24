@@ -8,6 +8,7 @@ import "./App.css";
 import Header from "./components/Header/Header";
 import Re_header from "./components/Responsive/Header/Re_header";
 import Hero from "./components/Body/Hero";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
@@ -26,7 +27,8 @@ function App() {
 
   return (
     <>
-      <div>{windowWidth >= 1000 ? (<><Header /><Hero /></>) : (<><Re_header /></>)}</div>
+      <div>{windowWidth >= 1000 ? (<><Header /><Hero /><Footer/></>) : (<><Re_header /></>)}</div>
+      
     </>
   );
 }

@@ -4,17 +4,29 @@ import "./Contact.css";
 function Contact() {
   return (
     <>
-      <div className="contact flex flex-col gap-2 m-5 p-3 items-center justify-center">
-        <span className="contact_heading">CONTACT US</span>
+      <div className="contact flex flex-col gap-2 m-5 p-5 items-center justify-center">
+        <span className="contact_heading ">CONTACT US</span>
         <span className="underline"></span>
-        <span className="contact_subheading py-4">Contact for any kind of queries.</span>
+        <span className="contact_subheading py-4">
+          Contact for any kind of queries.
+        </span>
         <div className="contact_info flex justify-evenly gap-[10rem] py-9">
           <div className="contact_details flex flex-col gap-[3rem] items-start justify-center p-4">
-            <span className="address"><i class="fa-solid fa-location-dot pr-3 scale-150"></i>
-              Electrical Engineering Department <br/> Jadavpur University, Kolkata
+            <span className="address">
+              <i className="fa-solid fa-location-dot pr-3 scale-150"></i>
+              Electrical Engineering Department 
+              <br /> 
+              <span className="block px-[22px]">Jadavpur University, Kolkata</span>
+              
             </span>
-            <span className="email"><i class="fa-solid fa-envelope pr-3 scale-150"></i>convolution2023@gmail.com</span>
-            <span className="number"><i class="fa-solid fa-phone pr-3 scale-150"></i>+91 8017 388 918/+91 7866 827 719</span>
+            <span className="email">
+              <i className="fa-solid fa-envelope pr-3 scale-150"></i>
+              convolution2023@gmail.com
+            </span>
+            <span className="number">
+              <i className="fa-solid fa-phone pr-3 scale-150"></i>+91 8017 388
+              918/+91 7866 827 719
+            </span>
           </div>
           <div className="contact_map">
             <iframe
