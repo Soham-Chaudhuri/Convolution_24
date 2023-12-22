@@ -6,6 +6,7 @@ import thunder from "../assets/Thunder.png";
 import About from "./About";
 import Event from "./Event";
 import Timeline from "./Timeline";
+import Teams from "./Teams";
 // import Back from "./Back";
 function Hero() {
   return (
@@ -38,6 +39,7 @@ function Hero() {
           <About />
           <Event />
           <Timeline />
+          <Teams/>
         </div>
       </div>
     </>
