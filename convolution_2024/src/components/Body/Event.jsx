@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-key */
 import React from "react";
 import "./Event.css";
 import picture from "../assets/event1.png";
@@ -56,20 +57,30 @@ const Event = () => {
           Browse over the links to register
         </p>
       </div>
-      <div className="grid grid-cols-2 gap-4">
+      <div className="grid grid-cols-2 gap-[56px]">
         {peopleData.map((person) => (
-          <div key={person.id} className="p-4 rounded-md flex border ">
-            <div className="left flex items-center w-30">
-              <img
-                src={picture}
-                alt={person.name}
-                className="w-14 h-14 rounded-full mx-auto"
-              />
+          // <div key={person.id} className="p-4 rounded-md flex border  ">
+          //   <div className="left flex items-center">
+          //     <img
+          //       src={picture}
+          //       alt={person.name}
+          //       className="w-14 h-14 rounded-full mx-auto"
+          //     />
+          //   </div>
+          //   <div className="right flex justify-content-center flex-col">
+          //     <h3 className="text-lg font-semibold">{person.name}</h3>
+          //     <p className="text-gray-600">{person.description}</p>
+          //   </div>
+          // </div>
+
+          <div key={person.id}  className="boro-goal flex flex-wrap">
+            <div className="group-child" />
+            <div className="algomaniac">ALGOMANIAC</div>
+            <div className="lorem-ipsum">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </div>
-            <div className="right flex justify-content-center flex-col w-70">
-              <h3 className="text-lg font-semibold">{person.name}</h3>
-              <p className="text-gray-600">{person.description}</p>
-            </div>
+            <div className="group-item" />
           </div>
         ))}
       </div>
