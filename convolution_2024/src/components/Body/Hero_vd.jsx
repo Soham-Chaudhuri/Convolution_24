@@ -1,10 +1,14 @@
-import React from 'react';
+import React from "react";
 import "../Body/Hero_vd.css";
+import video from "../assets/ronny_bhai.mp4";
 function Hero_vd() {
   return (
     <>
-        <div className=" hero_video">
-        </div>
+      <div className="hero_video">
+        <video className="video" controls loop>
+          <source src={video} type="video/mp4" />
+        </video>
+      </div>
     </>
   );
 }
