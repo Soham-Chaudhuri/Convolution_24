@@ -1,45 +1,52 @@
 /* eslint-disable react/jsx-key */
 import React from "react";
 import "./Event.css";
-import picture from "../assets/decisia.png";
+import picture1 from "../assets/Decisia_Dark.png";
+// import picture2 from "../assets/Abol Tabol_Dark.png";
+import picture2 from "../assets/abol2nd.png";
+import picture3 from "../assets/Circuistics_Dark.png";
+import picture4 from "../assets/Eureka_Dark.png";
+import picture5 from "../assets/Inquizzitive_Dark.png";
+import picture6 from "../assets/Papier_Dark.png";
+import picture7 from "../assets/Sparkhack_Dark.png";
 
 const peopleData = [
-  { id: 1, name: "John Doe", description: "Web Developer", imgSrc: "john.jpg" },
+  { id: 1, name: "John Doe", description: "Decisia", imgSrc: picture1 },
   {
     id: 2,
     name: "Jane Smith",
-    description: "Graphic Designer",
-    imgSrc: "jane.jpg",
+    description: "Abol Tabol",
+    imgSrc: picture2,
   },
   {
     id: 3,
     name: "Bob Johnson",
-    description: "Data Scientist",
-    imgSrc: "bob.jpg",
+    description: "Circuistics",
+    imgSrc: picture3,
   },
   {
     id: 4,
     name: "Alice Williams",
-    description: "UX/UI Designer",
-    imgSrc: "alice.jpg",
+    description: "Papier",
+    imgSrc: picture6,
   },
-  { id: 1, name: "John Doe", description: "Web Developer", imgSrc: "john.jpg" },
+  { id: 1, name: "John Doe", description: "Eureka", imgSrc: picture4 },
   {
     id: 2,
     name: "Jane Smith",
-    description: "Graphic Designer",
-    imgSrc: "jane.jpg",
+    description: "Inquizzitive",
+    imgSrc: picture5,
   },
   {
     id: 3,
     name: "Bob Johnson",
-    description: "Data Scientist",
-    imgSrc: "bob.jpg",
+    description: "Sparkhack",
+    imgSrc: picture7,
   },
   {
     id: 4,
     name: "Alice Williams",
-    description: "UX/UI Designer",
+    description: "Designer",
     imgSrc: "alice.jpg",
   },
 ];
@@ -60,23 +67,11 @@ const Event = () => {
       <div className="px-[69px] py-5">
         <div className="grid grid-cols-2 gap-[56px]">
           {peopleData.map((person) => (
-            // <div key={person.id} className="p-4 rounded-md flex border  ">
-            //   <div className="left flex items-center">
-            //     <img
-            //       src={picture}
-            //       alt={person.name}
-            //       className="w-14 h-14 rounded-full mx-auto"
-            //     />
-            //   </div>
-            //   <div className="right flex justify-content-center flex-col">
-            //     <h3 className="text-lg font-semibold">{person.name}</h3>
-            //     <p className="text-gray-600">{person.description}</p>
-            //   </div>
-            // </div>
-
             <div key={person.id} className="boro-goal flex flex-wrap">
-              <div className="group-child-img"><img src={picture} alt="" /></div>
-              <div className="algomaniac">DECISIA</div>
+              <div className="group-child-img">
+                <img src={person.imgSrc} alt={person.name} />
+              </div>
+              <div className="algomaniac">{person.description}</div>
               <div className="lorem-ipsum-para">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua.

@@ -1,6 +1,6 @@
 import React from "react";
 import "../Body/Hero_vd.css";
-import video from "../assets/ronny_bhai.mp4";
+import video from "../assets/Dwai.mp4";
 function Hero_vd() {
   return (
     <>

@@ -1,5 +1,6 @@
 import React from "react";
 import "../Header/Header.css";
+import convosvg from "../assets/Convolution_Dark2nd.png"
 
 function Header() {
   return (
@@ -23,7 +24,8 @@ function Header() {
             </ul>
           </div>
           <div className="justify-content-center mt-3 mb-4  p-4 nav_text_logo">
-            CONVOLUTION
+          <img className="w-[147px] h-[51.66px]" src={convosvg}/>
+          {/* CONVOLUTION */}
           </div>
           <div className="justify-content-center my-auto">
             <ul className="flex flex-wrap justify-around">

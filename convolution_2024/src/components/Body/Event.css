@@ -51,12 +51,14 @@
   left: 0;
   border-radius: 50%;
   /* background-color: #f76932; */
-  background-color: white;
+  /* background-color: white; */
+   background-color: black; 
 
   width: 204px;
   height: 204px;
   /* background-image: url(../assets/event1.png); */
   /* overflow: hidden; */
+  box-shadow: 6px 3px 0px 0px #e9c462;
 
 }
 .algomaniac,

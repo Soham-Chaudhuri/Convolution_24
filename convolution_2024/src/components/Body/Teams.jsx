@@ -26,7 +26,7 @@ const peopleData = [
     description: "Production",
     // imgSrc: picture4,
   },
-  { id: 1, name: "John Doe", description: "Web Developer", imgSrc: "john.jpg" },
+  { id: 1, name: "John Doe", description: "Developer", imgSrc: "john.jpg" },
   {
     id: 2,
     name: "Jane Smith",
