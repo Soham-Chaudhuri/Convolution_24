@@ -6,7 +6,8 @@
   top: 804px;
   left: 69px;
   border-radius: 46px;
-  border: 4px solid #e9c462;
+  /* border: 4px solid #e9c462; */
+  box-shadow: 5px 5px 0px 0px  #e9c462;
   margin: 5rem auto;
   /* background-color: black; */
 }
