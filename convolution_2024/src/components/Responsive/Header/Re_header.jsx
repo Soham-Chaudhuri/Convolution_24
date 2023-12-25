@@ -11,7 +11,7 @@ function Re_header() {
   };
   return (
     <>
-      <div className="navbar flex flex-wrap justify-around bg-black text-white text-center">
+      <div className="navbar flex flex-wrap justify-around bg-black text-white text-center sticky top-0">
         <div className="justify-content-center mt-3 mb-4  p-4 nav_text_logo">
         <img className="w-[109px] h-[35px]" src={convosvg}/>
         </div>

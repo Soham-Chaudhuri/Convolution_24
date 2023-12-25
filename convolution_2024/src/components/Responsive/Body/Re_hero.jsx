@@ -1,19 +1,22 @@
 import React from 'react';
 import "../Body/Re_hero.css";
+import Re_hero_vd from './Re_hero_vd';
+import Re_about from './Re_about';
+
 // import thunder from "../../assets/Thunder.png";
 
 function Re_hero() {
   return (
     <>
       <div className="Re_hero_bg p-3">
-        <div className="flex flex-col h-screen">
-          <div className="flex flex-col-reverse Re_gapping gap-[3.65rem]">
+        <div className="flex flex-col">
+          <div className="flex flex-col-reverse Re_gapping gap-[0.8rem]">
             <div className="m-4 Re_hero_heading_1_div">
               <span className="Re_hero_heading_1 text-shadow-md">
                 JUEE STUDENTS' FORUM
               </span>
               <br/>
-              <span className="Re_hero_heading_2 text-shadow-md">
+              <span className="Re_hero_heading_2 text-shadow-md block">
                 CONVOLUTION 9.0
               </span>
               <br/>
@@ -29,6 +32,9 @@ function Re_hero() {
               {/* <img src={thunder} alt="" className="Re_hero_thunder_img" /> */}
             </div>
           </div>
+
+          <Re_hero_vd/>
+          <Re_about/>
         </div>
       </div>
     </>

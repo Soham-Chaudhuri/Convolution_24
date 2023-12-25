@@ -1,0 +1,21 @@
+/* .Re_hero_video {
+    width: 1301px;
+    height: 731px;
+    
+    top: 804px;
+    left: 69px;
+    border-radius: 46px;
+    
+    box-shadow: 5px 5px 0px 0px  #e9c462;
+    margin: 5rem auto;
+    
+  } */
+  
+  .video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 23px;
+    box-shadow: 5px 5px 0px 0px  #e9c462;
+  }
+  
