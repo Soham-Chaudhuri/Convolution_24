@@ -5,11 +5,11 @@ import "../Body/Re_hero.css";
 function Re_hero() {
   return (
     <>
-      <div className="Re_hero_bg p-4">
-        <div className="flex flex-col">
-          <div className="flex flex-col-reverse Re_gapping">
+      <div className="Re_hero_bg p-3">
+        <div className="flex flex-col h-screen">
+          <div className="flex flex-col-reverse Re_gapping gap-[3.65rem]">
             <div className="m-4 Re_hero_heading_1_div">
-              <span className="Re_hero_heading_1 text-shadow-md ">
+              <span className="Re_hero_heading_1 text-shadow-md">
                 JUEE STUDENTS' FORUM
               </span>
               <br/>
@@ -20,7 +20,7 @@ function Re_hero() {
               <span className="Re_hero_heading_3">
                 The Ninth Edition of Annual Technical Meet
               </span>
-              <div className="flex Re_hero_btn mt-3">
+              <div className="flex Re_hero_btn">
                 <button className="Re_hero_btn_1">SignUp</button>
                 <button className="Re_hero_btn_2">Login</button>
               </div>
