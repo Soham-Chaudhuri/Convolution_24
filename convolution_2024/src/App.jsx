@@ -11,6 +11,8 @@ import Hero from "./components/Body/Hero";
 import Footer from "./components/Footer/Footer";
 import Re_hero from "./components/Responsive/Body/Re_hero";
 import Re_footer from "./components/Responsive/Footer/Re_footer";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Dashboard from "./components/Dashboard/Dashboard";
 
 function App() {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
@@ -29,8 +31,27 @@ function App() {
 
   return (
     <>
-      <div>{windowWidth >= 1000 ? (<><Header /><Hero /><Footer/></>) : (<><Re_header /><Re_hero/><Re_footer/></>)}</div>
-      
+      <div>
+        {windowWidth >= 1000 ? (
+          <>
+            <Header />
+            <Router>
+              <Routes>
+                <Route path="/dashboard" element={<Dashboard />} />
+                <Route path="/" element={<Hero />} />
+              </Routes>
+            </Router>
+            {/* <Hero /> */}
+            <Footer />
+          </>
+        ) : (
+          <>
+            <Re_header />
+            <Re_hero />
+            <Re_footer />
+          </>
+        )}
+      </div>
     </>
   );
 }
