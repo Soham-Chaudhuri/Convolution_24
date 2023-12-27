@@ -1,4 +1,5 @@
-import React from "react";
+/* eslint-disable no-unused-vars */
+import React, { useRef } from "react";
 import "../Dashboard/Dashboard.css";
 import pic3 from "../assets/vector@2x.png";
 import pic2 from "../assets/inquizzitive-logo-1@2x.png";
@@ -10,8 +11,11 @@ import pic7 from "../assets/Eureka_Light.png";
 import pic8 from "../assets/Inquizzitive_Light.png";
 import pic9 from "../assets/Papier_Light.png";
 import pic10 from "../assets/Sparkhack_Light.png";
+import { motion } from "framer-motion";
 
 function Dashboard() {
+  const Reference = useRef(null);
+
   const boxesData = [
     {
       id: 1,
@@ -97,12 +101,18 @@ function Dashboard() {
 
   return (
     <>
-      <div className="dashboard">
+      <div className="dashboard" ref={Reference}>
         <div>
           <div className="dashboard1">DASHBOARD</div>
           <div className="grid-container">
             {boxesData.map((box) => (
-              <div className={`grid-item first-box${box.id}`} key={box.id}>
+              <motion.div
+                drag
+                whileDrag={{ scale: 1 }}
+                dragConstraints={Reference}
+                className={`grid-item first-box${box.id}`}
+                key={box.id}
+              >
                 <div className="first-box-child" />
                 <div className="first-box-item" />
                 <div className="first-box-inner" />
@@ -143,7 +153,7 @@ function Dashboard() {
                     </p>
                   </span>
                 </div>
-              </div>
+              </motion.div>
             ))}
           </div>
           <div className="dashboard-underline" />
