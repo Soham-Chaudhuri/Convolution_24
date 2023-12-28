@@ -1,19 +1,23 @@
 /* eslint-disable no-unused-vars */
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import "../Dashboard/Dashboard.css";
 import pic3 from "../assets/vector@2x.png";
+import pic21 from "../assets/vector@2x@yellow.png";
+
 import pic2 from "../assets/inquizzitive-logo-1@2x.png";
 import pic1 from "../assets/arrow-logo@2x.png";
 import pic4 from "../assets/Decisia_Light.png";
 import pic5 from "../assets/Abol Tabol_Light.png";
 import pic6 from "../assets/Circuistics_Light.png";
 import pic7 from "../assets/Eureka_Light.png";
-import pic8 from "../assets/Inquizzitive_Light.png";
+import pic8 from "../assets/Algomaniac Light.png";
 import pic9 from "../assets/Papier_Light.png";
 import pic10 from "../assets/Sparkhack_Light.png";
+import pic11 from "../assets/24 Frames Light.png";
 import { motion } from "framer-motion";
 
 function Dashboard() {
+  const [isHovered, setIsHovered] = useState(false);
   const Reference = useRef(null);
 
   const boxesData = [
@@ -97,6 +101,16 @@ function Dashboard() {
       eventDate: "XX YY ZZZZ",
       registered: true,
     },
+    {
+      id: 9,
+
+      type: "Registered",
+      image: pic11,
+      content: "Lorem ipsum content for box 8",
+      lastDate: "XX YY ZZZZ",
+      eventDate: "XX YY ZZZZ",
+      registered: true,
+    },
   ];
 
   return (
@@ -109,8 +123,10 @@ function Dashboard() {
               <motion.div
                 drag
                 whileDrag={{ scale: 1 }}
+                dragElastic={1.3}
+                dragTransition={{ bounceStiffness: 30, bounceDamping: 4 }}
                 dragConstraints={Reference}
-                className={`grid-item first-box${box.id}`}
+                className={`grid-item z-10 first-box${box.id}`}
                 key={box.id}
               >
                 <div className="first-box-child" />
@@ -119,13 +135,21 @@ function Dashboard() {
                 {box.registered ? (
                   <img className="tick-logo-icon" src={pic2} />
                 ) : (
+                  // <img
+                  //   className="arrow-logo-icon hover:cursor-pointer  "
+                  //   src={pic21}
+                  // />
+
                   <img
-                    className="arrow-logo-icon hover:cursor-pointer"
-                    src={pic3}
+                    src={isHovered ? pic21 : pic3}
+                    className="arrow-logo-icon hover:cursor-pointer  "
+                    alt="Image"
                   />
                 )}
 
                 <b
+                  onMouseEnter={() => setIsHovered(true)}
+                  onMouseLeave={() => setIsHovered(false)}
                   className={
                     box.registered
                       ? "registered"
@@ -139,7 +163,7 @@ function Dashboard() {
                 <div className="lorem-dash">
                   <p>{box.content}</p>
                   <br />
-                  <p className="know-more">Know More </p>
+                  <p className="know-more hover:cursor-pointer">Know More </p>
                 </div>
                 <div className="last-date">
                   <span>

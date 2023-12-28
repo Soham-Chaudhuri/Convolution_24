@@ -9,6 +9,8 @@ import picture4 from "../assets/Eureka_Dark.png";
 import picture5 from "../assets/Inquizzitive_Dark.png";
 import picture6 from "../assets/Papier_Dark.png";
 import picture7 from "../assets/Sparkhack_Dark.png";
+import picture8 from "../assets/24 Frames Dark.png";
+import picture9 from "../assets/Algomaniac Dark.png";
 
 const peopleData = [
   { id: 1, name: "John Doe", description: "Decisia", imgSrc: picture1 },
@@ -46,8 +48,14 @@ const peopleData = [
   {
     id: 4,
     name: "Alice Williams",
-    description: "Designer",
-    imgSrc: "alice.jpg",
+    description: "24 Frames",
+    imgSrc: picture8,
+  },
+  {
+    id: 4,
+    name: "Alice Williams",
+    description: "Algomaniac",
+    imgSrc: picture9,
   },
 ];
 
