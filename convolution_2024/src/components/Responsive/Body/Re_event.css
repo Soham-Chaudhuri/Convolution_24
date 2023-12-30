@@ -72,10 +72,12 @@
 }
 
 .re_event_desc_para {
-    color: black;
-    letter-spacing: 0.56px;
-    line-height: 14px;
-    font-size: 14px;
-    font-family: Poppins;
-    font-weight: 400;
-  }
+  color: black;
+  letter-spacing: 0.56px;
+  line-height: 14px;
+  font-size: 14px;
+  font-family: Poppins;
+  font-weight: 400;
+  text-align: center;
+  text-justify: auto;
+}
