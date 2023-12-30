@@ -4,6 +4,7 @@ import Re_hero_vd from './Re_hero_vd';
 import Re_about from './Re_about';
 import Re_event from './Re_event';
 import Re_teams from './Re_teams';
+import Re_contact from './Re_contact';
 
 
 // import thunder from "../../assets/Thunder.png";
@@ -40,6 +41,7 @@ function Re_hero() {
           <Re_about/>
           <Re_event/>
           <Re_teams/>
+          {/* <Re_contact/> */}
         </div>
       </div>
     </>

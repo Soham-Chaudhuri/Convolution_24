@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Antonio:wght@100;200;300;400;500;600;700&family=Montserrat:wght@500&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+.re_contact_heading {
+  font-family: "Anton", sans-serif !important;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0.013em;
+  text-align: center;
+}
+.re_contact_underline {
+  width: 55px;
+  height: 4px;
+  top: 91px;
+  left: 685px;
+  border-radius: 4px;
+  border: 1px solid #f76932;
+  background-color: #f76932;
+  align-items: center;
+}
+.re_contact_subheading {
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0.013em;
+  text-align: center;
+  /* max-width: 1000px; */
+}
+
+.re_address,
+.re_email,
+.re_number {
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 15px;
+  letter-spacing: 0.013em;
+  text-align: left;
+}
+
+/* .conatact_map{
+    border-radius: 20px;
+    overflow: hidden;
+} */
