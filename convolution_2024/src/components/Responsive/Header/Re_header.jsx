@@ -1,7 +1,7 @@
 /* eslint-disable no-unused-vars */
 import React, { useState } from "react";
 import "../Header/Re_header.css";
-import convosvg from "../../assets/Convolution_Dark2nd.png"
+import convosvg from "../../assets/Convolution_Dark2nd.png";
 
 function Re_header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -11,9 +11,9 @@ function Re_header() {
   };
   return (
     <>
-      <div className="navbar flex flex-wrap justify-around bg-black text-white text-center sticky top-0">
+      <div className="navbar flex flex-wrap justify-around bg-black text-white text-center sticky top-0 z-50">
         <div className="justify-content-center mt-3 mb-4  p-4 nav_text_logo">
-        <img className="w-[109px] h-[35px]" src={convosvg}/>
+          <img className="w-[109px] h-[35px]" src={convosvg} />
         </div>
         <div className="toggle_btn mt-3 mb-4 p-3" onClick={handleToggle}>
           <i
