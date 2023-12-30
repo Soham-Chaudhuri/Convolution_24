@@ -8,8 +8,13 @@ import Event from "./Event";
 import Timeline from "./Timeline";
 import Teams from "./Teams";
 import Contact from "./Contact";
+// eslint-disable-next-line no-unused-vars
+import { BrowserRouter as Router, Routes, Route, Navigate, useNavigate,  } from "react-router-dom";
 // import Back from "./Back";
 function Hero() {
+
+
+  const navigate = useNavigate();
   return (
     <>
       {/* <Back /> */}
@@ -28,8 +33,8 @@ function Hero() {
                 The Ninth Edition of Annual Technical Meet
               </span>
               <div className="flex hero_btn mt-5">
-                <button className="hero_btn_1">SignUp</button>
-                <button className="hero_btn_2">Login</button>
+                <button className="hero_btn_1" onClick={() => {navigate("/signup")}} >SignUp</button>
+                <button className="hero_btn_2" onClick={() => {navigate("/login")}}>Login</button>
               </div>
             </div>
             <div className="hero_thunder flex items-center">

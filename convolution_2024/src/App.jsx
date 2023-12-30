@@ -13,6 +13,8 @@ import Re_hero from "./components/Responsive/Body/Re_hero";
 import Re_footer from "./components/Responsive/Footer/Re_footer";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Dashboard from "./components/Dashboard/Dashboard";
+import Signup from "./components/Signup/Signup";
+import Login from "./components/Login/Login";
 
 function App() {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
@@ -38,6 +40,8 @@ function App() {
             <Router>
               <Routes>
                 <Route path="/dashboard" element={<Dashboard />} />
+                <Route path="/signup" element={<Signup/>} />
+                <Route path="/login" element={<Login/>} />
                 <Route path="/" element={<Hero />} />
               </Routes>
             </Router>
