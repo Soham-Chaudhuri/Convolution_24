@@ -84,9 +84,10 @@ header {
   /* position: absolute; */
   z-index: 50;
   position: fixed;
-  right: 2rem;
+  /* right: 2rem; */
+  left: calc(50vw - 37.5vw);
   top: 100px;
-  width: 300px;
+  width: 75vw;
   gap: 2rem;
   height: 0px;
   background: rgba(225, 225, 225, 0.1);
@@ -117,6 +118,7 @@ header {
   border-radius: 20px;
   margin-bottom: 0.5rem;
   transition: 0.1s;
+  color: black;
 }
 
 .dropdown_menu li:hover,
@@ -130,7 +132,7 @@ header {
   font-family: "Poppins", sans-serif;
   font-weight: 700 !important;
   line-height: 24px !important;
-  color: black;
+  color: inherit;
 }
 .nav_link.active a {
   color: white;
@@ -152,9 +154,9 @@ header {
   }
 }
 
-@media (max-width: 576px) {
+/* @media (max-width: 576px) {
   .dropdown_menu {
     left: 2rem;
     width: unset;
   }
-}
+} */
