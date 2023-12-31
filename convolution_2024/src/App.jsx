@@ -15,7 +15,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Dashboard from "./components/Dashboard/Dashboard";
 import Signup from "./components/Signup/Signup";
 import Login from "./components/Login/Login";
-import Re_dashboard from "./components/Responsive/Dashboard/Re_dashboard";
+// import Re_dashboard from "./components/Responsive/Dashboard/Re_dashboard";
 
 function App() {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
@@ -40,7 +40,7 @@ function App() {
             <Header />
             <Router>
               <Routes>
-                <Route path="/dashboard" element={<Re_dashboard />} />
+                {/* <Route path="/dashboard" element={<Re_dashboard />} /> */}
                 <Route path="/signup" element={<Signup/>} />
                 <Route path="/login" element={<Login/>} />
                 <Route path="/" element={<Hero />} />
