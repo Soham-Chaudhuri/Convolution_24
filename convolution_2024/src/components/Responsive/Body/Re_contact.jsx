@@ -3,7 +3,7 @@ import "./Re_contact.css";
 function Re_contact() {
   return (
     <>
-      <div className="contact flex flex-col gap-2 m-5 p-5 items-center justify-center">
+      <div className="contact flex flex-col gap-2 my-6 py-6 items-center justify-center">
         <span className="re_contact_heading ">CONTACT US</span>
         <span className="re_contact_underline"></span>
         <span className="re_contact_subheading py-4">

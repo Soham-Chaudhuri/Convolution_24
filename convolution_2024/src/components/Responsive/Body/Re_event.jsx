@@ -81,7 +81,7 @@ const eventData = [
 function Re_event() {
   return (
     <>
-      <div className=" flex flex-col justify-center items-center gap-2 py-5">
+      <div className=" flex flex-col justify-center items-center gap-2 pb-5  pt-6 mt-6">
         <h1 className="text-center re_events_h1">EVENTS</h1>
         <span className="re_events_underline"></span>
         <p className="re_events_paragraph py-4">

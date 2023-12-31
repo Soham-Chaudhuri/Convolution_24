@@ -41,7 +41,7 @@ function Re_hero() {
           <Re_about/>
           <Re_event/>
           <Re_teams/>
-          {/* <Re_contact/> */}
+          <Re_contact/>
         </div>
       </div>
     </>
