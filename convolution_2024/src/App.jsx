@@ -16,6 +16,7 @@ import Dashboard from "./components/Dashboard/Dashboard";
 import Signup from "./components/Signup/Signup";
 import Login from "./components/Login/Login";
 import Re_dashboard from "./components/Responsive/Dashboard/Re_dashboard";
+import Loader from "./Loader";
 
 function App() {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
@@ -31,9 +32,24 @@ function App() {
       window.removeEventListener("resize", handleResize);
     };
   }, []);
+  const [loading, setLoading] = useState(true);
+  useEffect(() => {
+    const fetchData = async () => {
+      await new Promise((resolve) => setTimeout(resolve, 1500));
+
+      setLoading(false);
+    };
+
+    fetchData();
+  }, []);
 
   return (
     <>
+     {loading ? (
+        <h1>
+          <Loader />
+        </h1>
+      ) : (
       <div>
         {windowWidth >= 1000 ? (
           <>
@@ -41,8 +57,8 @@ function App() {
             <Router>
               <Routes>
                 <Route path="/dashboard" element={<Dashboard />} />
-                <Route path="/signup" element={<Signup/>} />
-                <Route path="/login" element={<Login/>} />
+                <Route path="/signup" element={<Signup />} />
+                <Route path="/login" element={<Login />} />
                 <Route path="/" element={<Hero />} />
               </Routes>
             </Router>
@@ -65,6 +81,7 @@ function App() {
           </>
         )}
       </div>
+      )}
     </>
   );
 }
