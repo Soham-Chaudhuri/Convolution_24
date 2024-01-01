@@ -45,42 +45,42 @@ function App() {
 
   return (
     <>
-     {loading ? (
+      {loading ? (
         <h1>
           <Loader />
         </h1>
       ) : (
-      <div>
-        {windowWidth >= 1000 ? (
-          <>
-            <Header />
-            <Router>
-              <Routes>
-                <Route path="/dashboard" element={<Dashboard />} />
-                <Route path="/signup" element={<Signup />} />
-                <Route path="/login" element={<Login />} />
-                <Route path="/" element={<Hero />} />
-              </Routes>
-            </Router>
-            {/* <Hero /> */}
-            <Footer />
-          </>
-        ) : (
-          <>
-            <Re_header />
-            <Router>
-              <Routes>
-                <Route path="/dashboard" element={<Re_dashboard />} />
-                {/* <Route path="/signup" element={<Signup/>} />
-                <Route path="/login" element={<Login/>} /> */}
-                <Route path="/" element={<Re_hero />} />
-              </Routes>
-            </Router>
-            {/* <Re_hero /> */}
-            <Re_footer />
-          </>
-        )}
-      </div>
+        <div>
+          {windowWidth >= 1000 ? (
+            <>
+              <Header />
+              <Router>
+                <Routes>
+                  <Route path="/dashboard" element={<Dashboard />} />
+                  <Route path="/signup" element={<Signup />} />
+                  <Route path="/login" element={<Login />} />
+                  <Route path="/" element={<Hero />} />
+                </Routes>
+              </Router>
+              {/* <Hero /> */}
+              <Footer />
+            </>
+          ) : (
+            <>
+              <Re_header />
+              <Router>
+                <Routes>
+                  <Route path="/dashboard" element={<Re_dashboard />} />
+                  <Route path="/signup" element={<Signup />} />
+                  <Route path="/login" element={<Login />} />
+                  <Route path="/" element={<Re_hero />} />
+                </Routes>
+              </Router>
+              {/* <Re_hero /> */}
+              <Re_footer />
+            </>
+          )}
+        </div>
       )}
     </>
   );
