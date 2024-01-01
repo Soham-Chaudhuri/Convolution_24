@@ -3,7 +3,6 @@ import React, { useRef, useState } from "react";
 import "../Dashboard/Dashboard.css";
 import pic3 from "../assets/vector@2x.png";
 import pic21 from "../assets/vector@2x@yellow.png";
-
 import pic2 from "../assets/inquizzitive-logo-1@2x.png";
 import pic1 from "../assets/arrow-logo@2x.png";
 import pic4 from "../assets/Decisia_Light.png";
@@ -23,7 +22,6 @@ function Dashboard() {
   const boxesData = [
     {
       id: 1,
-
       type: "Register Now",
       image: pic1,
       content: "Lorem ipsum content for box 1",
@@ -33,7 +31,6 @@ function Dashboard() {
     },
     {
       id: 2,
-
       type: "Register Now",
       image: pic4,
       content: "Lorem ipsum content for box 2",
@@ -43,7 +40,6 @@ function Dashboard() {
     },
     {
       id: 3,
-
       type: "Registered",
       image: pic5,
       content: "Lorem ipsum content for box 3",
@@ -53,7 +49,6 @@ function Dashboard() {
     },
     {
       id: 4,
-
       type: "Register Now",
       image: pic6,
       content: "Lorem ipsum content for box 4",
@@ -63,7 +58,6 @@ function Dashboard() {
     },
     {
       id: 5,
-
       type: "Registered",
       image: pic7,
       content: "Lorem ipsum content for box 5",
@@ -73,7 +67,6 @@ function Dashboard() {
     },
     {
       id: 6,
-
       type: "Register Now",
       image: pic8,
       content: "Lorem ipsum content for box 6",
@@ -83,7 +76,6 @@ function Dashboard() {
     },
     {
       id: 7,
-
       type: "Register Now",
       image: pic9,
       content: "Lorem ipsum content for box 7",
@@ -93,7 +85,6 @@ function Dashboard() {
     },
     {
       id: 8,
-
       type: "Registered",
       image: pic10,
       content: "Lorem ipsum content for box 8",
@@ -103,7 +94,6 @@ function Dashboard() {
     },
     {
       id: 9,
-
       type: "Registered",
       image: pic11,
       content: "Lorem ipsum content for box 8",
