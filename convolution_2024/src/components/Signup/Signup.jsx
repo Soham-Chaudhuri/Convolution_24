@@ -10,9 +10,6 @@ function Signup() {
   const [branch, setBranch] = useState("");
   const [year, setYear] = useState("");
 
-  
-
-
   function submit() {
     if (password === cpassword) {
       const user = [name, mail, password, college, branch, year];
@@ -24,7 +21,8 @@ function Signup() {
   }
 
   return (
-    <>{}
+    <>
+      {}
       <div className="flex flex-col items-center justify-center  py-[60px] form_signup_body">
         <h1 className="text-center pt-3 pb-3 form_heading">YOUR DETAILS</h1>
         <span className="form_underline"></span>
@@ -36,30 +34,6 @@ function Signup() {
               value={name}
               className="form-input h-14  p-6 form_place form_text"
               onChange={(e) => setName(e.target.value)}
-            />
-
-            <input
-              type="text"
-              placeholder="Email..."
-              value={mail}
-              className="form-input h-14  p-6 form_place form_text"
-              onChange={(e) => setMail(e.target.value)}
-            />
-
-            <input
-              type="password"
-              placeholder="Password..."
-              value={password}
-              className="form-input h-14  p-6 form_place form_text"
-              onChange={(e) => setPassword(e.target.value)}
-            />
-
-            <input
-              type="password"
-              placeholder="Confirm Password..."
-              value={cpassword}
-              className="form-input h-14  p-6 form_place form_text"
-              onChange={(e) => setCpassword(e.target.value)}
             />
 
             <input
@@ -84,6 +58,30 @@ function Signup() {
               value={year}
               className="form-input h-14  p-6 form_place form_text"
               onChange={(e) => setYear(e.target.value)}
+            />
+
+            <input
+              type="text"
+              placeholder="Email..."
+              value={mail}
+              className="form-input h-14  p-6 form_place form_text"
+              onChange={(e) => setMail(e.target.value)}
+            />
+
+            <input
+              type="password"
+              placeholder="Password..."
+              value={password}
+              className="form-input h-14  p-6 form_place form_text"
+              onChange={(e) => setPassword(e.target.value)}
+            />
+
+            <input
+              type="password"
+              placeholder="Confirm Password..."
+              value={cpassword}
+              className="form-input h-14  p-6 form_place form_text"
+              onChange={(e) => setCpassword(e.target.value)}
             />
             <div className="py-5">
               <button className="form_button mx-auto " onClick={submit}>

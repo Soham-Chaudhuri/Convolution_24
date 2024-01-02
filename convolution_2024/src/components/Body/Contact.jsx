@@ -13,7 +13,7 @@ function Contact() {
         <div className="contact_info flex justify-evenly gap-[10rem] py-9">
           <div className="contact_details flex flex-col gap-[3rem] items-start justify-center p-4">
             <span className="address">
-              <i className="fa-solid fa-location-dot pr-3 scale-150"></i>
+              <i className="fa-solid fa-location-dot pr-3 scale-150 trans"></i>
               Electrical Engineering Department 
               <br /> 
               <span className="block px-[22px]">Jadavpur University, Kolkata</span>
@@ -24,8 +24,7 @@ function Contact() {
               convolution2023@gmail.com
             </span>
             <span className="number">
-              <i className="fa-solid fa-phone pr-3 scale-150"></i>+91 8017 388
-              918/+91 7866 827 719
+              <i className="fa-solid fa-phone pr-3 scale-150"></i>+91 9674 273 275/+91 9073 421 224
             </span>
           </div>
           <div className="contact_map">

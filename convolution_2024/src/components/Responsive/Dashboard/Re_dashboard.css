@@ -38,7 +38,7 @@
   /* border-radius: 8px; */
   overflow: hidden;
   /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
-  -webkit-box-reflect: below 1px
+  -webkit-box-reflect: below 3px
     linear-gradient(transparent, transparent, #0002, #0004);
 }
 

@@ -43,3 +43,13 @@
     border-radius: 20px;
     overflow: hidden;
 } */
+
+
+.re_contact_map{
+  height: 256.5px;
+  width: 85vw;
+}
+
+.trans{
+  transform: translateY(7.5px) scale(1.5) !important;
+}
