@@ -1,15 +1,22 @@
-import React from 'react';
+import React from "react";
 import "../Body/Re_hero.css";
-import Re_hero_vd from './Re_hero_vd';
-import Re_about from './Re_about';
-import Re_event from './Re_event';
-import Re_teams from './Re_teams';
-import Re_contact from './Re_contact';
-
+import Re_hero_vd from "./Re_hero_vd";
+import Re_about from "./Re_about";
+import Re_event from "./Re_event";
+import Re_teams from "./Re_teams";
+import Re_contact from "./Re_contact";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Navigate,
+  useNavigate,
+} from "react-router-dom";
 
 // import thunder from "../../assets/Thunder.png";
 
 function Re_hero() {
+  const navigate = useNavigate();
   return (
     <>
       <div className="Re_hero_bg p-3">
@@ -19,17 +26,31 @@ function Re_hero() {
               <span className="Re_hero_heading_1 text-shadow-md">
                 JUEE STUDENTS' FORUM
               </span>
-              <br/>
+              <br />
               <span className="Re_hero_heading_2 text-shadow-md block">
                 CONVOLUTION 9.0
               </span>
-              <br/>
+              <br />
               <span className="Re_hero_heading_3">
                 The Ninth Edition of Annual Technical Meet
               </span>
               <div className="flex Re_hero_btn">
-                <button className="Re_hero_btn_1">SignUp</button>
-                <button className="Re_hero_btn_2">Login</button>
+                <button
+                  className="Re_hero_btn_1"
+                  onClick={() => {
+                    navigate("/signup");
+                  }}
+                >
+                  SignUp
+                </button>
+                <button
+                  className="Re_hero_btn_2"
+                  onClick={() => {
+                    navigate("/login");
+                  }}
+                >
+                  Login
+                </button>
               </div>
             </div>
             <div className="Re_hero_thunder">
@@ -37,11 +58,11 @@ function Re_hero() {
             </div>
           </div>
 
-          <Re_hero_vd/>
-          <Re_about/>
-          <Re_event/>
-          <Re_teams/>
-          <Re_contact/>
+          <Re_hero_vd />
+          <Re_about />
+          <Re_event />
+          <Re_teams />
+          <Re_contact />
         </div>
       </div>
     </>

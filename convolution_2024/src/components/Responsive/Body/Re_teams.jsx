@@ -2,32 +2,66 @@ import React from "react";
 import "./Re_teams.css";
 import picture1 from "../../assets/soham.png";
 import picture2 from "../../assets/uttam.png";
+import picture4 from "../../assets/Parthib.png";
+import picture5 from "../../assets/Ayan_per.png";
+import picture6 from "../../assets/dwaipayan.png";
+import picture7 from "../../assets/azfar.png";
+import picture8 from "../../assets/supratim.png";
 const peopleData = [
   {
     id: 1,
-    name: "Soham C",
-    heading: "Developer",
+    name: "Dwaipayan",
+    heading: "Secretary",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-    imgSrc: picture1,
+    imgSrc: picture6,
   },
   {
     id: 2,
-    name: "John Doe",
-    heading: "Designer",
+    name: "Parthib",
+    heading: "Joint-Secretary",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-    imgSrc: picture2,
+    imgSrc: picture4,
   },
   {
     id: 3,
-    name: "Jane Smith",
-    heading: "Product Manager",
+    name: "Obaidullah",
+    heading: "Treasurer",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
   },
   {
     id: 4,
-    name: "Bob Johnson",
-    heading: "QA Engineer",
+    name: "Soham",
+    heading: "Tech Lead",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+    imgSrc: picture1,
+  },
+  {
+    id: 5,
+    name: "Azfar",
+    heading: "Logistics Lead",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+    imgSrc: picture7,
+  },
+  {
+    id: 6,
+    name: "Supratim",
+    heading: "Sponsorship Lead",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+    imgSrc: picture8,
+  },
+  {
+    id: 7,
+    name: "Avishek",
+    heading: "Public Reach",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+    imgSrc: picture8,
+  },
+  {
+    id: 8,
+    name: "Ayan",
+    heading: "Design Lead",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+    imgSrc: picture5,
   },
 ];
 

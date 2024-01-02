@@ -3,47 +3,51 @@ import React from "react";
 import "./Teams.css";
 import picture1 from "../assets/soham.png";
 import picture2 from "../assets/uttam.png";
-// import picture3 from "../assets/bodda.png";
-// import picture4 from "../assets/ayan.png";
+
+import picture4 from "../assets/Parthib.png";
+import picture5 from "../assets/Ayan_per.png";
+import picture6 from "../assets/dwaipayan.png";
+import picture7 from "../assets/azfar.png";
+import picture8 from "../assets/supratim.png";
 
 const peopleData = [
-  { id: 1, name: "Soham C", description: "Developer", imgSrc: picture1 },
+  { id: 1, name: "Dwaipayan", description: "Secretary", imgSrc: picture6 },
   {
     id: 2,
-    name: "Uttam C",
-    description: "Designer",
-    imgSrc: picture2 ,
+    name: "Parthib",
+    description: "Joint-Secretary",
+    imgSrc: picture4,
   },
   {
     id: 3,
-    name: "Bodda",
-    description: "TOP G",
-    // imgSrc: picture3,
+    name: "Obaidullah",
+    description: "Treasurer",
+    // imgSrc: picture4,
   },
   {
     id: 4,
-    name: "Seyana",
-    description: "Production",
-    // imgSrc: picture4,
+    name: "Soham",
+    description: "Tech Lead",
+    imgSrc: picture1,
   },
-  { id: 1, name: "John Doe", description: "Developer", imgSrc: "john.jpg" },
+  { id: 1, name: "Azfar", description: "Logistics Lead", imgSrc: picture7 },
   {
     id: 2,
-    name: "Jane Smith",
-    description: "Designer",
-    imgSrc: "jane.jpg",
+    name: "Supratim",
+    description: "Supratim",
+    imgSrc: picture8,
   },
   {
     id: 3,
-    name: "Bob Johnson",
-    description: "Scientist",
+    name: "Avishek",
+    description: "Public Reach",
     imgSrc: "bob.jpg",
   },
   {
     id: 4,
-    name: "Alice Williams",
-    description: "Designer",
-    imgSrc: "alice.jpg",
+    name: "Ayan",
+    description: "Design Lead",
+    imgSrc: picture5,
   },
 ];
 
@@ -78,7 +82,9 @@ const Teams = () => {
             // </div>
 
             <div key={person.id} className="boro-goal-teams flex flex-wrap">
-              <div className="group-child-img-teams"><img src={person.imgSrc} alt={person.name} /></div>
+              <div className="group-child-img-teams">
+                <img src={person.imgSrc} alt={person.name} />
+              </div>
               <div className="algomaniac-teams">{person.description}</div>
               <div className="lorem-ipsum-para-teams flex flex-col gap-2">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.

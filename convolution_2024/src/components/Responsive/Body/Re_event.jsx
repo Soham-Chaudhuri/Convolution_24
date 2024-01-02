@@ -15,22 +15,22 @@ import picture9 from "../../assets/Algomaniac Dark.png";
 const eventData = [
   {
     id: 1,
-    heading: "Decisia",
-    imgSrc: picture1,
+    heading: "Circuistics",
+    imgSrc: picture3,
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
   },
   {
     id: 2,
-    heading: "Abol Tabol",
-    imgSrc: picture2,
+    heading: "Sparkhack",
+    imgSrc: picture7,
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
   },
   {
     id: 3,
-    heading: "Circuistics",
-    imgSrc: picture3,
+    heading: "Algomaniac",
+    imgSrc: picture9,
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
   },
@@ -50,15 +50,22 @@ const eventData = [
   },
   {
     id: 2,
-    heading: "Inquizzitive",
-    imgSrc: picture5,
+    heading: "Decisia",
+    imgSrc: picture1,
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
   },
   {
     id: 3,
-    heading: "Sparkhack",
-    imgSrc: picture7,
+    heading: "Abol Tabol",
+    imgSrc: picture2,
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
+  },
+  {
+    id: 4,
+    heading: "Inquizzitive",
+    imgSrc: picture5,
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
   },
@@ -66,13 +73,6 @@ const eventData = [
     id: 4,
     heading: "24 Frames",
     imgSrc: picture8,
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
-  },
-  {
-    id: 4,
-    heading: "Algomaniac",
-    imgSrc: picture9,
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
   },

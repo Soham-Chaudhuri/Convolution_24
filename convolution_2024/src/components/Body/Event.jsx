@@ -13,18 +13,18 @@ import picture8 from "../assets/24 Frames Dark.png";
 import picture9 from "../assets/Algomaniac Dark.png";
 
 const peopleData = [
-  { id: 1, name: "John Doe", description: "Decisia", imgSrc: picture1 },
+  { id: 1, name: "John Doe", description: "Circuistics", imgSrc: picture3 },
   {
     id: 2,
     name: "Jane Smith",
-    description: "Abol Tabol",
-    imgSrc: picture2,
+    description: "Sparkhack",
+    imgSrc: picture7,
   },
   {
     id: 3,
     name: "Bob Johnson",
-    description: "Circuistics",
-    imgSrc: picture3,
+    description: "Algomaniac",
+    imgSrc: picture9,
   },
   {
     id: 4,
@@ -36,26 +36,27 @@ const peopleData = [
   {
     id: 2,
     name: "Jane Smith",
-    description: "Inquizzitive",
-    imgSrc: picture5,
+    description: "Decisia",
+    imgSrc: picture1,
   },
   {
     id: 3,
     name: "Bob Johnson",
-    description: "Sparkhack",
-    imgSrc: picture7,
+    description: "Abol Tabol",
+    imgSrc: picture2,
+  },
+  {
+    id: 4,
+    name: "Alice Williams",
+
+    description: "Inquizzitive",
+    imgSrc: picture5,
   },
   {
     id: 4,
     name: "Alice Williams",
     description: "24 Frames",
     imgSrc: picture8,
-  },
-  {
-    id: 4,
-    name: "Alice Williams",
-    description: "Algomaniac",
-    imgSrc: picture9,
   },
 ];
 
