@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import {useNavigate} from "react-router-dom";
 import "../Signup/Signup.css";
 
 function Signup() {
@@ -10,15 +11,44 @@ function Signup() {
   const [branch, setBranch] = useState("");
   const [year, setYear] = useState("");
 
-  function submit() {
-    if (password === cpassword) {
-      const user = [name, mail, password, college, branch, year];
+  const navigate = useNavigate();
 
-      console.log(user);
+  const handleSubmit = () => {
+    if (password === cpassword) {
+      sendDataToServer();
     } else {
-      alert("you banchod cant even fill a form properly");
+      alert("Passwords do not match");
     }
-  }
+  };
+  const sendDataToServer = () => {
+    const dataToSend = {
+      email: mail,
+      name: name,
+      college: college,
+      branch: branch,
+      year: year,
+      papier:false,
+      eureka:false,
+      abol_tabol:false,
+      decisia:false,
+      circuistics:false,
+      inquizzitive:false,
+      spark_hack:false,
+      algomaniac:false,
+      _frames:false,
+    };
+
+    fetch("http://localhost:5000/create", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(dataToSend),
+    })
+      .then((response) => response.json())
+      .then((data) => {console.log(data);navigate(`/dashboard`);})
+      .catch((error) => console.error("Error fetching data:", error));
+  };
 
   return (
     <>
@@ -84,7 +114,7 @@ function Signup() {
               onChange={(e) => setCpassword(e.target.value)}
             />
             <div className="py-5">
-              <button className="form_button mx-auto " onClick={submit}>
+              <button className="form_button mx-auto " onClick={handleSubmit}>
                 Sign Up
               </button>
             </div>
