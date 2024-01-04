@@ -35,7 +35,7 @@ function Dashboard() {
           setBoxesData([
             {
               id: 1,
-              type: "Register Now",
+              type: data.inquizzitive ? "Registered" : "Register Now",
               image: pic1,
               content: "Lorem ipsum content for box 1",
               lastDate: "XX YY ZZZZ",
@@ -45,7 +45,7 @@ function Dashboard() {
             },
             {
               id: 2,
-              type: "Register Now",
+              type: data.decisia ? "Registered" : "Register Now",
               image: pic4,
               content: "Lorem ipsum content for box 2",
               lastDate: "XX YY ZZZZ",
@@ -55,7 +55,7 @@ function Dashboard() {
             },
             {
               id: 3,
-              type: "Registered",
+              type: data.abol_tabol ? "Registered" : "Register Now",
               image: pic5,
               content: "Lorem ipsum content for box 3",
               lastDate: "XX YY ZZZZ",
@@ -65,7 +65,7 @@ function Dashboard() {
             },
             {
               id: 4,
-              type: "Register Now",
+              type: data.circuistics ? "Registered" : "Register Now",
               image: pic6,
               content: "Lorem ipsum content for box 4",
               lastDate: "XX YY ZZZZ",
@@ -75,7 +75,7 @@ function Dashboard() {
             },
             {
               id: 5,
-              type: "Registered",
+              type: data.eureka ? "Registered" : "Register Now",
               image: pic7,
               content: "Lorem ipsum content for box 5",
               lastDate: "XX YY ZZZZ",
@@ -85,7 +85,7 @@ function Dashboard() {
             },
             {
               id: 6,
-              type: "Register Now",
+              type: data.algomaniac ? "Registered" : "Register Now",
               image: pic8,
               content: "Lorem ipsum content for box 6",
               lastDate: "XX YY ZZZZ",
@@ -95,7 +95,7 @@ function Dashboard() {
             },
             {
               id: 7,
-              type: "Register Now",
+              type: data.papier ? "Registered" : "Register Now",
               image: pic9,
               content: "Lorem ipsum content for box 7",
               lastDate: "XX YY ZZZZ",
@@ -105,7 +105,7 @@ function Dashboard() {
             },
             {
               id: 8,
-              type: "Registered",
+              type: data.spark_hack ? "Registered" : "Register Now",
               image: pic10,
               content: "Lorem ipsum content for box 8",
               lastDate: "XX YY ZZZZ",
@@ -115,7 +115,7 @@ function Dashboard() {
             },
             {
               id: 9,
-              type: "Registered",
+              type: data._frames ? "Registered" : "Register Now",
               image: pic11,
               content: "Lorem ipsum content for box 8",
               lastDate: "XX YY ZZZZ",
@@ -186,24 +186,8 @@ function Dashboard() {
                   <div className="first-box-child" />
                   <div className="first-box-item" />
                   <div className="first-box-inner" />
-                  {box.registered ? (
-                    <img className="tick-logo-icon" src={pic2} />
-                  ) : (
-                    // <img
-                    //   className="arrow-logo-icon hover:cursor-pointer  "
-                    //   src={pic21}
-                    // />
-
-                    <img
-                      src={isHovered ? pic21 : pic3}
-                      className="arrow-logo-icon hover:cursor-pointer  "
-                      alt="Image"
-                    />
-                  )}
 
                   <b
-                    onMouseEnter={() => setIsHovered(true)}
-                    onMouseLeave={() => setIsHovered(false)}
                     className={
                       box.registered
                         ? "registered"
@@ -216,7 +200,7 @@ function Dashboard() {
                       ]);
                     }}
                   >
-                    {box.type}
+                    {box.type} {!box.registered ? "\u2192" : "\u2714"}
                   </b>
                   <img className="logo-1" alt="" src={box.image} />
                   <div className="line-div" />
@@ -249,5 +233,3 @@ function Dashboard() {
 }
 
 export default Dashboard;
-
-
