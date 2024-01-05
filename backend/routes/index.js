@@ -91,10 +91,14 @@
 const express = require("express");
 const router = express.Router();
 const userModel = require("./users");
+const bcrypt = require("bcrypt");
+const saltRounds = 10;
 
 router.post("/create", async (req, res) => {
   try {
-    const createUser = await userModel.create(req.body);
+    const hashedData = req.body;
+    hashedData.password = await bcrypt.hash(hashedData.password,saltRounds);
+    const createUser = await userModel.create(hashedData);
     res.json(createUser);
     req.session.mail = createUser.email;
   } catch (error) {
@@ -144,7 +148,7 @@ router.post("/login", async (req, res) => {
     req.session.mail = mail;
     const user = await userModel.findOne({ mail });
 
-    if (!user || req.body.password !== user.password) {
+    if (!user || !await bcrypt.compare(req.body.password,user.password)) {
       return res
         .status(401)
         .json({ success: false, message: "Invalid email or password" });
