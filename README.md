@@ -2,9 +2,11 @@
 
 ## issues
 
-### arrow svg in dashboard
+- arrow svg in dashboard
 
-### scroll to reveal
+- scroll to reveal
+
+- signup page redirects to hero section
 
 
-//ok vai
+

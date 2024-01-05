@@ -25,7 +25,7 @@ function Dashboard() {
   useEffect(() => {
     const fetchUserData = async () => {
       try {
-        const response = await fetch(`http://localhost:5000/get-user`);
+        const response = await fetch(`http://localhost:4000/get-user`);
         const data = await response.json();
         console.log("Response data:", data);
 
@@ -137,7 +137,7 @@ function Dashboard() {
 
   const handleUpdateEvents = async () => {
     try {
-      const response = await fetch(`http://localhost:5000/update-events`, {
+      const response = await fetch(`http://localhost:4000/update-events`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

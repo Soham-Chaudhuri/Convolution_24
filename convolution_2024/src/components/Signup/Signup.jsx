@@ -1,6 +1,10 @@
 import React, { useState, useEffect } from "react";
-import {useNavigate} from "react-router-dom";
+import { useNavigate } from "react-router-dom";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import "../Signup/Signup.css";
+import Success from "../Successerror/Success";
+import Error from "../Successerror/Error";
 
 function Signup() {
   const [name, setName] = useState("");
@@ -10,14 +14,39 @@ function Signup() {
   const [college, setCollege] = useState("");
   const [branch, setBranch] = useState("");
   const [year, setYear] = useState("");
+  const [error, setError] = useState(false);
+  const [success, setSuccess] = useState(false);
 
   const navigate = useNavigate();
 
   const handleSubmit = () => {
     if (password === cpassword) {
-      sendDataToServer();
+      try {
+        sendDataToServer();
+        setSuccess(true);
+        setName("");
+        setMail("");
+        setPassword("");
+        setCpassword("");
+        setCollege("");
+        setBranch("");
+        setYear("");
+        toast.success("Signup successful", {
+          autoClose: 3200,
+          onClose: () => {
+            setTimeout(() => {
+              navigate(`/`);
+            }, 2000);
+          },
+        });
+      } catch (error) {
+        console.log(error);
+        setError(true);
+        toast.error("Password does not match");
+      }
     } else {
-      alert("Passwords do not match");
+      // alert("Passwords do not match");
+      toast.error("Password does not match");
     }
   };
   const sendDataToServer = () => {
@@ -27,18 +56,18 @@ function Signup() {
       college: college,
       branch: branch,
       year: year,
-      papier:false,
-      eureka:false,
-      abol_tabol:false,
-      decisia:false,
-      circuistics:false,
-      inquizzitive:false,
-      spark_hack:false,
-      algomaniac:false,
-      _frames:false,
+      papier: false,
+      eureka: false,
+      abol_tabol: false,
+      decisia: false,
+      circuistics: false,
+      inquizzitive: false,
+      spark_hack: false,
+      algomaniac: false,
+      _frames: false,
     };
 
-    fetch("http://localhost:5000/create", {
+    fetch("http://localhost:4000/create", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -46,13 +75,21 @@ function Signup() {
       body: JSON.stringify(dataToSend),
     })
       .then((response) => response.json())
-      .then((data) => {console.log(data);navigate(`/dashboard`);})
-      .catch((error) => console.error("Error fetching data:", error));
+      .then((data) => {
+        console.log(data);
+
+        // navigate(`/dashboard`);
+        // navigate(`/`);
+      })
+      .catch((error) => {
+        console.error("Error fetching data:", error);
+      });
   };
 
   return (
     <>
-      {}
+      {/* {error && <Error />} */}
+      {/* {success && <Success message="Registration successful" />} */}
       <div className="flex flex-col items-center justify-center  py-[60px] form_signup_body">
         <h1 className="text-center pt-3 pb-3 form_heading">YOUR DETAILS</h1>
         <span className="form_underline"></span>
@@ -121,6 +158,7 @@ function Signup() {
           </div>
         </div>
       </div>
+      <ToastContainer />
     </>
   );
 }

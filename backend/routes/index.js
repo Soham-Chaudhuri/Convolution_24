@@ -49,4 +49,32 @@ router.get("/get-user", async (req, res) => {
   }
 });
 
+
+
+router.get("/loggedin", function(req, res) {
+  try {
+   res.json(req.session.mail !== null);
+   console.log(req.session.mail !== null);
+  } catch (error) {
+   res.status(500).json({ error: error.message });
+  }
+});
+
+router.post("/loggedout", function(req, res) {
+  try {
+    req.session.destroy(function(err) {
+      if (err) {
+        res.status(500).json({ error: "Error destroying session" });
+      } else {
+        console.log("loggedout");
+        res.status(200).json({ message: "Successfully logged out" });
+      }
+    });
+  } catch (error) {
+    res.status(500).json({ error: error.message });
+  }
+});
+
+
+
 module.exports = router;

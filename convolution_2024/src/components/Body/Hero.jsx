@@ -1,5 +1,5 @@
 /* eslint-disable react/no-unescaped-entities */
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./Hero.css";
 import Hero_vd from "./Hero_vd";
 import thunder from "../assets/Thunder.png";
@@ -9,11 +9,55 @@ import Timeline from "./Timeline";
 import Teams from "./Teams";
 import Contact from "./Contact";
 // eslint-disable-next-line no-unused-vars
-import { BrowserRouter as Router, Routes, Route, Navigate, useNavigate,  } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Navigate,
+  useNavigate,
+} from "react-router-dom";
 // import Back from "./Back";
 function Hero() {
+  // const [isloggedin, setIsloggedin] = useState(false);
+  // const [logout, setLogout] = useState(false);
 
+  // useEffect(() => {
+  //   const loggedIn = async () => {
+  //     try {
+  //       const response = await fetch(`http://localhost:4000/loggedin`);
+  //       const data = await response.json();
+  //       console.log("Response data:", data);
+  //       setIsloggedin(data);
+  //       // setLogout(false);
+  //     } catch (error) {
+  //       console.log(error);
+  //     }
+  //   };
+  //   loggedIn();
+  // }, [logout]);
 
+  // const tologout = async () => {
+  //   try {
+  //     await fetch(`http://localhost:4000/loggedout`);
+
+  //     setLogout(true);
+  //     window.location.reload();
+  //     console.log("logout");
+  //   } catch (error) {
+  //     console.log(error);
+  //   }
+  // };
+
+  // const tologout = async () => {
+  //   try {
+  //     await fetch(`http://localhost:4000/loggedout`);
+  //     setLogout(true);
+  //     setIsloggedin(false);
+  //     console.log("logout");
+  //   } catch (error) {
+  //     console.log(error);
+  //   }
+  // };
   const navigate = useNavigate();
   return (
     <>
@@ -33,8 +77,56 @@ function Hero() {
                 The Ninth Edition of Annual Technical Meet
               </span>
               <div className="flex hero_btn mt-5">
-                <button className="hero_btn_1" onClick={() => {navigate("/signup")}} >SignUp</button>
-                <button className="hero_btn_2" onClick={() => {navigate("/login")}}>Login</button>
+                {/* {isloggedin ? (
+                  <>
+                    <button
+                      className="hero_btn_1"
+                      onClick={() => {
+                        navigate("/dashboard");
+                      }}
+                    >
+                      Dashboard
+                    </button>
+                    <button className="hero_btn_2" onClick={tologout}>
+                      Logout
+                    </button>
+                  </>
+                ) : (
+                  <>
+                    <button
+                      className="hero_btn_1"
+                      onClick={() => {
+                        navigate("/signup");
+                      }}
+                    >
+                      SignUp
+                    </button>
+                    <button
+                      className="hero_btn_2"
+                      onClick={() => {
+                        navigate("/login");
+                      }}
+                    >
+                      Login
+                    </button>
+                  </>
+                )} */}
+                <button
+                  className="hero_btn_1"
+                  onClick={() => {
+                    navigate("/signup");
+                  }}
+                >
+                  SignUp
+                </button>
+                <button
+                  className="hero_btn_2"
+                  onClick={() => {
+                    navigate("/login");
+                  }}
+                >
+                  Login
+                </button>
               </div>
             </div>
             <div className="hero_thunder flex items-center">
@@ -45,8 +137,8 @@ function Hero() {
           <About />
           <Event />
           <Timeline />
-          <Teams/>
-          <Contact/>
+          <Teams />
+          <Contact />
         </div>
       </div>
     </>
