@@ -1,10 +1,38 @@
 /* eslint-disable no-unused-vars */
 import React, { useState, useEffect } from "react";
 import "../Login/Login.css";
+import { useNavigate } from "react-router-dom";
 
 function Login() {
+  const navigate = useNavigate();
   const [mail, setMail] = useState("");
   const [password, setPassword] = useState("");
+  
+  const askServer = async () => {
+    const dataToSend = {
+      mail,
+      password,
+    };
+  
+    try {
+      const response = await fetch("http://localhost:4000/login", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(dataToSend),
+      });
+  
+      // Wait for the JSON data to be parsed
+      const data = await response.json();
+  
+      console.log(data);
+      if(data) {navigate("/")}
+    } catch (error) {
+      console.error("Error fetching data:", error);
+    }
+  };
+  
 
   
   
@@ -33,7 +61,7 @@ function Login() {
             />
 
             <div className="py-5 flex text-center justify-center gap-[40px] flex-wrap">
-              <button className="form_button">Login</button>
+              <button className="form_button" onClick={askServer}>Login</button>
               {/* <button className="form_button">Google Sign In</button> */}
             </div>
           </div>

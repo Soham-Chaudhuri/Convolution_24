@@ -9,6 +9,7 @@ const flash = require("connect-flash");
 var indexRouter = require("./routes/index");
 var usersRouter = require("./routes/users");
 const cors = require("cors");
+// const passport = require('passport');
 var app = express();
 
 // view engine setup

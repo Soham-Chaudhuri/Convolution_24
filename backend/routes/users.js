@@ -12,6 +12,10 @@ const userSchema = mongoose.Schema({
     type: String,
     required: true,
   },
+  password: {
+    type: String,
+    required: true,
+  },
   college: {
     type: String,
     required: true,
@@ -57,6 +61,10 @@ const userSchema = mongoose.Schema({
     default: false,
   },
   _frames: {
+    type: Boolean,
+    default: false,
+  },
+  isLoggedIn:{
     type: Boolean,
     default: false,
   },

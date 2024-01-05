@@ -55,6 +55,7 @@ function Signup() {
       name: name,
       college: college,
       branch: branch,
+      password: password,
       year: year,
       papier: false,
       eureka: false,
@@ -65,6 +66,7 @@ function Signup() {
       spark_hack: false,
       algomaniac: false,
       _frames: false,
+      isLoggedIn: true,
     };
 
     fetch("http://localhost:4000/create", {

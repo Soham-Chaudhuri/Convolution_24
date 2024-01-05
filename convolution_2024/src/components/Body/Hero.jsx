@@ -16,48 +16,39 @@ import {
   Navigate,
   useNavigate,
 } from "react-router-dom";
-// import Back from "./Back";
+
 function Hero() {
-  // const [isloggedin, setIsloggedin] = useState(false);
-  // const [logout, setLogout] = useState(false);
-
-  // useEffect(() => {
-  //   const loggedIn = async () => {
-  //     try {
-  //       const response = await fetch(`http://localhost:4000/loggedin`);
-  //       const data = await response.json();
-  //       console.log("Response data:", data);
-  //       setIsloggedin(data);
-  //       // setLogout(false);
-  //     } catch (error) {
-  //       console.log(error);
-  //     }
-  //   };
-  //   loggedIn();
-  // }, [logout]);
-
-  // const tologout = async () => {
-  //   try {
-  //     await fetch(`http://localhost:4000/loggedout`);
-
-  //     setLogout(true);
-  //     window.location.reload();
-  //     console.log("logout");
-  //   } catch (error) {
-  //     console.log(error);
-  //   }
-  // };
-
-  // const tologout = async () => {
-  //   try {
-  //     await fetch(`http://localhost:4000/loggedout`);
-  //     setLogout(true);
-  //     setIsloggedin(false);
-  //     console.log("logout");
-  //   } catch (error) {
-  //     console.log(error);
-  //   }
-  // };
+  const [logStatus, setLogStatus] = useState(false);
+  const [logOut, setLogOut] = useState(false);
+  useEffect(() => {
+    const statusdb = async () => {
+      try {
+        const response = await fetch(`http://localhost:4000/get-user`);
+        const data = await response.json();
+        setLogStatus(data.isLoggedIn);
+      } catch (error) {
+        console.error("Error fetching user status:", error);
+      }
+    };
+  
+    statusdb();
+  }, [logOut]);
+  const loggingout = async () => {
+    try {
+      await fetch(`http://localhost:4000/logout`);
+      console.log("logged out");
+      setLogStatus(false);
+      // navigate("/login");
+    } catch (error) {
+      console.error("Error during logout:", error);
+    }
+  };
+  useEffect(() => {
+    if (logOut) {
+      loggingout();
+      setLogOut(false);
+    }
+  }, [logOut]);
   const navigate = useNavigate();
   return (
     <>
@@ -77,7 +68,7 @@ function Hero() {
                 The Ninth Edition of Annual Technical Meet
               </span>
               <div className="flex hero_btn mt-5">
-                {/* {isloggedin ? (
+                {logStatus ? (
                   <>
                     <button
                       className="hero_btn_1"
@@ -87,7 +78,12 @@ function Hero() {
                     >
                       Dashboard
                     </button>
-                    <button className="hero_btn_2" onClick={tologout}>
+                    <button
+                      className="hero_btn_2"
+                      onClick={() => {
+                        setLogOut(true);
+                      }}
+                    >
                       Logout
                     </button>
                   </>
@@ -110,8 +106,8 @@ function Hero() {
                       Login
                     </button>
                   </>
-                )} */}
-                <button
+                )}
+                {/* <button
                   className="hero_btn_1"
                   onClick={() => {
                     navigate("/signup");
@@ -126,7 +122,7 @@ function Hero() {
                   }}
                 >
                   Login
-                </button>
+                </button> */}
               </div>
             </div>
             <div className="hero_thunder flex items-center">
