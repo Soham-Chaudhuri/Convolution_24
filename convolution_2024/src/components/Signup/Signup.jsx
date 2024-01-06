@@ -35,7 +35,7 @@ function Signup() {
           autoClose: 3200,
           onClose: () => {
             setTimeout(() => {
-              navigate(`/`);
+              navigate(`/profile`);
             }, 2000);
           },
         });

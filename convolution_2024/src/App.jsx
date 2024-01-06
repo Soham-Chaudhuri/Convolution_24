@@ -8,8 +8,10 @@ import "./App.css";
 import Header from "./components/Header/Header";
 import Re_header from "./components/Responsive/Header/Re_header";
 import Hero from "./components/Body/Hero";
+import Lhero from "./components/Body/Lhero"
 import Footer from "./components/Footer/Footer";
 import Re_hero from "./components/Responsive/Body/Re_hero";
+import Re_lhero from "./components/Responsive/Body/Re_lhero";
 import Re_footer from "./components/Responsive/Footer/Re_footer";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Dashboard from "./components/Dashboard/Dashboard";
@@ -60,6 +62,7 @@ function App() {
                   <Route path="/signup" element={<Signup />} />
                   <Route path="/login" element={<Login />} />
                   <Route path="/" element={<Hero />} />
+                  <Route path="/profile" element={<Lhero/>} />
                 </Routes>
               </Router>
               {/* <Hero /> */}
@@ -74,6 +77,7 @@ function App() {
                   <Route path="/signup" element={<Signup />} />
                   <Route path="/login" element={<Login />} />
                   <Route path="/" element={<Re_hero />} />
+                  <Route path="/profile" element={<Re_lhero/>} />
                 </Routes>
               </Router>
               {/* <Re_hero /> */}

@@ -1,19 +1,21 @@
 /* eslint-disable no-unused-vars */
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import "../Login/Login.css";
 import { useNavigate } from "react-router-dom";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 function Login() {
   const navigate = useNavigate();
   const [mail, setMail] = useState("");
   const [password, setPassword] = useState("");
-  
+
   const askServer = async () => {
     const dataToSend = {
-      mail,
-      password,
+      email: mail,
+      password: password,
     };
-  
+
     try {
       const response = await fetch("http://localhost:4000/login", {
         method: "POST",
@@ -22,20 +24,27 @@ function Login() {
         },
         body: JSON.stringify(dataToSend),
       });
-  
-      // Wait for the JSON data to be parsed
+
       const data = await response.json();
-  
+
       console.log(data);
-      if(data) {navigate("/")}
+      if (data.success) {
+        toast.success("Login successful", {
+          autoClose: 2000,
+          onClose: () => {
+            setTimeout(() => {
+              navigate("/profile");
+            }, 2000);
+          },
+        });
+      } else {
+        toast.error("Login failed. Please check your credentials.");
+      }
     } catch (error) {
       console.error("Error fetching data:", error);
+      toast.error("An error occurred while trying to log in.");
     }
   };
-  
-
-  
-  
 
   return (
     <>
@@ -61,12 +70,15 @@ function Login() {
             />
 
             <div className="py-5 flex text-center justify-center gap-[40px] flex-wrap">
-              <button className="form_button" onClick={askServer}>Login</button>
+              <button className="form_button" onClick={askServer}>
+                Login
+              </button>
               {/* <button className="form_button">Google Sign In</button> */}
             </div>
           </div>
         </div>
       </div>
+      <ToastContainer />
     </>
   );
 }
