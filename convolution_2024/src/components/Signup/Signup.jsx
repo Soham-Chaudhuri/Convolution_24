@@ -1,12 +1,17 @@
 import React, { useState, useEffect } from "react";
-import { useNavigate } from "react-router-dom";
+import { Navigate, useNavigate } from "react-router-dom";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import "../Signup/Signup.css";
 import Success from "../Successerror/Success";
 import Error from "../Successerror/Error";
-
+import { app } from "../firebase";
+import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
+import { getDatabase, ref, set } from "firebase/database";
+const auth = getAuth(app);
+const db = getDatabase(app);
 function Signup() {
+  const navigate = useNavigate();
   const [name, setName] = useState("");
   const [mail, setMail] = useState("");
   const [password, setPassword] = useState("");
@@ -14,48 +19,11 @@ function Signup() {
   const [college, setCollege] = useState("");
   const [branch, setBranch] = useState("");
   const [year, setYear] = useState("");
-  const [error, setError] = useState(false);
-  const [success, setSuccess] = useState(false);
-
-  const navigate = useNavigate();
-
-  const handleSubmit = () => {
-    if (password === cpassword) {
-      try {
-        sendDataToServer();
-        setSuccess(true);
-        setName("");
-        setMail("");
-        setPassword("");
-        setCpassword("");
-        setCollege("");
-        setBranch("");
-        setYear("");
-        toast.success("Signup successful", {
-          autoClose: 3200,
-          onClose: () => {
-            setTimeout(() => {
-              navigate(`/profile`);
-            }, 2000);
-          },
-        });
-      } catch (error) {
-        console.log(error);
-        setError(true);
-        toast.error("Password does not match");
-      }
-    } else {
-      // alert("Passwords do not match");
-      toast.error("Password does not match");
-    }
-  };
-  const sendDataToServer = () => {
-    const dataToSend = {
-      email: mail,
+  const dataEntry = () => {
+    set(ref(db, `users/${mail.replace(/\./g, "_")}`), {
       name: name,
       college: college,
       branch: branch,
-      password: password,
       year: year,
       papier: false,
       eureka: false,
@@ -66,26 +34,14 @@ function Signup() {
       spark_hack: false,
       algomaniac: false,
       _frames: false,
-      isLoggedIn: true,
-    };
-
-    fetch("http://localhost:4000/create", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(dataToSend),
-    })
-      .then((response) => response.json())
-      .then((data) => {
-        console.log(data);
-
-        // navigate(`/dashboard`);
-        // navigate(`/`);
-      })
-      .catch((error) => {
-        console.error("Error fetching data:", error);
-      });
+    });
+  };
+  const singUpUser = () => {
+    createUserWithEmailAndPassword(auth, mail, password).then((value) => {
+      console.log(value);
+      dataEntry();
+      navigate("/profile");
+    });
   };
 
   return (
@@ -153,7 +109,7 @@ function Signup() {
               onChange={(e) => setCpassword(e.target.value)}
             />
             <div className="py-5">
-              <button className="form_button mx-auto " onClick={handleSubmit}>
+              <button className="form_button mx-auto " onClick={singUpUser}>
                 Sign Up
               </button>
             </div>

@@ -14,161 +14,185 @@ import pic9 from "../assets/Papier_Light.png";
 import pic10 from "../assets/Sparkhack_Light.png";
 import pic11 from "../assets/24 Frames Light.png";
 import { motion } from "framer-motion";
-
-function Dashboard() {
-  const [isHovered, setIsHovered] = useState(false);
+import {
+  onValue,
+  ref,
+  getDatabase,
+  get,
+  child,
+  update,
+} from "firebase/database";
+import { app } from "../firebase";
+const db = getDatabase(app);
+function Dashboard({ user }) {
   const Reference = useRef(null);
-  const [eventsToUpdate, setEventsToUpdate] = useState([]);
-  const [user, setUser] = useState(null);
-  // console.log(`${mail}`);
+  const [papier, setPapier] = useState(false);
+  const [eureka, setEureka] = useState(false);
+  const [abol_tabol, setAbol_tabol] = useState(false);
+  const [decisia, setDecisia] = useState(false);
+  const [circuistics, setCircuistics] = useState(false);
+  const [inquizzitive, setInquizzitive] = useState(false);
+  const [spark_hack, setSpark_hack] = useState(false);
+  const [algomaniac, setAlgomaniac] = useState(false);
+  const [_frames, set_frames] = useState(false);
+  const [userData, setUserData] = useState(null);
   const [boxesData, setBoxesData] = useState([]);
+  const [events, useEvents] = useState([
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+  ]);
+  // const ok=;
   useEffect(() => {
-    const fetchUserData = async () => {
-      try {
-        const response = await fetch(`http://localhost:4000/get-user`);
-        const data = await response.json();
-        console.log("Response data:", data);
+    // Create a reference to the specific user's data in the database
+    const userRef = ref(db, `users/${user.email.replace(/\./g, "_")}`);
 
-        if (data) {
-          setUser(data);
-          console.log("Current user data:", data.email);
-          setBoxesData([
-            {
-              id: 1,
-              type: data.inquizzitive ? "Registered" : "Register Now",
-              image: pic1,
-              content: "Lorem ipsum content for box 1",
-              lastDate: "XX YY ZZZZ",
-              eventDate: "XX YY ZZZZ",
-              registered: data.inquizzitive,
-              event: "inquizzitive",
-            },
-            {
-              id: 2,
-              type: data.decisia ? "Registered" : "Register Now",
-              image: pic4,
-              content: "Lorem ipsum content for box 2",
-              lastDate: "XX YY ZZZZ",
-              eventDate: "XX YY ZZZZ",
-              registered: data.decisia,
-              event: "decisia",
-            },
-            {
-              id: 3,
-              type: data.abol_tabol ? "Registered" : "Register Now",
-              image: pic5,
-              content: "Lorem ipsum content for box 3",
-              lastDate: "XX YY ZZZZ",
-              eventDate: "XX YY ZZZZ",
-              registered: data.abol_tabol,
-              event: "abol_tabol",
-            },
-            {
-              id: 4,
-              type: data.circuistics ? "Registered" : "Register Now",
-              image: pic6,
-              content: "Lorem ipsum content for box 4",
-              lastDate: "XX YY ZZZZ",
-              eventDate: "XX YY ZZZZ",
-              registered: data.circuistics,
-              event: "circuistics",
-            },
-            {
-              id: 5,
-              type: data.eureka ? "Registered" : "Register Now",
-              image: pic7,
-              content: "Lorem ipsum content for box 5",
-              lastDate: "XX YY ZZZZ",
-              eventDate: "XX YY ZZZZ",
-              registered: data.eureka,
-              event: "eureka",
-            },
-            {
-              id: 6,
-              type: data.algomaniac ? "Registered" : "Register Now",
-              image: pic8,
-              content: "Lorem ipsum content for box 6",
-              lastDate: "XX YY ZZZZ",
-              eventDate: "XX YY ZZZZ",
-              registered: data.algomaniac,
-              event: "algomaniac",
-            },
-            {
-              id: 7,
-              type: data.papier ? "Registered" : "Register Now",
-              image: pic9,
-              content: "Lorem ipsum content for box 7",
-              lastDate: "XX YY ZZZZ",
-              eventDate: "XX YY ZZZZ",
-              registered: data.papier,
-              event: "papier",
-            },
-            {
-              id: 8,
-              type: data.spark_hack ? "Registered" : "Register Now",
-              image: pic10,
-              content: "Lorem ipsum content for box 8",
-              lastDate: "XX YY ZZZZ",
-              eventDate: "XX YY ZZZZ",
-              registered: data.spark_hack,
-              event: "spark_hack",
-            },
-            {
-              id: 9,
-              type: data._frames ? "Registered" : "Register Now",
-              image: pic11,
-              content: "Lorem ipsum content for box 8",
-              lastDate: "XX YY ZZZZ",
-              eventDate: "XX YY ZZZZ",
-              registered: data._frames,
-              event: "_frames",
-            },
-          ]);
-        } else {
-          console.log("User not found useeffect");
-        }
-      } catch (error) {
-        console.error("Error fetching user data:", error);
-      }
-    };
-
-    fetchUserData();
-  }, [eventsToUpdate]);
-
-  const handleUpdateEvents = async () => {
-    try {
-      const response = await fetch(`http://localhost:4000/update-events`, {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
+    // Listen for changes in the user's data
+    const unsubscribeUser = onValue(userRef, (snapshot) => {
+      const data = snapshot.val();
+      setUserData(data);
+      useEvents([
+        data.inquizzitive,
+        data.decisia,
+        data.abol_tabol,
+        data.circuistics,
+        data.eureka,
+        data.algomaniac,
+        data.papier,
+        data.spark_hack,
+        data._frames,
+      ]);
+      setBoxesData([
+        {
+          id: 1,
+          type: data.inquizzitive ? "Registered" : "Register Now",
+          image: pic1,
+          content: "Lorem ipsum content for box 1",
+          lastDate: "XX YY ZZZZ",
+          eventDate: "XX YY ZZZZ",
+          registered: data.inquizzitive,
+          event: "inquizzitive",
         },
-        body: JSON.stringify({ eventsToUpdate }),
-      });
+        {
+          id: 2,
+          type: data.decisia ? "Registered" : "Register Now",
+          image: pic4,
+          content: "Lorem ipsum content for box 2",
+          lastDate: "XX YY ZZZZ",
+          eventDate: "XX YY ZZZZ",
+          registered: data.decisia,
+          event: "decisia",
+        },
+        {
+          id: 3,
+          type: data.abol_tabol ? "Registered" : "Register Now",
+          image: pic5,
+          content: "Lorem ipsum content for box 3",
+          lastDate: "XX YY ZZZZ",
+          eventDate: "XX YY ZZZZ",
+          registered: data.abol_tabol,
+          event: "abol_tabol",
+        },
+        {
+          id: 4,
+          type: data.circuistics ? "Registered" : "Register Now",
+          image: pic6,
+          content: "Lorem ipsum content for box 4",
+          lastDate: "XX YY ZZZZ",
+          eventDate: "XX YY ZZZZ",
+          registered: data.circuistics,
+          event: "circuistics",
+        },
+        {
+          id: 5,
+          type: data.eureka ? "Registered" : "Register Now",
+          image: pic7,
+          content: "Lorem ipsum content for box 5",
+          lastDate: "XX YY ZZZZ",
+          eventDate: "XX YY ZZZZ",
+          registered: data.eureka,
+          event: "eureka",
+        },
+        {
+          id: 6,
+          type: data.algomaniac ? "Registered" : "Register Now",
+          image: pic8,
+          content: "Lorem ipsum content for box 6",
+          lastDate: "XX YY ZZZZ",
+          eventDate: "XX YY ZZZZ",
+          registered: data.algomaniac,
+          event: "algomaniac",
+        },
+        {
+          id: 7,
+          type: data.papier ? "Registered" : "Register Now",
+          image: pic9,
+          content: "Lorem ipsum content for box 7",
+          lastDate: "XX YY ZZZZ",
+          eventDate: "XX YY ZZZZ",
+          registered: data.papier,
+          event: "papier",
+        },
+        {
+          id: 8,
+          type: data.spark_hack ? "Registered" : "Register Now",
+          image: pic10,
+          content: "Lorem ipsum content for box 8",
+          lastDate: "XX YY ZZZZ",
+          eventDate: "XX YY ZZZZ",
+          registered: data.spark_hack,
+          event: "spark_hack",
+        },
+        {
+          id: 9,
+          type: data._frames ? "Registered" : "Register Now",
+          image: pic11,
+          content: "Lorem ipsum content for box 8",
+          lastDate: "XX YY ZZZZ",
+          eventDate: "XX YY ZZZZ",
+          registered: data._frames,
+          event: "_frames",
+        },
+      ]);
+    });
 
-      const data = await response.json();
-
-      if (data.user) {
-        setUser(data.user);
-        console.log("User data after update:", data.user);
-      } else {
-        console.log("User not found handle");
-      }
-    } catch (error) {
-      console.error("Error updating events:", error);
-    }
-  };
-
+    // Cleanup the listener when the component unmounts
+    return () => {
+      unsubscribeUser();
+    };
+  }, [user, events]);
   useEffect(() => {
-    console.log("Updated events:", eventsToUpdate);
-    if (eventsToUpdate.length > 0) {
-      handleUpdateEvents();
-      setEventsToUpdate([]);
+    // Check if userData is available and then update the database
+    if (userData) {
+      // Update user data in the database
+      update(ref(db, `users/${user.email.replace(/\./g, "_")}`), {
+        name: userData.name,
+        college: userData.college,
+        branch: userData.branch,
+        year: userData.year,
+        papier: events[6],
+        eureka: events[4],
+        abol_tabol: events[2],
+        decisia: events[1],
+        circuistics: events[3],
+        inquizzitive: events[0],
+        spark_hack: events[7],
+        algomaniac: events[5],
+        _frames: events[8],
+      });
     }
-  }, [eventsToUpdate]);
+  }, [events]);
 
   return (
     <>
-      {user && (
+      {/* {console.log(userData, "lol")} */}
+      {userData && (
         <div className="dashboard" ref={Reference}>
           <div>
             <div className="dashboard1">DASHBOARD</div>
@@ -194,10 +218,11 @@ function Dashboard() {
                         : "register-now transition-all hover:cursor-pointer hover:text-[#e9c462] "
                     }
                     onClick={() => {
-                      setEventsToUpdate((prevEvents) => [
-                        ...prevEvents,
-                        box.event,
-                      ]);
+                      useEvents((prevarray) => {
+                        const newarray = [...prevarray];
+                        newarray[box.id - 1] = !newarray[box.id - 1];
+                        return newarray;
+                      });
                     }}
                   >
                     {box.type} {!box.registered ? "\u2192" : "\u2714"}

@@ -4,46 +4,17 @@ import "../Login/Login.css";
 import { useNavigate } from "react-router-dom";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-
+import {getAuth,signInWithEmailAndPassword} from "firebase/auth"
+import {app} from "../firebase";
+const auth = getAuth(app);
 function Login() {
   const navigate = useNavigate();
   const [mail, setMail] = useState("");
   const [password, setPassword] = useState("");
-
-  const askServer = async () => {
-    const dataToSend = {
-      email: mail,
-      password: password,
-    };
-
-    try {
-      const response = await fetch("http://localhost:4000/login", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(dataToSend),
-      });
-
-      const data = await response.json();
-
-      console.log(data);
-      if (data.success) {
-        toast.success("Login successful", {
-          autoClose: 2000,
-          onClose: () => {
-            setTimeout(() => {
-              navigate("/profile");
-            }, 2000);
-          },
-        });
-      } else {
-        toast.error("Login failed. Please check your credentials.");
-      }
-    } catch (error) {
-      console.error("Error fetching data:", error);
-      toast.error("An error occurred while trying to log in.");
-    }
+  const signinUser = () => {
+    signInWithEmailAndPassword(auth, mail, password)
+      .then((value) => {console.log("Success");navigate("/profile")})
+      .catch((err) => console.log(err));
   };
 
   return (
@@ -70,7 +41,7 @@ function Login() {
             />
 
             <div className="py-5 flex text-center justify-center gap-[40px] flex-wrap">
-              <button className="form_button" onClick={askServer}>
+              <button className="form_button" onClick={signinUser}>
                 Login
               </button>
               {/* <button className="form_button">Google Sign In</button> */}

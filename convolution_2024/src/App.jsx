@@ -19,10 +19,14 @@ import Signup from "./components/Signup/Signup";
 import Login from "./components/Login/Login";
 import Re_dashboard from "./components/Responsive/Dashboard/Re_dashboard";
 import Loader from "./Loader";
+import {getAuth,onAuthStateChanged,signOut} from 'firebase/auth'
+import {app} from './components/firebase';
+const auth = getAuth(app);
+
 
 function App() {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
-
+  const [user, setUser] = useState(null);
   const handleResize = () => {
     setWindowWidth(window.innerWidth);
   };
@@ -44,6 +48,17 @@ function App() {
 
     fetchData();
   }, []);
+  
+  useEffect(()=>{
+    onAuthStateChanged(auth,(user)=>{
+      if(user){
+        setUser(user);
+      }else{
+        console.log("You are logged out");
+        setUser(null);
+      }
+    });
+  },[]);
 
   return (
     <>
@@ -58,11 +73,11 @@ function App() {
               <Header />
               <Router>
                 <Routes>
-                  <Route path="/dashboard" element={<Dashboard />} />
+                  <Route path="/dashboard" element={<Dashboard user={user} />} />
                   <Route path="/signup" element={<Signup />} />
                   <Route path="/login" element={<Login />} />
                   <Route path="/" element={<Hero />} />
-                  <Route path="/profile" element={<Lhero/>} />
+                  <Route path="/profile" element={<Lhero user={user}/>} />
                 </Routes>
               </Router>
               {/* <Hero /> */}

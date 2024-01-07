@@ -16,37 +16,7 @@ import {
 // import thunder from "../../assets/Thunder.png";
 
 function Re_hero() {
-  const [logStatus, setLogStatus] = useState(false);
-  const [logOut, setLogOut] = useState(false);
-  useEffect(() => {
-    const statusdb = async () => {
-      try {
-        const response = await fetch(`http://localhost:4000/get-user`);
-        const data = await response.json();
-        setLogStatus(data.isLoggedIn);
-      } catch (error) {
-        console.error("Error fetching user status:", error);
-      }
-    };
-
-    statusdb();
-  }, [logOut]);
-  const loggingout = async () => {
-    try {
-      await fetch(`http://localhost:4000/logout`);
-      console.log("logged out");
-      setLogStatus(false);
-      // navigate("/login");
-    } catch (error) {
-      console.error("Error during logout:", error);
-    }
-  };
-  useEffect(() => {
-    if (logOut) {
-      loggingout();
-      setLogOut(false);
-    }
-  }, [logOut]);
+  
   const navigate = useNavigate();
   return (
     <>

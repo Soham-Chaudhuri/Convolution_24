@@ -18,37 +18,7 @@ import {
 } from "react-router-dom";
 
 function Hero() {
-  const [logStatus, setLogStatus] = useState(false);
-  const [logOut, setLogOut] = useState(false);
-  useEffect(() => {
-    const statusdb = async () => {
-      try {
-        const response = await fetch(`http://localhost:4000/get-user`);
-        const data = await response.json();
-        setLogStatus(data.isLoggedIn);
-      } catch (error) {
-        console.error("Error fetching user status:", error);
-      }
-    };
   
-    statusdb();
-  }, [logOut]);
-  const loggingout = async () => {
-    try {
-      await fetch(`http://localhost:4000/logout`);
-      console.log("logged out");
-      setLogStatus(false);
-      // navigate("/login");
-    } catch (error) {
-      console.error("Error during logout:", error);
-    }
-  };
-  useEffect(() => {
-    if (logOut) {
-      loggingout();
-      setLogOut(false);
-    }
-  }, [logOut]);
   const navigate = useNavigate();
   return (
     <>
@@ -68,46 +38,8 @@ function Hero() {
                 The Ninth Edition of Annual Technical Meet
               </span>
               <div className="flex hero_btn mt-5">
-                {logStatus ? (
-                  <>
-                    <button
-                      className="hero_btn_1"
-                      onClick={() => {
-                        navigate("/dashboard");
-                      }}
-                    >
-                      Dashboard
-                    </button>
-                    <button
-                      className="hero_btn_2"
-                      onClick={() => {
-                        setLogOut(true);
-                      }}
-                    >
-                      Logout
-                    </button>
-                  </>
-                ) : (
-                  <>
-                    <button
-                      className="hero_btn_1"
-                      onClick={() => {
-                        navigate("/signup");
-                      }}
-                    >
-                      SignUp
-                    </button>
-                    <button
-                      className="hero_btn_2"
-                      onClick={() => {
-                        navigate("/login");
-                      }}
-                    >
-                      Login
-                    </button>
-                  </>
-                )}
-                {/* <button
+                
+                <button
                   className="hero_btn_1"
                   onClick={() => {
                     navigate("/signup");
@@ -122,7 +54,7 @@ function Hero() {
                   }}
                 >
                   Login
-                </button> */}
+                </button>
               </div>
             </div>
             <div className="hero_thunder flex items-center">

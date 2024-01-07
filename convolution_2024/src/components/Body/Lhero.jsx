@@ -10,14 +10,14 @@ import Teams from "./Teams";
 import Contact from "./Contact";
 // eslint-disable-next-line no-unused-vars
 import { BrowserRouter as Router, useNavigate } from "react-router-dom";
-
-function Hero() {
+import { getAuth, signOut } from 'firebase/auth';
+import { app } from '../firebase';
+const auth = getAuth(app);
+function Hero({user}) {
   const navigate = useNavigate();
-
   const logout = async () => {
-    await fetch("http://localhost:4000/logout");
-    console.log("client logout");
-    navigate("/");
+    await signOut(auth);
+    await navigate("/");
   };
 
   return (
