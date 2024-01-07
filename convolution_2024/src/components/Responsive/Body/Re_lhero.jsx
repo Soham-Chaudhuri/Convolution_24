@@ -16,7 +16,6 @@ import {
 // import thunder from "../../assets/Thunder.png";
 
 function Re_hero() {
-  
   const navigate = useNavigate();
   return (
     <>
@@ -36,23 +35,22 @@ function Re_hero() {
                 The Ninth Edition of Annual Technical Meet
               </span>
               <div className="flex Re_hero_btn">
-                    <button
-                      className="Re_hero_btn_1"
-                      onClick={() => {
-                        navigate("/Re_dashboard");
-                      }}
-                    >
-                      Dashboard
-                    </button>
-                    <button
-                      className="Re_hero_btn_2"
-                      onClick={() => {
-                        navigate("/profile");
-                      }}
-                    >
-                      Logout
-                    </button>
-
+                <button
+                  className="Re_hero_btn_1"
+                  onClick={() => {
+                    navigate("/dashboard");
+                  }}
+                >
+                  Dashboard
+                </button>
+                <button
+                  className="Re_hero_btn_2"
+                  onClick={() => {
+                    navigate("/");
+                  }}
+                >
+                  Logout
+                </button>
               </div>
             </div>
             <div className="Re_hero_thunder">

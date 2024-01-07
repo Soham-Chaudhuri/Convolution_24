@@ -88,11 +88,11 @@ function App() {
               <Re_header />
               <Router>
                 <Routes>
-                  <Route path="/dashboard" element={<Re_dashboard />} />
+                  <Route path="/dashboard" element={<Re_dashboard user={user}/>} />
                   <Route path="/signup" element={<Signup />} />
                   <Route path="/login" element={<Login />} />
                   <Route path="/" element={<Re_hero />} />
-                  <Route path="/profile" element={<Re_lhero/>} />
+                  <Route path="/profile" element={<Re_lhero user={user}/>} />
                 </Routes>
               </Router>
               {/* <Re_hero /> */}
