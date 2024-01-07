@@ -37,10 +37,19 @@ function Signup() {
     });
   };
   const singUpUser = () => {
-    createUserWithEmailAndPassword(auth, mail, password).then((value) => {
+    createUserWithEmailAndPassword(auth, mail, password)
+    .then((value) => {
       console.log(value);
       dataEntry();
-      navigate("/profile");
+      toast.success("Signup successful!", { autoClose: 3200 });
+      setTimeout(() => {
+        navigate("/profile");
+      }, 2000);
+    })
+    .catch((err) => {
+      console.log(err);
+      toast.error(`Signup failed . Invalid email address or weak password`);
+      
     });
   };
 

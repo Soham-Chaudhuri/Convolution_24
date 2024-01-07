@@ -4,8 +4,8 @@ import "../Login/Login.css";
 import { useNavigate } from "react-router-dom";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import {getAuth,signInWithEmailAndPassword} from "firebase/auth"
-import {app} from "../firebase";
+import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
+import { app } from "../firebase";
 const auth = getAuth(app);
 function Login() {
   const navigate = useNavigate();
@@ -13,8 +13,17 @@ function Login() {
   const [password, setPassword] = useState("");
   const signinUser = () => {
     signInWithEmailAndPassword(auth, mail, password)
-      .then((value) => {console.log("Success");navigate("/profile")})
-      .catch((err) => console.log(err));
+      .then((value) => {
+        console.log("Success");
+        toast.success("Login successful!", { autoClose: 3200 });
+        setTimeout(() => {
+          navigate("/profile");
+        }, 2000);
+      })
+      .catch((err) => {
+        console.log(err);
+        toast.error("Login failed. Please check your credentials.");
+      });
   };
 
   return (
