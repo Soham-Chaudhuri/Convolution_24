@@ -12,6 +12,7 @@ import {
   Navigate,
   useNavigate,
 } from "react-router-dom";
+import Re_timeline from "./Re_timeline";
 
 // import thunder from "../../assets/Thunder.png";
 
@@ -61,6 +62,7 @@ function Re_hero() {
           <Re_hero_vd />
           <Re_about />
           <Re_event />
+          {/* <Re_timeline/> */}
           <Re_teams />
           <Re_contact />
         </div>

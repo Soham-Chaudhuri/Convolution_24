@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:wght@500&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+.Re_timeline {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  min-height: 800px;
+}
+
+.Re_timeline_container {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 30px;
+}
+
+.Re_timeline_container .Re_timeline_card {
+  position: relative;
+  max-width: 300px;
+  height: 215px;
+  background-color: rgba(0, 0, 0);
+  margin: 30px 0;
+  padding: 20px 15px;
+
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+  transition: 0.3s ease-in-out;
+  border-radius: 15px;
+}
+.Re_timeline_container .Re_timeline_card:hover {
+  height: 320px;
+}
+
+.Re_timeline_container .Re_timeline_card .Re_timeline_image {
+  position: relative;
+  width: 260px;
+  height: 260px;
+
+  top: -40%;
+
+  /* box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2), 0 0 0 15px rgba(0, 0, 0, 0); */
+  z-index: 1;
+}
+
+.Re_timeline_container .Re_timeline_card .Re_timeline_image .Re_timeline_box {
+  max-width: 100%;
+  border-radius: 15px;
+
+  background: rgba(247, 255, 255, 0.1);
+  backdrop-filter: blur(20px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.Re_timeline_container .Re_timeline_card .Re_timeline_content {
+  position: relative;
+  top: -140px;
+  padding: 10px 15px;
+  color: #111;
+  text-align: center;
+
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.3s ease-in-out;
+}
+
+.Re_timeline_container .Re_timeline_card:hover .Re_timeline_content {
+  margin-top: 30px;
+  visibility: visible;
+  opacity: 1;
+  transition-delay: 0.2s;
+}
+
+.Re_timeline_day {
+  font-family: poppins !important;
+  color: #f76932;
+}
+
+.Re_timeline_para {
+  font-family: poppins !important;
+  color: white;
+  font-size: 0.92rem;
+}
+
+/* .Re_timeline_box {
+  background: rgba(247, 255, 255, 0.1);
+  backdrop-filter: blur(20px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 20px !important;
+  
+} */
+
+.Re_timeline_heading {
+  font-family: anton;
+  color: white;
+  font-size: 35px;
+  letter-spacing: 0.2rem;
+}

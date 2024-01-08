@@ -2,159 +2,127 @@ import React from "react";
 import "./Timeline.css";
 import dotted from "../assets/line-1@2x.png";
 
-const peopleData = [
-  {
-    id: 1,
-    name: "John Doe",
-    description: "Web Developer",
-    imgSrc: "john.jpg",
-  },
-  {
-    id: 2,
-    name: "Jane Smith",
-    description: "Graphic Designer",
-    imgSrc: "jane.jpg",
-  },
-  {
-    id: 3,
-    name: "Bob Johnson",
-    description: "Data Scientist",
-    imgSrc: "bob.jpg",
-  },
-  {
-    id: 4,
-    name: "Alice Williams",
-    description: "UX/UI Designer",
-    imgSrc: "alice.jpg",
-  },
-  {
-    id: 1,
-    name: "John Doe",
-    description: "Web Developer",
-    imgSrc: "john.jpg",
-  },
-  {
-    id: 2,
-    name: "Jane Smith",
-    description: "Graphic Designer",
-    imgSrc: "jane.jpg",
-  },
-  {
-    id: 3,
-    name: "Bob Johnson",
-    description: "Data Scientist",
-    imgSrc: "bob.jpg",
-  },
-  {
-    id: 4,
-    name: "Alice Williams",
-    description: "UX/UI Designer",
-    imgSrc: "alice.jpg",
-  },
-
-  {
-    id: 1,
-    name: "John Doe",
-    description: "Web Developer",
-    imgSrc: "john.jpg",
-  },
-  {
-    id: 2,
-    name: "Jane Smith",
-    description: "Graphic Designer",
-    imgSrc: "jane.jpg",
-  },
-  {
-    id: 3,
-    name: "Bob Johnson",
-    description: "Data Scientist",
-    imgSrc: "bob.jpg",
-  },
-  {
-    id: 4,
-    name: "Alice Williams",
-    description: "UX/UI Designer",
-    imgSrc: "alice.jpg",
-  },
-
-  {
-    id: 1,
-    name: "John Doe",
-    description: "Web Developer",
-    imgSrc: "john.jpg",
-  },
-  {
-    id: 2,
-    name: "Jane Smith",
-    description: "Graphic Designer",
-    imgSrc: "jane.jpg",
-  },
-  {
-    id: 3,
-    name: "Bob Johnson",
-    description: "Data Scientist",
-    imgSrc: "bob.jpg",
-  },
-];
 function Timeline() {
   return (
     <>
-      <div className="timeline_layer_bg">
-        <div className="timeline_layer_lines"></div>
-        <div className="timeline flex text-center flex-col align-center justify-center gap-10">
-          <span className="heading_timeline py-[42px]">TIMELINE</span>
+      <section className="timeline_body" id="timeline">
+        <div className="reveal">
+          <div className=" flex flex-col justify-center items-center gap-2 py-5">
+            <h1 className="text-center event_h1">TIMELINE</h1>
+            <span className="underline"></span>
+            <p className="paragraph py-4">
+              A plethora of events covering all your skills. So gear up for the
+              showdown!
+              <br />
+              Browse over the links to register
+            </p>
+          </div>
 
-          <div className="whole-timeline-graphics w-[1180px] h-[920px] mx-auto">
-            <img
-              className="whole-timeline-graphics-child"
-              alt=""
-              src={dotted}
-            />
+          <div className="timeline_container1">
+            <div className="timeline_card">
+              <div className="timeline_imgBx">
+                <h1 className="timeline_day">DAY 1</h1>
+              </div>
+              <div className="timeline_content1">
+                <div className="flex flex-col ">
+                  <h3>Morning Session:</h3>
+                  <p className="timeline_para">
+                    - Event 1
+                    <br />
+                    - Event 2
+                    <br />- Event 3
+                  </p>
+                </div>
+              </div>
+            </div>
 
-            <img
-              className="whole-timeline-graphics-item"
-              alt=""
-              src={dotted}
-            />
+            <div className="timeline_card">
+              <div className="timeline_imgBx">
+                <h1 className="timeline_day">DAY 1</h1>
+              </div>
+              <div className="timeline_content1 ">
+                <div>
+                  <h3>Morning Session:</h3>
+                  <p className="timeline_para">
+                    - Event 1
+                    <br />
+                    - Event 2
+                    <br />- Event 3
+                  </p>
+                </div>
+              </div>
+            </div>
 
-            <img
-              className="whole-timeline-graphics-inner"
-              alt=""
-              src={dotted}
-            />
+            <div className="timeline_card">
+              <div className="timeline_imgBx">
+                <h1 className="timeline_day">DAY 2</h1>
+              </div>
+              <div className="timeline_content1">
+                <div>
+                  <h3>Morning Session:</h3>
+                  <p className="timeline_para">
+                    - Event 1
+                    <br />
+                    - Event 2
+                    <br />- Event 3
+                  </p>
+                </div>
+              </div>
+            </div>
 
-            <img className="line-icon" alt="" src={dotted} />
+            <div className="timeline_card">
+              <div className="timeline_imgBx">
+                <h1 className="timeline_day">DAY 2</h1>
+              </div>
+              <div className="timeline_content1">
+                <div>
+                  <h3>Afternoon Session:</h3>
+                  <p className="timeline_para">
+                    - Event 1
+                    <br />
+                    - Event 2
+                    <br />- Event 3
+                  </p>
+                </div>
+              </div>
+            </div>
 
-            <div className="ellipse-div"></div>
-            <img
-              className="whole-timeline-graphics-child1"
-              alt=""
-              src={dotted}
-            />
+            <div className="timeline_card">
+              <div className="timeline_imgBx">
+                <h1 className="timeline_day">DAY 3</h1>
+              </div>
+              <div className="timeline_content1">
+                <div>
+                  <h3>Afternoon Session:</h3>
+                  <p className="timeline_para">
+                    - Event 1
+                    <br />
+                    - Event 2
+                    <br />- Event 3
+                  </p>
+                </div>
+              </div>
+            </div>
 
-            <div className="whole-timeline-graphics-child2"></div>
-            <div className="whole-timeline-graphics-child3"></div>
-            <div className="whole-timeline-graphics-child4"></div>
-            <div className="whole-timeline-graphics-child5"></div>
-            <div className="whole-timeline-graphics-child6"></div>
-            <div className="whole-timeline-graphics-child7"></div>
-            <div className="whole-timeline-graphics-child8"></div>
-            <div className="whole-timeline-graphics-child9"></div>
-            <div className="whole-timeline-graphics-child10"></div>
-            <div className="whole-timeline-graphics-child11"></div>
-            <div className="whole-timeline-graphics-child12"></div>
-            <div className="whole-timeline-graphics-child13"></div>
-            <div className="whole-timeline-graphics-child14"></div>
-            <div className="whole-timeline-graphics-child15"></div>
-            <div className="whole-timeline-graphics-child16"></div>
-            <div className="whole-timeline-graphics-child17"></div>
-            <div className="whole-timeline-graphics-child18"></div>
-            <div className="whole-timeline-graphics-child19"></div>
+            <div className="timeline_card">
+              <div className="timeline_imgBx">
+                <h1 className="timeline_day">DAY 3</h1>
+              </div>
+              <div className="timeline_content1">
+                <div>
+                  <h3>Afternoon Session:</h3>
+                  <p className="timeline_para">
+                    - Event 1
+                    <br />
+                    - Event 2
+                    <br />- Event 3
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-
-      
+      </section>
     </>
   );
 }
