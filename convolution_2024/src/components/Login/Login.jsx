@@ -11,10 +11,17 @@ function Login() {
   const navigate = useNavigate();
   const [mail, setMail] = useState("");
   const [password, setPassword] = useState("");
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  };
   const signinUser = () => {
     signInWithEmailAndPassword(auth, mail, password)
       .then((value) => {
         console.log("Success");
+        scrollToTop();
         toast.success("Login successful!", { autoClose: 3200 });
         setTimeout(() => {
           navigate("/profile");

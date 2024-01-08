@@ -36,11 +36,18 @@ function Signup() {
       _frames: false,
     });
   };
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  };
   const singUpUser = () => {
     createUserWithEmailAndPassword(auth, mail, password)
     .then((value) => {
       console.log(value);
       dataEntry();
+      scrollToTop();
       toast.success("Signup successful!", { autoClose: 3200 });
       setTimeout(() => {
         navigate("/profile");

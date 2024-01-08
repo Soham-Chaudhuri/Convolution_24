@@ -1,11 +1,9 @@
 # Convolution_24
 
 ## issues
-
-
 - scroll to reveal
+- know more in dashboard
 
-- signup page redirects to hero section
 
 
 
