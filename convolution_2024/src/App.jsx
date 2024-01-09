@@ -92,6 +92,7 @@ function App() {
                 <Routes>
                   <Route path="/dashboard" element={<Re_dashboard user={user}/>} />
                   <Route path="/signup" element={<Signup />} />
+                  <Route path="/reg/:event" element={<Team_reg />} />
                   <Route path="/login" element={<Login />} />
                   <Route path="/" element={<Re_hero />} />
                   <Route path="/profile" element={<Re_lhero user={user}/>} />
