@@ -21,6 +21,7 @@ import Re_dashboard from "./components/Responsive/Dashboard/Re_dashboard";
 import Loader from "./Loader";
 import {getAuth,onAuthStateChanged,signOut} from 'firebase/auth'
 import {app} from './components/firebase';
+import Team_reg from "./components/TeamReg/Team_reg";
 const auth = getAuth(app);
 
 
@@ -75,6 +76,7 @@ function App() {
                 <Routes>
                   <Route path="/dashboard" element={<Dashboard user={user} />} />
                   <Route path="/signup" element={<Signup />} />
+                  <Route path="/reg/:event" element={<Team_reg />} />
                   <Route path="/login" element={<Login />} />
                   <Route path="/" element={<Hero />} />
                   <Route path="/profile" element={<Lhero user={user}/>} />

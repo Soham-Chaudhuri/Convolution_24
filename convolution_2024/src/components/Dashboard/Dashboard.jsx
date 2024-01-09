@@ -14,6 +14,7 @@ import pic9 from "../assets/Papier_Light.png";
 import pic10 from "../assets/Sparkhack_Light.png";
 import pic11 from "../assets/24 Frames Light.png";
 import { motion } from "framer-motion";
+import { useNavigate } from "react-router-dom";
 import {
   onValue,
   ref,
@@ -48,7 +49,8 @@ function Dashboard({ user }) {
     false,
     false,
   ]);
-  // const ok=;
+
+
   useEffect(() => {
     // Create a reference to the specific user's data in the database
     const userRef = ref(db, `users/${user.email.replace(/\./g, "_")}`);
@@ -188,7 +190,7 @@ function Dashboard({ user }) {
       });
     }
   }, [events]);
-
+  const navigate = useNavigate();
   return (
     <>
       {/* {console.log(userData, "lol")} */}
@@ -217,12 +219,15 @@ function Dashboard({ user }) {
                         ? "registered"
                         : "register-now transition-all hover:cursor-pointer hover:text-[#e9c462] "
                     }
-                    onClick={() => {
-                      useEvents((prevarray) => {
+                    onClick={async () => {
+                      await useEvents((prevarray) => {
                         const newarray = [...prevarray];
-                        newarray[box.id - 1] = !newarray[box.id - 1];
+                        if (!newarray[box.id - 1]) {
+                          newarray[box.id - 1] = !newarray[box.id - 1];
+                        }
                         return newarray;
                       });
+                      navigate(`/reg/${box.event}`);
                     }}
                   >
                     {box.type} {!box.registered ? "\u2192" : "\u2714"}
