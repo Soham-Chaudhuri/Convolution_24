@@ -15,25 +15,27 @@
   align-items: center;
   justify-content: center;
 
-  padding: 30px;
+  padding: 35px 30px;
 }
 
 .Re_timeline_container .Re_timeline_card {
   position: relative;
   max-width: 300px;
-  height: 215px;
-  background-color: rgba(0, 0, 0);
+  height: 150px;
+  /* background-color: rgba(0, 0, 0); */
   margin: 30px 0;
   padding: 20px 15px;
 
   display: flex;
   flex-direction: column;
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+  /* box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5); */
   transition: 0.3s ease-in-out;
   border-radius: 15px;
 }
 .Re_timeline_container .Re_timeline_card:hover {
   height: 320px;
+  background-color: rgba(0, 0, 0);
+  box-shadow: 5px 5px 0px 0px #f76932;
 }
 
 .Re_timeline_container .Re_timeline_card .Re_timeline_image {
@@ -51,12 +53,16 @@
   max-width: 100%;
   border-radius: 15px;
 
-  background: rgba(247, 255, 255, 0.1);
-  backdrop-filter: blur(20px);
+  /* background: rgba(247, 255, 255, 0.1);
+  backdrop-filter: blur(20px); */
+  background: url("../../assets/wave2-0.5.png")  black;
   display: flex;
+  box-shadow: 5px 5px 0px 0px #f76932;
   justify-content: center;
   align-items: center;
   overflow: hidden;
+  transition: 0.3s ease-in-out !important;
+  /* border : 5px solid black; */
 }
 
 .Re_timeline_container .Re_timeline_card .Re_timeline_content {
@@ -76,6 +82,7 @@
   visibility: visible;
   opacity: 1;
   transition-delay: 0.2s;
+  
 }
 
 .Re_timeline_day {
@@ -105,4 +112,10 @@
   color: white;
   font-size: 35px;
   letter-spacing: 0.2rem;
+}
+
+
+.Re_timeline_box:hover{
+  box-shadow: 0px 0px 0px 0px #f76932 !important;
+  
 }

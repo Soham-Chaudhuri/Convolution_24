@@ -50,7 +50,6 @@ function Dashboard({ user }) {
     false,
   ]);
 
-
   useEffect(() => {
     // Create a reference to the specific user's data in the database
     const userRef = ref(db, `users/${user.email.replace(/\./g, "_")}`);
@@ -73,7 +72,7 @@ function Dashboard({ user }) {
       setBoxesData([
         {
           id: 1,
-          type: data.inquizzitive ? "Registered" : "Register Now",
+          type: "On Day Registration",
           image: pic1,
           content: "Lorem ipsum content for box 1",
           lastDate: "XX YY ZZZZ",
@@ -227,7 +226,9 @@ function Dashboard({ user }) {
                         }
                         return newarray;
                       });
-                      navigate(`/reg/${box.event}`);
+                      if (!events[box.id - 1] && box.id !== 6 ) {
+                        navigate(`/reg/${box.event}`);
+                      }
                     }}
                   >
                     {box.type} {!box.registered ? "\u2192" : "\u2714"}

@@ -13,7 +13,7 @@ import pic8 from "../../assets/Algomaniac Light.png";
 import pic9 from "../../assets/Papier_Light.png";
 import pic10 from "../../assets/Sparkhack_Light.png";
 import pic11 from "../../assets/24 Frames Light.png";
-
+import { useNavigate } from "react-router-dom";
 import {
   onValue,
   ref,
@@ -24,8 +24,11 @@ import {
 } from "firebase/database";
 import { app } from "../../firebase";
 const db = getDatabase(app);
+
 function Re_dashboard({ user }) {
   // const Reference = useRef(null);
+
+  const navigate = useNavigate();
   const [papier, setPapier] = useState(false);
   const [eureka, setEureka] = useState(false);
   const [abol_tabol, setAbol_tabol] = useState(false);
@@ -219,30 +222,30 @@ function Re_dashboard({ user }) {
           <p className="re_dashboard_heading">Dashboard</p>
           <div className="re_dashboard_underline"></div>
         </div>
-        <div class="swiper mySwiper">
-          <div class="swiper-wrapper">
+        <div className="swiper mySwiper">
+          <div className="swiper-wrapper">
             {boxesData.map((dat) => (
-              <div key={dat.id} class="swiper-slide">
-                <div class="card">
-                  <div class="card_top">
-                    <div class="card_img">
+              <div key={dat.id} className="swiper-slide">
+                <div className="card">
+                  <div className="card_top">
+                    <div className="card_img">
                       <img src={dat.image} alt="Card Image" />
                     </div>
-                    <div class="card_top_para">
-                      <p class="card_top_span"> Last Date to Apply: </p>
+                    <div className="card_top_para">
+                      <p className="card_top_span"> Last Date to Apply: </p>
 
-                      <p class="card_top_date"> {dat.lastDate} </p>
+                      <p className="card_top_date"> {dat.lastDate} </p>
                       <br />
-                      <p class="card_top_event">
+                      <p className="card_top_event">
                         Event on:
-                        <p class="card_top_date">{dat.eventDate}</p>
+                        <p className="card_top_date">{dat.eventDate}</p>
                       </p>
                     </div>
                   </div>
-                  <div class="card_mid_bar"></div>
-                  <div class="card-content">
-                    <p class="card-text">{dat.content}</p>
-                    <a href="#" class="card_top_date">
+                  <div className="card_mid_bar"></div>
+                  <div className="card-content">
+                    <p className="card-text">{dat.content}</p>
+                    <a href="#" className="card_top_date">
                       Know more
                     </a>
                     <div
@@ -251,12 +254,17 @@ function Re_dashboard({ user }) {
                           ? "card-title text-[#3cb043]"
                           : "card-title"
                       }
-                      onClick={() => {
-                        useEvents((prevarray) => {
+                      onClick={async () => {
+                        await useEvents((prevarray) => {
                           const newarray = [...prevarray];
-                          newarray[dat.id - 1] = !newarray[dat.id - 1];
+                          if (!newarray[dat.id - 1]) {
+                            newarray[dat.id - 1] = !newarray[dat.id - 1];
+                          }
                           return newarray;
                         });
+                        if (!events[dat.id - 1] && dat.id !== 6) {
+                          navigate(`/reg/${dat.event}`);
+                        }
                       }}
                     >
                       {dat.type} {!dat.registered ? "\u2192" : "\u2714"}

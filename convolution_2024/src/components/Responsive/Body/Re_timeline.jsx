@@ -14,7 +14,7 @@ function Re_timeline() {
           Browse over the links to register
         </p>
       </div>
-      <div className="Re_timeline flex flex-col py-8">
+      <div className="Re_timeline flex flex-col py-4">
         <div className="Re_timeline_container">
           <div className="Re_timeline_card">
             <div className="Re_timeline_image">

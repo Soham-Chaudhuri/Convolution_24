@@ -62,7 +62,7 @@ function Re_hero() {
           <Re_hero_vd />
           <Re_about />
           <Re_event />
-          {/* <Re_timeline/> */}
+          <Re_timeline/>
           <Re_teams />
           <Re_contact />
         </div>

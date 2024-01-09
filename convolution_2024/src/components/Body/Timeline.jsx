@@ -20,8 +20,9 @@ function Timeline() {
 
           <div className="timeline_container1">
             <div className="timeline_card">
-              <div className="timeline_imgBx">
+              <div className="timeline_imgBx flex flex-col ">
                 <h1 className="timeline_day">DAY 1</h1>
+                
               </div>
               <div className="timeline_content1">
                 <div className="flex flex-col ">

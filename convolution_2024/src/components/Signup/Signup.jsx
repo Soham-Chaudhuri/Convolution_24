@@ -15,15 +15,18 @@ function Signup() {
   const [mail, setMail] = useState("");
   const [password, setPassword] = useState("");
   const [cpassword, setCpassword] = useState("");
+  const [phnumber, setphNumber] = useState("");
   const [college, setCollege] = useState("");
   const [branch, setBranch] = useState("");
   const [year, setYear] = useState("");
+
   const dataEntry = () => {
     set(ref(db, `users/${mail.replace(/\./g, "_")}`), {
       name: name,
       college: college,
       branch: branch,
       year: year,
+      number: phnumber,
       papier: false,
       eureka: false,
       abol_tabol: false,
@@ -38,25 +41,25 @@ function Signup() {
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
-      behavior: 'smooth'
+      behavior: "smooth",
     });
   };
   const singUpUser = () => {
     createUserWithEmailAndPassword(auth, mail, password)
-    .then((value) => {
-      console.log(value);
-      dataEntry();
-      scrollToTop();
-      toast.success("Signup successful!", { autoClose: 3200 });
-      setTimeout(() => {
-        navigate("/profile");
-      }, 2000);
-    })
-    .catch((err) => {
-      console.log(err);
-      toast.error(`Signup failed . Invalid email address or weak password`);
-      
-    });
+      .then((value) => {
+        console.log(value);
+        dataEntry();
+        scrollToTop();
+        toast.success("Signup successful!", { autoClose: 3200 });
+        setTimeout(() => {
+          navigate("/profile");
+        }, 2000);
+
+      })
+      .catch((err) => {
+        console.log(err);
+        toast.error(`Signup failed.`);
+      });
   };
 
   return (
@@ -74,6 +77,7 @@ function Signup() {
               value={name}
               className="form-input h-14  p-6 form_place form_text"
               onChange={(e) => setName(e.target.value)}
+              required
             />
 
             <input
@@ -82,6 +86,7 @@ function Signup() {
               value={college}
               className="form-input h-14  p-6 form_place form_text"
               onChange={(e) => setCollege(e.target.value)}
+              required
             />
 
             <input
@@ -90,6 +95,7 @@ function Signup() {
               value={branch}
               className="form-input h-14  p-6 form_place form_text"
               onChange={(e) => setBranch(e.target.value)}
+              required
             />
 
             <input
@@ -98,6 +104,18 @@ function Signup() {
               value={year}
               className="form-input h-14  p-6 form_place form_text"
               onChange={(e) => setYear(e.target.value)}
+              required
+            />
+
+            <input
+              type="tel"
+              placeholder="Phone..."
+              value={phnumber}
+              className="form-input h-14  p-6 form_place form_text"
+              pattern="[0-9]*"
+              maxLength="10"
+              onChange={(e) => setphNumber(e.target.value)}
+              required
             />
 
             <input
@@ -106,6 +124,7 @@ function Signup() {
               value={mail}
               className="form-input h-14  p-6 form_place form_text"
               onChange={(e) => setMail(e.target.value)}
+              required
             />
 
             <input
@@ -114,6 +133,7 @@ function Signup() {
               value={password}
               className="form-input h-14  p-6 form_place form_text"
               onChange={(e) => setPassword(e.target.value)}
+              required
             />
 
             <input
@@ -122,6 +142,7 @@ function Signup() {
               value={cpassword}
               className="form-input h-14  p-6 form_place form_text"
               onChange={(e) => setCpassword(e.target.value)}
+              required
             />
             <div className="py-5">
               <button className="form_button mx-auto " onClick={singUpUser}>

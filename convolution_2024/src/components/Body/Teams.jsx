@@ -9,7 +9,8 @@ import picture5 from "../assets/Ayan_per.png";
 import picture6 from "../assets/dwaipayan.png";
 import picture7 from "../assets/azfar.png";
 import picture8 from "../assets/supratim.png";
-
+import picture9 from "../assets/obaidulla.png";
+import picture10 from "../assets/avishek.png";
 const peopleData = [
   { id: 1, name: "Dwaipayan", description: "Secretary", imgSrc: picture6 },
   {
@@ -22,7 +23,7 @@ const peopleData = [
     id: 3,
     name: "Obaidullah",
     description: "Treasurer",
-    // imgSrc: picture4,
+    imgSrc: picture9,
   },
   {
     id: 4,
@@ -30,18 +31,24 @@ const peopleData = [
     description: "Tech Lead",
     imgSrc: picture1,
   },
-  { id: 1, name: "Azfar", description: "Logistics Lead", imgSrc: picture7 },
+  {
+    id: 1,
+    name: "Azfar",
+    description: "Logistics Lead",
+
+    // imgSrc: picture7
+  },
   {
     id: 2,
     name: "Supratim",
-    description: "Supratim",
+    description: "Sponsorship Lead",
     imgSrc: picture8,
   },
   {
     id: 3,
     name: "Avishek",
     description: "Public Reach",
-    imgSrc: "bob.jpg",
+    imgSrc: picture10,
   },
   {
     id: 4,

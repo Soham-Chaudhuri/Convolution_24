@@ -74,9 +74,8 @@
 }
 
 .form_signup_body {
-  background-color:#f6eddf; 
+  background-color: #f6eddf;
 }
-
 
 /* .form_signup_body {
   background: url(../assets/back_signup.png), lightgray 1% / cover no-repeat;
@@ -88,11 +87,11 @@
     line-height: 18px;
   }
 
-  .form_heading{
-    font-size:33px;
+  .form_heading {
+    font-size: 33px;
   }
 
-  .form_underline{
+  .form_underline {
     width: 57px;
   }
 
@@ -101,3 +100,4 @@
     border: 2px solid black !important;
   }
 }
+
