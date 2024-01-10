@@ -25,3 +25,52 @@
     line-height: 35px !important;
     color: #E9C462;
 }
+
+/* .active{
+    max-width: 100%;
+    transition-property: all;
+    transition-duration: 500ms;
+    height: 1px;
+    background-color: #ff9800;
+    border-radius: 9999px; 
+} */
+
+/* .hover{
+    
+    width: 0%;
+    animation: fadeIn 3s ease-in-out ;
+}
+
+@keyframes fadeIn {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  } */
+
+
+/* .active{
+    max-width: 100%;
+    transition: all 500ms;
+    height: 1px;
+    background-color: #ff9800;  
+    border-radius: 9999px; 
+} */
+
+/* .group:hover span,
+.active span {
+    max-width: 100%;
+    transition: all 500ms;
+    height: 1px;
+    background-color: #ff9800;  
+    border-radius: 9999px; 
+}
+
+
+.group span,
+.group:hover span,
+.active span {
+  transition: background-color 300ms ease-in-out; 
+} */

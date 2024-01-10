@@ -35,7 +35,7 @@ function Team_reg({user}) {
         Member3: ((member3.length>0)?(member3):("N/A")),
       });
       scrollToTop();
-        toast.success("Registration successful!", { autoClose: 3200 });
+        toast.success("Registration successful!", { autoClose: 3200, theme:"dark" });
         setTimeout(() => {
           navigate("/dashboard");
         }, 2000);
@@ -47,7 +47,9 @@ function Team_reg({user}) {
 
     } catch (error) {
       console.log(error);
-      toast.error(`Registration failed.`);
+      toast.error("Registration failed.",{
+        theme: "dark",
+      });
     }
   };
 
@@ -112,7 +114,7 @@ function Team_reg({user}) {
           </div>
         </div>
       </div>
-      <ToastContainer />
+      <ToastContainer theme="dark"/>
     </>
   );
 }

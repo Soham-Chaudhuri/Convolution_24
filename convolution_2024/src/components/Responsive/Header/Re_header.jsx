@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import "../Header/Re_header.css";
 import convosvg from "../../assets/Convolution_Dark2nd.png";
+import { Link, animateScroll as scroll, scroller } from "react-scroll";
 
 function Re_header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -25,22 +26,24 @@ function Re_header() {
       </div>
       <div className={`dropdown_menu ${isOpen ? "open" : ""}`}>
         <li className="nav_link active">
-          <a href="">Home</a>
+          <Link to="Re_hero" smooth={true} duration={500}>
+            Home
+          </Link>
         </li>
         <li className="nav_link">
-          <a href="">About</a>
+          <Link to="Re_about" smooth={true} duration={600}>About</Link>
         </li>
         <li className="nav_link">
-          <a href="">Events</a>
+          <Link to="Re_events" smooth={true} duration={700}>Events</Link>
         </li>
         <li className="nav_link">
-          <a href="">Timeline</a>
+          <Link to="Re_timeline" smooth={true} duration={800}>Timeline</Link>
         </li>
         <li className="nav_link">
-          <a href="">Team</a>
+          <Link to="Re_team" smooth={true} duration={900}>Team</Link>
         </li>
         <li className="nav_link">
-          <a href="">Contacts</a>
+          <Link to="Re_contacts" smooth={true} duration={1000}>Contacts</Link>
         </li>
       </div>
     </>

@@ -61,6 +61,7 @@ const peopleData = [
 const Teams = () => {
   return (
     <>
+    <section id="team">
       <div className=" flex flex-col justify-center items-center gap-2 py-5">
         <h1 className="text-center teams_h1">TEAMS</h1>
         <span className="underline_teams"></span>
@@ -74,19 +75,7 @@ const Teams = () => {
       <div className="px-[69px] py-5">
         <div className="grid grid-cols-2 gap-[56px]">
           {peopleData.map((person) => (
-            // <div key={person.id} className="p-4 rounded-md flex border  ">
-            //   <div className="left flex items-center">
-            //     <img
-            //       src={picture}
-            //       alt={person.name}
-            //       className="w-14 h-14 rounded-full mx-auto"
-            //     />
-            //   </div>
-            //   <div className="right flex justify-content-center flex-col">
-            //     <h3 className="text-lg font-semibold">{person.name}</h3>
-            //     <p className="text-gray-600">{person.description}</p>
-            //   </div>
-            // </div>
+            
 
             <div key={person.id} className="boro-goal-teams flex flex-wrap">
               <div className="group-child-img-teams">
@@ -107,6 +96,7 @@ const Teams = () => {
           ))}
         </div>
       </div>
+      </section>
     </>
   );
 };

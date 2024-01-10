@@ -44,21 +44,29 @@ function Signup() {
       behavior: "smooth",
     });
   };
+
   const singUpUser = () => {
+    if (password !== cpassword) {
+      toast.error("Password doesn't match", {
+        theme: "dark",
+      });
+      return false;
+    }
     createUserWithEmailAndPassword(auth, mail, password)
       .then((value) => {
         console.log(value);
         dataEntry();
         scrollToTop();
-        toast.success("Signup successful!", { autoClose: 3200 });
+        toast.success("Signup successful!", { autoClose: 3200, theme: "dark" });
         setTimeout(() => {
           navigate("/profile");
         }, 2000);
-
       })
       .catch((err) => {
         console.log(err);
-        toast.error(`Signup failed.`);
+        toast.error("Signup failed.", {
+          theme: "dark",
+        });
       });
   };
 
@@ -152,7 +160,7 @@ function Signup() {
           </div>
         </div>
       </div>
-      <ToastContainer />
+      <ToastContainer theme="dark" />
     </>
   );
 }

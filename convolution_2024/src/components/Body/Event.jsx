@@ -63,33 +63,35 @@ const peopleData = [
 const Event = () => {
   return (
     <>
-      <div className=" flex flex-col justify-center items-center gap-2 py-5">
-        <h1 className="text-center event_h1">EVENTS</h1>
-        <span className="underline"></span>
-        <p className="paragraph py-4">
-          A plethora of events covering all your skills. So gear up for the
-          showdown!
-          <br />
-          Browse over the links to register
-        </p>
-      </div>
-      <div className="px-[69px] py-5">
-        <div className="grid grid-cols-2 gap-[56px]">
-          {peopleData.map((person) => (
-            <div key={person.id} className="boro-goal flex flex-wrap">
-              <div className="group-child-img">
-                <img src={person.imgSrc} alt={person.name} />
-              </div>
-              <div className="algomaniac">{person.description}</div>
-              <div className="lorem-ipsum-para">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              </div>
-              <div className="group-item" />
-            </div>
-          ))}
+      <section id="events">
+        <div className=" flex flex-col justify-center items-center gap-2 py-5">
+          <h1 className="text-center event_h1">EVENTS</h1>
+          <span className="underline"></span>
+          <p className="paragraph py-4">
+            A plethora of events covering all your skills. So gear up for the
+            showdown!
+            <br />
+            Browse over the links to register
+          </p>
         </div>
-      </div>
+        <div className="px-[69px] py-5">
+          <div className="grid grid-cols-2 gap-[56px]">
+            {peopleData.map((person) => (
+              <div key={person.id} className="boro-goal flex flex-wrap">
+                <div className="group-child-img">
+                  <img src={person.imgSrc} alt={person.name} />
+                </div>
+                <div className="algomaniac">{person.description}</div>
+                <div className="lorem-ipsum-para">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </div>
+                <div className="group-item" />
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
     </>
   );
 };

@@ -13,6 +13,8 @@ import pic8 from "../assets/Algomaniac Light.png";
 import pic9 from "../assets/Papier_Light.png";
 import pic10 from "../assets/Sparkhack_Light.png";
 import pic11 from "../assets/24 Frames Light.png";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
 import {
@@ -64,12 +66,12 @@ function Dashboard({ user }) {
       setBoxesData([
         {
           id: 1,
-          type: "On Day Registration",
+          type: "Register Now",
           image: pic1,
           content: "Lorem ipsum content for box 1",
           lastDate: "XX YY ZZZZ",
           eventDate: "XX YY ZZZZ",
-          registered: true,
+          registered: false,
           event: "inquizzitive",
         },
         {
@@ -221,6 +223,12 @@ function Dashboard({ user }) {
                       if (!events[box.id - 1] && (box.id !== 6 && box.id!==1)) {
                         navigate(`/reg/${box.event}`);
                       }
+
+                      if(box.id === 1){
+                        toast.info("On Day Registration at JU Electrical Engineering building",{
+                          theme:"dark"
+                        });
+                      }
                     }}
                   >
                     {box.type} {!box.registered ? "\u2192" : "\u2714"}
@@ -251,6 +259,7 @@ function Dashboard({ user }) {
           </div>
         </div>
       )}
+      <ToastContainer theme="dark"/>
     </>
   );
 }

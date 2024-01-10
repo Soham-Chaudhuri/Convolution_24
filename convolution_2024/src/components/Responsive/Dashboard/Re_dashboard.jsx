@@ -13,6 +13,8 @@ import pic8 from "../../assets/Algomaniac Light.png";
 import pic9 from "../../assets/Papier_Light.png";
 import pic10 from "../../assets/Sparkhack_Light.png";
 import pic11 from "../../assets/24 Frames Light.png";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import { useNavigate } from "react-router-dom";
 import {
   onValue,
@@ -66,12 +68,12 @@ function Re_dashboard({ user }) {
       setBoxesData([
         {
           id: 1,
-          type: "On Day Registration",
+          type: "Register Now",
           image: pic1,
           content: "Lorem ipsum content for box 1",
           lastDate: "XX YY ZZZZ",
           eventDate: "XX YY ZZZZ",
-          registered: true,
+          registered: false,
           event: "inquizzitive",
         },
         {
@@ -249,12 +251,29 @@ function Re_dashboard({ user }) {
                       onClick={async () => {
                         await useEvents((prevarray) => {
                           const newarray = [...prevarray];
-                          if (!newarray[dat.id - 1]&& dat.id ===6) {
+                          if (!newarray[dat.id - 1] && dat.id === 6) {
                             newarray[dat.id - 1] = !newarray[dat.id - 1];
                           }
                           return newarray;
                         });
-                        if (!events[dat.id - 1] && dat.id !== 6 && dat.id!==1) {
+
+                        if (!events[dat.id - 1] && (dat.id !== 6 && dat.id!==1)) {
+                          navigate(`/reg/${dat.event}`);
+                        }
+
+                        if (dat.id === 1) {
+                          toast.info(
+                            "On Day Registration at JU Electrical Engineering building",
+                            {
+                              theme: "dark",
+                            }
+                          );
+                        }
+                        if (
+                          !events[dat.id - 1] &&
+                          dat.id !== 6 &&
+                          dat.id !== 1
+                        ) {
                           navigate(`/reg/${dat.event}`);
                         }
                       }}
@@ -268,6 +287,7 @@ function Re_dashboard({ user }) {
           </div>
         </div>
       </div>
+      <ToastContainer theme="dark" />
     </>
   );
 }

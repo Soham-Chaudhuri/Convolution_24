@@ -17,54 +17,54 @@ import Re_timeline from "./Re_timeline";
 // import thunder from "../../assets/Thunder.png";
 
 function Re_hero() {
-  
   const navigate = useNavigate();
   return (
     <>
       <div className="Re_hero_bg p-3">
         <div className="flex flex-col">
-          <div className="flex flex-col-reverse Re_gapping gap-[0.8rem]">
-            <div className="m-4 Re_hero_heading_1_div">
-              <span className="Re_hero_heading_1 text-shadow-md">
-                JUEE STUDENTS' FORUM
-              </span>
-              <br />
-              <span className="Re_hero_heading_2 text-shadow-md block">
-                CONVOLUTION 9.0
-              </span>
-              <br />
-              <span className="Re_hero_heading_3">
-                The Ninth Edition of Annual Technical Meet
-              </span>
-              <div className="flex Re_hero_btn">
-              
-                <button
-                  className="Re_hero_btn_1"
-                  onClick={() => {
-                    navigate("/signup");
-                  }}
-                >
-                  SignUp
-                </button>
-                <button
-                  className="Re_hero_btn_2"
-                  onClick={() => {
-                    navigate("/login");
-                  }}
-                >
-                  Login
-                </button>
+          <section id="Re_hero">
+            <div className="flex flex-col-reverse Re_gapping gap-[0.8rem]">
+              <div className="m-4 Re_hero_heading_1_div">
+                <span className="Re_hero_heading_1 text-shadow-md">
+                  JUEE STUDENTS' FORUM
+                </span>
+                <br />
+                <span className="Re_hero_heading_2 text-shadow-md block">
+                  CONVOLUTION 9.0
+                </span>
+                <br />
+                <span className="Re_hero_heading_3">
+                  The Ninth Edition of Annual Technical Meet
+                </span>
+                <div className="flex Re_hero_btn">
+                  <button
+                    className="Re_hero_btn_1"
+                    onClick={() => {
+                      navigate("/signup");
+                    }}
+                  >
+                    SignUp
+                  </button>
+                  <button
+                    className="Re_hero_btn_2"
+                    onClick={() => {
+                      navigate("/login");
+                    }}
+                  >
+                    Login
+                  </button>
+                </div>
+              </div>
+              <div className="Re_hero_thunder">
+                {/* <img src={thunder} alt="" className="Re_hero_thunder_img" /> */}
               </div>
             </div>
-            <div className="Re_hero_thunder">
-              {/* <img src={thunder} alt="" className="Re_hero_thunder_img" /> */}
-            </div>
-          </div>
+          </section>
 
           <Re_hero_vd />
           <Re_about />
           <Re_event />
-          <Re_timeline/>
+          <Re_timeline />
           <Re_teams />
           <Re_contact />
         </div>

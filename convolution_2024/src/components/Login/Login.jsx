@@ -14,7 +14,7 @@ function Login() {
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
-      behavior: 'smooth'
+      behavior: "smooth",
     });
   };
   const signinUser = () => {
@@ -22,14 +22,16 @@ function Login() {
       .then((value) => {
         console.log("Success");
         scrollToTop();
-        toast.success("Login successful!", { autoClose: 3200 });
+        toast.success("Login successful!", { autoClose: 3200, theme: "dark" });
         setTimeout(() => {
           navigate("/profile");
         }, 2000);
       })
       .catch((err) => {
         console.log(err);
-        toast.error("Login failed. Please check your credentials.");
+        toast.error("Login failed. Please check your credentials.", {
+          theme: "dark",
+        });
       });
   };
 
@@ -65,7 +67,7 @@ function Login() {
           </div>
         </div>
       </div>
-      <ToastContainer />
+      <ToastContainer theme="dark" />
     </>
   );
 }
