@@ -27,14 +27,6 @@ import { app } from "../firebase";
 const db = getDatabase(app);
 function Dashboard({ user }) {
   const Reference = useRef(null);
-  const [papier, setPapier] = useState(false);
-  const [eureka, setEureka] = useState(false);
-  const [abol_tabol, setAbol_tabol] = useState(false);
-  const [decisia, setDecisia] = useState(false);
-  const [circuistics, setCircuistics] = useState(false);
-  const [inquizzitive, setInquizzitive] = useState(false);
-  const [spark_hack, setSpark_hack] = useState(false);
-  const [algomaniac, setAlgomaniac] = useState(false);
   const [_frames, set_frames] = useState(false);
   const [userData, setUserData] = useState(null);
   const [boxesData, setBoxesData] = useState([]);
@@ -77,7 +69,7 @@ function Dashboard({ user }) {
           content: "Lorem ipsum content for box 1",
           lastDate: "XX YY ZZZZ",
           eventDate: "XX YY ZZZZ",
-          registered: data.inquizzitive,
+          registered: true,
           event: "inquizzitive",
         },
         {
@@ -221,12 +213,12 @@ function Dashboard({ user }) {
                     onClick={async () => {
                       await useEvents((prevarray) => {
                         const newarray = [...prevarray];
-                        if (!newarray[box.id - 1]) {
+                        if (!newarray[box.id - 1] && (box.id === 6) ) {
                           newarray[box.id - 1] = !newarray[box.id - 1];
                         }
                         return newarray;
                       });
-                      if (!events[box.id - 1] && box.id !== 6 ) {
+                      if (!events[box.id - 1] && (box.id !== 6 && box.id!==1)) {
                         navigate(`/reg/${box.event}`);
                       }
                     }}

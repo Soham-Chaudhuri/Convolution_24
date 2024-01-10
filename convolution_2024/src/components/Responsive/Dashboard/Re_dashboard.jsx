@@ -29,14 +29,6 @@ function Re_dashboard({ user }) {
   // const Reference = useRef(null);
 
   const navigate = useNavigate();
-  const [papier, setPapier] = useState(false);
-  const [eureka, setEureka] = useState(false);
-  const [abol_tabol, setAbol_tabol] = useState(false);
-  const [decisia, setDecisia] = useState(false);
-  const [circuistics, setCircuistics] = useState(false);
-  const [inquizzitive, setInquizzitive] = useState(false);
-  const [spark_hack, setSpark_hack] = useState(false);
-  const [algomaniac, setAlgomaniac] = useState(false);
   const [_frames, set_frames] = useState(false);
   const [userData, setUserData] = useState(null);
   const [boxesData, setBoxesData] = useState([]);
@@ -74,12 +66,12 @@ function Re_dashboard({ user }) {
       setBoxesData([
         {
           id: 1,
-          type: data.inquizzitive ? "Registered" : "Register Now",
+          type: "On Day Registration",
           image: pic1,
           content: "Lorem ipsum content for box 1",
           lastDate: "XX YY ZZZZ",
           eventDate: "XX YY ZZZZ",
-          registered: data.inquizzitive,
+          registered: true,
           event: "inquizzitive",
         },
         {
@@ -257,12 +249,12 @@ function Re_dashboard({ user }) {
                       onClick={async () => {
                         await useEvents((prevarray) => {
                           const newarray = [...prevarray];
-                          if (!newarray[dat.id - 1]) {
+                          if (!newarray[dat.id - 1]&& dat.id ===6) {
                             newarray[dat.id - 1] = !newarray[dat.id - 1];
                           }
                           return newarray;
                         });
-                        if (!events[dat.id - 1] && dat.id !== 6) {
+                        if (!events[dat.id - 1] && dat.id !== 6 && dat.id!==1) {
                           navigate(`/reg/${dat.event}`);
                         }
                       }}

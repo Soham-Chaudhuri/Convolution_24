@@ -4,15 +4,15 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import "../TeamReg/Team_reg.css";
 import { app } from "../firebase";
-import { getDatabase, ref, set } from "firebase/database";
+import { getDatabase, ref, set , update } from "firebase/database";
 const db = getDatabase(app);
-function Team_reg() {
+function Team_reg({user}) {
   const navigate = useNavigate();
-  const [team_leader, setTeam_leader] = useState("");
-  const [teamName, setTeamName] = useState("");
-  const [member1, setMember1] = useState("");
-  const [member2, setMember2] = useState("");
-  const [member3, setMember3] = useState("");
+  const [team_leader, setTeam_leader] = useState(null);
+  const [teamName, setTeamName] = useState(null);
+  const [member1, setMember1] = useState(null);
+  const [member2, setMember2] = useState(null);
+  const [member3, setMember3] = useState(null);
 
   const eventName = useParams();
   // console.log(eventName.event);
@@ -22,6 +22,9 @@ function Team_reg() {
       behavior: 'smooth'
     });
   };
+  useEffect(() => {
+    scrollToTop();
+  }, []);
   const dataEntry = () => {
     try {
       
@@ -36,6 +39,12 @@ function Team_reg() {
         setTimeout(() => {
           navigate("/dashboard");
         }, 2000);
+
+        update(ref(db, `users/${user.email.replace(/\./g, "_")}`), {
+          [eventName.event] : true,
+        });
+
+
     } catch (error) {
       console.log(error);
       toast.error(`Registration failed.`);

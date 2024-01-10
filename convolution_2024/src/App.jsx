@@ -13,7 +13,7 @@ import Footer from "./components/Footer/Footer";
 import Re_hero from "./components/Responsive/Body/Re_hero";
 import Re_lhero from "./components/Responsive/Body/Re_lhero";
 import Re_footer from "./components/Responsive/Footer/Re_footer";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import Dashboard from "./components/Dashboard/Dashboard";
 import Signup from "./components/Signup/Signup";
 import Login from "./components/Login/Login";
@@ -76,7 +76,7 @@ function App() {
                 <Routes>
                   <Route path="/dashboard" element={<Dashboard user={user} />} />
                   <Route path="/signup" element={<Signup />} />
-                  <Route path="/reg/:event" element={<Team_reg />} />
+                  <Route path="/reg/:event" element={<Team_reg user={user} />} />
                   <Route path="/login" element={<Login />} />
                   <Route path="/" element={<Hero />} />
                   <Route path="/profile" element={<Lhero user={user}/>} />
@@ -92,7 +92,7 @@ function App() {
                 <Routes>
                   <Route path="/dashboard" element={<Re_dashboard user={user}/>} />
                   <Route path="/signup" element={<Signup />} />
-                  <Route path="/reg/:event" element={<Team_reg />} />
+                  <Route path="/reg/:event" element={<Team_reg user={user} />} />
                   <Route path="/login" element={<Login />} />
                   <Route path="/" element={<Re_hero />} />
                   <Route path="/profile" element={<Re_lhero user={user}/>} />
