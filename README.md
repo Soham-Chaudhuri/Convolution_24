@@ -6,7 +6,6 @@
 - event page(design team pending)
 - content team
 - linking social media
-- footer text- poppins
 - protected routes.
 
 
