@@ -15,10 +15,11 @@
   letter-spacing: 0.38px;
 }
 
-.re_footer_l{
-    color: white;
+.re_footer_l {
+  color: white;
+  font-family: poppins;
 }
 
-.re_footer_social{
-    color: white;
+.re_footer_social {
+  color: white;
 }
