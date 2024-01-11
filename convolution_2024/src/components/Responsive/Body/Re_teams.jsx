@@ -16,6 +16,12 @@ const peopleData = [
     heading: "Secretary",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
     imgSrc: picture6,
+    socialMediaLinks: {
+      instagram: "https://www.instagram.com/dwaipayanhaldar15/",
+      linkedin: "https://www.linkedin.com/in/dwaipayan-haldar/",
+      facebook: "https://www.facebook.com/profile.php?id=100011133515951",
+    },
+    socialMediaavailable: { insta: true, linke: true, face: true },
   },
   {
     id: 2,
@@ -23,6 +29,12 @@ const peopleData = [
     heading: "Joint-Secretary",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
     imgSrc: picture4,
+    socialMediaLinks: {
+      instagram: "https://www.instagram.com/parthib_not_parthiv/",
+      linkedin: "https://www.linkedin.com/in/parthib-roy-3a78b3224/",
+      facebook: "https://www.facebook.com/profile.php?id=100074521635711",
+    },
+    socialMediaavailable: { insta: true, linke: true, face: true },
   },
   {
     id: 3,
@@ -30,6 +42,12 @@ const peopleData = [
     heading: "Treasurer",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
     imgSrc: picture9,
+    socialMediaLinks: {
+      instagram: "https://www.instagram.com/obaidullachottu/",
+      linkedin: "https://www.linkedin.com/in/md-obaidullah-74b085242/",
+      facebook: "https://www.facebook.com/obaidulla.chottu",
+    },
+    socialMediaavailable: { insta: true, linke: true, face: true },
   },
   {
     id: 4,
@@ -37,13 +55,25 @@ const peopleData = [
     heading: "Tech Lead",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
     imgSrc: picture1,
+    socialMediaLinks: {
+      instagram: "link",
+      linkedin: "https://www.linkedin.com/in/soham-chaudhuri-8aa0a9226/",
+      facebook: "link",
+    },
+    socialMediaavailable: { insta: false, linke: true, face: false },
   },
   {
     id: 5,
     name: "Azfar",
     heading: "Logistics Lead",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-    // imgSrc: picture7,
+    imgSrc: picture7,
+    socialMediaLinks: {
+      instagram: "https://www.instagram.com/hasanazfar28/",
+      linkedin: "https://www.linkedin.com/in/azfar-hasan-a989b3226/",
+      facebook: "https://www.facebook.com/azfar.hasan.161",
+    },
+    socialMediaavailable: { insta: true, linke: true, face: true },
   },
   {
     id: 6,
@@ -51,6 +81,12 @@ const peopleData = [
     heading: "Sponsorship Lead",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
     imgSrc: picture8,
+    socialMediaLinks: {
+      instagram: "https://www.instagram.com/sarkarsupratim2003/",
+      linkedin: "https://www.linkedin.com/in/supratim-sarkar-18226821b/",
+      facebook: "https://www.facebook.com/supratim.sarkar.543",
+    },
+    socialMediaavailable: { insta: true, linke: true, face: true },
   },
   {
     id: 7,
@@ -58,6 +94,12 @@ const peopleData = [
     heading: "Public Reach",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
     imgSrc: picture10,
+    socialMediaLinks: {
+      instagram: "https://www.instagram.com/avishek_bandyopadhyay/",
+      linkedin: "https://www.linkedin.com/in/avishek-bandyopadhyay-72963b241/",
+      facebook: "https://www.facebook.com/avishek.bandyopadhyay.758",
+    },
+    socialMediaavailable: { insta: true, linke: true, face: true },
   },
   {
     id: 8,
@@ -65,6 +107,12 @@ const peopleData = [
     heading: "Design Lead",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
     imgSrc: picture5,
+    socialMediaLinks: {
+      instagram: "https://www.instagram.com/_.ay.an._03_/",
+      linkedin: "https://www.linkedin.com/in/ayan-bose-982276225/",
+      facebook: "https://www.facebook.com/ayan.bose.1213",
+    },
+    socialMediaavailable: { insta: true, linke: true, face: true },
   },
 ];
 
@@ -98,9 +146,41 @@ function Re_teams() {
                   <div className="re_team_desc_para items-center flex flex-col gap-3">
                     {people.description}
                     <div className="flex gap-2">
-                      <i className="fa-brands fa-square-instagram re_events_fabicon"></i>
-                      <i className="fa-brands fa-linkedin re_events_fabicon"></i>
-                      <i className="fa-brands fa-square-facebook re_events_fabicon"></i>
+                      {people.socialMediaavailable.insta ? (
+                        <a
+                          href={people.socialMediaLinks.instagram}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          <i className="fa-brands fa-square-instagram re_events_fabicon"></i>
+                        </a>
+                      ) : (
+                        ""
+                      )}
+
+                      {people.socialMediaavailable.linke ? (
+                        <a
+                          href={people.socialMediaLinks.linkedin}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          <i className="fa-brands fa-linkedin re_events_fabicon"></i>
+                        </a>
+                      ) : (
+                        ""
+                      )}
+
+                      {people.socialMediaavailable.face ? (
+                        <a
+                          href={people.socialMediaLinks.facebook}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          <i className="fa-brands fa-square-facebook re_events_fabicon"></i>
+                        </a>
+                      ) : (
+                        ""
+                      )}
                     </div>
                   </div>
                 </div>
