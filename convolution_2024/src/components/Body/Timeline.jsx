@@ -43,7 +43,7 @@ function Timeline() {
                 </div>
                 <div className="timeline_content1 ">
                   <div>
-                    <h3>Morning Session:</h3>
+                    <h3>Afternoon Session:</h3>
                     <p className="timeline_para">
                       - Event 1
                       <br />
@@ -94,7 +94,7 @@ function Timeline() {
                 </div>
                 <div className="timeline_content1">
                   <div>
-                    <h3>Afternoon Session:</h3>
+                    <h3>Morning Session:</h3>
                     <p className="timeline_para">
                       - Event 1
                       <br />

@@ -8,6 +8,7 @@
   letter-spacing: 0.015em;
   text-align: center;
 }
+
 .underline {
   width: 70px;
   height: 4px;
@@ -29,45 +30,50 @@
   max-width: 1000px;
 }
 
-/* .left{
-    width: 30%;
-    height: 150px;
-
-   
-    
-}
-
-.right{
-    width: 70%;
-    height: 150px;
-
-    
-} */
-/* ----------grp cards---------------- */
-
 .group-child-img {
   position: relative;
   top: 0;
   left: 0;
   border-radius: 50%;
-  /* background-color: #f76932; */
-  /* background-color: white; */
-   background-color: black; 
-
+  background-color: black;
   width: 204px;
   height: 204px;
-  /* background-image: url(../assets/event1.png); */
-  /* overflow: hidden; */
+  overflow: hidden;
   box-shadow: 6px 3px 0px 0px #e9c462;
-
 }
+
+.normal-image,
+.hover-image {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.5s ease-in-out;
+}
+
+.normal-image {
+  z-index: 2;
+}
+
+.hover-image {
+  z-index: 1;
+  transform: translateX(-100%);
+}
+
+.group-child-img:hover .normal-image {
+  transform: translateX(100%);
+}
+
+.group-child-img:hover .hover-image {
+  transform: translateX(0);
+}
+
 .algomaniac,
 .lorem-ipsum-para {
   position: absolute;
   left: 227px;
-  
-  
 }
+
 .algomaniac {
   top: 22px;
   display: flex;
@@ -82,8 +88,8 @@
   flex-shrink: 0;
   font-weight: 400;
   font-feature-settings: 'clig' off, 'liga' off;
-
 }
+
 .lorem-ipsum-para {
   top: 85px;
   font-size: 14px;
@@ -91,13 +97,11 @@
   display: flex;
   width: 407px;
   height: 120px;
-  /* letter-spacing: 0.04em; */
   letter-spacing: 0.56px;
-  /* line-height: 100%; */
   line-height: 14px;
   font-feature-settings: 'clig' off, 'liga' off;
-
 }
+
 .group-item {
   position: absolute;
   top: 70px;
@@ -109,6 +113,7 @@
   width: 70px;
   height: 4px;
 }
+
 .boro-goal {
   position: relative;
   top: 0;
@@ -116,3 +121,5 @@
   width: 634px;
   height: 205px;
 }
+
+/* Add any additional styles as needed */

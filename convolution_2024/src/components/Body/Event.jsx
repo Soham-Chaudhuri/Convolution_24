@@ -1,8 +1,6 @@
-/* eslint-disable react/jsx-key */
-import React from "react";
+import React, { useState } from "react";
 import "./Event.css";
 import picture1 from "../assets/Decisia_Dark.png";
-// import picture2 from "../assets/Abol Tabol_Dark.png";
 import picture2 from "../assets/abol2nd.png";
 import picture3 from "../assets/Circuistics_Dark.png";
 import picture4 from "../assets/Eureka_Dark.png";
@@ -13,54 +11,74 @@ import picture8 from "../assets/24 Frames Dark.png";
 import picture9 from "../assets/Algomaniac Dark.png";
 
 const peopleData = [
-  { id: 1, name: "John Doe", description: "Circuistics", imgSrc: picture3 },
+  {
+    id: 1,
+    name: "John Doe",
+    description: "Circuistics",
+    imgSrc: picture3,
+    normalImg: picture3,
+  },
   {
     id: 2,
     name: "Jane Smith",
     description: "Sparkhack",
     imgSrc: picture7,
+    normalImg: picture7,
   },
   {
     id: 3,
     name: "Bob Johnson",
     description: "Algomaniac",
     imgSrc: picture9,
+    normalImg: picture9,
   },
   {
     id: 4,
     name: "Alice Williams",
     description: "Papier",
     imgSrc: picture6,
+    normalImg: picture6,
   },
-  { id: 1, name: "John Doe", description: "Eureka", imgSrc: picture4 },
   {
-    id: 2,
+    id: 5,
+    name: "John Doe",
+    description: "Eureka",
+    imgSrc: picture4,
+    normalImg: picture4,
+  },
+  {
+    id: 6,
     name: "Jane Smith",
     description: "Decisia",
     imgSrc: picture1,
+    normalImg: picture1,
   },
   {
-    id: 3,
+    id: 7,
     name: "Bob Johnson",
     description: "Abol Tabol",
     imgSrc: picture2,
+    normalImg: picture2,
   },
   {
-    id: 4,
+    id: 8,
     name: "Alice Williams",
-
     description: "Inquizzitive",
     imgSrc: picture5,
+    normalImg: picture5,
   },
   {
-    id: 4,
+    id: 9,
     name: "Alice Williams",
     description: "24 Frames",
     imgSrc: picture8,
+    normalImg: picture8,
   },
 ];
 
 const Event = () => {
+  const [hoveredId, setHoveredId] = useState(null);
+
   return (
     <>
       <section id="events">
@@ -77,14 +95,25 @@ const Event = () => {
         <div className="px-[69px] py-5">
           <div className="grid grid-cols-2 gap-[56px]">
             {peopleData.map((person) => (
-              <div key={person.id} className="boro-goal flex flex-wrap">
+              <div key={person.id} className="boro-goal flex flex-wrap hovered">
                 <div className="group-child-img">
-                  <img src={person.imgSrc} alt={person.name} />
+                  <img
+                    src={person.normalImg}
+                    alt={person.name}
+                    className="normal-image"
+                  />
+
+                  <img
+                    src={person.imgSrc}
+                    alt={person.name}
+                    className="hover-image"
+                  />
                 </div>
                 <div className="algomaniac">{person.description}</div>
                 <div className="lorem-ipsum-para">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Quidem laboriosam numquam facere. Omnis esse sed cupiditate
+                  iusto rerum neque atque qui quo dicta itaque?
                 </div>
                 <div className="group-item" />
               </div>
