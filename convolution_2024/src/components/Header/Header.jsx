@@ -16,6 +16,7 @@ function Header() {
                 duration={500}
                 className="group  m-4 p-4 nav_text_li  transition duration-300 "
                 spy={true}
+                offset={-110}
                 activeClass="active"
               >
                 Home
@@ -27,6 +28,7 @@ function Header() {
                 duration={600}
                 className="group  m-4 p-4 nav_text_li  transition duration-300"
                 spy={true}
+                offset={-100}
                 activeClass="active"
               >
                 About
@@ -36,6 +38,7 @@ function Header() {
                 to="events"
                 smooth={true}
                 duration={700}
+                offset={-100}
                 className="group m-4 p-4 nav_text_li transition duration-300"
               >
                 Events
@@ -44,7 +47,7 @@ function Header() {
             </ul>
           </div>
           <div className="justify-content-center mt-3 mb-4  p-4 nav_text_logo">
-            <Link to="hero" smooth={true} duration={900}>
+            <Link to="hero" smooth={true} duration={900} offset={-100}>
               <img
                 className="w-[147px] h-[51.66px] hover:cursor-pointer"
                 src={convosvg}
@@ -58,6 +61,7 @@ function Header() {
                 to="timeline"
                 smooth={true}
                 duration={800}
+                offset={-100}
                 className="group m-4 p-4 nav_text_li transition duration-300"
               >
                 Timeline
@@ -67,6 +71,7 @@ function Header() {
                 to="team"
                 smooth={true}
                 duration={900}
+                offset={-100}
                 className="group m-4 p-4 nav_text_li transition duration-300"
               >
                 Team
@@ -76,6 +81,7 @@ function Header() {
                 to="contacts"
                 smooth={true}
                 duration={1000}
+                offset={-100}
                 className="group m-4 p-4 nav_text_li transition duration-300"
               >
                 Contacts
