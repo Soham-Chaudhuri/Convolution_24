@@ -24,7 +24,7 @@ function Hero({user}) {
     <>
       {/* <Back /> */}
 
-      <div className="hero_bg p-4">
+      <div className="hero_bg p-7">
         <div className="flex flex-col">
           <div className="flex gapping">
             <div className="m-4 hero_heading_1_div flex flex-wrap flex-col">

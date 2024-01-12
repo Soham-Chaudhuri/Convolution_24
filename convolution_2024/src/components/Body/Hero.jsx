@@ -21,7 +21,7 @@ function Hero() {
   const navigate = useNavigate();
   return (
     <>
-      <div className="hero_bg p-4">
+      <div className="hero_bg p-7">
         <div className="flex flex-col">
           <section id="hero">
             <div className="flex gapping">
