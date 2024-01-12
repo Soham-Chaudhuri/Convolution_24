@@ -99,6 +99,7 @@ header {
 
 .dropdown_menu.open {
   height: 320px;
+  /* background-color: transparent; */
 }
 .dropdown_menu li {
   padding: 0.7rem;

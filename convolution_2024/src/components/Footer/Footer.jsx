@@ -6,8 +6,8 @@ function Footer() {
     <>
       <div className="footer_bg">
         <div className="footer_lines"></div>
-        <div className="flex py-5 justify-around w-full h-[351px] text-white footer_hi bg-black">
-          <div className="px-[19px] pt-[52px] ">
+        <div className="flex py-5 justify-around w-full h-[351px] text-white footer_hi bg-black items-center gap-[24rem]">
+          <div className="px-[19px] pt-[60px] pb-[30px]">
             <h1 className="footer_h1">CONVOLUTION 9.0</h1>
             <br />
             <p className="footer_paragraph flex flex-col gap-[0px]">
@@ -32,9 +32,9 @@ function Footer() {
               <span className="block">Email: convolution2023@gmail.com</span>
             </p>
           </div>
-          <div className="flex items-center flex-col my-auto">
+          <div className="flex gap-3 flex-col mb-[160px]">
             <p className="footer_icons ">Our Social Networks:</p>
-            <br />
+            
             <div className="flex gap-2">
               <i className="fa-brands fa-square-instagram fabicon"></i>
               <i className="fa-brands fa-linkedin fabicon"></i>

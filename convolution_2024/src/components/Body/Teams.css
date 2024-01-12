@@ -54,9 +54,9 @@
   width: 204px;
   height: 204px;
   /* background-image: url(../assets/event1.png); */
-  /* overflow: hidden; */
+  overflow: hidden;
 
-  /* box-shadow: 5px 5px 0px 0px #e9c462; */
+  box-shadow: 6px 3px 0px 0px #e9c462;
 
 }
 .algomaniac-teams,

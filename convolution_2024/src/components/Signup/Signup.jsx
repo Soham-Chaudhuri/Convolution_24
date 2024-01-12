@@ -11,14 +11,14 @@ const auth = getAuth(app);
 const db = getDatabase(app);
 function Signup() {
   const navigate = useNavigate();
-  const [name, setName] = useState("");
-  const [mail, setMail] = useState("");
-  const [password, setPassword] = useState("");
-  const [cpassword, setCpassword] = useState("");
-  const [phnumber, setphNumber] = useState("");
-  const [college, setCollege] = useState("");
-  const [branch, setBranch] = useState("");
-  const [year, setYear] = useState("");
+  const [name, setName] = useState(null);
+  const [mail, setMail] = useState(null);
+  const [password, setPassword] = useState(null);
+  const [cpassword, setCpassword] = useState(null);
+  const [phnumber, setphNumber] = useState(null);
+  const [college, setCollege] = useState(null);
+  const [branch, setBranch] = useState(null);
+  const [year, setYear] = useState(null);
 
   const dataEntry = () => {
     set(ref(db, `users/${mail.replace(/\./g, "_")}`), {
