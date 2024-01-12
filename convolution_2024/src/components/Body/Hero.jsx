@@ -16,6 +16,7 @@ import {
   Navigate,
   useNavigate,
 } from "react-router-dom";
+import Sponsor from "./Sponsor";
 
 function Hero() {
   const navigate = useNavigate();
@@ -65,6 +66,7 @@ function Hero() {
           <Event />
           <Timeline />
           <Teams />
+          <Sponsor/>
           <Contact />
         </div>
       </div>
