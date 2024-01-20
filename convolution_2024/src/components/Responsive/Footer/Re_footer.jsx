@@ -20,18 +20,16 @@ function Re_footer() {
           </div>
           <div className="re_footer_contact py-6">
             <span className="re_footer_l">
-              Phone: +91 8017388918/+91 7866827719
+              Phone: +91 967 427 3275/+91 907 342 1224
             </span>
             <br />
             <span className="re_footer_l">
-              Email: convolution2023@gmail.com
+              Email: convolution2024@gmail.com
             </span>
           </div>
         </div>
         <div className="re_footer_social">
-          <span className="text-center text-white">
-            Our Social Networks:
-          </span>
+          <span className="text-center text-white">Our Social Networks:</span>
           <div className="flex flex-col items-center pt-2">
             <div className="flex gap-2">
               <i className="fa-brands fa-square-instagram fabicon"></i>

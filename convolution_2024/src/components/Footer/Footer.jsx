@@ -26,15 +26,15 @@ function Footer() {
 
             <p className="footer_paragraph py-[28px]">
               <span className="block">
-                Phone: +91 8017388918/+91 7866827719
+                Phone: +91 967 427 3275/+91 907 342 1224
               </span>
               <br />
-              <span className="block">Email: convolution2023@gmail.com</span>
+              <span className="block">Email: convolution2024@gmail.com</span>
             </p>
           </div>
           <div className="flex gap-3 flex-col mb-[160px]">
             <p className="footer_icons ">Our Social Networks:</p>
-            
+
             <div className="flex gap-2">
               <i className="fa-brands fa-square-instagram fabicon"></i>
               <i className="fa-brands fa-linkedin fabicon"></i>

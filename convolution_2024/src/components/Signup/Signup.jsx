@@ -44,7 +44,9 @@ function Signup() {
       behavior: "smooth",
     });
   };
-
+  useEffect(() => {
+    scrollToTop();
+  }, []);
   const singUpUser = () => {
     if (password !== cpassword) {
       toast.error("Password doesn't match", {

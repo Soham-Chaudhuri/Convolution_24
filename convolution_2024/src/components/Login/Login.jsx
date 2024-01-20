@@ -17,6 +17,9 @@ function Login() {
       behavior: "smooth",
     });
   };
+  // useEffect(() => {
+  //   scrollToTop();
+  // }, []);
   const signinUser = () => {
     signInWithEmailAndPassword(auth, mail, password)
       .then((value) => {
@@ -37,6 +40,7 @@ function Login() {
 
   return (
     <>
+    {/* {scrollToTop()} */}
       <div className="flex flex-col items-center justify-center  py-[60px] form_signup_body h-[100vh]">
         <h1 className="text-center pt-3 pb-3 form_heading">LOGIN</h1>
         <span className="form_underline"></span>

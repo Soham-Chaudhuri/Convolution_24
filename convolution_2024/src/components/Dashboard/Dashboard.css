@@ -256,7 +256,7 @@ body {
 }
 
 .dashboard-underline{
-  z-index: 0;
+  z-index: -1;
 }
 
 .grid-container {

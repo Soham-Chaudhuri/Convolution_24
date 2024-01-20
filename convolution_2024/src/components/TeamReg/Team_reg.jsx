@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Navigate, useNavigate , useParams } from "react-router-dom";
+import { useNavigate , useParams } from "react-router-dom";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import "../TeamReg/Team_reg.css";
@@ -28,23 +28,30 @@ function Team_reg({user}) {
   const dataEntry = () => {
     try {
       
-      set(ref(db, `events/${eventName.event}/${teamName}`), {
-        Team_Leader: team_leader,
-        Member1: member1,
-        Member2: ((member2.length>0)?(member2):("N/A")),
-        Member3: ((member3.length>0)?(member3):("N/A")),
-      });
-      scrollToTop();
-        toast.success("Registration successful!", { autoClose: 3200, theme:"dark" });
-        setTimeout(() => {
-          navigate("/dashboard");
-        }, 2000);
+      if(team_leader!==null && teamName!==null && team_leader!=="" && teamName!=="" && (member1!==null) && (member1!=="")){
 
-        update(ref(db, `users/${user.email.replace(/\./g, "_")}`), {
-          [eventName.event] : true,
+        set(ref(db, `events/${eventName.event}/${teamName}`), {
+          Team_Leader: team_leader,
+          Member1: member1,
+          Member2: member2,
+          Member3: member3,
         });
-
-
+        scrollToTop();
+          toast.success("Registration successful!", { autoClose: 3200, theme:"dark" });
+          setTimeout(() => {
+            navigate("/dashboard");
+          }, 2000);
+  
+          update(ref(db, `users/${user.email.replace(/\./g, "_")}`), {
+            [eventName.event] : true,
+          });
+      }
+      else{
+        toast.error("Registration failed.",{
+          autoClose: 3200,
+          theme: "dark",
+        });
+      }
     } catch (error) {
       console.log(error);
       toast.error("Registration failed.",{
@@ -55,8 +62,6 @@ function Team_reg({user}) {
 
   return (
     <>
-      {/* {error && <Error />} */}
-      {/* {success && <Success message="Registration successful" />} */}
       <div className="flex flex-col items-center justify-center  py-[60px] form_signup_body">
         <h1 className="text-center pt-3 pb-3 form_heading">TEAM DETAILS</h1>
         <span className="form_underline"></span>
@@ -85,7 +90,7 @@ function Team_reg({user}) {
               placeholder="Member 1..."
               value={member1}
               className="form-input h-14  p-6 form_place form_text"
-              onChange={(e) => setMember1(e.target.value)}
+              onChange={(e) => {setMember1(e.target.value)}}
               required
             />
 
