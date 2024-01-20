@@ -13,8 +13,6 @@ import {
   useNavigate,
 } from "react-router-dom";
 import Re_timeline from "./Re_timeline";
-import Re_header from "../Header/Re_header";
-import Re_footer from "../Footer/Re_footer";
 
 // import thunder from "../../assets/Thunder.png";
 
@@ -22,7 +20,6 @@ function Re_hero() {
   const navigate = useNavigate();
   return (
     <>
-    <Re_header/>
       <div className="Re_hero_bg p-3">
         <div className="flex flex-col">
           <div className="flex flex-col-reverse Re_gapping gap-[0.8rem]">
@@ -70,7 +67,6 @@ function Re_hero() {
           <Re_contact />
         </div>
       </div>
-      <Re_footer/>
     </>
   );
 }

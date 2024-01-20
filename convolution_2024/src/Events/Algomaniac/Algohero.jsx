@@ -1,14 +1,12 @@
-/* eslint-disable react/no-unescaped-entities */
 import React, { useEffect, useState } from "react";
 import "./Hero.css";
-import Hero_vd from "./Hero_vd";
-import thunder from "../assets/Thunder.png";
+
+import thunder from "../../components/assets/Thunder.png";
 import About from "./About";
-import Event from "./Event";
+
 import Timeline from "./Timeline";
 import Teams from "./Teams";
-import Contact from "./Contact";
-// eslint-disable-next-line no-unused-vars
+
 import {
   BrowserRouter as Router,
   Routes,
@@ -18,9 +16,11 @@ import {
 } from "react-router-dom";
 import Sponsor from "./Sponsor";
 import Header from "../Header/Header";
-import Footer from "../Footer/Footer";
+import Footer from "../../components/Footer/Footer";
+import Judges from "./Judges";
+import Faq from "./Faq";
 
-function Hero() {
+function Algohero() {
   const navigate = useNavigate();
   return (
     <>
@@ -34,7 +34,7 @@ function Hero() {
                   JUEE STUDENTS' FORUM
                 </span>
                 <span className="hero_heading_2 text-shadow-md">
-                  CONVOLUTION 9.0
+                  ALGOMANIAC
                 </span>
                 <span className="hero_heading_3">
                   The Ninth Edition of Annual Technical Meet
@@ -64,19 +64,18 @@ function Hero() {
             </div>
           </section>
 
-          <Hero_vd />
           <About />
-          <Event />
-          <Timeline />
-          <Teams />
-          <Sponsor />
-          <Contact />
 
+          <Timeline />
+          <Judges/>
+          <Faq/>
+          <Teams />
+
+          {/* <Sponsor /> */}
         </div>
       </div>
-      <Footer/>
     </>
   );
 }
 
-export default Hero;
+export default Algohero;

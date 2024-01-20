@@ -77,9 +77,11 @@
   background-color: #f6eddf;
 }
 
-/* .form_signup_body {
-  background: url(../assets/back_signup.png), lightgray 1% / cover no-repeat;
-} */
+.form_signup_body {
+  background: url(../assets/output-onlinepngtoohello.png) ;
+
+
+}
 
 @media (max-width: 800px) {
   .form_text {

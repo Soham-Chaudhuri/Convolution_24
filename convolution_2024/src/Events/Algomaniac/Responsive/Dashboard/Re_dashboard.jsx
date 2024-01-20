@@ -211,7 +211,7 @@ function Re_dashboard({ user }) {
 
   return (
     <>
-      <div className="body_main pt-8">
+      <div className="body_main">
         <div className="flex flex-col items-center my-10 gap-2">
           <p className="re_dashboard_heading">Dashboard</p>
           <div className="re_dashboard_underline"></div>

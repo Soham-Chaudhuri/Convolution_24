@@ -8,7 +8,7 @@ import "./App.css";
 import Header from "./components/Header/Header";
 import Re_header from "./components/Responsive/Header/Re_header";
 import Hero from "./components/Body/Hero";
-import Lhero from "./components/Body/Lhero"
+import Lhero from "./components/Body/Lhero";
 import Footer from "./components/Footer/Footer";
 import Re_hero from "./components/Responsive/Body/Re_hero";
 import Re_lhero from "./components/Responsive/Body/Re_lhero";
@@ -19,11 +19,11 @@ import Signup from "./components/Signup/Signup";
 import Login from "./components/Login/Login";
 import Re_dashboard from "./components/Responsive/Dashboard/Re_dashboard";
 import Loader from "./Loader";
-import {getAuth,onAuthStateChanged,signOut} from 'firebase/auth'
-import {app} from './components/firebase';
+import { getAuth, onAuthStateChanged, signOut } from "firebase/auth";
+import { app } from "./components/firebase";
 import Team_reg from "./components/TeamReg/Team_reg";
+import Algohero from "./Events/Algomaniac/Algohero";
 const auth = getAuth(app);
-
 
 function App() {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
@@ -49,17 +49,17 @@ function App() {
 
     fetchData();
   }, []);
-  
-  useEffect(()=>{
-    onAuthStateChanged(auth,(user)=>{
-      if(user){
+
+  useEffect(() => {
+    onAuthStateChanged(auth, (user) => {
+      if (user) {
         setUser(user);
-      }else{
+      } else {
         console.log("You are logged out");
         setUser(null);
       }
     });
-  },[]);
+  }, []);
 
   return (
     <>
@@ -71,35 +71,49 @@ function App() {
         <div>
           {windowWidth >= 1000 ? (
             <>
-              <Header />
+              {/* <Header /> */}
               <Router>
                 <Routes>
-                  <Route path="/dashboard" element={<Dashboard user={user} />} />
+                  <Route
+                    path="/dashboard"
+                    element={<Dashboard user={user} />}
+                  />
                   <Route path="/signup" element={<Signup />} />
-                  <Route path="/reg/:event" element={<Team_reg user={user} />} />
+                  <Route
+                    path="/reg/:event"
+                    element={<Team_reg user={user} />}
+                  />
                   <Route path="/login" element={<Login />} />
                   <Route path="/" element={<Hero />} />
-                  <Route path="/profile" element={<Lhero user={user}/>} />
+
+                  <Route path="/profile" element={<Lhero user={user} />} />
+                  <Route path="/evevts/algomaniac" element={<Algohero />} />
                 </Routes>
               </Router>
-              {/* <Hero /> */}
-              <Footer />
+
+              {/* <Footer /> */}
             </>
           ) : (
             <>
-              <Re_header />
+              {/* <Re_header /> */}
               <Router>
                 <Routes>
-                  <Route path="/dashboard" element={<Re_dashboard user={user}/>} />
+                  <Route
+                    path="/dashboard"
+                    element={<Re_dashboard user={user} />}
+                  />
                   <Route path="/signup" element={<Signup />} />
-                  <Route path="/reg/:event" element={<Team_reg user={user} />} />
+                  <Route
+                    path="/reg/:event"
+                    element={<Team_reg user={user} />}
+                  />
                   <Route path="/login" element={<Login />} />
                   <Route path="/" element={<Re_hero />} />
-                  <Route path="/profile" element={<Re_lhero user={user}/>} />
+                  <Route path="/profile" element={<Re_lhero user={user} />} />
                 </Routes>
               </Router>
               {/* <Re_hero /> */}
-              <Re_footer />
+              {/* <Re_footer /> */}
             </>
           )}
         </div>

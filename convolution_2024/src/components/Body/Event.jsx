@@ -9,6 +9,14 @@ import picture6 from "../assets/Papier_Dark.png";
 import picture7 from "../assets/Sparkhack_Dark.png";
 import picture8 from "../assets/24 Frames Dark.png";
 import picture9 from "../assets/Algomaniac Dark.png";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Navigate,
+  Link,
+  useNavigate,
+} from "react-router-dom";
 
 const peopleData = [
   {
@@ -17,6 +25,7 @@ const peopleData = [
     description: "Circuistics",
     imgSrc: picture3,
     normalImg: picture3,
+    href: "/evevts/circuistics"
   },
   {
     id: 2,
@@ -24,6 +33,7 @@ const peopleData = [
     description: "Sparkhack",
     imgSrc: picture7,
     normalImg: picture7,
+    href: "/evevts/algomaniac"
   },
   {
     id: 3,
@@ -31,6 +41,7 @@ const peopleData = [
     description: "Algomaniac",
     imgSrc: picture9,
     normalImg: picture9,
+    href: "/evevts/algomaniac"
   },
   {
     id: 4,
@@ -45,6 +56,7 @@ const peopleData = [
     description: "Eureka",
     imgSrc: picture4,
     normalImg: picture4,
+    href: "/evevts/algomaniac"
   },
   {
     id: 6,
@@ -52,6 +64,7 @@ const peopleData = [
     description: "Decisia",
     imgSrc: picture1,
     normalImg: picture1,
+    href: "/evevts/algomaniac"
   },
   {
     id: 7,
@@ -59,6 +72,7 @@ const peopleData = [
     description: "Abol Tabol",
     imgSrc: picture2,
     normalImg: picture2,
+    href: "/evevts/algomaniac"
   },
   {
     id: 8,
@@ -66,6 +80,7 @@ const peopleData = [
     description: "Inquizzitive",
     imgSrc: picture5,
     normalImg: picture5,
+    href: "/evevts/algomaniac"
   },
   {
     id: 9,
@@ -73,6 +88,7 @@ const peopleData = [
     description: "24 Frames",
     imgSrc: picture8,
     normalImg: picture8,
+    href: "/evevts/algomaniac"
   },
 ];
 
@@ -109,7 +125,9 @@ const Event = () => {
                     className="hover-image"
                   />
                 </div>
-                <div className="algomaniac">{person.description}</div>
+                <Link to={person.href}>
+                  <div className="algomaniac">{person.description}</div>
+                </Link>
                 <div className="lorem-ipsum-para">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Quidem laboriosam numquam facere. Omnis esse sed cupiditate

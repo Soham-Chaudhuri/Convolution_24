@@ -12,6 +12,8 @@ import Contact from "./Contact";
 import { BrowserRouter as Router, useNavigate } from "react-router-dom";
 import { getAuth, signOut } from 'firebase/auth';
 import { app } from '../firebase';
+import Header from "../Header/Header";
+import Footer from "../Footer/Footer";
 const auth = getAuth(app);
 function Hero({user}) {
   const navigate = useNavigate();
@@ -23,6 +25,7 @@ function Hero({user}) {
   return (
     <>
       {/* <Back /> */}
+      <Header/>
 
       <div className="hero_bg p-7">
         <div className="flex flex-col">
@@ -68,6 +71,7 @@ function Hero({user}) {
           <Contact />
         </div>
       </div>
+      <Footer/>
     </>
   );
 }
