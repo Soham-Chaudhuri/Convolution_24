@@ -15,6 +15,7 @@ import {
 import Re_timeline from "./Re_timeline";
 import Re_header from "../Header/Re_header";
 import Re_footer from "../Footer/Re_footer";
+import Sponsor from "../../Body/Sponsor";
 
 // import thunder from "../../assets/Thunder.png";
 
@@ -69,6 +70,7 @@ function Re_hero() {
           <Re_event />
           <Re_timeline />
           <Re_teams />
+          <Sponsor/>
           <Re_contact />
         </div>
       </div>

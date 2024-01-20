@@ -8,6 +8,7 @@ import Event from "./Event";
 import Timeline from "./Timeline";
 import Teams from "./Teams";
 import Contact from "./Contact";
+import $ from 'jquery';
 // eslint-disable-next-line no-unused-vars
 import {
   BrowserRouter as Router,
