@@ -5,6 +5,7 @@ import Re_about from "./Re_about";
 import Re_event from "./Re_event";
 import Re_teams from "./Re_teams";
 import Re_contact from "./Re_contact";
+import Sponsor from "../../Body/Sponsor";
 import {
   BrowserRouter as Router,
   Routes,
@@ -67,6 +68,7 @@ function Re_hero() {
           <Re_event />
           <Re_timeline/>
           <Re_teams />
+          <Sponsor/>
           <Re_contact />
         </div>
       </div>

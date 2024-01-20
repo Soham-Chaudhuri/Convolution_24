@@ -14,6 +14,7 @@ import { getAuth, signOut } from 'firebase/auth';
 import { app } from '../firebase';
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
+import Sponsor from "./Sponsor";
 const auth = getAuth(app);
 function Hero({user}) {
   const navigate = useNavigate();
@@ -68,6 +69,7 @@ function Hero({user}) {
           <Event />
           <Timeline />
           <Teams />
+          <Sponsor/>
           <Contact />
         </div>
       </div>
