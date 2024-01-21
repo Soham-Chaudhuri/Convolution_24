@@ -35,15 +35,26 @@ function Header() {
                 <span className="mt-1 mr-2 block max-w-0 group-hover:max-w-full transition-all duration-500 h-1 bg-orange-500 rounded-full"></span>
               </Link>
               <Link
-                to="events"
+                to="timeline"
                 smooth={true}
-                duration={700}
+                duration={800}
                 offset={-100}
                 className="group m-4 p-4 nav_text_li transition duration-300"
               >
-                FAQ
+                Timeline
                 <span className="mt-1 mr-2 block max-w-0 group-hover:max-w-full transition-all duration-500 h-1 bg-orange-500 rounded-full"></span>
               </Link>
+              <Link
+                to="timeline"
+                smooth={true}
+                duration={800}
+                offset={-100}
+                className="group m-4 p-4 nav_text_li transition duration-300"
+              >
+                Gallery
+                <span className="mt-1 mr-2 block max-w-0 group-hover:max-w-full transition-all duration-500 h-1 bg-orange-500 rounded-full"></span>
+              </Link>
+              
             </ul>
           </div>
           <div className="justify-content-center mt-3 mb-4  p-4 nav_text_logo">
@@ -58,13 +69,13 @@ function Header() {
           <div className="justify-content-center my-auto">
             <ul className="flex flex-wrap justify-around">
               <Link
-                to="timeline"
+                to="judges"
                 smooth={true}
                 duration={800}
                 offset={-100}
                 className="group m-4 p-4 nav_text_li transition duration-300"
               >
-                Timeline
+                Judges
                 <span className="mt-1 mr-2 block max-w-0 group-hover:max-w-full transition-all duration-500 h-1 bg-orange-500 rounded-full"></span>
               </Link>
               <Link
@@ -74,7 +85,17 @@ function Header() {
                 offset={-100}
                 className="group m-4 p-4 nav_text_li transition duration-300"
               >
-                Team
+                Prizes
+                <span className="mt-1 mr-2 block max-w-0 group-hover:max-w-full transition-all duration-500 h-1 bg-orange-500 rounded-full"></span>
+              </Link>
+              <Link
+                to="faq"
+                smooth={true}
+                duration={900}
+                offset={-100}
+                className="group m-4 p-4 nav_text_li transition duration-300"
+              >
+                FAQ
                 <span className="mt-1 mr-2 block max-w-0 group-hover:max-w-full transition-all duration-500 h-1 bg-orange-500 rounded-full"></span>
               </Link>
               <Link
@@ -84,7 +105,7 @@ function Header() {
                 offset={-100}
                 className="group m-4 p-4 nav_text_li transition duration-300"
               >
-                Prizes
+                Contacts
                 <span className="mt-1 mr-2 block max-w-0 group-hover:max-w-full transition-all duration-500 h-1 bg-orange-500 rounded-full"></span>
               </Link>
             </ul>

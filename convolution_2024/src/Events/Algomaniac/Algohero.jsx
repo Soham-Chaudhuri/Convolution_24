@@ -19,6 +19,7 @@ import Header from "../Header/Header";
 import Footer from "../../components/Footer/Footer";
 import Judges from "./Judges";
 import Faq from "./Faq";
+import Contact from "../../components/Body/Contact";
 
 function Algohero() {
   const navigate = useNavigate();
@@ -28,17 +29,15 @@ function Algohero() {
       <div className="hero_bg p-7">
         <div className="flex flex-col">
           <section id="hero">
-            <div className="flex gapping">
+            <div className="flex gapping  gap-[12.5rem]">
               <div className="m-4 hero_heading_1_div flex flex-wrap flex-col">
                 <span className="hero_heading_1 text-shadow-md">
-                  JUEE STUDENTS' FORUM
+                  Convolution 9.0 Presents
                 </span>
                 <span className="hero_heading_2 text-shadow-md">
                   ALGOMANIAC
                 </span>
-                <span className="hero_heading_3">
-                  The Ninth Edition of Annual Technical Meet
-                </span>
+                <span className="hero_heading_3">Let your code speak</span>
                 <div className="flex hero_btn mt-5">
                   <button
                     className="hero_btn_1"
@@ -67,13 +66,15 @@ function Algohero() {
           <About />
 
           <Timeline />
-          <Judges/>
-          <Faq/>
+          <Judges />
+          <Faq />
           <Teams />
+          <Contact/>
 
           {/* <Sponsor /> */}
         </div>
       </div>
+      <Footer/>
     </>
   );
 }

@@ -54,40 +54,7 @@ function Timeline() {
                 </div>
               </div>
 
-              <div className="timeline_card">
-                <div className="timeline_imgBx">
-                  <h1 className="timeline_day">DAY 2</h1>
-                </div>
-                <div className="timeline_content1">
-                  <div>
-                    <h3>Morning Session:</h3>
-                    <p className="timeline_para">
-                      - Event 1
-                      <br />
-                      - Event 2
-                      <br />- Event 3
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <div className="timeline_card">
-                <div className="timeline_imgBx">
-                  <h1 className="timeline_day">DAY 2</h1>
-                </div>
-                <div className="timeline_content1">
-                  <div>
-                    <h3>Afternoon Session:</h3>
-                    <p className="timeline_para">
-                      - Event 1
-                      <br />
-                      - Event 2
-                      <br />- Event 3
-                    </p>
-                  </div>
-                </div>
-              </div>
-
+              
               <div className="timeline_card">
                 <div className="timeline_imgBx">
                   <h1 className="timeline_day">DAY 3</h1>

@@ -38,7 +38,7 @@ const peopleData = [
 function Judges() {
   return (
     <>
-      <section id="team">
+      <section id="judges">
         <div className=" flex flex-col justify-center items-center gap-2 py-5">
           <h1 className="text-center teams_h1">JUDGES</h1>
           <span className="underline_teams"></span>

@@ -44,10 +44,31 @@ function Signup() {
       behavior: "smooth",
     });
   };
-  useEffect(() => {
-    scrollToTop();
-  }, []);
+
   const singUpUser = () => {
+    if (
+      !name ||
+      !college ||
+      !branch ||
+      !year ||
+      !phnumber ||
+      !mail ||
+      !password ||
+      !cpassword
+    ) {
+      toast.error("Please fill in all required fields", {
+        theme: "dark",
+      });
+      return;
+    }
+
+    if (phnumber.length < 10) {
+      toast.error("Please enter the correct phone number", {
+        theme: "dark",
+      });
+      return;
+    }
+
     if (password !== cpassword) {
       toast.error("Password doesn't match", {
         theme: "dark",

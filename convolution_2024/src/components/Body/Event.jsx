@@ -25,7 +25,7 @@ const peopleData = [
     description: "Circuistics",
     imgSrc: picture3,
     normalImg: picture3,
-    href: "/evevts/circuistics"
+    href: "/evevts/algomaniac"
   },
   {
     id: 2,
