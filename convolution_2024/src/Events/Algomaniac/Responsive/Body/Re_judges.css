@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Anton&family=Antonio:wght@100;200;300;400;500;600;700&family=Montserrat:wght@500&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
-.re_events_h1 {
+.re_teams_h1 {
   font-family: "Anton", sans-serif !important;
   font-size: 30px;
   font-weight: 400;
@@ -8,7 +8,7 @@
   letter-spacing: 0.013em;
   text-align: center;
 }
-.re_events_underline {
+.re_teams_underline {
   width: 55px;
   height: 4px;
   top: 91px;
@@ -19,7 +19,7 @@
   align-items: center;
 }
 
-.re_events_paragraph {
+.re_teams_paragraph {
   font-family: Poppins;
   font-size: 18px;
   font-weight: 400;
@@ -45,7 +45,7 @@
 } */
 /* ----------grp cards---------------- */
 
-.re_event_img {
+.re_team_img {
   background-color: black;
   border-radius: 50%;
   width: 102px;
@@ -53,7 +53,7 @@
   box-shadow: 3px 1.5px 0px 0px #e9c462;
 }
 
-.re_event_desc_heading {
+.re_team_desc_heading {
   color: black;
   letter-spacing: 1px;
   line-height: 20px;
@@ -62,7 +62,7 @@
   font-weight: 400;
 }
 
-.re_event_desc_underline {
+.re_team_desc_underline {
   width: 40px;
   height: 4px;
   border-radius: 4px;
@@ -71,7 +71,7 @@
   align-items: center;
 }
 
-.re_event_desc_para {
+.re_team_desc_para {
   color: black;
   letter-spacing: 0.56px;
   line-height: 14px;
@@ -80,4 +80,20 @@
   font-weight: 400;
   text-align: center;
   text-justify: auto;
+}
+
+
+.re_events_fabicon{
+    font-size: 18px;
+    /* border-radius: 50%; */
+    transition: 0.3s ease-in-out;
+
+
+}
+
+.re_events_fabicon:hover {
+    scale: 1.2;
+    cursor: pointer;
+    /* filter: invert(100%); */
+    /* color:aqua */
 }

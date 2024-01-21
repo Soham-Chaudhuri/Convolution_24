@@ -21,7 +21,7 @@
   position: absolute;
   top: 0px;
   left: 0px;
-  background-image: url(../../assets/wave2.png);
+  background-image: url(../../../../components/assets/wave2.png);
   /* width: 200px; */
   opacity: 0.1;
   z-index: 1;

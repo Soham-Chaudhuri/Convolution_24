@@ -7,7 +7,7 @@ function About() {
         <div className="Re_about_layer_bg">
           <div className="Re_about_layer_lines"></div>
           <div className="Re_about flex text-center flex-col align-center justify-center gap-6 py-10 px-6">
-            <span className="Re_heading">ABOUT CONVOLUTION 9.0</span>
+            <span className="Re_heading">ABOUT ALGOMANIAC</span>
             <span className="Re_para">
               Convolution 9.0 is the ninth edition of the annual
               techno-management fest organized by the Students' Forum of the

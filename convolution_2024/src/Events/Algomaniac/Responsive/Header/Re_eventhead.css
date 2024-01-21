@@ -98,7 +98,7 @@ header {
 }
 
 .dropdown_menu.open {
-  height: 320px;
+  height: max-content;
   /* background-color: transparent; */
 }
 .dropdown_menu li {

@@ -11,19 +11,23 @@ import picture6 from "../../assets/Papier_Dark.png";
 import picture7 from "../../assets/Sparkhack_Dark.png";
 import picture8 from "../../assets/24 Frames Dark.png";
 import picture9 from "../../assets/Algomaniac Dark.png";
+import { Link } from "react-router-dom";
 
 const eventData = [
   {
     id: 1,
     heading: "Circuistics",
     imgSrc: picture3,
+    href: "/events/algomaniac",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
+
   },
   {
     id: 2,
     heading: "Sparkhack",
     imgSrc: picture7,
+    href: "/events/algomaniac",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
   },
@@ -31,6 +35,7 @@ const eventData = [
     id: 3,
     heading: "Algomaniac",
     imgSrc: picture9,
+    href: "/events/algomaniac",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
   },
@@ -38,6 +43,7 @@ const eventData = [
     id: 4,
     heading: "Papier",
     imgSrc: picture6,
+    href: "/events/algomaniac",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
   },
@@ -45,6 +51,7 @@ const eventData = [
     id: 1,
     heading: "Eureka",
     imgSrc: picture4,
+    href: "/events/algomaniac",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
   },
@@ -52,6 +59,7 @@ const eventData = [
     id: 2,
     heading: "Decisia",
     imgSrc: picture1,
+    href: "/events/algomaniac",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
   },
@@ -59,6 +67,7 @@ const eventData = [
     id: 3,
     heading: "Abol Tabol",
     imgSrc: picture2,
+    href: "/events/algomaniac",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
   },
@@ -66,6 +75,7 @@ const eventData = [
     id: 4,
     heading: "Inquizzitive",
     imgSrc: picture5,
+    href: "/events/algomaniac",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
   },
@@ -73,6 +83,7 @@ const eventData = [
     id: 4,
     heading: "24 Frames",
     imgSrc: picture8,
+    href: "/events/algomaniac",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
   },
@@ -103,7 +114,7 @@ function Re_event() {
                 <img src={data.imgSrc} alt={data.name} />
               </div>
               <div className="re_event_desc flex items-center flex-col text-center">
-                <div className="re_event_desc_heading">{data.heading}</div>
+               <Link to={data.href}> <div className="re_event_desc_heading">{data.heading}</div></Link>
                 <div className="re_event_desc_underline mt-2 mb-3"></div>
                 <div className="re_event_desc_para">{data.description}</div>
               </div>

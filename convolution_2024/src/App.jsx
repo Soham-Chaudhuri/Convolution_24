@@ -23,6 +23,7 @@ import { getAuth, onAuthStateChanged, signOut } from "firebase/auth";
 import { app } from "./components/firebase";
 import Team_reg from "./components/TeamReg/Team_reg";
 import Algohero from "./Events/Algomaniac/Algohero";
+import Re_Algohero from "./Events/Algomaniac/Responsive/Body/Re_Algohero";
 const auth = getAuth(app);
 
 function App() {
@@ -87,7 +88,7 @@ function App() {
                   <Route path="/" element={<Hero />} />
 
                   <Route path="/profile" element={<Lhero user={user} />} />
-                  <Route path="/evevts/algomaniac" element={<Algohero />} />
+                  <Route path="/events/algomaniac" element={<Algohero />} />
                 </Routes>
               </Router>
 
@@ -110,9 +111,10 @@ function App() {
                   <Route path="/login" element={<Login />} />
                   <Route path="/" element={<Re_hero />} />
                   <Route path="/profile" element={<Re_lhero user={user} />} />
+                  <Route path="/events/algomaniac" element={<Re_Algohero/>} />
                 </Routes>
               </Router>
-              {/* <Re_hero /> */}
+              
               {/* <Re_footer /> */}
             </>
           )}

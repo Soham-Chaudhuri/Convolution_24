@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from "react";
 import "../Body/Re_hero.css";
-import Re_hero_vd from "./Re_hero_vd";
+
 import Re_about from "./Re_about";
-import Re_event from "./Re_event";
+
 import Re_teams from "./Re_teams";
 import Re_contact from "./Re_contact";
+import Re_faq from "./Re_faq";
 import {
   BrowserRouter as Router,
   Routes,
@@ -14,12 +15,17 @@ import {
 } from "react-router-dom";
 import Re_timeline from "./Re_timeline";
 
-// import thunder from "../../assets/Thunder.png";
+import Re_footer from "../Footer/Re_footer";
+import Re_eventhead from "../Header/Re_eventhead";
+import Re_judges from "./Re_judges";
 
-function Re_hero() {
+
+function Re_Algohero() {
   const navigate = useNavigate();
   return (
     <>
+      <Re_eventhead />
+
       <div className="Re_hero_bg p-3">
         <div className="flex flex-col">
           <section id="Re_hero">
@@ -61,16 +67,19 @@ function Re_hero() {
             </div>
           </section>
 
-          <Re_hero_vd />
           <Re_about />
-          <Re_event />
+
           <Re_timeline />
+          <Re_judges/>
+          <Re_faq/>
           <Re_teams />
+
           <Re_contact />
         </div>
       </div>
+      <Re_footer />
     </>
   );
 }
 
-export default Re_hero;
+export default Re_Algohero;

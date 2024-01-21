@@ -25,7 +25,7 @@ const peopleData = [
     description: "Circuistics",
     imgSrc: picture3,
     normalImg: picture3,
-    href: "/evevts/algomaniac"
+    href: "/events/algomaniac"
   },
   {
     id: 2,
@@ -33,7 +33,7 @@ const peopleData = [
     description: "Sparkhack",
     imgSrc: picture7,
     normalImg: picture7,
-    href: "/evevts/algomaniac"
+    href: "/events/algomaniac"
   },
   {
     id: 3,
@@ -41,7 +41,7 @@ const peopleData = [
     description: "Algomaniac",
     imgSrc: picture9,
     normalImg: picture9,
-    href: "/evevts/algomaniac"
+    href: "/events/algomaniac"
   },
   {
     id: 4,
@@ -56,7 +56,7 @@ const peopleData = [
     description: "Eureka",
     imgSrc: picture4,
     normalImg: picture4,
-    href: "/evevts/algomaniac"
+    href: "/events/algomaniac"
   },
   {
     id: 6,
@@ -64,7 +64,7 @@ const peopleData = [
     description: "Decisia",
     imgSrc: picture1,
     normalImg: picture1,
-    href: "/evevts/algomaniac"
+    href: "/events/algomaniac"
   },
   {
     id: 7,
@@ -72,7 +72,7 @@ const peopleData = [
     description: "Abol Tabol",
     imgSrc: picture2,
     normalImg: picture2,
-    href: "/evevts/algomaniac"
+    href: "/events/algomaniac"
   },
   {
     id: 8,
@@ -80,7 +80,7 @@ const peopleData = [
     description: "Inquizzitive",
     imgSrc: picture5,
     normalImg: picture5,
-    href: "/evevts/algomaniac"
+    href: "/events/algomaniac"
   },
   {
     id: 9,
@@ -88,7 +88,7 @@ const peopleData = [
     description: "24 Frames",
     imgSrc: picture8,
     normalImg: picture8,
-    href: "/evevts/algomaniac"
+    href: "/events/algomaniac"
   },
 ];
 
