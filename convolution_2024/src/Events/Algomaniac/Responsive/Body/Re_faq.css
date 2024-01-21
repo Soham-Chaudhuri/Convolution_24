@@ -75,7 +75,7 @@ body {
   padding: 10px 20px 30px;
   box-sizing: border-box;
   transition-delay: 2s ;
-  height: 28vh;
+  /* height: 28vh; */
   height: max-content;
   
 }

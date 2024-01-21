@@ -26,6 +26,7 @@ function Re_Algohero() {
     <>
       <Re_eventhead />
 
+
       <div className="Re_hero_bg p-3">
         <div className="flex flex-col">
           <section id="Re_hero">
@@ -62,7 +63,7 @@ function Re_Algohero() {
                 </div>
               </div>
               <div className="Re_hero_thunder">
-                {/* <img src={thunder} alt="" className="Re_hero_thunder_img" /> */}
+                
               </div>
             </div>
           </section>
