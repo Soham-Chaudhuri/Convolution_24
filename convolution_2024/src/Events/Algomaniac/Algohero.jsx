@@ -20,6 +20,7 @@ import Footer from "../../components/Footer/Footer";
 import Judges from "./Judges";
 import Faq from "./Faq";
 import Contact from "../../components/Body/Contact";
+import Prizes from "./Prizes";
 
 function Algohero() {
   const navigate = useNavigate();
@@ -66,7 +67,9 @@ function Algohero() {
           <About />
 
           <Timeline />
+          <Prizes dat={"Gallery"}/>
           <Judges />
+          <Prizes dat={"Prizes"}/>
           <Faq />
           <Teams />
           <Contact/>

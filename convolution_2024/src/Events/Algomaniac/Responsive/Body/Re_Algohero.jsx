@@ -18,6 +18,7 @@ import Re_timeline from "./Re_timeline";
 import Re_footer from "../Footer/Re_footer";
 import Re_eventhead from "../Header/Re_eventhead";
 import Re_judges from "./Re_judges";
+import Prizes from "../../Prizes";
 
 
 function Re_Algohero() {
@@ -71,7 +72,9 @@ function Re_Algohero() {
           <Re_about />
 
           <Re_timeline />
+          <Prizes dat={"Gallery"}/>
           <Re_judges/>
+          <Prizes dat={"Prizes"}/>
           <Re_faq/>
           <Re_teams />
 

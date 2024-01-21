@@ -121,6 +121,9 @@ header {
   transition: 0.1s;
   color: black;
 }
+.dropdown_menu li:nth-child(8) {
+  margin-bottom: 0;
+}
 
 .dropdown_menu li:hover,
 .nav_link a:hover {
