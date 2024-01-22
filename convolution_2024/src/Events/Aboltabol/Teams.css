@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Antonio:wght@100;200;300;400;500;600;700&family=Montserrat:wght@500&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.teams_h1 {
+  font-family: "Anton", sans-serif !important;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 40px;
+  letter-spacing: 0.015em;
+  text-align: center;
+}
+.underline_teams {
+  width: 70px;
+  height: 4px;
+  top: 91px;
+  left: 685px;
+  border-radius: 4px;
+  border: 1px solid #f76932;
+  background-color: #f76932;
+  align-items: center;
+}
+
+.paragraph_teams {
+  font-family: Poppins;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.015em;
+  text-align: center;
+  max-width: 1100px;
+}
+
+/* .left{
+    width: 30%;
+    height: 150px;
+
+   
+    
+}
+
+.right{
+    width: 70%;
+    height: 150px;
+
+    
+} */
+/* ----------grp cards---------------- */
+
+.group-child-img-teams {
+  position: relative;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+  background-color: #f76932;
+  width: 204px;
+  height: 204px;
+  /* background-image: url(../assets/event1.png); */
+  overflow: hidden;
+
+  box-shadow: 6px 3px 0px 0px #e9c462;
+
+}
+.algomaniac-teams,
+.lorem-ipsum-para-teams {
+  position: absolute;
+  left: 227px;
+  
+  
+}
+.algomaniac-teams {
+  top: 22px;
+  display: flex;
+  align-items: center;
+  width: 200px;
+  height: 45px;
+  color: #000000;
+  letter-spacing: 1.12px;
+  line-height: 28px;
+  font-size: 28px;
+  font-family: Antonio;
+  flex-shrink: 0;
+  font-weight: 400;
+  font-feature-settings: 'clig' off, 'liga' off;
+
+}
+.lorem-ipsum-para-teams {
+  top: 85px;
+  font-size: 14px;
+  font-family: Poppins;
+  display: flex;
+  width: 407px;
+  height: 120px;
+  /* letter-spacing: 0.04em; */
+  letter-spacing: 0.56px;
+  /* line-height: 100%; */
+  line-height: 14px;
+  font-feature-settings: 'clig' off, 'liga' off;
+
+}
+.group-item-teams {
+  position: absolute;
+  top: 70px;
+  left: 227px;
+  border-radius: 4px;
+  background-color: #f76932;
+  border: 1px solid #f76932;
+  box-sizing: border-box;
+  width: 70px;
+  height: 4px;
+}
+.boro-goal-teams {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 634px;
+  height: 205px;
+}
+
+
+
+.fabicon{
+    font-size: 26px;
+    /* border-radius: 50%; */
+    transition: 0.3s ease-in-out;
+
+
+}
+
+.fabicon:hover {
+    scale: 1.2;
+    cursor: pointer;
+    /* filter: invert(100%); */
+    /* color:aqua */
+}

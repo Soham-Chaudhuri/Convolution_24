@@ -288,16 +288,21 @@ class Slider extends React.Component {
   }
 }
 
-function Prizes({dat}) {
+function Prizes({ dat }) {
   return (
     <>
-      <div className=" flex flex-col justify-center items-center gap-2 pb-3 pt-10">
-        <h1 className="text-center teams_h1">{dat}</h1>
-        <span className="underline_teams"></span>
-        <div className="prizes_body">
-          <Slider heading="Example Slider" slides={(dat==="Prizes"?(prizeData):(sponsorData))} />
+      <section id={dat}>
+        <div className=" flex flex-col justify-center items-center gap-2 pb-3 pt-10">
+          <h1 className="text-center teams_h1">{dat}</h1>
+          <span className="underline_teams"></span>
+          <div className="prizes_body">
+            <Slider
+              heading="Example Slider"
+              slides={dat === "Prizes" ? prizeData : sponsorData}
+            />
+          </div>
         </div>
-      </div>
+      </section>
     </>
   );
 }

@@ -14,7 +14,7 @@ import {
   Navigate,
   useNavigate,
 } from "react-router-dom";
-import Sponsor from "./Sponsor";
+// import Sponsor from "./Sponsor";
 import Header from "../Header/Header";
 import Footer from "../../components/Footer/Footer";
 import Judges from "./Judges";
@@ -24,6 +24,15 @@ import Prizes from "./Prizes";
 
 function Algohero() {
   const navigate = useNavigate();
+  useEffect(() => {
+    const scrollToTop = () => {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
+    };
+    scrollToTop();
+  }, []);
   return (
     <>
       <Header />

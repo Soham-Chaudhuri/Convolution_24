@@ -24,6 +24,22 @@ import { app } from "./components/firebase";
 import Team_reg from "./components/TeamReg/Team_reg";
 import Algohero from "./Events/Algomaniac/Algohero";
 import Re_Algohero from "./Events/Algomaniac/Responsive/Body/Re_Algohero";
+import Frameshero from "./Events/24frames/Frameshero";
+import Aboltabolhero from "./Events/Aboltabol/Aboltabolhero";
+import Circuisticshero from "./Events/Circuistics/Circuisticshero";
+import Sparkhackhero from "./Events/Sparkhack/Sparkhackhero";
+import Decisiahero from "./Events/Decisia/Decisiahero";
+import Eurekahero from "./Events/Eureka/Eurekahero";
+import Inquizzitivehero from "./Events/Inquizzitive/Inquizzitivehero";
+import Papierhero from "./Events/Papier/Papierhero";
+import Re_Frameshero from "./Events/24frames/Responsive/Body/Re_Frameshero"
+import Re_Aboltabolhero from "./Events/Aboltabol/Responsive/Body/Re_Aboltabolhero"
+import Re_Circuisticshero from "./Events/Circuistics/Responsive/Body/Re_Circuisticshero"
+import Re_Decisiahero from "./Events/Decisia/Responsive/Body/Re_Decisiahero"
+import Re_Eurekahero from "./Events/Eureka/Responsive/Body/Re_Eurekahero"
+import Re_Inquizzitivehero from "./Events/Inquizzitive/Responsive/Body/Re_Inquizzitivehero"
+import Re_Papierhero from "./Events/Papier/Responsive/Body/Re_Papierhero"
+import Re_Sparkhackhero from "./Events/Sparkhack/Responsive/Body/Re_Sparkhackhero"
 const auth = getAuth(app);
 
 function App() {
@@ -89,6 +105,20 @@ function App() {
 
                   <Route path="/profile" element={<Lhero user={user} />} />
                   <Route path="/events/algomaniac" element={<Algohero />} />
+                  <Route path="/events/24frames" element={<Frameshero />} />
+                  <Route path="/events/aboltabol" element={<Aboltabolhero />} />
+                  <Route
+                    path="/events/circuistics"
+                    element={<Circuisticshero />}
+                  />
+                  <Route path="/events/sparkhack" element={<Sparkhackhero />} />
+                  <Route path="/events/papier" element={<Papierhero />} />
+                  <Route path="/events/eureka" element={<Eurekahero />} />
+                  <Route path="/events/decisia" element={<Decisiahero />} />
+                  <Route
+                    path="/events/inquizzitive"
+                    element={<Inquizzitivehero />}
+                  />
                 </Routes>
               </Router>
 
@@ -111,10 +141,24 @@ function App() {
                   <Route path="/login" element={<Login />} />
                   <Route path="/" element={<Re_hero />} />
                   <Route path="/profile" element={<Re_lhero user={user} />} />
-                  <Route path="/events/algomaniac" element={<Re_Algohero/>} />
+                  <Route path="/events/algomaniac" element={<Re_Algohero />} />
+                  <Route path="/events/24frames" element={<Re_Frameshero />} />
+                  <Route path="/events/aboltabol" element={<Re_Aboltabolhero />} />
+                  <Route
+                    path="/events/circuistics"
+                    element={<Re_Circuisticshero />}
+                  />
+                  <Route path="/events/sparkhack" element={<Re_Sparkhackhero />} />
+                  <Route path="/events/papier" element={<Re_Papierhero />} />
+                  <Route path="/events/eureka" element={<Re_Eurekahero />} />
+                  <Route path="/events/decisia" element={<Re_Decisiahero />} />
+                  <Route
+                    path="/events/inquizzitive"
+                    element={<Re_Inquizzitivehero />}
+                  />
                 </Routes>
               </Router>
-              
+
               {/* <Re_footer /> */}
             </>
           )}

@@ -45,7 +45,7 @@ function Header() {
                 <span className="mt-1 mr-2 block max-w-0 group-hover:max-w-full transition-all duration-500 h-1 bg-orange-500 rounded-full"></span>
               </Link>
               <Link
-                to="timeline"
+                to="Gallery"
                 smooth={true}
                 duration={800}
                 offset={-100}
@@ -79,7 +79,7 @@ function Header() {
                 <span className="mt-1 mr-2 block max-w-0 group-hover:max-w-full transition-all duration-500 h-1 bg-orange-500 rounded-full"></span>
               </Link>
               <Link
-                to="team"
+                to="Prizes"
                 smooth={true}
                 duration={900}
                 offset={-100}

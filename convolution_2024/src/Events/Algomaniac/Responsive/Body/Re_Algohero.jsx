@@ -23,6 +23,15 @@ import Prizes from "../../Prizes";
 
 function Re_Algohero() {
   const navigate = useNavigate();
+  useEffect(() => {
+    const scrollToTop = () => {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
+    };
+    scrollToTop();
+  }, []);
   return (
     <>
       <Re_eventhead />
@@ -34,17 +43,17 @@ function Re_Algohero() {
             <div className="flex flex-col-reverse Re_gapping gap-[0.8rem]">
               <div className="m-4 Re_hero_heading_1_div">
                 <span className="Re_hero_heading_1 text-shadow-md">
-                  JUEE STUDENTS' FORUM
+                  CONVOLUTION 9.0 PRESENTS
                 </span>
                 <br />
                 <span className="Re_hero_heading_2 text-shadow-md block">
-                  CONVOLUTION 9.0
+                  ALGOMANIAC
                 </span>
                 <br />
                 <span className="Re_hero_heading_3">
-                  The Ninth Edition of Annual Technical Meet
+                  LET YOUR CODE SPEAK
                 </span>
-                <div className="flex Re_hero_btn">
+                {/* <div className="flex Re_hero_btn">
                   <button
                     className="Re_hero_btn_1"
                     onClick={() => {
@@ -61,7 +70,7 @@ function Re_Algohero() {
                   >
                     Login
                   </button>
-                </div>
+                </div> */}
               </div>
               <div className="Re_hero_thunder">
                 

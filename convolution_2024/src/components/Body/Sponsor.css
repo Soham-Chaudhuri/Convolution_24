@@ -3,7 +3,7 @@
   --color-primary: #6b7a8f;
   --color-secondary: #101118;
   --color-accent: #1d1f2f;
-  --color-focus: #6d64f7;
+  --color-focus: black;
   --base-duration: 600ms;
   --base-ease: cubic-bezier(0.25, 0.46, 0.45, 0.84);
 }

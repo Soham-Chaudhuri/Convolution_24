@@ -18,7 +18,7 @@ const eventData = [
     id: 1,
     heading: "Circuistics",
     imgSrc: picture3,
-    href: "/events/algomaniac",
+    href: "/events/circuistics",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
 
@@ -27,7 +27,7 @@ const eventData = [
     id: 2,
     heading: "Sparkhack",
     imgSrc: picture7,
-    href: "/events/algomaniac",
+    href: "/events/sparkhack",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
   },
@@ -43,7 +43,7 @@ const eventData = [
     id: 4,
     heading: "Papier",
     imgSrc: picture6,
-    href: "/events/algomaniac",
+    href: "/events/papier",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
   },
@@ -51,7 +51,7 @@ const eventData = [
     id: 1,
     heading: "Eureka",
     imgSrc: picture4,
-    href: "/events/algomaniac",
+    href: "/events/eureka",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
   },
@@ -59,7 +59,7 @@ const eventData = [
     id: 2,
     heading: "Decisia",
     imgSrc: picture1,
-    href: "/events/algomaniac",
+    href: "/events/decisia",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
   },
@@ -67,7 +67,7 @@ const eventData = [
     id: 3,
     heading: "Abol Tabol",
     imgSrc: picture2,
-    href: "/events/algomaniac",
+    href: "/events/aboltabol",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
   },
@@ -75,7 +75,7 @@ const eventData = [
     id: 4,
     heading: "Inquizzitive",
     imgSrc: picture5,
-    href: "/events/algomaniac",
+    href: "/events/inquizzitive",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
   },
@@ -83,7 +83,7 @@ const eventData = [
     id: 4,
     heading: "24 Frames",
     imgSrc: picture8,
-    href: "/events/algomaniac",
+    href: "/events/24frames",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
   },

@@ -1,0 +1,121 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Antonio:wght@100;200;300;400;500;600;700&family=Montserrat:wght@500&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+  background: #fafafa;
+}
+
+.re_accordion {
+  display: flex;
+  flex-direction: column;
+  font-family: Poppins;
+  width: 100vw;
+  margin: 50px auto;
+  padding: 0 50px;
+  
+}
+/* 
+.re_accordion h1 {
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 40px;
+  letter-spacing: 0.015em;
+  text-align: center;
+  font-family: "Anton", sans-serif !important;
+} */
+
+/* .teams_h1{
+
+  font-family: "Anton", sans-serif !important;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0.013em;
+  text-align: center;
+
+} */
+
+.re_accordion-item {
+  margin-top: 16px;
+  border-radius: 36px;
+  background: #000;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+  
+  
+}
+
+.re_accordion-item .re_accordion-item-title {
+  position: relative;
+  margin: 0;
+  display: flex;
+  width: 100%;
+  font-size: 15px;
+  cursor: pointer;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  padding: 14px 20px;
+  box-sizing: border-box;
+  align-items: center;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 1.1px;
+  color: #fff;
+  transition: all ease-in-out 200ms;
+  
+}
+
+.re_accordion-item .re_accordion-item-desc {
+  display: none;
+  font-size: 13px;
+  line-height: 25px;
+  font-weight: 400;
+  color: #d9d6d6;
+  border-top: 1px dashed #ddd;
+  padding: 10px 20px 30px;
+  box-sizing: border-box;
+  transition-delay: 2s ;
+  /* height: 28vh; */
+  height: max-content;
+  
+}
+
+.re_accordion-item input[type="checkbox"] {
+  position: absolute;
+  height: 0;
+  width: 0;
+  opacity: 0;
+  
+}
+
+.re_accordion-item input[type="checkbox"]:checked ~ .re_accordion-item-desc {
+  display: block;
+  align-items: center !important;
+  justify-content: center;
+  transition-delay: 2s ;
+  
+  
+}
+
+.re_accordion-item input[type="checkbox"]:checked ~ .re_accordion-item-title .faq-icon:after {
+  content: "-";
+  font-size: 24px;
+  transition: all ease-in-out 200ms;
+}
+
+.re_accordion-item input[type="checkbox"] ~ .re_accordion-item-title .faq-icon:after {
+  content: "+";
+  font-size: 24px;
+  transition: all ease-in-out 200ms;
+}
+
+.re_accordion-item:first-child {
+  margin-top: 0;
+  
+}
+
+.re_accordion-item .faq-icon {
+  margin-left: 14px;
+  
+}
+

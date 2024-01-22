@@ -15,7 +15,7 @@ import pic10 from "../../assets/Sparkhack_Light.png";
 import pic11 from "../../assets/24 Frames Light.png";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import {
   onValue,
   ref,
@@ -75,6 +75,7 @@ function Re_dashboard({ user }) {
           eventDate: "XX YY ZZZZ",
           registered: false,
           event: "inquizzitive",
+          href: "/events/inquizzitive",
         },
         {
           id: 2,
@@ -85,6 +86,7 @@ function Re_dashboard({ user }) {
           eventDate: "XX YY ZZZZ",
           registered: data.decisia,
           event: "decisia",
+          href: "/events/decisia",
         },
         {
           id: 3,
@@ -95,6 +97,7 @@ function Re_dashboard({ user }) {
           eventDate: "XX YY ZZZZ",
           registered: data.abol_tabol,
           event: "abol_tabol",
+          href: "/events/aboltabol",
         },
         {
           id: 4,
@@ -105,6 +108,7 @@ function Re_dashboard({ user }) {
           eventDate: "XX YY ZZZZ",
           registered: data.circuistics,
           event: "circuistics",
+          href: "/events/circuistics",
         },
         {
           id: 5,
@@ -115,6 +119,7 @@ function Re_dashboard({ user }) {
           eventDate: "XX YY ZZZZ",
           registered: data.eureka,
           event: "eureka",
+          href: "/events/eureka",
         },
         {
           id: 6,
@@ -125,6 +130,7 @@ function Re_dashboard({ user }) {
           eventDate: "XX YY ZZZZ",
           registered: data.algomaniac,
           event: "algomaniac",
+          href: "/events/algomaniac",
         },
         {
           id: 7,
@@ -135,6 +141,7 @@ function Re_dashboard({ user }) {
           eventDate: "XX YY ZZZZ",
           registered: data.papier,
           event: "papier",
+          href: "/events/papier",
         },
         {
           id: 8,
@@ -145,6 +152,7 @@ function Re_dashboard({ user }) {
           eventDate: "XX YY ZZZZ",
           registered: data.spark_hack,
           event: "spark_hack",
+          href: "/events/sparkhack",
         },
         {
           id: 9,
@@ -155,6 +163,7 @@ function Re_dashboard({ user }) {
           eventDate: "XX YY ZZZZ",
           registered: data._frames,
           event: "_frames",
+          href: "/events/24frames",
         },
       ]);
     });
@@ -239,9 +248,9 @@ function Re_dashboard({ user }) {
                   <div className="card_mid_bar"></div>
                   <div className="card-content">
                     <p className="card-text">{dat.content}</p>
-                    <a href="#" className="card_top_date">
-                      Know more
-                    </a>
+                    <Link to={dat.href}>
+                      <a className="card_top_date">Know more</a>
+                    </Link>
                     <div
                       className={
                         dat.registered
@@ -257,7 +266,11 @@ function Re_dashboard({ user }) {
                           return newarray;
                         });
 
-                        if (!events[dat.id - 1] && (dat.id !== 6 && dat.id!==1)) {
+                        if (
+                          !events[dat.id - 1] &&
+                          dat.id !== 6 &&
+                          dat.id !== 1
+                        ) {
                           navigate(`/reg/${dat.event}`);
                         }
 

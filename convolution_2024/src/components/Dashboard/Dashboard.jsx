@@ -16,7 +16,7 @@ import pic11 from "../assets/24 Frames Light.png";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { motion } from "framer-motion";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import {
   onValue,
   ref,
@@ -73,6 +73,7 @@ function Dashboard({ user }) {
           eventDate: "XX YY ZZZZ",
           registered: false,
           event: "inquizzitive",
+          href: "/events/inquizzitive",
         },
         {
           id: 2,
@@ -83,6 +84,7 @@ function Dashboard({ user }) {
           eventDate: "XX YY ZZZZ",
           registered: data.decisia,
           event: "decisia",
+          href: "/events/decisia",
         },
         {
           id: 3,
@@ -93,6 +95,7 @@ function Dashboard({ user }) {
           eventDate: "XX YY ZZZZ",
           registered: data.abol_tabol,
           event: "abol_tabol",
+          href: "/events/aboltabol",
         },
         {
           id: 4,
@@ -103,6 +106,7 @@ function Dashboard({ user }) {
           eventDate: "XX YY ZZZZ",
           registered: data.circuistics,
           event: "circuistics",
+          href: "/events/circuistics",
         },
         {
           id: 5,
@@ -113,6 +117,7 @@ function Dashboard({ user }) {
           eventDate: "XX YY ZZZZ",
           registered: data.eureka,
           event: "eureka",
+          href: "/events/eureka",
         },
         {
           id: 6,
@@ -123,6 +128,7 @@ function Dashboard({ user }) {
           eventDate: "XX YY ZZZZ",
           registered: data.algomaniac,
           event: "algomaniac",
+          href: "/events/algomaniac",
         },
         {
           id: 7,
@@ -133,6 +139,7 @@ function Dashboard({ user }) {
           eventDate: "XX YY ZZZZ",
           registered: data.papier,
           event: "papier",
+          href: "/events/papier",
         },
         {
           id: 8,
@@ -143,6 +150,7 @@ function Dashboard({ user }) {
           eventDate: "XX YY ZZZZ",
           registered: data.spark_hack,
           event: "spark_hack",
+          href: "/events/sparkhack",
         },
         {
           id: 9,
@@ -153,6 +161,7 @@ function Dashboard({ user }) {
           eventDate: "XX YY ZZZZ",
           registered: data._frames,
           event: "_frames",
+          href: "/events/24frames",
         },
       ]);
     });
@@ -215,19 +224,22 @@ function Dashboard({ user }) {
                     onClick={async () => {
                       await useEvents((prevarray) => {
                         const newarray = [...prevarray];
-                        if (!newarray[box.id - 1] && (box.id === 6) ) {
+                        if (!newarray[box.id - 1] && box.id === 6) {
                           newarray[box.id - 1] = !newarray[box.id - 1];
                         }
                         return newarray;
                       });
-                      if (!events[box.id - 1] && (box.id !== 6 && box.id!==1)) {
+                      if (!events[box.id - 1] && box.id !== 6 && box.id !== 1) {
                         navigate(`/reg/${box.event}`);
                       }
 
-                      if(box.id === 1){
-                        toast.info("On Day Registration at JU Electrical Engineering building",{
-                          theme:"dark"
-                        });
+                      if (box.id === 1) {
+                        toast.info(
+                          "On Day Registration at JU Electrical Engineering building",
+                          {
+                            theme: "dark",
+                          }
+                        );
                       }
                     }}
                   >
@@ -238,7 +250,11 @@ function Dashboard({ user }) {
                   <div className="lorem-dash">
                     <p>{box.content}</p>
                     <br />
-                    <p className="know-more hover:cursor-pointer">Know More </p>
+                    <Link to={box.href}>
+                      <p className="know-more hover:cursor-pointer">
+                        Know More{" "}
+                      </p>
+                    </Link>
                   </div>
                   <div className="last-date">
                     <span>
@@ -259,7 +275,7 @@ function Dashboard({ user }) {
           </div>
         </div>
       )}
-      <ToastContainer theme="dark"/>
+      <ToastContainer theme="dark" />
     </>
   );
 }
