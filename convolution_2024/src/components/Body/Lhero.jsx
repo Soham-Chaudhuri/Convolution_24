@@ -45,7 +45,7 @@ function Hero({user}) {
                 <button
                   className="hero_btn_1"
                   onClick={() => {
-                    navigate("/dashboard");
+                    navigate(`/dashboard/${user.uid}`);
                   }}
                 >
                   Dashboard
@@ -59,6 +59,7 @@ function Hero({user}) {
                   Logout
                 </button>
               </div>
+              
             </div>
             <div className="hero_thunder flex items-center">
               <img src={thunder} alt="" className="hero_thunder_img" />

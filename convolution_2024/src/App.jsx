@@ -92,10 +92,10 @@ function App() {
               <Router>
                 <Routes>
                   <Route
-                    path="/dashboard"
+                    path="/dashboard/:userid"
                     element={<Dashboard user={user} />}
                   />
-                  <Route path="/signup" element={<Signup />} />
+                  <Route path="/signup" element={<Signup/>} />
                   <Route
                     path="/reg/:event"
                     element={<Team_reg user={user} />}
@@ -103,7 +103,7 @@ function App() {
                   <Route path="/login" element={<Login />} />
                   <Route path="/" element={<Hero />} />
 
-                  <Route path="/profile" element={<Lhero user={user} />} />
+                  <Route path="/profile/:userid" element={<Lhero user={user} />} />
                   <Route path="/events/algomaniac" element={<Algohero />} />
                   <Route path="/events/24frames" element={<Frameshero />} />
                   <Route path="/events/aboltabol" element={<Aboltabolhero />} />
@@ -140,7 +140,7 @@ function App() {
                   />
                   <Route path="/login" element={<Login />} />
                   <Route path="/" element={<Re_hero />} />
-                  <Route path="/profile" element={<Re_lhero user={user} />} />
+                  {/* <Route path="/profile/" element={<Re_lhero user={user} />} /> */}
                   <Route path="/events/algomaniac" element={<Re_Algohero />} />
                   <Route path="/events/24frames" element={<Re_Frameshero />} />
                   <Route path="/events/aboltabol" element={<Re_Aboltabolhero />} />

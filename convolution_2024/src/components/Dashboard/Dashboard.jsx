@@ -17,6 +17,7 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { motion } from "framer-motion";
 import { Link, useNavigate } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import {
   onValue,
   ref,
@@ -43,6 +44,9 @@ function Dashboard({ user }) {
     false,
     false,
   ]);
+
+  const userID = useParams();
+  console.log(userID);
 
   useEffect(() => {
     // Create a reference to the specific user's data in the database

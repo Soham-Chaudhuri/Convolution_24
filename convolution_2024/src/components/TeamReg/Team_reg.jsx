@@ -109,7 +109,7 @@ function Team_reg({ user }) {
           theme: "dark",
         });
         setTimeout(() => {
-          navigate("/dashboard");
+          navigate(`/dashboard/${user.uid}`);
         }, 2000);
 
         update(ref(db, `users/${tl1email.replace(/\./g, "_")}`), {
