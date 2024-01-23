@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import "./Re_dashboard.css";
 import picture1 from "../../assets/Inquizzitive_Light.png";
 import pic3 from "../../assets/vector@2x.png";
@@ -27,10 +27,10 @@ import {
 } from "firebase/database";
 import { app } from "../../firebase";
 const db = getDatabase(app);
-
 function Re_dashboard({ user }) {
   // const Reference = useRef(null);
   const userID = useParams();
+  const Reference = useRef(null);
   const navigate = useNavigate();
   const [_frames, set_frames] = useState(false);
   const [userData, setUserData] = useState(null);
@@ -221,6 +221,7 @@ function Re_dashboard({ user }) {
 
   return (
     <>
+    
       <div className="body_main pt-8">
         <div className="flex flex-col items-center my-10 gap-2">
           <p className="re_dashboard_heading">Dashboard</p>

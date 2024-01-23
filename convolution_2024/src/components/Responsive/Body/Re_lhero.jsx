@@ -16,11 +16,27 @@ import {
 import Re_timeline from "./Re_timeline";
 import Re_header from "../Header/Re_header";
 import Re_footer from "../Footer/Re_footer";
-
+import { getAuth, signOut } from "firebase/auth";
+import { app } from "../../firebase";
+const auth = getAuth(app);
 // import thunder from "../../assets/Thunder.png";
 
 function Re_hero({user}) {
   const navigate = useNavigate();
+  const logout = async () => {
+    await signOut(auth);
+    await navigate("/");
+  };
+
+  useEffect(() => {
+    const scrollToTop = () => {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
+    };
+    scrollToTop();
+  }, []);
   return (
     <>
     <Re_header/>
@@ -51,7 +67,7 @@ function Re_hero({user}) {
                 <button
                   className="Re_hero_btn_2"
                   onClick={() => {
-                    navigate("/");
+                    logout();
                   }}
                 >
                   Logout

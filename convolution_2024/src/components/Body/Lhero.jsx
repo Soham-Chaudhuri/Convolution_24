@@ -10,13 +10,13 @@ import Teams from "./Teams";
 import Contact from "./Contact";
 // eslint-disable-next-line no-unused-vars
 import { BrowserRouter as Router, useNavigate } from "react-router-dom";
-import { getAuth, signOut } from 'firebase/auth';
-import { app } from '../firebase';
+import { getAuth, signOut } from "firebase/auth";
+import { app } from "../firebase";
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
 import Sponsor from "./Sponsor";
 const auth = getAuth(app);
-function Hero({user}) {
+function Hero({ user }) {
   const navigate = useNavigate();
   const logout = async () => {
     await signOut(auth);
@@ -36,7 +36,7 @@ function Hero({user}) {
   return (
     <>
       {/* <Back /> */}
-      <Header/>
+      <Header />
 
       <div className="hero_bg p-7">
         <div className="flex flex-col">
@@ -69,7 +69,6 @@ function Hero({user}) {
                   Logout
                 </button>
               </div>
-              
             </div>
             <div className="hero_thunder flex items-center">
               <img src={thunder} alt="" className="hero_thunder_img" />
@@ -80,11 +79,11 @@ function Hero({user}) {
           <Event />
           <Timeline />
           <Teams />
-          <Sponsor/>
+          <Sponsor />
           <Contact />
         </div>
       </div>
-      <Footer/>
+      <Footer />
     </>
   );
 }
