@@ -130,7 +130,7 @@ function App() {
               <Router>
                 <Routes>
                   <Route
-                    path="/dashboard"
+                    path="/dashboard/:userid"
                     element={<Re_dashboard user={user} />}
                   />
                   <Route path="/signup" element={<Signup />} />
@@ -140,7 +140,7 @@ function App() {
                   />
                   <Route path="/login" element={<Login />} />
                   <Route path="/" element={<Re_hero />} />
-                  {/* <Route path="/profile/" element={<Re_lhero user={user} />} /> */}
+                  <Route path="/profile/:userid" element={<Re_lhero user={user} />} />
                   <Route path="/events/algomaniac" element={<Re_Algohero />} />
                   <Route path="/events/24frames" element={<Re_Frameshero />} />
                   <Route path="/events/aboltabol" element={<Re_Aboltabolhero />} />

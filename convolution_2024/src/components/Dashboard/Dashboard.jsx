@@ -46,7 +46,7 @@ function Dashboard({ user }) {
   ]);
 
   const userID = useParams();
-  console.log(userID);
+  // console.log(userID);
 
   useEffect(() => {
     // Create a reference to the specific user's data in the database

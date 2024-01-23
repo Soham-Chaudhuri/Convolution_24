@@ -44,26 +44,16 @@ function Frameshero() {
                 <span className="hero_heading_1 text-shadow-md">
                   Convolution 9.0 Presents
                 </span>
-                <span className="hero_heading_2 text-shadow-md">
-                  24 Frames
-                </span>
+                <span className="hero_heading_2 text-shadow-md">24 Frames</span>
                 <span className="hero_heading_3">Let your code speak</span>
                 <div className="flex hero_btn mt-5">
                   <button
                     className="hero_btn_1"
                     onClick={() => {
-                      navigate("/signup");
+                      window.history.back();
                     }}
                   >
-                    SignUp
-                  </button>
-                  <button
-                    className="hero_btn_2"
-                    onClick={() => {
-                      navigate("/login");
-                    }}
-                  >
-                    Login
+                    Register
                   </button>
                 </div>
               </div>
@@ -76,17 +66,17 @@ function Frameshero() {
           <About />
 
           <Timeline />
-          <Prizes dat={"Gallery"}/>
+          <Prizes dat={"Gallery"} />
           <Judges />
-          <Prizes dat={"Prizes"}/>
+          <Prizes dat={"Prizes"} />
           <Faq />
           <Teams />
-          <Contact/>
+          <Contact />
 
           {/* <Sponsor /> */}
         </div>
       </div>
-      <Footer/>
+      <Footer />
     </>
   );
 }

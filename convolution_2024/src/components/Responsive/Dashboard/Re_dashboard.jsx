@@ -15,6 +15,7 @@ import pic10 from "../../assets/Sparkhack_Light.png";
 import pic11 from "../../assets/24 Frames Light.png";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { useParams } from "react-router-dom";
 import { Link, useNavigate } from "react-router-dom";
 import {
   onValue,
@@ -29,7 +30,7 @@ const db = getDatabase(app);
 
 function Re_dashboard({ user }) {
   // const Reference = useRef(null);
-
+  const userID = useParams();
   const navigate = useNavigate();
   const [_frames, set_frames] = useState(false);
   const [userData, setUserData] = useState(null);

@@ -27,7 +27,7 @@ function Login() {
         scrollToTop();
         toast.success("Login successful!", { autoClose: 3200, theme: "dark" });
         setTimeout(() => {
-          navigate("/profile");
+          navigate(`/profile/${value.user.uid}`);
         }, 2000);
       })
       .catch((err) => {

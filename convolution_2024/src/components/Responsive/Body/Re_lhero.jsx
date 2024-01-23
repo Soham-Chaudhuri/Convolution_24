@@ -19,7 +19,7 @@ import Re_footer from "../Footer/Re_footer";
 
 // import thunder from "../../assets/Thunder.png";
 
-function Re_hero() {
+function Re_hero({user}) {
   const navigate = useNavigate();
   return (
     <>
@@ -43,7 +43,7 @@ function Re_hero() {
                 <button
                   className="Re_hero_btn_1"
                   onClick={() => {
-                    navigate("/dashboard");
+                    navigate(`/dashboard/${user.uid}`);
                   }}
                 >
                   Dashboard
