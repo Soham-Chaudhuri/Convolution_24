@@ -28,7 +28,7 @@ function Re_header() {
         </div>
       </div>
       <div className={`dropdown_menu ${isOpen ? "open" : ""}`}>
-        <li className="nav_link active">
+        <li className="nav_link">
           <Link to="Re_hero" smooth={true} duration={500}  offset={-100}>
             Home
           </Link>

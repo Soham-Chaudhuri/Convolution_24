@@ -3,7 +3,7 @@
 ## issues
 - email verify
 - content team
-- protected routes.
+- navbar link
 
 
 
