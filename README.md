@@ -1,9 +1,7 @@
 # Convolution_24
 
 ## issues
-- scroll to reveal
-- know more in dashboard(design team)
-- event page(design team pending)
+- email verify
 - content team
 - protected routes.
 

@@ -32,7 +32,7 @@ function Dashboard({ user }) {
   const [_frames, set_frames] = useState(false);
   const [userData, setUserData] = useState(null);
   const [boxesData, setBoxesData] = useState([]);
-  const [events, useEvents] = useState([
+  const [events, setEvents] = useState([
     false,
     false,
     false,
@@ -52,7 +52,7 @@ function Dashboard({ user }) {
     const unsubscribeUser = onValue(userRef, (snapshot) => {
       const data = snapshot.val();
       setUserData(data);
-      useEvents([
+      const newEvents = [
         data.inquizzitive,
         data.decisia,
         data.abol_tabol,
@@ -62,7 +62,10 @@ function Dashboard({ user }) {
         data.papier,
         data.spark_hack,
         data._frames,
-      ]);
+      ];
+      if (!events.every((value, index) => value === newEvents[index])) {
+        setEvents(newEvents);
+      }
       setBoxesData([
         {
           id: 1,
@@ -170,7 +173,7 @@ function Dashboard({ user }) {
     return () => {
       unsubscribeUser();
     };
-  }, [user, events]);
+  }, [user,events]);
   useEffect(() => {
     // Check if userData is available and then update the database
     if (userData) {
@@ -222,7 +225,7 @@ function Dashboard({ user }) {
                         : "register-now transition-all hover:cursor-pointer hover:text-[#e9c462] "
                     }
                     onClick={async () => {
-                      await useEvents((prevarray) => {
+                      await setEvents((prevarray) => {
                         const newarray = [...prevarray];
                         if (!newarray[box.id - 1] && box.id === 6) {
                           newarray[box.id - 1] = !newarray[box.id - 1];
