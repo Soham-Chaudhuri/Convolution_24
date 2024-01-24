@@ -200,6 +200,12 @@ function Dashboard({ user }) {
     }
   }, [events]);
   const navigate = useNavigate();
+
+
+  // useEffect(() => {
+  //   window.location.reload();
+  // }, []);
+  
   return (
     <>
       {/* {console.log(userData, "lol")} */}
@@ -232,13 +238,15 @@ function Dashboard({ user }) {
                       await setEvents((prevarray) => {
                         const newarray = [...prevarray];
                         if (!newarray[box.id - 1] && box.id === 6) {
-                          newarray[box.id - 1] = !newarray[box.id - 1];
+                          newarray[box.id - 1] = true;
                         }
                         return newarray;
                       });
                       if (!events[box.id - 1] && box.id !== 6 && box.id !== 1) {
                         navigate(`/reg/${box.event}`);
+
                       }
+                      window.location.reload();
 
                       if (box.id === 1) {
                         toast.info(

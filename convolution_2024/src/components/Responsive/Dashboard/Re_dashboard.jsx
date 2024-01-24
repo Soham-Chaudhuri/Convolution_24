@@ -263,7 +263,7 @@ function Re_dashboard({ user }) {
                         await useEvents((prevarray) => {
                           const newarray = [...prevarray];
                           if (!newarray[dat.id - 1] && dat.id === 6) {
-                            newarray[dat.id - 1] = !newarray[dat.id - 1];
+                            newarray[dat.id - 1] = true;
                           }
                           return newarray;
                         });
@@ -275,6 +275,7 @@ function Re_dashboard({ user }) {
                         ) {
                           navigate(`/reg/${dat.event}`);
                         }
+                        window.location.reload();
 
                         if (dat.id === 1) {
                           toast.info(
