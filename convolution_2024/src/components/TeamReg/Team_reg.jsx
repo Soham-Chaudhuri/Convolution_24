@@ -110,7 +110,7 @@ function Team_reg({ user }) {
         });
         setTimeout(() => {
           navigate(`/dashboard/${user.uid}`);
-        }, 2000);
+        }, 200);
 
         update(ref(db, `users/${tl1email.replace(/\./g, "_")}`), {
           [eventName.event]: true,
@@ -226,7 +226,13 @@ function Team_reg({ user }) {
               required
             />
             <div className="py-5">
-              <button className="form_button mx-auto " onClick={()=>{scrollToTop();dataEntry();}}>
+              <button
+                className="form_button mx-auto "
+                onClick={() => {
+                  scrollToTop();
+                  dataEntry();
+                }}
+              >
                 Register
               </button>
             </div>
