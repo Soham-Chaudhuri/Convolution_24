@@ -1,16 +1,16 @@
 import React from "react";
 import "./Judges.css";
 
-import picture4 from "../../components/assets/Parthib.png";
+import picture4 from "../../components/assets/nojudge.png";
 
-import picture6 from "../../components/assets/dwaipayan.png";
+// import picture6 from "../../components/assets/dwaipayan.png";
 
 const peopleData = [
   {
     id: 1,
     name: "Dwaipayan",
     description: "Secretary",
-    imgSrc: picture6,
+    imgSrc: picture4,
 
     socialMediaLinks: {
       instagram: "https://www.instagram.com/dwaipayanhaldar15/",
