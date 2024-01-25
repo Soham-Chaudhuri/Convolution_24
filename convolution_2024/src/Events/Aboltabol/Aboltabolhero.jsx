@@ -8,11 +8,11 @@ import Timeline from "./Timeline";
 import Teams from "./Teams";
 
 import {
+  useNavigate,
   BrowserRouter as Router,
   Routes,
   Route,
   Navigate,
-  useNavigate,
 } from "react-router-dom";
 import Sponsor from "./Sponsor";
 import Header from "../Header/Header";
@@ -24,6 +24,7 @@ import Prizes from "./Prizes";
 
 function Aboltabolhero() {
   const navigate = useNavigate();
+
   useEffect(() => {
     const scrollToTop = () => {
       window.scrollTo({
@@ -52,18 +53,10 @@ function Aboltabolhero() {
                   <button
                     className="hero_btn_1"
                     onClick={() => {
-                      navigate("/signup");
+                      window.history.back();
                     }}
                   >
-                    SignUp
-                  </button>
-                  <button
-                    className="hero_btn_2"
-                    onClick={() => {
-                      navigate("/login");
-                    }}
-                  >
-                    Login
+                    Register
                   </button>
                 </div>
               </div>
@@ -76,17 +69,17 @@ function Aboltabolhero() {
           <About />
 
           <Timeline />
-          <Prizes dat={"Gallery"}/>
+          <Prizes dat={"Gallery"} />
           <Judges />
-          <Prizes dat={"Prizes"}/>
+          <Prizes dat={"Prizes"} />
           <Faq />
           <Teams />
-          <Contact/>
+          <Contact />
 
           {/* <Sponsor /> */}
         </div>
       </div>
-      <Footer/>
+      <Footer />
     </>
   );
 }

@@ -177,7 +177,7 @@ function Dashboard({ user }) {
     return () => {
       unsubscribeUser();
     };
-  }, [user,events]);
+  }, [user, events]);
   useEffect(() => {
     // Check if userData is available and then update the database
     if (userData) {
@@ -201,11 +201,16 @@ function Dashboard({ user }) {
   }, [events]);
   const navigate = useNavigate();
 
-
   // useEffect(() => {
   //   window.location.reload();
   // }, []);
-  
+
+  const algoupdate = () => {
+    update(ref(db, `users/${user.email.replace(/\./g, "_")}`), {
+      algomaniac: true,
+    });
+  };
+
   return (
     <>
       {/* {console.log(userData, "lol")} */}
@@ -235,18 +240,22 @@ function Dashboard({ user }) {
                         : "register-now transition-all hover:cursor-pointer hover:text-[#e9c462] "
                     }
                     onClick={async () => {
-                      await setEvents((prevarray) => {
-                        const newarray = [...prevarray];
-                        if (!newarray[box.id - 1] && box.id === 6) {
-                          newarray[box.id - 1] = true;
-                        }
-                        return newarray;
-                      });
+                      // await setEvents((prevarray) => {
+                      //   const newarray = [...prevarray];
+                      //   if (!newarray[box.id - 1] && box.id === 6) {
+                      //     newarray[box.id - 1] = !newarray[box.id - 1];
+                      //   }
+                      //   return newarray;
+                      // });]
+                      if (box.id === 6) {
+                        algoupdate();
+                        window.location.reload();
+                      }
+
                       if (!events[box.id - 1] && box.id !== 6 && box.id !== 1) {
                         navigate(`/reg/${box.event}`);
-
                       }
-                      window.location.reload();
+                      
 
                       if (box.id === 1) {
                         toast.info(

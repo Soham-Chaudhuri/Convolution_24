@@ -23,6 +23,17 @@ import Footer from "../Footer/Footer";
 
 function Hero() {
   const navigate = useNavigate();
+
+  useEffect(() => {
+    const scrollToTop = () => {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
+    };
+    scrollToTop();
+  }, []);
+  
   return (
     <>
       <Header />
@@ -38,7 +49,7 @@ function Hero() {
                   CONVOLUTION 9.0
                 </span>
                 <span className="hero_heading_3">
-                  The Ninth Edition of Annual Technical Meet
+                  The Ninth Edition of Annual Techno-Management Meet
                 </span>
                 <div className="flex hero_btn mt-5">
                   <button

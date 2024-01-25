@@ -110,7 +110,7 @@ function Team_reg({ user }) {
         });
         setTimeout(() => {
           navigate(`/dashboard/${user.uid}`);
-        }, 200);
+        }, 0);
 
         update(ref(db, `users/${tl1email.replace(/\./g, "_")}`), {
           [eventName.event]: true,
