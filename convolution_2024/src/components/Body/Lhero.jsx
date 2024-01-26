@@ -40,40 +40,42 @@ function Hero({ user }) {
 
       <div className="hero_bg p-7">
         <div className="flex flex-col">
-          <div className="flex gapping">
-            <div className="m-4 hero_heading_1_div flex flex-wrap flex-col">
-              <span className="hero_heading_1 text-shadow-md">
-                JUEE STUDENTS' FORUM
-              </span>
-              <span className="hero_heading_2 text-shadow-md">
-                CONVOLUTION 9.0
-              </span>
-              <span className="hero_heading_3">
-              The Ninth Edition of Annual Techno-Management Meet
-              </span>
-              <div className="flex hero_btn mt-5">
-                <button
-                  className="hero_btn_1"
-                  onClick={() => {
-                    navigate(`/dashboard/${user.uid}`);
-                  }}
-                >
-                  Dashboard
-                </button>
-                <button
-                  className="hero_btn_2"
-                  onClick={() => {
-                    logout();
-                  }}
-                >
-                  Logout
-                </button>
+          <section id="hero">
+            <div className="flex gapping">
+              <div className="m-4 hero_heading_1_div flex flex-wrap flex-col">
+                <span className="hero_heading_1 text-shadow-md">
+                  JUEE STUDENTS' FORUM
+                </span>
+                <span className="hero_heading_2 text-shadow-md">
+                  CONVOLUTION 9.0
+                </span>
+                <span className="hero_heading_3">
+                  The Ninth Edition of Annual Techno-Management Meet
+                </span>
+                <div className="flex hero_btn mt-5">
+                  <button
+                    className="hero_btn_1"
+                    onClick={() => {
+                      navigate(`/dashboard/${user.uid}`);
+                    }}
+                  >
+                    Dashboard
+                  </button>
+                  <button
+                    className="hero_btn_2"
+                    onClick={() => {
+                      logout();
+                    }}
+                  >
+                    Logout
+                  </button>
+                </div>
+              </div>
+              <div className="hero_thunder flex items-center animated">
+                <img src={thunder} alt="" className="hero_thunder_img" />
               </div>
             </div>
-            <div className="hero_thunder flex items-center animated">
-              <img src={thunder} alt="" className="hero_thunder_img" />
-            </div>
-          </div>
+          </section>
           <Hero_vd />
           <About />
           <Event />
