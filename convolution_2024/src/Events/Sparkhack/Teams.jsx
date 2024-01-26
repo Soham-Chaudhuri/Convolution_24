@@ -4,7 +4,7 @@ import "./Teams.css";
 
 import picture4 from "../../components/assets/Parthib.png";
 
-import picture6 from "../../components/assets/dwaipayan.png";
+import picture6 from "../../components/assets/uttam.png";
 
 const peopleData = [
   {

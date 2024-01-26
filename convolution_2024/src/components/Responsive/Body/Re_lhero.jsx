@@ -53,7 +53,7 @@ function Re_hero({user}) {
               </span>
               <br />
               <span className="Re_hero_heading_3">
-                The Ninth Edition of Annual Technical Meet
+              The Ninth Edition of Annual Techno Management Meet
               </span>
               <div className="flex Re_hero_btn">
                 <button

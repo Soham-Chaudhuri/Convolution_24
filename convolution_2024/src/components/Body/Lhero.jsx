@@ -49,7 +49,7 @@ function Hero({ user }) {
                 CONVOLUTION 9.0
               </span>
               <span className="hero_heading_3">
-                The Ninth Edition of Annual Technical Meet
+              The Ninth Edition of Annual Techno-Management Meet
               </span>
               <div className="flex hero_btn mt-5">
                 <button
@@ -70,7 +70,7 @@ function Hero({ user }) {
                 </button>
               </div>
             </div>
-            <div className="hero_thunder flex items-center">
+            <div className="hero_thunder flex items-center animated">
               <img src={thunder} alt="" className="hero_thunder_img" />
             </div>
           </div>
