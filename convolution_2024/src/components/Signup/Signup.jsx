@@ -20,6 +20,14 @@ function Signup() {
   const [branch, setBranch] = useState(null);
   const [year, setYear] = useState(null);
 
+
+  const validateAndSetMail = (value) => {
+    const lowerCaseEmail = value.toLowerCase();
+    setMail(lowerCaseEmail);
+    return lowerCaseEmail;
+
+  };
+
   const dataEntry = () => {
     set(ref(db, `users/${mail.replace(/\./g, "_")}`), {
       name: name,
@@ -58,6 +66,13 @@ function Signup() {
       !cpassword
     ) {
       toast.error("Please fill in all required fields", {
+        theme: "dark",
+      });
+      return;
+    }
+
+    if (mail !== validateAndSetMail(mail)) {
+      toast.error("Email should be in lowercase", {
         theme: "dark",
       });
       return;
