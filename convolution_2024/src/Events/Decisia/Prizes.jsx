@@ -1,60 +1,28 @@
 import React from "react";
 import "./Prizes.css";
+import prize1 from "../../components/assets/convoprize/DECISIA site prize/1-removebg-preview (1).png"
+import prize2 from "../../components/assets/convoprize/DECISIA site prize/2-removebg-preview (1).png"
+import prize3 from "../../components/assets/convoprize/DECISIA site prize/3-removebg-preview (1).png"
 const prizeData = [
   {
     index: 0,
     headline: "New Fashion Apparel",
     button: "Shop now",
-    src: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/225363/forest.jpg",
+    src: prize1,
   },
   {
     index: 1,
     headline: "In The Wilderness",
     button: "Book travel",
-    src: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/225363/forest.jpg",
+    src: prize2,
   },
   {
     index: 2,
     headline: "For Your Current Mood",
     button: "Listen",
-    src: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/225363/forest.jpg",
+    src: prize3,
   },
-  {
-    index: 3,
-    headline: "Focus On The Writing",
-    button: "Get Focused",
-    src: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/225363/forest.jpg",
-  },
-  {
-    index: 4,
-    headline: "Focus On The Writing",
-    button: "Get Focused",
-    src: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/225363/forest.jpg",
-  },
-  {
-    index: 5,
-    headline: "Focus On The Writing",
-    button: "Get Focused",
-    src: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/225363/forest.jpg",
-  },
-  {
-    index: 6,
-    headline: "Focus On The Writing",
-    button: "Get Focused",
-    src: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/225363/forest.jpg",
-  },
-  {
-    index: 7,
-    headline: "Focus On The Writing",
-    button: "Get Focused",
-    src: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/225363/forest.jpg",
-  },
-  {
-    index: 8,
-    headline: "Focus On The Writing",
-    button: "Get Focused",
-    src: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/225363/forest.jpg",
-  },
+  
 ];
 const sponsorData = [
   {

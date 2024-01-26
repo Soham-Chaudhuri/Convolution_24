@@ -54,21 +54,13 @@ function Re_Aboltabolhero() {
                   LET YOUR CODE SPEAK
                 </span>
                 <div className="flex Re_hero_btn">
-                  <button
+                <button
                     className="Re_hero_btn_1"
                     onClick={() => {
-                      navigate("/signup");
+                      window.history.back();
                     }}
                   >
-                    SignUp
-                  </button>
-                  <button
-                    className="Re_hero_btn_2"
-                    onClick={() => {
-                      navigate("/login");
-                    }}
-                  >
-                    Login
+                    Register
                   </button>
                 </div>
               </div>

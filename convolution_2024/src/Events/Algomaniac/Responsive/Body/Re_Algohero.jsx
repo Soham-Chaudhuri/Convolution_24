@@ -53,24 +53,16 @@ function Re_Algohero() {
                 <span className="Re_hero_heading_3">
                   LET YOUR CODE SPEAK
                 </span>
-                {/* <div className="flex Re_hero_btn">
-                  <button
+                <div className="flex Re_hero_btn">
+                <button
                     className="Re_hero_btn_1"
                     onClick={() => {
-                      navigate("/signup");
+                      window.history.back();
                     }}
                   >
-                    SignUp
+                    Register
                   </button>
-                  <button
-                    className="Re_hero_btn_2"
-                    onClick={() => {
-                      navigate("/login");
-                    }}
-                  >
-                    Login
-                  </button>
-                </div> */}
+                </div>
               </div>
               <div className="Re_hero_thunder">
                 

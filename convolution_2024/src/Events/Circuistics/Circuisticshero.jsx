@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./Hero.css";
 
-import thunder from "../../components/assets/samplecirr.jpg";
+import thunder from "../../components/assets/Thunder.png";
 import About from "./About";
 
 import Timeline from "./Timeline";
@@ -49,21 +49,13 @@ function Algohero() {
                 </span>
                 <span className="hero_heading_3">Let your code speak</span>
                 <div className="flex hero_btn mt-5">
-                  <button
+                <button
                     className="hero_btn_1"
                     onClick={() => {
-                      navigate("/signup");
+                      window.history.back();
                     }}
                   >
-                    SignUp
-                  </button>
-                  <button
-                    className="hero_btn_2"
-                    onClick={() => {
-                      navigate("/login");
-                    }}
-                  >
-                    Login
+                    Register
                   </button>
                 </div>
               </div>

@@ -1,8 +1,9 @@
 import React from "react";
 import "./Prizes.css";
-import prize1 from "../../components/assets/convoprize/1.png"
-import prize2 from "../../components/assets/convoprize/8.png"
-import prize3 from "../../components/assets/convoprize/15.png"
+import prize1 from "../../components/assets/convoprize/24 FRAMES site prize/1-removebg-preview (1).png"
+import prize2 from "../../components/assets/convoprize/24 FRAMES site prize/2-removebg-preview (1).png"
+import prize3 from "../../components/assets/convoprize/24 FRAMES site prize/3-removebg-preview (1).png"
+import prize4 from "../../components/assets/convoprize/24 FRAMES site prize/4-removebg-preview (1).png"
 const prizeData = [
   {
     index: 0,
@@ -22,7 +23,12 @@ const prizeData = [
     button: "Listen",
     src: prize3,
   },
-  
+  {
+    index: 3,
+    headline: "For Your Current Mood",
+    button: "Listen",
+    src: prize4,
+  },
   
 ];
 const sponsorData = [
