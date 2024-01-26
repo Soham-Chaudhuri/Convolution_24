@@ -92,3 +92,20 @@
 .gapping {
   gap: 5rem;
 }
+
+
+
+.animated{
+  animation: up-down 1.3s ease-in-out infinite alternate-reverse both;
+}
+
+
+@keyframes up-down {
+  0% {
+    transform: translateY(18px);
+  }
+
+  100% {
+    transform: translateY(-18px);
+  }
+}

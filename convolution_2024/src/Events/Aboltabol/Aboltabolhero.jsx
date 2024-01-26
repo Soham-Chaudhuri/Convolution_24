@@ -60,7 +60,7 @@ function Aboltabolhero() {
                   </button>
                 </div>
               </div>
-              <div className="hero_thunder flex items-center">
+              <div className="hero_thunder flex items-center animated">
                 <img src={thunder} alt="" className="hero_thunder_img" />
               </div>
             </div>
