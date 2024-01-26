@@ -220,11 +220,11 @@ function Re_dashboard({ user }) {
   }, []);
 
 
-  const algoupdate = () => {
-    update(ref(db, `users/${user.email.replace(/\./g, "_")}`), {
-      algomaniac: true,
-    });
-  };
+  // const algoupdate = () => {
+  //   update(ref(db, `users/${user.email.replace(/\./g, "_")}`), {
+  //     algomaniac: true,
+  //   });
+  // };
 
   return (
     <>
@@ -267,18 +267,19 @@ function Re_dashboard({ user }) {
                           : "card-title"
                       }
                       onClick={async () => {
-                        // await useEvents((prevarray) => {
-                        //   const newarray = [...prevarray];
-                        //   if (!newarray[dat.id - 1] && dat.id === 6) {
-                        //     newarray[dat.id - 1] = true;
-                        //   }
-                        //   return newarray;
-                        // });
+                        await useEvents((prevarray) => {
+                          const newarray = [...prevarray];
+                          if (!newarray[dat.id - 1] && dat.id === 6) {
+                            newarray[dat.id - 1] = true;
+                            window.location.reload();
+                          }
+                          return newarray;
+                        });
 
-                        if(dat.id === 6) {
-                          algoupdate();
-                          window.location.reload();
-                        }
+                        // if(dat.id === 6) {
+                        //   algoupdate();
+                        //   window.location.reload();
+                        // }
 
                         if (
                           !events[dat.id - 1] &&
