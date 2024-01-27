@@ -129,6 +129,7 @@ body {
   margin: 0 calc(var(--slide-margin) * -1);
   position: absolute;
   transition: transform var(--base-duration) cubic-bezier(0.25, 1, 0.35, 1);
+  
 }
 
 .slide {
@@ -215,6 +216,7 @@ body {
   -ms-user-select: none;
   user-select: none;
   width: 110%;
+  /* box-shadow: 6px 3px 0px 0px #e9c462; */
 }
 @media (hover: hover) {
   .slide--current .slide__image {

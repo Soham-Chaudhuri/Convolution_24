@@ -1,60 +1,67 @@
 import React from "react";
 import "./Sponsor.css";
+import sponsorpic1 from "../assets/sponsor/1.png"
+import sponsorpic2 from "../assets/sponsor/2.png"
+import sponsorpic3 from "../assets/sponsor/3.png"
+import sponsorpic4 from "../assets/sponsor/4.png"
+import sponsorpic5 from "../assets/sponsor/5.png"
+import sponsorpic6 from "../assets/sponsor/6.png"
+import sponsorpic7 from "../assets/sponsor/7.png"
 const slideData = [
   {
     index: 0,
     headline: "New Fashion Apparel",
     button: "Shop now",
-    src: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/225363/forest.jpg",
+    src: sponsorpic1,
   },
   {
     index: 1,
     headline: "In The Wilderness",
     button: "Book travel",
-    src: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/225363/forest.jpg",
+    src: sponsorpic2,
   },
   {
     index: 2,
     headline: "For Your Current Mood",
     button: "Listen",
-    src: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/225363/forest.jpg",
+    src: sponsorpic3,
   },
   {
     index: 3,
     headline: "Focus On The Writing",
     button: "Get Focused",
-    src: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/225363/forest.jpg",
+    src: sponsorpic7,
   },
   {
     index: 4,
     headline: "Focus On The Writing",
     button: "Get Focused",
-    src: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/225363/forest.jpg",
+    src: sponsorpic5,
   },
   {
     index: 5,
     headline: "Focus On The Writing",
     button: "Get Focused",
-    src: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/225363/forest.jpg",
+    src: sponsorpic6,
   },
   {
     index: 6,
     headline: "Focus On The Writing",
     button: "Get Focused",
-    src: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/225363/forest.jpg",
+    src: sponsorpic4,
   },
-  {
-    index: 7,
-    headline: "Focus On The Writing",
-    button: "Get Focused",
-    src: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/225363/forest.jpg",
-  },
-  {
-    index: 8,
-    headline: "Focus On The Writing",
-    button: "Get Focused",
-    src: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/225363/forest.jpg",
-  },
+  // {
+  //   index: 7,
+  //   headline: "Focus On The Writing",
+  //   button: "Get Focused",
+  //   src: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/225363/forest.jpg",
+  // },
+  // {
+  //   index: 8,
+  //   headline: "Focus On The Writing",
+  //   button: "Get Focused",
+  //   src: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/225363/forest.jpg",
+  // },
 ];
 
 // =========================
