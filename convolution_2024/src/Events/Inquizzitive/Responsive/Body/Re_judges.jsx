@@ -1,34 +1,34 @@
 import React from "react";
-import picture6 from "../../../../components/assets/dwaipayan.png";
+import picture6 from "../../../../components/assets/judges/Quizmaster.png";
 import picture4 from "../../../../components/assets/Parthib.png";
 
 const peopleData = [
   {
     id: 1,
-    name: "Dwaipayan",
-    heading: "Secretary",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+    name: "Baneswar Sarker",
+    description: "Baneswar Sarker",
     imgSrc: picture6,
+    desc: "Research Scholar (PhD) at IIT Kharagpur",
     socialMediaLinks: {
-      instagram: "https://www.instagram.com/dwaipayanhaldar15/",
-      linkedin: "https://www.linkedin.com/in/dwaipayan-haldar/",
-      facebook: "https://www.facebook.com/profile.php?id=100011133515951",
+      instagram: "link",
+      linkedin: "https://www.linkedin.com/in/baneswar-sarker-59689587/?originalSubdomain=in",
+      facebook: "link",
     },
-    socialMediaavailable: { insta: true, linke: true, face: true },
+    socialMediaavailable: { insta: false, linke: true, face: false },
   },
-  {
-    id: 2,
-    name: "Parthib",
-    heading: "Joint-Secretary",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-    imgSrc: picture4,
-    socialMediaLinks: {
-      instagram: "https://www.instagram.com/parthib_not_parthiv/",
-      linkedin: "https://www.linkedin.com/in/parthib-roy-3a78b3224/",
-      facebook: "https://www.facebook.com/profile.php?id=100074521635711",
-    },
-    socialMediaavailable: { insta: true, linke: true, face: true },
-  },
+  // {
+  //   id: 2,
+  //   name: "Parthib",
+  //   heading: "Joint-Secretary",
+  //   description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+  //   imgSrc: picture4,
+  //   socialMediaLinks: {
+  //     instagram: "https://www.instagram.com/parthib_not_parthiv/",
+  //     linkedin: "https://www.linkedin.com/in/parthib-roy-3a78b3224/",
+  //     facebook: "https://www.facebook.com/profile.php?id=100074521635711",
+  //   },
+  //   socialMediaavailable: { insta: true, linke: true, face: true },
+  // },
 ];
 
 function Re_judges() {
@@ -56,10 +56,10 @@ function Re_judges() {
                   <img src={people.imgSrc} alt={people.name} />
                 </div>
                 <div className="re_team_desc flex items-center flex-col text-center">
-                  <div className="re_team_desc_heading">{people.heading}</div>
+                  <div className="re_team_desc_heading">{people.name}</div>
                   <div className="re_team_desc_underline mt-2 mb-3"></div>
                   <div className="re_team_desc_para items-center flex flex-col gap-3">
-                    {people.description}
+                    {people.desc}
                     <div className="flex gap-2">
                       {people.socialMediaavailable.insta ? (
                         <a

@@ -4,13 +4,13 @@ import "./Teams.css";
 
 import picture4 from "../../components/assets/Parthib.png";
 
-import picture6 from "../../components/assets/dwaipayan.png";
+import picture6 from "../../components/assets/leads/Srijita.jpeg";
 
 const peopleData = [
   {
     id: 1,
-    name: "Dwaipayan",
-    description: "Secretary",
+    name: "Srijita",
+    description: "Srijita Pal",
     imgSrc: picture6,
 
     socialMediaLinks: {
@@ -19,7 +19,7 @@ const peopleData = [
       facebook: "https://www.facebook.com/profile.php?id=100011133515951",
     },
     socialMediaavailable: { insta: true, linke: true, face: true },
-    desc: "Bodda supremacy only",
+    desc: "Student at JU EE",
   },
   {
     id: 2,

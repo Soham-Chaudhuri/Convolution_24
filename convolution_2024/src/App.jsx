@@ -104,20 +104,20 @@ function App() {
                   <Route path="/" element={<Hero />} />
 
                   <Route path="/profile/:userid" element={<Lhero user={user} />} />
-                  <Route path="/events/algomaniac" element={<Algohero />} />
-                  <Route path="/events/24frames" element={<Frameshero />} />
-                  <Route path="/events/aboltabol" element={<Aboltabolhero />} />
+                  <Route path="/events/algomaniac" element={<Algohero user={user}/>} />
+                  <Route path="/events/24frames" element={<Frameshero user={user}/>} />
+                  <Route path="/events/aboltabol" element={<Aboltabolhero user={user}/>} />
                   <Route
                     path="/events/circuistics"
-                    element={<Circuisticshero />}
+                    element={<Circuisticshero user={user}/>}
                   />
-                  <Route path="/events/sparkhack" element={<Sparkhackhero />} />
-                  <Route path="/events/papier" element={<Papierhero />} />
-                  <Route path="/events/eureka" element={<Eurekahero />} />
-                  <Route path="/events/decisia" element={<Decisiahero />} />
+                  <Route path="/events/sparkhack" element={<Sparkhackhero user={user}/>} />
+                  <Route path="/events/papier" element={<Papierhero user={user}/>} />
+                  <Route path="/events/eureka" element={<Eurekahero user={user}/>} />
+                  <Route path="/events/decisia" element={<Decisiahero user={user}/>} />
                   <Route
                     path="/events/inquizzitive"
-                    element={<Inquizzitivehero />}
+                    element={<Inquizzitivehero user={user}/>}
                   />
                 </Routes>
               </Router>
@@ -141,20 +141,20 @@ function App() {
                   <Route path="/login" element={<Login />} />
                   <Route path="/" element={<Re_hero />} />
                   <Route path="/profile/:userid" element={<Re_lhero user={user} />} />
-                  <Route path="/events/algomaniac" element={<Re_Algohero />} />
-                  <Route path="/events/24frames" element={<Re_Frameshero />} />
-                  <Route path="/events/aboltabol" element={<Re_Aboltabolhero />} />
+                  <Route path="/events/algomaniac" element={<Re_Algohero user={user}/>} />
+                  <Route path="/events/24frames" element={<Re_Frameshero user={user}/>} />
+                  <Route path="/events/aboltabol" element={<Re_Aboltabolhero user={user}/>} />
                   <Route
                     path="/events/circuistics"
-                    element={<Re_Circuisticshero />}
+                    element={<Re_Circuisticshero user={user}/>}
                   />
-                  <Route path="/events/sparkhack" element={<Re_Sparkhackhero />} />
-                  <Route path="/events/papier" element={<Re_Papierhero />} />
-                  <Route path="/events/eureka" element={<Re_Eurekahero />} />
-                  <Route path="/events/decisia" element={<Re_Decisiahero />} />
+                  <Route path="/events/sparkhack" element={<Re_Sparkhackhero user={user}/>} />
+                  <Route path="/events/papier" element={<Re_Papierhero user={user}/>} />
+                  <Route path="/events/eureka" element={<Re_Eurekahero user={user}/>} />
+                  <Route path="/events/decisia" element={<Re_Decisiahero user={user}/>} />
                   <Route
                     path="/events/inquizzitive"
-                    element={<Re_Inquizzitivehero />}
+                    element={<Re_Inquizzitivehero user={user}/>}
                   />
                 </Routes>
               </Router>

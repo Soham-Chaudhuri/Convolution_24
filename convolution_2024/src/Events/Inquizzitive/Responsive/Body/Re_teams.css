@@ -51,6 +51,7 @@
   width: 102px;
   height: 102px;
   box-shadow: 3px 1.5px 0px 0px #e9c462;
+  overflow: hidden;
 }
 
 .re_team_desc_heading {

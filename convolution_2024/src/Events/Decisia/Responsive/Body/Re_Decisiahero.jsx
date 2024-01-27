@@ -57,7 +57,13 @@ function Re_Decisiahero() {
                 <button
                     className="Re_hero_btn_1"
                     onClick={() => {
-                      window.history.back();
+                      if(user!==null){
+                        navigate(`/dashboard/${user.uid}`);
+                        console.log(user.uid);
+                      }
+                      else{
+                        window.history.back();
+                      }
                     }}
                   >
                     Register

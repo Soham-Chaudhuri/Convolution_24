@@ -22,7 +22,7 @@ import Faq from "./Faq";
 import Contact from "../../components/Body/Contact";
 import Prizes from "./Prizes";
 
-function Frameshero() {
+function Frameshero({user}) {
   const navigate = useNavigate();
   useEffect(() => {
     const scrollToTop = () => {
@@ -50,7 +50,14 @@ function Frameshero() {
                   <button
                     className="hero_btn_1"
                     onClick={() => {
-                      window.history.back();
+                      // window.history.back();
+                      if(user!==null){
+                        navigate(`/dashboard/${user.uid}`);
+                        console.log(user.uid);
+                      }
+                      else{
+                        window.history.back();
+                      }
                     }}
                   >
                     Register

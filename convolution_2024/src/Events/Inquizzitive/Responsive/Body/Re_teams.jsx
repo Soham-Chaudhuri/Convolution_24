@@ -3,14 +3,14 @@ import "./Re_teams.css";
 
 import picture4 from "../../../../components/assets/Parthib.png";
 
-import picture6 from "../../../../components/assets/dwaipayan.png";
+import picture6 from "../../../../components/assets/leads/Srijita.jpeg";
 
 const peopleData = [
   {
     id: 1,
-    name: "Dwaipayan",
+    name: "Srijita",
     heading: "Secretary",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+    description: "Student at JUEE",
     imgSrc: picture6,
     socialMediaLinks: {
       instagram: "https://www.instagram.com/dwaipayanhaldar15/",
@@ -59,7 +59,7 @@ function Re_teams() {
                   <img src={people.imgSrc} alt={people.name} />
                 </div>
                 <div className="re_team_desc flex items-center flex-col text-center">
-                  <div className="re_team_desc_heading">{people.heading}</div>
+                  <div className="re_team_desc_heading">{people.name}</div>
                   <div className="re_team_desc_underline mt-2 mb-3"></div>
                   <div className="re_team_desc_para items-center flex flex-col gap-3">
                     {people.description}

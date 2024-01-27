@@ -22,7 +22,7 @@ function Re_contact() {
               </span>
               <span className="re_email mx-auto">
                 <i className="fa-solid fa-envelope pr-3 scale-150"></i>
-                convolution2023@gmail.com
+                convolution2024@gmail.com
               </span>
               <span className="re_number mx-auto">
                 <i className="fa-solid fa-phone pr-3 scale-150"></i>+91 967 427

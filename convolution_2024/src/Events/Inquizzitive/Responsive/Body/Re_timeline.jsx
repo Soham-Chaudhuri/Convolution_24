@@ -20,33 +20,26 @@ function Re_timeline() {
             <div className="Re_timeline_card">
               <div className="Re_timeline_image">
                 <div className="Re_timeline_box flex justify-center align-items-center text-center h-[200px] w-[790]">
-                  <h1 className="Re_timeline_heading">DAY 1</h1>
+                  <h1 className="Re_timeline_heading">15th March</h1>
                 </div>
               </div>
               <div className="Re_timeline_content">
-                <h3 className="Re_timeline_day">Morning Session:</h3>
+                <h3 className="Re_timeline_day">Afternoon Session:</h3>
+                <br />
+                <br />
                 <p className="Re_timeline_para">
-                  Event 1
+                  Prelims - 3PM to 4PM
                   <br />
-                  Event 2
-                  <br />
-                  Event 3
+                  Finals - 4PM to 6PM
                 </p>
 
-                <h3 className="Re_timeline_day">Afternoon Session:</h3>
-                <p className="Re_timeline_para">
-                  Event 1
-                  <br />
-                  Event 2
-                  <br />
-                  Event 3
-                </p>
+                
               </div>
             </div>
           </div>
 
         
-
+{/* 
           <div className="Re_timeline_container">
             <div className="Re_timeline_card">
               <div className="Re_timeline_image">
@@ -74,7 +67,7 @@ function Re_timeline() {
                 </p>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </section>
     </>

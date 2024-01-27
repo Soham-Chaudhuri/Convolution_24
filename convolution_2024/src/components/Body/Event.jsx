@@ -105,8 +105,8 @@ const peopleData = [
 ];
 
 const Event = () => {
+  const navigate = useNavigate();
   const [hoveredId, setHoveredId] = useState(null);
-
   return (
     <>
       <section id="events">
@@ -124,11 +124,12 @@ const Event = () => {
           <div className="grid grid-cols-2 gap-[56px]">
             {peopleData.map((person) => (
               <div key={person.id} className="boro-goal flex flex-wrap hovered">
-                <div className="group-child-img">
+                <div className="group-child-img" >
                   <img
                     src={person.normalImg}
                     alt={person.name}
                     className="normal-image"
+                    // onClick={()=>navigate(person.href)}
                   />
 
                   <img
