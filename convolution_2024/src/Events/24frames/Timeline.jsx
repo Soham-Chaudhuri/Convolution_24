@@ -11,12 +11,12 @@ function Timeline() {
             <div className=" flex flex-col justify-center items-center gap-2 py-5">
               <h1 className="text-center event_h1">TIMELINE</h1>
               <span className="underline"></span>
-              <p className="paragraph py-4">
+              {/* <p className="paragraph py-4">
                 A plethora of events covering all your skills. So gear up for
                 the showdown!
                 <br />
                 Browse over the links to register
-              </p>
+              </p> */}
             </div>
 
             <div className="timeline_container1">

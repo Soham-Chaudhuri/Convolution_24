@@ -36,9 +36,25 @@ function Footer() {
             <p className="footer_icons ">Our Social Networks:</p>
 
             <div className="flex gap-2">
-              <i className="fa-brands fa-square-instagram fabicon"></i>
-              <i className="fa-brands fa-linkedin fabicon"></i>
-              <i className="fa-brands fa-square-facebook fabicon"></i>
+              <a 
+                href="https://www.instagram.com/convolution24/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i className="fa-brands fa-square-instagram fabicon"></i>
+              </a>
+              <a
+              href="https://www.linkedin.com/company/101543654/admin/feed/posts/?feedType=following
+              "
+              target="_blank"
+              rel="noopener noreferrer">
+                <i className="fa-brands fa-linkedin fabicon"></i>
+              </a>
+              <a href="https://www.facebook.com/profile.php?id=61555660919861"
+                target="_blank"
+                rel="noopener noreferrer">
+                <i className="fa-brands fa-square-facebook fabicon"></i>
+              </a>
             </div>
           </div>
         </div>

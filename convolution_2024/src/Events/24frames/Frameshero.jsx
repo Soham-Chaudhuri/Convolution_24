@@ -22,7 +22,7 @@ import Faq from "./Faq";
 import Contact from "../../components/Body/Contact";
 import Prizes from "./Prizes";
 
-function Frameshero({user}) {
+function Frameshero({ user }) {
   const navigate = useNavigate();
   useEffect(() => {
     const scrollToTop = () => {
@@ -45,17 +45,14 @@ function Frameshero({user}) {
                   Convolution 9.0 Presents
                 </span>
                 <span className="hero_heading_2 text-shadow-md">24 Frames</span>
-                <span className="hero_heading_3">Let your code speak</span>
+                <span className="hero_heading_3">Photographers' Delight</span>
                 <div className="flex hero_btn mt-5">
                   <button
                     className="hero_btn_1"
                     onClick={() => {
-                      // window.history.back();
-                      if(user!==null){
+                      if (user !== null) {
                         navigate(`/dashboard/${user.uid}`);
-                        console.log(user.uid);
-                      }
-                      else{
+                      } else {
                         window.history.back();
                       }
                     }}

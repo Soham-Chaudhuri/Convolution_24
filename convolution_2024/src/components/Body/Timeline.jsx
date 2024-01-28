@@ -28,10 +28,10 @@ function Timeline() {
                   <div className="flex flex-col ">
                     <h3>Morning Session:</h3>
                     <p className="timeline_para">
-                      - Event 1
+                      - Innauguration
                       <br />
-                      - Event 2
-                      <br />- Event 3
+                      - Eureka! Prelims
+                      <br />
                     </p>
                   </div>
                 </div>
@@ -45,10 +45,10 @@ function Timeline() {
                   <div>
                     <h3>Afternoon Session:</h3>
                     <p className="timeline_para">
-                      - Event 1
+                      - Inquizzitive Prelims
                       <br />
-                      - Event 2
-                      <br />- Event 3
+                      - Inquizzitive Finals
+                      <br />
                     </p>
                   </div>
                 </div>
@@ -62,10 +62,10 @@ function Timeline() {
                   <div>
                     <h3>Morning Session:</h3>
                     <p className="timeline_para">
-                      - Event 1
+                      - Circuistics Prelims
                       <br />
-                      - Event 2
-                      <br />- Event 3
+                      - Sparkhack Finals
+                      <br />- Eureka! Finals
                     </p>
                   </div>
                 </div>
@@ -79,10 +79,10 @@ function Timeline() {
                   <div>
                     <h3>Afternoon Session:</h3>
                     <p className="timeline_para">
-                      - Event 1
+                      - Decisia Finals
                       <br />
-                      - Event 2
-                      <br />- Event 3
+                      - Papier Finals
+                      <br />
                     </p>
                   </div>
                 </div>
@@ -96,10 +96,10 @@ function Timeline() {
                   <div>
                     <h3>Morning Session:</h3>
                     <p className="timeline_para">
-                      - Event 1
+                      - Algomaniac Final
                       <br />
-                      - Event 2
-                      <br />- Event 3
+                      - Circuistics Final
+                      <br />
                     </p>
                   </div>
                 </div>
@@ -113,10 +113,11 @@ function Timeline() {
                   <div>
                     <h3>Afternoon Session:</h3>
                     <p className="timeline_para">
-                      - Event 1
+                      - Abol Tabol Final
                       <br />
-                      - Event 2
-                      <br />- Event 3
+                      - Prize Distribution
+                      <br />
+                      - Closing Ceremony
                     </p>
                   </div>
                 </div>

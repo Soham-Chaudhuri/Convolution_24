@@ -9,16 +9,7 @@ function About() {
           <div className="about flex text-center flex-col align-center justify-center gap-10">
             <span className="heading">ABOUT 24 Frames</span>
             <span className="para">
-              Convolution 9.0 is the ninth edition of the annual
-              techno-management fest organized by the Students' Forum of the
-              Department of Electrical Engineering, Jadavpur University. It
-              provides a dynamic hotspot to students pursuing STEM-related
-              programs, where they can apply their creativity and skills, and
-              test their mettle against the best. Convolution acts as an
-              umbrella event comprising of several student interaction events,
-              technical events, workshops, and has also hosted, in the past,
-              lectures by some of the most illustrious names in academia and
-              industry alike.
+            A collection of four and a half minute vignettes of 24 images, to bring before all the camera-wielding enthusiasts, the ones who could meander through the forgotten streets of a city only to lend a kaleidoscopic eye to all its dimensions. Grab this opportunity to be the best “moment-catcher”!
             </span>
           </div>
         </div>

@@ -129,13 +129,14 @@ const Event = () => {
                     src={person.normalImg}
                     alt={person.name}
                     className="normal-image"
-                    // onClick={()=>navigate(person.href)}
+                    
                   />
 
                   <img
                     src={person.imgSrc}
                     alt={person.name}
-                    className="hover-image"
+                    className="hover-image cursor-pointer"
+                    onClick={()=>navigate(person.href)}
                   />
                 </div>
                 <Link to={person.href}>

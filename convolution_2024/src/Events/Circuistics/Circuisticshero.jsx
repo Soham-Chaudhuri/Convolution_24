@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./Hero.css";
 
-import thunder from "../../components/assets/Thunder.png";
+import thunder from "../../components/assets/9.png";
 import About from "./About";
 
 import Timeline from "./Timeline";
@@ -66,7 +66,7 @@ function Algohero() {
                 </div>
               </div>
               <div className="hero_thunder flex items-center animated">
-                <img src={thunder} alt="" className="hero_thunder_img" />
+                <img src={thunder} alt="" className="hero_thunder_img scale-125" />
               </div>
             </div>
           </section>

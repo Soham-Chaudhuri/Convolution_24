@@ -24,7 +24,7 @@ const peopleData = [
       facebook: "https://www.facebook.com/profile.php?id=100011133515951",
     },
     socialMediaavailable: { insta: true, linke: true, face: true },
-    desc: "Bodda supremacy only",
+    desc: "Dwaipayan Haldar",
   },
   {
     id: 2,
@@ -37,7 +37,7 @@ const peopleData = [
       facebook: "https://www.facebook.com/profile.php?id=100074521635711",
     },
     socialMediaavailable: { insta: true, linke: true, face: true },
-    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    desc: "Parthib Roy",
   },
   {
     id: 3,
@@ -50,7 +50,7 @@ const peopleData = [
       facebook: "https://www.facebook.com/obaidulla.chottu",
     },
     socialMediaavailable: { insta: true, linke: true, face: true },
-    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    desc: "Md. Obaidullah",
   },
   {
     id: 4,
@@ -63,7 +63,7 @@ const peopleData = [
       facebook: "link",
     },
     socialMediaavailable: { insta: false, linke: true, face: false },
-    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    desc: "Soham Chaudhuri",
   },
   {
     id: 1,
@@ -75,7 +75,7 @@ const peopleData = [
       facebook: "https://www.facebook.com/azfar.hasan.161",
     },
     socialMediaavailable: { insta: true, linke: true, face: true },
-    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    desc: "Azfar Hasan",
 
     imgSrc: picture7,
   },
@@ -90,7 +90,7 @@ const peopleData = [
       facebook: "https://www.facebook.com/supratim.sarkar.543",
     },
     socialMediaavailable: { insta: true, linke: true, face: true },
-    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    desc: "Supratim Sarkar",
   },
   {
     id: 3,
@@ -103,7 +103,7 @@ const peopleData = [
       facebook: "https://www.facebook.com/avishek.bandyopadhyay.758",
     },
     socialMediaavailable: { insta: true, linke: true, face: true },
-    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    desc: "Avishek Bandyopadhyay",
   },
   {
     id: 4,
@@ -116,7 +116,7 @@ const peopleData = [
       facebook: "https://www.facebook.com/ayan.bose.1213",
     },
     socialMediaavailable: { insta: true, linke: true, face: true },
-    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    desc: "Ayan Kumar Bose",
   },
 ];
 
@@ -142,7 +142,7 @@ const Teams = () => {
                   <img src={person.imgSrc} alt={person.name} />
                 </div>
                 <div className="algomaniac-teams">{person.description}</div>
-                <div className="lorem-ipsum-para-teams flex flex-col gap-2">
+                <div className="lorem-ipsum-para-teams text-xl flex flex-col gap-2">
                   {person.desc}
                   <div className="flex gap-2">
                     {person.socialMediaavailable.insta ? (
