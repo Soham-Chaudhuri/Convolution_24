@@ -20,7 +20,7 @@ import Re_eventhead from "../Header/Re_eventhead";
 import Re_judges from "./Re_judges";
 import Prizes from "../../Prizes";
 
-function Re_Eurekahero() {
+function Re_Eurekahero({user}) {
   const navigate = useNavigate();
   useEffect(() => {
     const scrollToTop = () => {

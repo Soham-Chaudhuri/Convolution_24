@@ -22,7 +22,7 @@ import Faq from "./Faq";
 import Contact from "../../components/Body/Contact";
 import Prizes from "./Prizes";
 
-function Aboltabolhero() {
+function Aboltabolhero({user}) {
   const navigate = useNavigate();
 
   useEffect(() => {

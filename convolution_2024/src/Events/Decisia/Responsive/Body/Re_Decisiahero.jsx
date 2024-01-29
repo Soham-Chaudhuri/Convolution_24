@@ -21,7 +21,7 @@ import Re_judges from "./Re_judges";
 import Prizes from "../../Prizes";
 
 
-function Re_Decisiahero() {
+function Re_Decisiahero({user}) {
   const navigate = useNavigate();
   useEffect(() => {
     const scrollToTop = () => {

@@ -21,7 +21,7 @@ import Re_judges from "./Re_judges";
 import Prizes from "../../Prizes";
 
 
-function Re_Algohero() {
+function Re_Algohero({user}) {
   const navigate = useNavigate();
   useEffect(() => {
     const scrollToTop = () => {

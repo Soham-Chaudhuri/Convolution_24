@@ -21,7 +21,7 @@ import Re_judges from "./Re_judges";
 import Prizes from "../../Prizes";
 
 
-function Re_Circuisticshero() {
+function Re_Circuisticshero({user}) {
   const navigate = useNavigate();
   useEffect(() => {
     const scrollToTop = () => {
