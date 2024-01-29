@@ -1,7 +1,7 @@
 import React from "react";
 import "./Re_teams.css";
 
-import picture4 from "../../../../components/assets/Parthib.png";
+import picture4 from "../../../../components/assets/uttam.png";
 
 import picture6 from "../../../../components/assets/dwaipayan.png";
 
