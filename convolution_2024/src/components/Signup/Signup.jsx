@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Navigate, useNavigate } from "react-router-dom";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import emailjs from "emailjs-com";
 import "../Signup/Signup.css";
 
 import { app } from "../firebase";
@@ -19,6 +20,29 @@ function Signup() {
   const [college, setCollege] = useState(null);
   const [branch, setBranch] = useState(null);
   const [year, setYear] = useState(null);
+
+
+  const sendWelcomeEmail = () => {
+    const templateParams = {
+      mail: mail ,
+      name: name,
+    };
+
+    emailjs
+      .send(
+        "service_xvsw9ej", 
+        "template_ju83qrd", 
+        templateParams,
+        "IGbvuzMK9_y4lpaDb" 
+      )
+
+      .then((response) => {
+        console.log("Welcome email sent:", response);
+      })
+      .catch((error) => {
+        console.error("Error sending welcome email:", error);
+      });
+  };
 
 
   const validateAndSetMail = (value) => {
@@ -97,6 +121,8 @@ function Signup() {
         dataEntry();
         scrollToTop();
         toast.success("Signup successful!", { autoClose: 3200, theme: "dark" });
+
+        sendWelcomeEmail();
         setTimeout(() => {
           navigate(`/profile/${value.user.uid}`);
         }, 2000);

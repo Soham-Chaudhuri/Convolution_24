@@ -11,7 +11,9 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@emailjs/browser": "^3.12.1",
     "bootstrap": "^5.3.2",
+    "emailjs-com": "^3.2.0",
     "firebase": "^10.7.1",
     "framer-motion": "^10.16.16",
     "hamburger-react": "^2.5.0",
