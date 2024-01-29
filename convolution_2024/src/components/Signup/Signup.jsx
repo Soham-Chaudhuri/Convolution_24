@@ -30,10 +30,10 @@ function Signup() {
 
     emailjs
       .send(
-        "service_xvsw9ej", 
-        "template_ju83qrd", 
+        "service_tpy2avm", 
+        "template_61yi17j", 
         templateParams,
-        "IGbvuzMK9_y4lpaDb" 
+        "PUkw79pWv5_JpHXX-" 
       )
 
       .then((response) => {
