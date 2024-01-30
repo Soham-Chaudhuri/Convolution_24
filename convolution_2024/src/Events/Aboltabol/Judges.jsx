@@ -1,9 +1,9 @@
 import React from "react";
 import "./Judges.css";
 
-import picture4 from "../../components/assets/Parthib.png";
+import picture4 from "../../components/assets/SGM.png";
 
-import picture6 from "../../components/assets/dwaipayan.png";
+import picture6 from "../../components/assets/nojudge.png";
 
 const peopleData = [
   {
@@ -13,25 +13,25 @@ const peopleData = [
     imgSrc: picture6,
 
     socialMediaLinks: {
-      instagram: "https://www.instagram.com/dwaipayanhaldar15/",
-      linkedin: "https://www.linkedin.com/in/dwaipayan-haldar/",
-      facebook: "https://www.facebook.com/profile.php?id=100011133515951",
+      instagram: "",
+      linkedin: "",
+      facebook: "",
     },
     socialMediaavailable: { insta: true, linke: true, face: true },
-    desc: "Bodda supremacy only",
+    desc: "prof at JU",
   },
   {
     id: 2,
-    name: "Parthib",
-    description: "Joint-Secretary",
+    name: "",
+    description:"Sugata Munshi",
     imgSrc: picture4,
     socialMediaLinks: {
-      instagram: "https://www.instagram.com/parthib_not_parthiv/",
-      linkedin: "https://www.linkedin.com/in/parthib-roy-3a78b3224/",
-      facebook: "https://www.facebook.com/profile.php?id=100074521635711",
+      // instagram: "https://www.instagram.com/parthib_not_parthiv/",
+      linkedin: "https://www.linkedin.com/in/sugata-munshi-ab791425/",
+      // facebook: "https://www.facebook.com/profile.php?id=100074521635711",
     },
-    socialMediaavailable: { insta: true, linke: true, face: true },
-    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    socialMediaavailable: { insta: false, linke: true, face: false },
+    desc: "Professor at Jadavpur University Electrical Engineering Department",
   },
 ];
 
@@ -43,10 +43,9 @@ function Judges() {
           <h1 className="text-center teams_h1">JUDGES</h1>
           <span className="underline_teams"></span>
           <p className="paragraph_teams py-4">
-            Meet the representatives of JU EE Students' Forum making Convolution
-            9.0 possible!
-            <br />
-            We are ready to address all your queries!
+            Meet the judges of Abol Tabol!
+            
+            
           </p>
         </div>
         <div className="px-[69px] py-5">

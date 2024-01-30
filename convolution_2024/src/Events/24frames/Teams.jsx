@@ -2,37 +2,37 @@
 import React from "react";
 import "./Teams.css";
 
-import picture4 from "../../components/assets/Parthib.png";
+import picture4 from "../../components/assets/debashish.png";
 
-import picture6 from "../../components/assets/dwaipayan.png";
+import picture6 from "../../components/assets/nojudge.png";
 
 const peopleData = [
   {
     id: 1,
-    name: "Dwaipayan",
-    description: "Secretary",
+    name: "",
+    description: "Abhinaba Biswas",
     imgSrc: picture6,
 
     socialMediaLinks: {
-      instagram: "https://www.instagram.com/dwaipayanhaldar15/",
-      linkedin: "https://www.linkedin.com/in/dwaipayan-haldar/",
-      facebook: "https://www.facebook.com/profile.php?id=100011133515951",
+      instagram: "",
+      linkedin: "",
+      facebook: "",
     },
     socialMediaavailable: { insta: true, linke: true, face: true },
-    desc: "Bodda supremacy only",
+    desc: "",
   },
   {
     id: 2,
-    name: "Parthib",
-    description: "Joint-Secretary",
+    name: "debashish",
+    description: "Debashis Mondal",
     imgSrc: picture4,
     socialMediaLinks: {
-      instagram: "https://www.instagram.com/parthib_not_parthiv/",
-      linkedin: "https://www.linkedin.com/in/parthib-roy-3a78b3224/",
-      facebook: "https://www.facebook.com/profile.php?id=100074521635711",
+      instagram: "",
+      linkedin: "",
+      facebook: "",
     },
     socialMediaavailable: { insta: true, linke: true, face: true },
-    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    desc: "",
   },
 ];
 
@@ -44,10 +44,8 @@ const Teams = () => {
           <h1 className="text-center teams_h1">EVENT LEADS</h1>
           <span className="underline_teams"></span>
           <p className="paragraph_teams py-4">
-            Meet the representatives of JU EE Students' Forum making Convolution
-            9.0 possible!
-            <br />
-            We are ready to address all your queries!
+            Meet the Event Leads of 24 Frames! We are ready to address all your
+            queries!
           </p>
         </div>
         <div className="px-[69px] py-5">

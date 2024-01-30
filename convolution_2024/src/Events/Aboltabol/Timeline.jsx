@@ -11,27 +11,26 @@ function Timeline() {
             <div className=" flex flex-col justify-center items-center gap-2 py-5">
               <h1 className="text-center event_h1">TIMELINE</h1>
               <span className="underline"></span>
-              <p className="paragraph py-4">
+              {/* <p className="paragraph py-4">
                 A plethora of events covering all your skills. So gear up for
                 the showdown!
                 <br />
                 Browse over the links to register
-              </p>
+              </p> */}
             </div>
 
             <div className="timeline_container1">
               <div className="timeline_card">
                 <div className="timeline_imgBx flex flex-col ">
-                  <h1 className="timeline_day">DAY 1</h1>
+                  <h1 className="timeline_day text-[34px]">12<sup>th</sup> Feb</h1>
                 </div>
                 <div className="timeline_content1">
                   <div className="flex flex-col ">
-                    <h3>Morning Session:</h3>
+                    <h3>Abstract Submission Starts</h3>
                     <p className="timeline_para">
-                      - Event 1
+                      - The fray begins! All registered participants will be submitting a presentation.
                       <br />
-                      - Event 2
-                      <br />- Event 3
+                      
                     </p>
                   </div>
                 </div>
@@ -39,16 +38,15 @@ function Timeline() {
 
               <div className="timeline_card">
                 <div className="timeline_imgBx">
-                  <h1 className="timeline_day">DAY 1</h1>
+                  <h1 className="timeline_day text-[34px]">26<sup>th</sup> Feb</h1>
                 </div>
                 <div className="timeline_content1 ">
                   <div>
-                    <h3>Afternoon Session:</h3>
+                    <h3>Abstract Submission Ends</h3>
                     <p className="timeline_para">
-                      - Event 1
+                      - all abstracts to be submitted by 11:59pm on 26th Feb
                       <br />
-                      - Event 2
-                      <br />- Event 3
+                      
                     </p>
                   </div>
                 </div>
@@ -57,16 +55,15 @@ function Timeline() {
               
               <div className="timeline_card">
                 <div className="timeline_imgBx">
-                  <h1 className="timeline_day">DAY 3</h1>
+                  <h1 className="timeline_day text-[34px]">8<sup>th</sup> Mar</h1>
                 </div>
                 <div className="timeline_content1">
                   <div>
-                    <h3>Morning Session:</h3>
+                    <h3>Announcing Results of Prelims</h3>
                     <p className="timeline_para">
-                      - Event 1
+                      - The top 8/10 teams will be shortlisted for the final round
                       <br />
-                      - Event 2
-                      <br />- Event 3
+                      
                     </p>
                   </div>
                 </div>
@@ -74,16 +71,15 @@ function Timeline() {
 
               <div className="timeline_card">
                 <div className="timeline_imgBx">
-                  <h1 className="timeline_day">DAY 3</h1>
+                  <h1 className="timeline_day text-[34px]">17<sup>th</sup> Mar</h1>
                 </div>
                 <div className="timeline_content1">
                   <div>
-                    <h3>Afternoon Session:</h3>
+                    <h3>Final Round & Prize Distribution</h3>
                     <p className="timeline_para">
-                      - Event 1
+                      - the shortlisted teams will have to pitch their concepts before the judges and chief guest.
                       <br />
-                      - Event 2
-                      <br />- Event 3
+                      
                     </p>
                   </div>
                 </div>

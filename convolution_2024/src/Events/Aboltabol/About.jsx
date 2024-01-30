@@ -9,16 +9,16 @@ function About() {
           <div className="about flex text-center flex-col align-center justify-center gap-10">
             <span className="heading">ABOUT ABOLTABOL</span>
             <span className="para">
-              Convolution 9.0 is the ninth edition of the annual
-              techno-management fest organized by the Students' Forum of the
-              Department of Electrical Engineering, Jadavpur University. It
-              provides a dynamic hotspot to students pursuing STEM-related
-              programs, where they can apply their creativity and skills, and
-              test their mettle against the best. Convolution acts as an
-              umbrella event comprising of several student interaction events,
-              technical events, workshops, and has also hosted, in the past,
-              lectures by some of the most illustrious names in academia and
-              industry alike.
+              Welcome to Abol Tabol, where laughter meets logic and geekiness
+              takes center stage!  From envisioning humans evolving
+              into cats to creating processors designed to block out babies
+              crying on airplanes, the stage is set for a comedic exploration of
+              the bizarre and the brilliant. Unleash your inner geeky stand-up
+              comedian and share your most outrageous ideas with our panel of
+              judges and an enthusiastic audience. Abol Tabol is not just a
+              comedy show; it's a platform for the wittiest and most imaginative
+              minds to showcase their unique perspectives on the world of
+              science and technology.
             </span>
           </div>
         </div>

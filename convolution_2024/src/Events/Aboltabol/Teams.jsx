@@ -2,37 +2,37 @@
 import React from "react";
 import "./Teams.css";
 
-import picture4 from "../../components/assets/Parthib.png";
+import picture4 from "../../components/assets/sugam.png";
 
-import picture6 from "../../components/assets/dwaipayan.png";
+import picture6 from "../../components/assets/manas.png";
 
 const peopleData = [
   {
     id: 1,
-    name: "Dwaipayan",
-    description: "Secretary",
+    name: "Manas",
+    description: "Manas Sarkar",
     imgSrc: picture6,
 
     socialMediaLinks: {
-      instagram: "https://www.instagram.com/dwaipayanhaldar15/",
-      linkedin: "https://www.linkedin.com/in/dwaipayan-haldar/",
-      facebook: "https://www.facebook.com/profile.php?id=100011133515951",
+      instagram: "https://www.instagram.com/its_me_chacha2002?igsh=MXYzc2hxdGV5M2tzOQ==",
+      linkedin: "https://www.linkedin.com/in/manassarkar?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      facebook: "https://www.facebook.com/ManasSarkar.114?mibextid=ZbWKwL",
     },
     socialMediaavailable: { insta: true, linke: true, face: true },
-    desc: "Bodda supremacy only",
+    desc: "",
   },
   {
     id: 2,
-    name: "Parthib",
-    description: "Joint-Secretary",
+    name: "Sugam",
+    description: "Sugam Das",
     imgSrc: picture4,
     socialMediaLinks: {
-      instagram: "https://www.instagram.com/parthib_not_parthiv/",
-      linkedin: "https://www.linkedin.com/in/parthib-roy-3a78b3224/",
-      facebook: "https://www.facebook.com/profile.php?id=100074521635711",
+      instagram: "https://www.instagram.com/s_u_g_a_m_das?igsh=MWFuOHoxdmt0NXF1OA==",
+      linkedin: "https://www.linkedin.com/in/sugam-das-760213233/",
+      facebook: "https://www.facebook.com/rinslor",
     },
     socialMediaavailable: { insta: true, linke: true, face: true },
-    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    desc: "",
   },
 ];
 
@@ -44,10 +44,7 @@ const Teams = () => {
           <h1 className="text-center teams_h1">EVENT LEADS</h1>
           <span className="underline_teams"></span>
           <p className="paragraph_teams py-4">
-            Meet the representatives of JU EE Students' Forum making Convolution
-            9.0 possible!
-            <br />
-            We are ready to address all your queries!
+          Meet the Event Leads of Abol Tabol! We are ready to address all your queries!
           </p>
         </div>
         <div className="px-[69px] py-5">

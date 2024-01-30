@@ -48,7 +48,7 @@ function Aboltabolhero({user}) {
                 <span className="hero_heading_2 text-shadow-md">
                   Abol Tabol
                 </span>
-                <span className="hero_heading_3">Let your code speak</span>
+                <span className="hero_heading_3">The Curious Case of Quirky Nonscience</span>
                 <div className="flex hero_btn mt-5">
                   <button
                     className="hero_btn_1"
