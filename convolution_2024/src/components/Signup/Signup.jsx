@@ -126,6 +126,7 @@ function Signup() {
         setTimeout(() => {
           navigate(`/profile/${value.user.uid}`);
         }, 2000);
+        toast.info("You are adviced to save your password", { autoClose: 3200, theme: "dark" });
       })
       .catch((err) => {
         console.log(err);

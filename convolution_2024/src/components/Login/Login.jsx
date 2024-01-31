@@ -4,7 +4,11 @@ import "../Login/Login.css";
 import { useNavigate } from "react-router-dom";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
+import {
+  getAuth,
+  sendPasswordResetEmail,
+  signInWithEmailAndPassword,
+} from "firebase/auth";
 import { app } from "../firebase";
 const auth = getAuth(app);
 function Login() {
@@ -29,6 +33,11 @@ function Login() {
         setTimeout(() => {
           navigate(`/profile/${value.user.uid}`);
         }, 2000);
+
+        toast.info("You are adviced to save your password", {
+          autoClose: 3200,
+          theme: "dark",
+        });
       })
       .catch((err) => {
         console.log(err);
@@ -38,9 +47,18 @@ function Login() {
       });
   };
 
+  const forgotPassword = () => {
+    sendPasswordResetEmail(auth, mail).then(() => {
+      toast.info(`The Reset Password Link Sent to your ${mail}`, {
+        autoClose: 3200,
+        theme: "dark",
+      });
+    });
+  };
+
   return (
     <>
-    {/* {scrollToTop()} */}
+      {/* {scrollToTop()} */}
       <div className="flex flex-col items-center justify-center  py-[60px] form_signup_body h-[100vh]">
         <h1 className="text-center pt-3 pb-3 form_heading">LOGIN</h1>
         <span className="form_underline"></span>
@@ -66,7 +84,9 @@ function Login() {
               <button className="form_button" onClick={signinUser}>
                 Login
               </button>
-              {/* <button className="form_button">Google Sign In</button> */}
+              <button className="form_button" onClick={forgotPassword}>
+                Forgot Password
+              </button>
             </div>
           </div>
         </div>
