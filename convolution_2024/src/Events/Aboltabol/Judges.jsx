@@ -9,7 +9,7 @@ const peopleData = [
   {
     id: 1,
     name: "Dwaipayan",
-    description: "Secretary",
+    description: "Anticipated...",
     imgSrc: picture6,
 
     socialMediaLinks: {
@@ -18,7 +18,7 @@ const peopleData = [
       facebook: "",
     },
     socialMediaavailable: { insta: true, linke: true, face: true },
-    desc: "prof at JU",
+    desc: "",
   },
   {
     id: 2,

@@ -2,8 +2,16 @@ import React, { useState, useEffect } from "react";
 import "../Header/Header.css";
 import convosvg from "../../components/assets/Convolution_Dark2nd.png";
 import { Link, animateScroll as scroll, scroller } from "react-scroll";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Navigate,
+  useNavigate,
+} from "react-router-dom";
 
-function Header() {
+function Header({ user }) {
+  const navigate = useNavigate();
   return (
     <>
       <nav className="sticky top-0 z-50">
@@ -54,14 +62,20 @@ function Header() {
                 Gallery
                 <span className="mt-1 mr-2 block max-w-0 group-hover:max-w-full transition-all duration-500 h-1 bg-orange-500 rounded-full"></span>
               </Link>
-              
             </ul>
           </div>
           <div className="justify-content-center mt-3 mb-4  p-4 nav_text_logo">
-            <Link to="hero" smooth={true} duration={900} offset={-100}>
+            <Link smooth={true} duration={900} offset={-100}>
               <img
                 className="w-[147px] h-[51.66px] hover:cursor-pointer"
                 src={convosvg}
+                onClick={() => {
+                  if (user !== null) {
+                    navigate(`/profile/${user.uid}`);
+                  } else {
+                    navigate("/");
+                  }
+                }}
               />
             </Link>
             {/* CONVOLUTION */}

@@ -35,7 +35,7 @@ function Algohero({user}) {
   }, []);
   return (
     <>
-      <Header />
+      <Header user={user}/>
       <div className="hero_bg p-7">
         <div className="flex flex-col">
           <section id="hero">
