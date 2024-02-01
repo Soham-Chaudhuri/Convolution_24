@@ -36,6 +36,21 @@
   transition: 400ms ease;
 }
 
+.forgot {
+  font-size: 18px;
+  font-family: poppins;
+
+  margin: auto;
+  transition: 0.3s ease-in-out;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.forgot:hover {
+  color: #f76932;
+}
+
 .form_button {
   color: white;
   background: #000;
@@ -74,7 +89,7 @@
 }
 
 .form_signup_body {
-  background-color:#f6eddf; 
+  background-color: #f6eddf;
 }
 
 @media (max-width: 800px) {
@@ -83,11 +98,11 @@
     line-height: 18px;
   }
 
-  .form_heading{
-    font-size:33px;
+  .form_heading {
+    font-size: 33px;
   }
 
-  .form_underline{
+  .form_underline {
     width: 55px;
   }
 

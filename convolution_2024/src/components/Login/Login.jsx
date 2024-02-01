@@ -48,12 +48,27 @@ function Login() {
   };
 
   const forgotPassword = () => {
-    sendPasswordResetEmail(auth, mail).then(() => {
-      toast.info(`The Reset Password Link Sent to your ${mail}`, {
+    if (!mail) {
+      toast.error("please enter your email first", {
         autoClose: 3200,
         theme: "dark",
       });
-    });
+    } else {
+      sendPasswordResetEmail(auth, mail)
+        .then(() => {
+          toast.info(`The Reset Password Link Sent to your ${mail}`, {
+            autoClose: 3200,
+            theme: "dark",
+          });
+        })
+
+        .catch((err) => {
+          console.error(err);
+          toast.error("Invalid email address. Please check and try again.", {
+            theme: "dark",
+          });
+        });
+    }
   };
 
   return (
@@ -80,13 +95,17 @@ function Login() {
               onChange={(e) => setPassword(e.target.value)}
             />
 
-            <div className="py-5 flex text-center justify-center gap-[40px] flex-wrap">
+            <div className="py-5 flex text-center flex-col mx-auto justify-center gap-[40px] flex-wrap">
               <button className="form_button" onClick={signinUser}>
                 Login
               </button>
-              <button className="form_button" onClick={forgotPassword}>
+              {/* <button className="form_button" onClick={forgotPassword}>
                 Forgot Password
-              </button>
+              </button> */}
+
+              <a className="cursor-pointer forgot" onClick={forgotPassword}>
+                Forgot Password?
+              </a>
             </div>
           </div>
         </div>

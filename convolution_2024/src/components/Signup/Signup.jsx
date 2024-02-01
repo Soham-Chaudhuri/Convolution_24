@@ -21,19 +21,18 @@ function Signup() {
   const [branch, setBranch] = useState(null);
   const [year, setYear] = useState(null);
 
-
   const sendWelcomeEmail = () => {
     const templateParams = {
-      mail: mail ,
+      mail: mail,
       name: name,
     };
 
     emailjs
       .send(
-        "service_tpy2avm", 
-        "template_61yi17j", 
+        "service_tpy2avm",
+        "template_61yi17j",
         templateParams,
-        "PUkw79pWv5_JpHXX-" 
+        "PUkw79pWv5_JpHXX-"
       )
 
       .then((response) => {
@@ -44,12 +43,10 @@ function Signup() {
       });
   };
 
-
   const validateAndSetMail = (value) => {
     const lowerCaseEmail = value.toLowerCase();
     setMail(lowerCaseEmail);
     return lowerCaseEmail;
-
   };
 
   const dataEntry = () => {
@@ -77,7 +74,6 @@ function Signup() {
     });
   };
 
-   
   const singUpUser = () => {
     if (
       !name ||
@@ -126,13 +122,23 @@ function Signup() {
         setTimeout(() => {
           navigate(`/profile/${value.user.uid}`);
         }, 2000);
-        toast.info("You are adviced to save your password", { autoClose: 3200, theme: "dark" });
-      })
-      .catch((err) => {
-        console.log(err);
-        toast.error("Signup failed.", {
+        toast.info("You are adviced to save your password", {
+          autoClose: 3200,
           theme: "dark",
         });
+      })
+      .catch((err) => {
+        console.error("Signup failed", err);
+
+        if (err.code === "auth/email-already-in-use") {
+          toast.error("Email is already in use", {
+            theme: "dark",
+          });
+        } else {
+          toast.error("Signup failed. Please try again.", {
+            theme: "dark",
+          });
+        }
       });
   };
 
