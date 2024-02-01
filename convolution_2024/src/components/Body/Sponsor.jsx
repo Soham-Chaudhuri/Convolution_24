@@ -169,6 +169,9 @@ class Slider extends React.Component {
     this.handleNextClick = this.handleNextClick.bind(this);
     this.handleSlideClick = this.handleSlideClick.bind(this);
   }
+  componentDidMount() {
+    this.autoAdvanceInterval = setInterval(this.handleNextClick, 2000);
+  }
 
   handlePreviousClick() {
     const previous = this.state.current - 1;

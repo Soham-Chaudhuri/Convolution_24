@@ -4,6 +4,9 @@ import prize1 from "../../components/assets/convoprize/24 FRAMES site prize/1-re
 import prize2 from "../../components/assets/convoprize/24 FRAMES site prize/2-removebg-preview (1).png"
 import prize3 from "../../components/assets/convoprize/24 FRAMES site prize/3-removebg-preview (1).png"
 import prize4 from "../../components/assets/convoprize/24 FRAMES site prize/4-removebg-preview (1).png"
+import gal1 from "../../components/assets/gallery/24 frames.png"
+import gal2 from "../../components/assets/gallery/24 frames 2.png"
+import gal3 from "../../components/assets/gallery/24 frames 3.png"
 const prizeData = [
   {
     index: 0,
@@ -36,56 +39,21 @@ const sponsorData = [
     index: 0,
     headline: "New Fashion Apparel",
     button: "Shop now",
-    src: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/225363/fashion.jpg",
+    src: gal1,
   },
   {
     index: 1,
     headline: "In The Wilderness",
     button: "Book travel",
-    src: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/225363/fashion.jpg",
+    src: gal2,
   },
   {
     index: 2,
     headline: "For Your Current Mood",
     button: "Listen",
-    src: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/225363/fashion.jpg",
+    src: gal3,
   },
-  {
-    index: 3,
-    headline: "Focus On The Writing",
-    button: "Get Focused",
-    src: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/225363/forest.jpg",
-  },
-  {
-    index: 4,
-    headline: "Focus On The Writing",
-    button: "Get Focused",
-    src: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/225363/forest.jpg",
-  },
-  {
-    index: 5,
-    headline: "Focus On The Writing",
-    button: "Get Focused",
-    src: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/225363/forest.jpg",
-  },
-  {
-    index: 6,
-    headline: "Focus On The Writing",
-    button: "Get Focused",
-    src: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/225363/forest.jpg",
-  },
-  {
-    index: 7,
-    headline: "Focus On The Writing",
-    button: "Get Focused",
-    src: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/225363/forest.jpg",
-  },
-  {
-    index: 8,
-    headline: "Focus On The Writing",
-    button: "Get Focused",
-    src: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/225363/forest.jpg",
-  },
+  
 ];
 // =========================
 // Slide
@@ -192,6 +160,9 @@ class Slider extends React.Component {
     this.handleSlideClick = this.handleSlideClick.bind(this);
   }
 
+  // componentDidMount() {
+  //   this.autoAdvanceInterval = setInterval(this.handleNextClick, 2000);
+  // }
   handlePreviousClick() {
     const previous = this.state.current - 1;
 

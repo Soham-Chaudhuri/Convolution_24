@@ -2,15 +2,15 @@
 import React from "react";
 import "./Teams.css";
 
-import picture4 from "../../components/assets/Parthib.png";
+import picture4 from "../../components/assets/leads/aneesh.png";
 
-import picture6 from "../../components/assets/dwaipayan.png";
+import picture6 from "../../components/assets/nojudge.png";
 
 const peopleData = [
   {
     id: 1,
-    name: "Dwaipayan",
-    description: "Secretary",
+    name: "",
+    description: "Tirtha Pratim Ghosh",
     imgSrc: picture6,
 
     socialMediaLinks: {
@@ -19,20 +19,20 @@ const peopleData = [
       facebook: "https://www.facebook.com/profile.php?id=100011133515951",
     },
     socialMediaavailable: { insta: true, linke: true, face: true },
-    desc: "Bodda supremacy only",
+    desc: "",
   },
   {
     id: 2,
-    name: "Parthib",
-    description: "Joint-Secretary",
+    name: "",
+    description: "Aneesh Ranjan Gupta",
     imgSrc: picture4,
     socialMediaLinks: {
-      instagram: "https://www.instagram.com/parthib_not_parthiv/",
-      linkedin: "https://www.linkedin.com/in/parthib-roy-3a78b3224/",
-      facebook: "https://www.facebook.com/profile.php?id=100074521635711",
+      instagram: "https://www.instagram.com/aneesh___003?igsh=bWs4d3ZlZDVoZmh2",
+      linkedin: "https://www.linkedin.com/in/aneesh-gupta-55921920b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      facebook: "https://www.facebook.com/Aneesh.Gupta.2003?mibextid=ZbWKwL",
     },
     socialMediaavailable: { insta: true, linke: true, face: true },
-    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    desc: "",
   },
 ];
 
@@ -57,7 +57,7 @@ const Teams = () => {
                 <div className="group-child-img-teams">
                   <img src={person.imgSrc} alt={person.name} />
                 </div>
-                <div className="algomaniac-teams">{person.description}</div>
+                <div className="algomaniac-teams text-[22.9px]">{person.description}</div>
                 <div className="lorem-ipsum-para-teams flex flex-col gap-2">
                   {person.desc}
                   <div className="flex gap-2">

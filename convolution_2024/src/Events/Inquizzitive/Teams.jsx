@@ -2,7 +2,7 @@
 import React from "react";
 import "./Teams.css";
 
-import picture4 from "../../components/assets/Parthib.png";
+import picture4 from "../../components/assets/leads/Swarnava_pix-fotor-20240130203426.png";
 
 import picture6 from "../../components/assets/leads/Srijita.jpeg";
 
@@ -14,25 +14,25 @@ const peopleData = [
     imgSrc: picture6,
 
     socialMediaLinks: {
-      instagram: "https://www.instagram.com/dwaipayanhaldar15/",
-      linkedin: "https://www.linkedin.com/in/dwaipayan-haldar/",
-      facebook: "https://www.facebook.com/profile.php?id=100011133515951",
+      instagram: "https://www.instagram.com/_srijita03_?utm_source=qr&igsh=MXdyMHR6Y3ZlbXJyYg==",
+      linkedin: "https://www.linkedin.com/in/srijita-pal-19a478257?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      facebook: "https://www.facebook.com/profile.php?id=100077025027065&mibextid=ZbWKwL",
     },
     socialMediaavailable: { insta: true, linke: true, face: true },
-    desc: "Student at JU EE",
+    desc: "",
   },
   {
     id: 2,
-    name: "Parthib",
-    description: "Joint-Secretary",
+    name: "Swarnabha",
+    description: "Swarnabha Pramanik",
     imgSrc: picture4,
     socialMediaLinks: {
-      instagram: "https://www.instagram.com/parthib_not_parthiv/",
-      linkedin: "https://www.linkedin.com/in/parthib-roy-3a78b3224/",
-      facebook: "https://www.facebook.com/profile.php?id=100074521635711",
+      instagram: "https://www.instagram.com/s_ontohin?igsh=eTFqeHlmeXpsZmk4",
+      linkedin: "https://www.linkedin.com/in/swarnabha-pramanik-ba1354224?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      facebook: "https://www.facebook.com/swarnabha.pramanik.1",
     },
     socialMediaavailable: { insta: true, linke: true, face: true },
-    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    desc: "",
   },
 ];
 
@@ -57,7 +57,7 @@ const Teams = () => {
                 <div className="group-child-img-teams">
                   <img src={person.imgSrc} alt={person.name} />
                 </div>
-                <div className="algomaniac-teams">{person.description}</div>
+                <div className="algomaniac-teams text-[23.2px]">{person.description}</div>
                 <div className="lorem-ipsum-para-teams flex flex-col gap-2">
                   {person.desc}
                   <div className="flex gap-2">

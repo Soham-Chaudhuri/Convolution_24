@@ -28,7 +28,7 @@ function Faq() {
             />
             <label htmlFor="accordion1" className="accordion-item-title ">
               <span className="faq-icon"></span>Can I submit photos taken with a
-              smartphone for the photography competition?
+              smartphone for the event?
             </label>
             <div className="accordion-item-desc items-center">
             Yes, absolutely! Our photography competition is open to entries captured with any type of camera, including smartphones. We believe that creativity knows no bounds, and stunning images can be produced with a variety of devices.
