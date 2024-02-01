@@ -2,37 +2,37 @@
 import React from "react";
 import "./Teams.css";
 
-import picture4 from "../../components/assets/Parthib.png";
+import picture4 from "../../components/assets/arpan.png";
 
-import picture6 from "../../components/assets/dwaipayan.png";
+import picture6 from "../../components/assets/pradhan.png";
 
 const peopleData = [
   {
     id: 1,
-    name: "Dwaipayan",
-    description: "Secretary",
+    name: "Sayandeep",
+    description: "Sayandeep Pradhan",
     imgSrc: picture6,
 
     socialMediaLinks: {
-      instagram: "https://www.instagram.com/dwaipayanhaldar15/",
-      linkedin: "https://www.linkedin.com/in/dwaipayan-haldar/",
-      facebook: "https://www.facebook.com/profile.php?id=100011133515951",
+      instagram: "",
+      linkedin: "",
+      facebook: "",
     },
     socialMediaavailable: { insta: true, linke: true, face: true },
-    desc: "Bodda supremacy only",
+    desc: "",
   },
   {
     id: 2,
-    name: "Parthib",
-    description: "Joint-Secretary",
+    name: "Arpan",
+    description: "Arpan Roy",
     imgSrc: picture4,
     socialMediaLinks: {
-      instagram: "https://www.instagram.com/parthib_not_parthiv/",
-      linkedin: "https://www.linkedin.com/in/parthib-roy-3a78b3224/",
-      facebook: "https://www.facebook.com/profile.php?id=100074521635711",
+      instagram: "",
+      linkedin: "",
+      facebook: "",
     },
     socialMediaavailable: { insta: true, linke: true, face: true },
-    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    desc: "",
   },
 ];
 
@@ -57,7 +57,7 @@ const Teams = () => {
                 <div className="group-child-img-teams">
                   <img src={person.imgSrc} alt={person.name} />
                 </div>
-                <div className="algomaniac-teams">{person.description}</div>
+                <div className="algomaniac-teams text-[23.9px]">{person.description}</div>
                 <div className="lorem-ipsum-para-teams flex flex-col gap-2">
                   {person.desc}
                   <div className="flex gap-2">

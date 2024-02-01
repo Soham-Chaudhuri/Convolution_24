@@ -58,7 +58,7 @@ function Aboltabolhero({user}) {
                         console.log(user.uid);
                       }
                       else{
-                        window.history.back();
+                        navigate("/");
                       }
                     }}
                   >

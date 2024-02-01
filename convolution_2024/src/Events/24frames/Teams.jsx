@@ -4,7 +4,7 @@ import "./Teams.css";
 
 import picture4 from "../../components/assets/debashish.png";
 
-import picture6 from "../../components/assets/nojudge.png";
+import picture6 from "../../components/assets/abhinaba.png";
 
 const peopleData = [
   {
@@ -14,9 +14,9 @@ const peopleData = [
     imgSrc: picture6,
 
     socialMediaLinks: {
-      instagram: "",
-      linkedin: "",
-      facebook: "",
+      instagram: "#",
+      linkedin: "#",
+      facebook: "#",
     },
     socialMediaavailable: { insta: true, linke: true, face: true },
     desc: "",
@@ -27,9 +27,9 @@ const peopleData = [
     description: "Debashis Mondal",
     imgSrc: picture4,
     socialMediaLinks: {
-      instagram: "",
-      linkedin: "",
-      facebook: "",
+      instagram: "#",
+      linkedin: "#",
+      facebook: "#",
     },
     socialMediaavailable: { insta: true, linke: true, face: true },
     desc: "",

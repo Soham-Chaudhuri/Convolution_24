@@ -53,7 +53,7 @@ function Frameshero({ user }) {
                       if (user !== null) {
                         navigate(`/dashboard/${user.uid}`);
                       } else {
-                        window.history.back();
+                         navigate("/");
                       }
                     }}
                   >

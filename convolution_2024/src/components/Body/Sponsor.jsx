@@ -1,12 +1,13 @@
 import React from "react";
 import "./Sponsor.css";
-import sponsorpic1 from "../assets/sponsor/1.png"
-import sponsorpic2 from "../assets/sponsor/2.png"
-import sponsorpic3 from "../assets/sponsor/3.png"
-import sponsorpic4 from "../assets/sponsor/4.png"
-import sponsorpic5 from "../assets/sponsor/5.png"
-import sponsorpic6 from "../assets/sponsor/6.png"
-import sponsorpic7 from "../assets/sponsor/7.png"
+import sponsorpic1 from "../assets/sponsor/1.png";
+import sponsorpic2 from "../assets/sponsor/2.png";
+import sponsorpic3 from "../assets/sponsor/3.png";
+import sponsorpic4 from "../assets/CESC.png";
+import sponsorpic5 from "../assets/sponsor/5.png";
+import sponsorpic6 from "../assets/sponsor/6.png";
+import sponsorpic7 from "../assets/sponsor/7.png";
+// import sponsorpic8 from "../assets/EXIDE.png";
 const slideData = [
   {
     index: 0,
@@ -54,7 +55,7 @@ const slideData = [
   //   index: 7,
   //   headline: "Focus On The Writing",
   //   button: "Get Focused",
-  //   src: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/225363/forest.jpg",
+  //   src: sponsorpic8,
   // },
   // {
   //   index: 8,
