@@ -7,6 +7,8 @@ import prize4 from "../../components/assets/convoprize/24 FRAMES site prize/4-re
 import gal1 from "../../components/assets/gallery/24 frames.png"
 import gal2 from "../../components/assets/gallery/24 frames 2.png"
 import gal3 from "../../components/assets/gallery/24 frames 3.png"
+import gal4 from "../../components/assets/gallery/24 frames 21.png"
+import gal5 from "../../components/assets/gallery/frame22.png"
 const prizeData = [
   {
     index: 0,
@@ -52,6 +54,18 @@ const sponsorData = [
     headline: "For Your Current Mood",
     button: "Listen",
     src: gal3,
+  },
+  {
+    index: 3,
+    headline: "For Your Current Mood",
+    button: "Listen",
+    src: gal4,
+  },
+  {
+    index: 4,
+    headline: "For Your Current Mood",
+    button: "Listen",
+    src: gal5,
   },
   
 ];
