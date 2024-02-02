@@ -47,7 +47,7 @@ function Algohero({user}) {
                 <span className="hero_heading_2 text-shadow-md">
                   INQUIZZITIVE
                 </span>
-                <span className="hero_heading_3">Let your code speak</span>
+                <span className="hero_heading_3">Anything and Everything Under the Sun</span>
                 <div className="flex hero_btn mt-5">
                   <button
                     className="hero_btn_1"
@@ -57,7 +57,7 @@ function Algohero({user}) {
                         console.log(user.uid);
                       }
                       else{
-                        window.history.back();
+                        navigate("/");
                       }
                     }}
                   >

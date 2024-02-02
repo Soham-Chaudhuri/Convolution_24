@@ -57,7 +57,7 @@ function Algohero({user}) {
                         console.log(user.uid);
                       }
                       else{
-                        window.history.back();
+                        navigate("/");
                       }
                     }}
                   >
