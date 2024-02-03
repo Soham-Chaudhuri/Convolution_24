@@ -7,7 +7,7 @@ import sponsorpic4 from "../assets/CESC.png";
 import sponsorpic5 from "../assets/sponsor/5.png";
 import sponsorpic6 from "../assets/sponsor/6.png";
 import sponsorpic7 from "../assets/sponsor/7.png";
-// import sponsorpic8 from "../assets/EXIDE.png";
+import sponsorpic8 from "../assets/EXIDE.png";
 const slideData = [
   {
     index: 0,
@@ -51,12 +51,12 @@ const slideData = [
     button: "Get Focused",
     src: sponsorpic4,
   },
-  // {
-  //   index: 7,
-  //   headline: "Focus On The Writing",
-  //   button: "Get Focused",
-  //   src: sponsorpic8,
-  // },
+  {
+    index: 7,
+    headline: "Focus On The Writing",
+    button: "Get Focused",
+    src: sponsorpic8,
+  },
   // {
   //   index: 8,
   //   headline: "Focus On The Writing",
