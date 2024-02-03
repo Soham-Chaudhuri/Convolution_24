@@ -27,17 +27,18 @@ function Faq() {
               onChange={() => handleCheckboxChange("accordion1")}
             />
             <label htmlFor="accordion1" className="re_accordion-item-title ">
-              <span className="faq-icon"></span>What is SEO, and why is it important
-              for online businesses?
+              <span className="faq-icon"></span>What makes Abol Tabol suitable
+              for students from different fields?
             </label>
             <div className="re_accordion-item-desc items-center">
-              SEO, or Search Engine Optimization, is the practice of optimizing
-              a website to improve its visibility on search engines like Google.
-              It involves various techniques to enhance a site's ranking in
-              search results. SEO is crucial for online businesses as it helps
-              drive organic traffic, increases visibility, and ultimately leads
-              to higher conversions.
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis sint accusantium reprehenderit magnam.   
+            Abol Tabol is designed as a multidisciplinary platform that
+              celebrates the diversity of student interests. The show's content
+              is carefully curated to include a broad spectrum of topics,
+              ensuring that whether you're studying sciences, humanities, arts,
+              engineering, or any other field, there's something intriguing and
+              entertaining for everyone. Abol Tabol creates a space where the
+              intersections of different disciplines lead to unexpected and
+              delightful intellectual hilarity.   
             </div>
           </div>
 
@@ -49,16 +50,17 @@ function Faq() {
               onChange={() => handleCheckboxChange("accordion2")}
             />
             <label htmlFor="accordion2" className="re_accordion-item-title">
-              <span className="faq-icon"></span>How long does it take to see results
-              from SEO efforts?
+              <span className="faq-icon"></span>Do I need to be a science major
+              to participate in Abol Tabol?
             </label>
             <div className="re_accordion-item-desc">
-              The timeline for seeing results from SEO can vary based on several
-              factors, such as the competitiveness of keywords, the current
-              state of the website, and the effectiveness of the SEO strategy.
-              Generally, it may take several weeks to months before noticeable
-              improvements occur. However, long-term commitment to SEO is
-              essential for sustained success.
+            Not at all! Abol Tabol thrives on the rich tapestry of ideas that
+              students from various majors bring to the table. Whether you're
+              majoring in a scientific discipline or pursuing studies in the
+              arts, humanities, or social sciences, your unique perspective is
+              valued. The show is a fantastic opportunity to explore the
+              humorous side of your field or even playfully venture into the
+              realms of other disciplines.
             </div>
           </div>
 
@@ -70,19 +72,22 @@ function Faq() {
               onChange={() => handleCheckboxChange("accordion3")}
             />
             <label htmlFor="accordion3" className="re_accordion-item-title">
-              <span className="faq-icon"></span>What are the key components of a
-              successful SEO strategy?
+              <span className="faq-icon"></span>How can student participants
+              contribute their ideas to the show?
             </label>
             <div className="re_accordion-item-desc">
-              A successful SEO strategy involves various components, including
-              keyword research, on-page optimization, quality content creation,
-              link building, technical SEO, and user experience optimization.
-              These elements work together to improve a website's relevance and
-              authority in the eyes of search engines.
+            Students can actively engage with Abol Tabol by submitting their
+              whimsical and imaginative ideas related to their respective
+              fields. This can take various forms, such as crafting stand-up
+              comedy routines, creating humorous sketches, or exploring comedic
+              perspectives on specific topics within their majors. The emphasis
+              is on embracing creativity and showcasing the lighter side of
+              intellectual pursuits, fostering a sense of community and
+              shared laughter.
             </div>
           </div>
 
-          <div className="re_accordion-item flex flex-col">
+          {/* <div className="re_accordion-item flex flex-col">
             <input
               type="checkbox"
               id="accordion4"
@@ -101,9 +106,9 @@ function Faq() {
               seamless experience on mobile devices are more likely to rank
               higher in search results.
             </div>
-          </div>
+          </div> */}
 
-          <div className="re_accordion-item">
+          {/* <div className="re_accordion-item">
             <input
               type="checkbox"
               id="accordion5"
@@ -124,7 +129,7 @@ function Faq() {
               community activities. It's important to focus on natural and
               ethical link-building practices.
             </div>
-          </div>
+          </div> */}
         </div>
       </section>
     </>

@@ -7,70 +7,43 @@ function Re_timeline() {
       <section id="Re_timeline">
         <div className=" flex flex-col justify-center items-center gap-2 pb-5  pt-6 mt-6">
           <h1 className="text-center re_events_h1">TIMELINE</h1>
-          <span className="re_events_underline"></span>
-          <p className="re_events_paragraph py-4">
-            A plethora of events covering all your skills. So gear up for the
-            showdown!
-            <br />
-            Browse over the links to register
-          </p>
         </div>
         <div className="Re_timeline flex flex-col py-4">
           <div className="Re_timeline_container">
             <div className="Re_timeline_card">
               <div className="Re_timeline_image">
                 <div className="Re_timeline_box flex justify-center align-items-center text-center h-[200px] w-[790]">
-                  <h1 className="Re_timeline_heading">DAY 1</h1>
+                  <h1 className="Re_timeline_heading">
+                    16<sup>th</sup> Mar
+                  </h1>
                 </div>
               </div>
               <div className="Re_timeline_content">
-                <h3 className="Re_timeline_day">Morning Session:</h3>
+                <h3 className="Re_timeline_day pt-7">Preliminary Round</h3>
                 <p className="Re_timeline_para">
-                  Event 1
+                  - The participants will have to solve some questions to
+                  qualify for the next round.
                   <br />
-                  Event 2
-                  <br />
-                  Event 3
-                </p>
-
-                <h3 className="Re_timeline_day">Afternoon Session:</h3>
-                <p className="Re_timeline_para">
-                  Event 1
-                  <br />
-                  Event 2
-                  <br />
-                  Event 3
                 </p>
               </div>
             </div>
           </div>
 
-        
-
           <div className="Re_timeline_container">
             <div className="Re_timeline_card">
               <div className="Re_timeline_image">
                 <div className="Re_timeline_box flex justify-center align-items-center text-center h-[200px] w-[790]">
-                  <h1 className="Re_timeline_heading">DAY 3</h1>
+                  <h1 className="Re_timeline_heading">
+                    17<sup>th</sup> Mar
+                  </h1>
                 </div>
               </div>
               <div className="Re_timeline_content">
-                <h3 className="Re_timeline_day">Morning Session:</h3>
+                <h3 className="Re_timeline_day pt-7">Finals</h3>
                 <p className="Re_timeline_para">
-                  Event 1
+                  - The qualified participants will have to design circuits in
+                  this round
                   <br />
-                  Event 2
-                  <br />
-                  Event 3
-                </p>
-
-                <h3 className="Re_timeline_day">Afternoon Session:</h3>
-                <p className="Re_timeline_para">
-                  Event 1
-                  <br />
-                  Event 2
-                  <br />
-                  Event 3
                 </p>
               </div>
             </div>

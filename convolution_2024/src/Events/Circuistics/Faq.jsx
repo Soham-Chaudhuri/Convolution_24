@@ -27,8 +27,8 @@ function Faq() {
               onChange={() => handleCheckboxChange("accordion1")}
             />
             <label htmlFor="accordion1" className="accordion-item-title ">
-              <span className="faq-icon"></span>What is SEO, and why is it important
-              for online businesses?
+              <span className="faq-icon"></span>What is SEO, and why is it
+              important for online businesses?
             </label>
             <div className="accordion-item-desc items-center">
               SEO, or Search Engine Optimization, is the practice of optimizing
@@ -36,8 +36,8 @@ function Faq() {
               It involves various techniques to enhance a site's ranking in
               search results. SEO is crucial for online businesses as it helps
               drive organic traffic, increases visibility, and ultimately leads
-              to higher conversions.
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis sint accusantium reprehenderit magnam.   
+              to higher conversions. Lorem ipsum dolor, sit amet consectetur
+              adipisicing elit. Corporis sint accusantium reprehenderit magnam.
             </div>
           </div>
 
@@ -49,8 +49,8 @@ function Faq() {
               onChange={() => handleCheckboxChange("accordion2")}
             />
             <label htmlFor="accordion2" className="accordion-item-title">
-              <span className="faq-icon"></span>How long does it take to see results
-              from SEO efforts?
+              <span className="faq-icon"></span>How long does it take to see
+              results from SEO efforts?
             </label>
             <div className="accordion-item-desc">
               The timeline for seeing results from SEO can vary based on several
@@ -90,8 +90,8 @@ function Faq() {
               onChange={() => handleCheckboxChange("accordion4")}
             />
             <label htmlFor="accordion4" className="accordion-item-title">
-              <span className="faq-icon"></span>How does mobile optimization impact
-              SEO?
+              <span className="faq-icon"></span>How does mobile optimization
+              impact SEO?
             </label>
             <div className="accordion-item-desc">
               Mobile optimization is crucial for SEO because search engines

@@ -8,39 +8,24 @@ function Re_timeline() {
         <div className=" flex flex-col justify-center items-center gap-2 pb-5  pt-6 mt-6">
           <h1 className="text-center re_events_h1">TIMELINE</h1>
           <span className="re_events_underline"></span>
-          <p className="re_events_paragraph py-4">
-            A plethora of events covering all your skills. So gear up for the
-            showdown!
-            <br />
-            Browse over the links to register
-          </p>
+          
         </div>
         <div className="Re_timeline flex flex-col py-4">
           <div className="Re_timeline_container">
             <div className="Re_timeline_card">
               <div className="Re_timeline_image">
                 <div className="Re_timeline_box flex justify-center align-items-center text-center h-[200px] w-[790]">
-                  <h1 className="Re_timeline_heading">DAY 1</h1>
+                  <h1 className="Re_timeline_heading">19<sup>th</sup> Feb</h1>
                 </div>
               </div>
               <div className="Re_timeline_content">
-                <h3 className="Re_timeline_day">Morning Session:</h3>
+                <h3 className="Re_timeline_day">Abstract Submission Starts</h3>
                 <p className="Re_timeline_para">
-                  Event 1
-                  <br />
-                  Event 2
-                  <br />
-                  Event 3
+                - the participants will have to submit an abstract of their business ideas
+                      <br />
                 </p>
 
-                <h3 className="Re_timeline_day">Afternoon Session:</h3>
-                <p className="Re_timeline_para">
-                  Event 1
-                  <br />
-                  Event 2
-                  <br />
-                  Event 3
-                </p>
+                
               </div>
             </div>
           </div>
@@ -51,27 +36,53 @@ function Re_timeline() {
             <div className="Re_timeline_card">
               <div className="Re_timeline_image">
                 <div className="Re_timeline_box flex justify-center align-items-center text-center h-[200px] w-[790]">
-                  <h1 className="Re_timeline_heading">DAY 3</h1>
+                  <h1 className="Re_timeline_heading">2<sup>nd</sup> Mar</h1>
                 </div>
               </div>
               <div className="Re_timeline_content">
-                <h3 className="Re_timeline_day">Morning Session:</h3>
+                <h3 className="Re_timeline_day">Abstract Submission Ends</h3>
                 <p className="Re_timeline_para">
-                  Event 1
-                  <br />
-                  Event 2
-                  <br />
-                  Event 3
+                - Participants will have to submit their abstracts by 11:59pm on 2nd March.
+                      <br />
                 </p>
 
-                <h3 className="Re_timeline_day">Afternoon Session:</h3>
+                
+              </div>
+            </div>
+          </div>
+          <div className="Re_timeline_container">
+            <div className="Re_timeline_card">
+              <div className="Re_timeline_image">
+                <div className="Re_timeline_box flex justify-center align-items-center text-center h-[200px] w-[790]">
+                  <h1 className="Re_timeline_heading">8<sup>th</sup> Mar</h1>
+                </div>
+              </div>
+              <div className="Re_timeline_content">
+                <h3 className="Re_timeline_day">Result Announcement of Prelims</h3>
                 <p className="Re_timeline_para">
-                  Event 1
-                  <br />
-                  Event 2
-                  <br />
-                  Event 3
+                - Top 8 teams will be shortlisted for the 2nd round
+                      <br />
                 </p>
+
+                
+              </div>
+            </div>
+          </div>
+          <div className="Re_timeline_container">
+            <div className="Re_timeline_card">
+              <div className="Re_timeline_image">
+                <div className="Re_timeline_box flex justify-center align-items-center text-center h-[200px] w-[790]">
+                  <h1 className="Re_timeline_heading">16<sup>th</sup> Mar</h1>
+                </div>
+              </div>
+              <div className="Re_timeline_content">
+                <h3 className="Re_timeline_day">Finals</h3>
+                <p className="Re_timeline_para">
+                - The shortlisted participants will have to pitch their ideas infront of the judges.
+                      <br />
+                </p>
+
+                
               </div>
             </div>
           </div>

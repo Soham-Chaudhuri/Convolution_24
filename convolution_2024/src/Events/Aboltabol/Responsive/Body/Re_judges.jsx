@@ -1,33 +1,33 @@
 import React from "react";
-import picture6 from "../../../../components/assets/dwaipayan.png";
-import picture4 from "../../../../components/assets/Parthib.png";
+import picture6 from "../../../../components/assets/nojudge.png";
+import picture4 from "../../../../components/assets/SGM.png";
 
 const peopleData = [
   {
     id: 1,
-    name: "Dwaipayan",
-    heading: "Secretary",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+    name: "",
+    heading: "Anticipated...",
+    description: "",
     imgSrc: picture6,
     socialMediaLinks: {
-      instagram: "https://www.instagram.com/dwaipayanhaldar15/",
-      linkedin: "https://www.linkedin.com/in/dwaipayan-haldar/",
-      facebook: "https://www.facebook.com/profile.php?id=100011133515951",
+      instagram: "",
+      linkedin: "",
+      facebook: "",
     },
     socialMediaavailable: { insta: true, linke: true, face: true },
   },
   {
     id: 2,
-    name: "Parthib",
-    heading: "Joint-Secretary",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+    name: "Sugata Munshi",
+    heading: "Sugata Munshi",
+    description: "Professor at Jadavpur University Electrical Engineering Department",
     imgSrc: picture4,
     socialMediaLinks: {
-      instagram: "https://www.instagram.com/parthib_not_parthiv/",
-      linkedin: "https://www.linkedin.com/in/parthib-roy-3a78b3224/",
-      facebook: "https://www.facebook.com/profile.php?id=100074521635711",
+      // instagram: "https://www.instagram.com/parthib_not_parthiv/",
+      linkedin: "https://www.linkedin.com/in/sugata-munshi-ab791425/",
+      // facebook: "https://www.facebook.com/profile.php?id=100074521635711",
     },
-    socialMediaavailable: { insta: true, linke: true, face: true },
+    socialMediaavailable: { insta: false, linke: true, face: false },
   },
 ];
 
@@ -39,10 +39,7 @@ function Re_judges() {
           <h1 className="text-center re_teams_h1">JUDGES</h1>
           <span className="re_teams_underline"></span>
           <p className="re_teams_paragraph py-4">
-            Meet the representatives of JU EE Students' Forum making Convolution
-            9.0 possible!
-            <br />
-            We are ready to address all your queries!
+          Meet the judges of Abol Tabol!
           </p>
         </div>
         <div className="">

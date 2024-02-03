@@ -22,15 +22,17 @@ function Timeline() {
             <div className="timeline_container1">
               <div className="timeline_card">
                 <div className="timeline_imgBx flex flex-col ">
-                  <h1 className="timeline_day text-[34px]">12<sup>th</sup> Feb</h1>
+                  <h1 className="timeline_day text-[34px]">
+                    12<sup>th</sup> Feb
+                  </h1>
                 </div>
                 <div className="timeline_content1">
                   <div className="flex flex-col ">
                     <h3>Abstract Submission Starts</h3>
                     <p className="timeline_para">
-                      - The fray begins! All registered participants will be submitting a presentation.
+                      - The fray begins! All registered participants will be
+                      submitting a presentation.
                       <br />
-                      
                     </p>
                   </div>
                 </div>
@@ -38,7 +40,9 @@ function Timeline() {
 
               <div className="timeline_card">
                 <div className="timeline_imgBx">
-                  <h1 className="timeline_day text-[34px]">26<sup>th</sup> Feb</h1>
+                  <h1 className="timeline_day text-[34px]">
+                    26<sup>th</sup> Feb
+                  </h1>
                 </div>
                 <div className="timeline_content1 ">
                   <div>
@@ -46,24 +50,24 @@ function Timeline() {
                     <p className="timeline_para">
                       - all abstracts to be submitted by 11:59pm on 26th Feb
                       <br />
-                      
                     </p>
                   </div>
                 </div>
               </div>
 
-              
               <div className="timeline_card">
                 <div className="timeline_imgBx">
-                  <h1 className="timeline_day text-[34px]">8<sup>th</sup> Mar</h1>
+                  <h1 className="timeline_day text-[34px]">
+                    8<sup>th</sup> Mar
+                  </h1>
                 </div>
                 <div className="timeline_content1">
                   <div>
                     <h3>Announcing Results of Prelims</h3>
                     <p className="timeline_para">
-                      - The top 8/10 teams will be shortlisted for the final round
+                      - The top 8/10 teams will be shortlisted for the final
+                      round
                       <br />
-                      
                     </p>
                   </div>
                 </div>
@@ -71,15 +75,17 @@ function Timeline() {
 
               <div className="timeline_card">
                 <div className="timeline_imgBx">
-                  <h1 className="timeline_day text-[34px]">17<sup>th</sup> Mar</h1>
+                  <h1 className="timeline_day text-[34px]">
+                    17<sup>th</sup> Mar
+                  </h1>
                 </div>
                 <div className="timeline_content1">
                   <div>
                     <h3>Final Round & Prize Distribution</h3>
                     <p className="timeline_para">
-                      - the shortlisted teams will have to pitch their concepts before the judges and chief guest.
+                      - the shortlisted teams will have to pitch their concepts
+                      before the judges and chief guest.
                       <br />
-                      
                     </p>
                   </div>
                 </div>

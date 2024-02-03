@@ -1,34 +1,34 @@
 import React from "react";
 import "./Re_teams.css";
 
-import picture4 from "../../../../components/assets/Parthib.png";
+import picture4 from "../../../../components/assets/leads/aneesh.png";
 
-import picture6 from "../../../../components/assets/dwaipayan.png";
+import picture6 from "../../../../components/assets/nojudge.png";
 
 const peopleData = [
   {
     id: 1,
-    name: "Dwaipayan",
-    heading: "Secretary",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+    name: "",
+    heading: "Tirtha Pratim Ghosh",
+    description: "",
     imgSrc: picture6,
     socialMediaLinks: {
-      instagram: "https://www.instagram.com/dwaipayanhaldar15/",
-      linkedin: "https://www.linkedin.com/in/dwaipayan-haldar/",
-      facebook: "https://www.facebook.com/profile.php?id=100011133515951",
+      instagram: "",
+      linkedin: "",
+      facebook: "",
     },
     socialMediaavailable: { insta: true, linke: true, face: true },
   },
   {
     id: 2,
-    name: "Parthib",
-    heading: "Joint-Secretary",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+    name: "",
+    heading: "Aneesh Ranjan Gupta",
+    description: "",
     imgSrc: picture4,
     socialMediaLinks: {
-      instagram: "https://www.instagram.com/parthib_not_parthiv/",
-      linkedin: "https://www.linkedin.com/in/parthib-roy-3a78b3224/",
-      facebook: "https://www.facebook.com/profile.php?id=100074521635711",
+      instagram: "https://www.instagram.com/aneesh___003?igsh=bWs4d3ZlZDVoZmh2",
+      linkedin: "https://www.linkedin.com/in/aneesh-gupta-55921920b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      facebook: "https://www.facebook.com/Aneesh.Gupta.2003?mibextid=ZbWKwL",
     },
     socialMediaavailable: { insta: true, linke: true, face: true },
   },

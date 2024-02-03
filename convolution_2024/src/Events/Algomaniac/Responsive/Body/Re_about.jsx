@@ -9,16 +9,7 @@ function About() {
           <div className="Re_about flex text-center flex-col align-center justify-center gap-6 py-10 px-6">
             <span className="Re_heading">ABOUT ALGOMANIAC</span>
             <span className="Re_para">
-              Convolution 9.0 is the ninth edition of the annual
-              techno-management fest organized by the Students' Forum of the
-              Department of Electrical Engineering, Jadavpur University. It
-              provides a dynamic hotspot to students pursuing STEM-related
-              programs, where they can apply their creativity and skills, and
-              test their mettle against the best. Convolution acts as an
-              umbrella event comprising of several student interaction events,
-              technical events, workshops, and has also hosted, in the past,
-              lectures by some of the most illustrious names in academia and
-              industry alike.
+            Embark on a coding odyssey like never before! Join our exclusive competitive programming event, where brilliant minds converge to unravel mind-boggling challenges using the language of code. Unleash your keyboard prowess and ignite the creative power of your mind as you navigate through lines of code in this epic battle of algorithms and innovation. It's not just a competition; it's a journey into the limitless realms of problem-solving and coding excellence. Seize the opportunity to showcase your coding wizardry and make history in the ultimate test of intellect and skill!
             </span>
           </div>
         </div>

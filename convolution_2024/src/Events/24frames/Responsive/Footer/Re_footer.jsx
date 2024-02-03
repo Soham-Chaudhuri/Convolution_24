@@ -24,19 +24,36 @@ function Re_footer() {
             </span>
             <br />
             <span className="re_footer_l">
-              Email: convolution2023@gmail.com
+              Email: convolution2024@gmail.com
             </span>
           </div>
         </div>
         <div className="re_footer_social">
-          <span className="text-center text-white">
-            Our Social Networks:
-          </span>
+          <span className="text-center text-white">Our Social Networks:</span>
           <div className="flex flex-col items-center pt-2">
             <div className="flex gap-2">
-              <i className="fa-brands fa-square-instagram fabicon"></i>
-              <i className="fa-brands fa-linkedin fabicon"></i>
-              <i className="fa-brands fa-square-facebook fabicon"></i>
+              <a
+                href="https://www.instagram.com/convolution24/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i className="fa-brands fa-square-instagram fabicon"></i>
+              </a>
+              <a
+                href="https://www.linkedin.com/company/101543654/admin/feed/posts/?feedType=following
+              "
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i className="fa-brands fa-linkedin fabicon"></i>
+              </a>
+              <a
+                href="https://www.facebook.com/profile.php?id=61555660919861"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i className="fa-brands fa-square-facebook fabicon"></i>
+              </a>
             </div>
           </div>
         </div>

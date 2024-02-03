@@ -8,7 +8,7 @@ function About() {
         <div className="about_layer_bg">
           <div className="about_layer_lines"></div>
           <div className="about flex text-center flex-col align-center justify-center gap-10">
-            <span className="heading">ABOUT 24 Frames</span>
+            <span className="heading">ABOUT 24 FRAMES</span>
             <span className="para">
               Embark on a journey through the lens with our innovative
               collection, where four-and-a-half-minute vignettes crafted from 24

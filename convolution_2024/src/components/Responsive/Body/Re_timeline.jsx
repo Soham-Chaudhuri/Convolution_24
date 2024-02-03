@@ -26,20 +26,14 @@ function Re_timeline() {
               <div className="Re_timeline_content">
                 <h3 className="Re_timeline_day">Morning Session:</h3>
                 <p className="Re_timeline_para">
-                  Event 1
-                  <br />
-                  Event 2
-                  <br />
-                  Event 3
+                  - Innauguration
+                  <br />- Eureka! Prelims
                 </p>
 
                 <h3 className="Re_timeline_day">Afternoon Session:</h3>
                 <p className="Re_timeline_para">
-                  Event 1
-                  <br />
-                  Event 2
-                  <br />
-                  Event 3
+                  - Inquizzitive Prelims
+                  <br />- Inquizzitive Finals
                 </p>
               </div>
             </div>
@@ -55,20 +49,16 @@ function Re_timeline() {
               <div className="Re_timeline_content">
                 <h3 className="Re_timeline_day">Morning Session:</h3>
                 <p className="Re_timeline_para">
-                  Event 1
+                  - Circuistics Prelims
                   <br />
-                  Event 2
-                  <br />
-                  Event 3
+                  - Sparkhack Finals
+                  <br />- Eureka! Finals
                 </p>
 
                 <h3 className="Re_timeline_day">Afternoon Session:</h3>
                 <p className="Re_timeline_para">
-                  Event 1
-                  <br />
-                  Event 2
-                  <br />
-                  Event 3
+                  - Decisia Finals
+                  <br />- Papier Finals
                 </p>
               </div>
             </div>
@@ -84,20 +74,16 @@ function Re_timeline() {
               <div className="Re_timeline_content">
                 <h3 className="Re_timeline_day">Morning Session:</h3>
                 <p className="Re_timeline_para">
-                  Event 1
-                  <br />
-                  Event 2
-                  <br />
-                  Event 3
+                  - Algomaniac Final
+                  <br />- Circuistics Final
                 </p>
 
                 <h3 className="Re_timeline_day">Afternoon Session:</h3>
                 <p className="Re_timeline_para">
-                  Event 1
+                  - Abol Tabol Final
                   <br />
-                  Event 2
-                  <br />
-                  Event 3
+                  - Prize Distribution
+                  <br />- Closing Ceremony
                 </p>
               </div>
             </div>

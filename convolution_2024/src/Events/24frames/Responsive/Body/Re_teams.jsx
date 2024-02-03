@@ -1,34 +1,34 @@
 import React from "react";
 import "./Re_teams.css";
 
-import picture4 from "../../../../components/assets/Parthib.png";
+import picture4 from "../../../../components/assets/debashish.png";
 
-import picture6 from "../../../../components/assets/dwaipayan.png";
+import picture6 from "../../../../components/assets/abhinaba.png";
 
 const peopleData = [
   {
     id: 1,
-    name: "Dwaipayan",
-    heading: "Secretary",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+    name: "",
+    heading: "Abhinaba Biswas",
+    description: "",
     imgSrc: picture6,
     socialMediaLinks: {
-      instagram: "https://www.instagram.com/dwaipayanhaldar15/",
-      linkedin: "https://www.linkedin.com/in/dwaipayan-haldar/",
-      facebook: "https://www.facebook.com/profile.php?id=100011133515951",
+      instagram: "#",
+      linkedin: "#",
+      facebook: "#",
     },
     socialMediaavailable: { insta: true, linke: true, face: true },
   },
   {
     id: 2,
-    name: "Parthib",
-    heading: "Joint-Secretary",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+    name: "",
+    heading: "Debashis Mondal",
+    description: "",
     imgSrc: picture4,
     socialMediaLinks: {
-      instagram: "https://www.instagram.com/parthib_not_parthiv/",
-      linkedin: "https://www.linkedin.com/in/parthib-roy-3a78b3224/",
-      facebook: "https://www.facebook.com/profile.php?id=100074521635711",
+      instagram: "#",
+      linkedin: "#",
+      facebook: "#",
     },
     socialMediaavailable: { insta: true, linke: true, face: true },
   },

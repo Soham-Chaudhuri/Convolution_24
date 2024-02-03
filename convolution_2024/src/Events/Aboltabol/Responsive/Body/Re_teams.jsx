@@ -1,34 +1,34 @@
 import React from "react";
 import "./Re_teams.css";
 
-import picture4 from "../../../../components/assets/Parthib.png";
+import picture4 from "../../../../components/assets/sugam.png";
 
-import picture6 from "../../../../components/assets/dwaipayan.png";
+import picture6 from "../../../../components/assets/manas.png";
 
 const peopleData = [
   {
     id: 1,
-    name: "Dwaipayan",
-    heading: "Secretary",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+    name: "Manas",
+    heading: "Manas Sarkar",
+    description: "",
     imgSrc: picture6,
     socialMediaLinks: {
-      instagram: "https://www.instagram.com/dwaipayanhaldar15/",
-      linkedin: "https://www.linkedin.com/in/dwaipayan-haldar/",
-      facebook: "https://www.facebook.com/profile.php?id=100011133515951",
+      instagram: "https://www.instagram.com/its_me_chacha2002?igsh=MXYzc2hxdGV5M2tzOQ==",
+      linkedin: "https://www.linkedin.com/in/manassarkar?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      facebook: "https://www.facebook.com/ManasSarkar.114?mibextid=ZbWKwL",
     },
     socialMediaavailable: { insta: true, linke: true, face: true },
   },
   {
     id: 2,
-    name: "Parthib",
-    heading: "Joint-Secretary",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+    name: "Sugam",
+    heading: "Sugam Das",
+    description: "",
     imgSrc: picture4,
     socialMediaLinks: {
-      instagram: "https://www.instagram.com/parthib_not_parthiv/",
-      linkedin: "https://www.linkedin.com/in/parthib-roy-3a78b3224/",
-      facebook: "https://www.facebook.com/profile.php?id=100074521635711",
+      instagram: "https://www.instagram.com/s_u_g_a_m_das?igsh=MWFuOHoxdmt0NXF1OA==",
+      linkedin: "https://www.linkedin.com/in/sugam-das-760213233/",
+      facebook: "https://www.facebook.com/rinslor",
     },
     socialMediaavailable: { insta: true, linke: true, face: true },
   },

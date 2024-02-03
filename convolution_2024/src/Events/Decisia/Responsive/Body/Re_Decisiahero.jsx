@@ -34,7 +34,7 @@ function Re_Decisiahero({user}) {
   }, []);
   return (
     <>
-      <Re_eventhead />
+      <Re_eventhead user={user}/>
 
 
       <div className="Re_hero_bg p-3">
@@ -43,7 +43,7 @@ function Re_Decisiahero({user}) {
             <div className="flex flex-col-reverse Re_gapping gap-[0.8rem]">
               <div className="m-4 Re_hero_heading_1_div">
               <span className="Re_hero_heading_1 text-shadow-md">
-                  CONVOLUTION 9.0 PRESENTS
+              Convolution 9.0 Presents
                 </span>
                 <br />
                 <span className="Re_hero_heading_2 text-shadow-md block">
@@ -51,7 +51,7 @@ function Re_Decisiahero({user}) {
                 </span>
                 <br />
                 <span className="Re_hero_heading_3">
-                  LET YOUR CODE SPEAK
+                Impactful decisions, endless possibilities
                 </span>
                 <div className="flex Re_hero_btn">
                 <button

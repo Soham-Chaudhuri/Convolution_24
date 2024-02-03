@@ -16,9 +16,9 @@ const peopleData = [
     socialMediaLinks: {
       instagram: "",
       linkedin: "",
-      facebook: "",
+      facebook: "https://www.facebook.com/sayandeep.pradhan.77?mibextid=ngobeXctTp5pD3Zm",
     },
-    socialMediaavailable: { insta: true, linke: true, face: true },
+    socialMediaavailable: { insta: false, linke: false, face: true },
     desc: "",
   },
   {
@@ -27,9 +27,9 @@ const peopleData = [
     description: "Arpan Roy",
     imgSrc: picture4,
     socialMediaLinks: {
-      instagram: "",
-      linkedin: "",
-      facebook: "",
+      instagram: "https://www.instagram.com/_spartan_26?igsh=MWYzdnI5bWNnejIwMw==",
+      linkedin: "https://www.linkedin.com/in/arpan-roy-17296b257?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      facebook: "https://www.facebook.com/shirsho.roy.58?mibextid=ZbWKwL",
     },
     socialMediaavailable: { insta: true, linke: true, face: true },
     desc: "",

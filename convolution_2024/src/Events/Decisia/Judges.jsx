@@ -43,9 +43,7 @@ function Judges() {
           <h1 className="text-center teams_h1">JUDGES</h1>
           <span className="underline_teams"></span>
           <p className="paragraph_teams py-4">
-            Meet the Judges of Decisia!
-            
-            We are ready to address all your queries!
+          The judges for the event to be announced soon!
           </p>
         </div>
         <div className="px-[69px] py-5">

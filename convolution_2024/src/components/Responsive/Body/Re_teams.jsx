@@ -14,8 +14,9 @@ const peopleData = [
     id: 1,
     name: "Dwaipayan",
     heading: "Secretary",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+    description: "Dwaipayan Haldar",
     imgSrc: picture6,
+
     socialMediaLinks: {
       instagram: "https://www.instagram.com/dwaipayanhaldar15/",
       linkedin: "https://www.linkedin.com/in/dwaipayan-haldar/",
@@ -27,7 +28,7 @@ const peopleData = [
     id: 2,
     name: "Parthib",
     heading: "Joint-Secretary",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+    description: "Parthib Roy",
     imgSrc: picture4,
     socialMediaLinks: {
       instagram: "https://www.instagram.com/parthib_not_parthiv/",
@@ -40,7 +41,7 @@ const peopleData = [
     id: 3,
     name: "Obaidullah",
     heading: "Treasurer",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+    description: "Md. Obaidullah",
     imgSrc: picture9,
     socialMediaLinks: {
       instagram: "https://www.instagram.com/obaidullachottu/",
@@ -53,7 +54,7 @@ const peopleData = [
     id: 4,
     name: "Soham",
     heading: "Tech Lead",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+    description: "Soham Chaudhuri",
     imgSrc: picture1,
     socialMediaLinks: {
       instagram: "link",
@@ -66,7 +67,7 @@ const peopleData = [
     id: 5,
     name: "Azfar",
     heading: "Logistics Lead",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+    description: "Azfar Hasan",
     imgSrc: picture7,
     socialMediaLinks: {
       instagram: "https://www.instagram.com/hasanazfar28/",
@@ -79,7 +80,7 @@ const peopleData = [
     id: 6,
     name: "Supratim",
     heading: "Sponsorship Lead",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+    description: "Supratim Sarkar",
     imgSrc: picture8,
     socialMediaLinks: {
       instagram: "https://www.instagram.com/sarkarsupratim2003/",
@@ -92,7 +93,7 @@ const peopleData = [
     id: 7,
     name: "Avishek",
     heading: "Public Reach",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+    description: "Avishek Bandyopadhyay",
     imgSrc: picture10,
     socialMediaLinks: {
       instagram: "https://www.instagram.com/avishek_bandyopadhyay/",
@@ -105,7 +106,7 @@ const peopleData = [
     id: 8,
     name: "Ayan",
     heading: "Design Lead",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+    description: "Ayan Kumar Bose",
     imgSrc: picture5,
     socialMediaLinks: {
       instagram: "https://www.instagram.com/_.ay.an._03_/",
@@ -143,7 +144,7 @@ function Re_teams() {
                 <div className="re_team_desc flex items-center flex-col text-center">
                   <div className="re_team_desc_heading">{people.heading}</div>
                   <div className="re_team_desc_underline mt-2 mb-3"></div>
-                  <div className="re_team_desc_para items-center flex flex-col gap-3">
+                  <div className="re_team_desc_para items-center flex flex-col gap-3 text-[15px]">
                     {people.description}
                     <div className="flex gap-2">
                       {people.socialMediaavailable.insta ? (

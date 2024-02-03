@@ -44,8 +44,7 @@ function Judges() {
           <span className="underline_teams"></span>
           <p className="paragraph_teams py-4">
             Meet the judges of Algomaniac!
-            
-            We are ready to address all your queries!
+
           </p>
         </div>
         <div className="px-[69px] py-5">

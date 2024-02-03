@@ -41,14 +41,14 @@ function Re_Frameshero({user}) {
             <div className="flex flex-col-reverse Re_gapping gap-[0.8rem]">
               <div className="m-4 Re_hero_heading_1_div">
                 <span className="Re_hero_heading_1 text-shadow-md">
-                  CONVOLUTION 9.0 PRESENTS
+                Convolution 9.0 Presents
                 </span>
                 <br />
                 <span className="Re_hero_heading_2 text-shadow-md block">
-                  24 FRAMES
+                24 Frames
                 </span>
                 <br />
-                <span className="Re_hero_heading_3">LET YOUR CODE SPEAK</span>
+                <span className="Re_hero_heading_3">Photographers' Delight</span>
                 <div className="flex Re_hero_btn">
                   <button
                     className="Re_hero_btn_1"

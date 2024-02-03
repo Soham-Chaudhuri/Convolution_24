@@ -14,11 +14,11 @@ const peopleData = [
     imgSrc: picture6,
 
     socialMediaLinks: {
-      instagram: "https://www.instagram.com/dwaipayanhaldar15/",
-      linkedin: "https://www.linkedin.com/in/dwaipayan-haldar/",
-      facebook: "https://www.facebook.com/profile.php?id=100011133515951",
+      instagram: "https://www.instagram.com/__mainak._seal?igsh=MXAyd3gwMHg1MTJkbg==",
+      linkedin: "https://www.linkedin.com/in/mainak-seal-5b4b06223?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      // facebook: "https://www.facebook.com/profile.php?id=100011133515951",
     },
-    socialMediaavailable: { insta: true, linke: true, face: true },
+    socialMediaavailable: { insta: true, linke: true, face: false },
     desc: "",
   },
   {
@@ -27,11 +27,11 @@ const peopleData = [
     description: "Srayan Bhattachryya",
     imgSrc: picture4,
     socialMediaLinks: {
-      instagram: "https://www.instagram.com/parthib_not_parthiv/",
-      linkedin: "https://www.linkedin.com/in/parthib-roy-3a78b3224/",
-      facebook: "https://www.facebook.com/profile.php?id=100074521635711",
+      // instagram: "https://www.instagram.com/parthib_not_parthiv/",
+      linkedin: " https://www.linkedin.com/in/srayanbhattacharyya/",
+      facebook: "https://www.facebook.com/BhattacharyyaSrayan",
     },
-    socialMediaavailable: { insta: true, linke: true, face: true },
+    socialMediaavailable: { insta: false, linke: true, face: true },
     desc: "",
   },
 ];
