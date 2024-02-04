@@ -15,7 +15,9 @@ function Faq() {
       <section id="Re_faq">
         <div className="re_accordion">
           <div className=" flex flex-col justify-center items-center gap-3 py-5">
-            <h1 className="text-center re_teams_h1">FREQUENTLY ASKED QUESTIONS</h1>
+            <h1 className="text-center re_teams_h1">
+              FREQUENTLY ASKED QUESTIONS
+            </h1>
             <span className="underline_teams"></span>
           </div>
 
@@ -27,17 +29,21 @@ function Faq() {
               onChange={() => handleCheckboxChange("accordion1")}
             />
             <label htmlFor="accordion1" className="re_accordion-item-title ">
-              <span className="faq-icon"></span>What is SEO, and why is it important
-              for online businesses?
+              <span className="faq-icon"></span>
+              Is there a penalty for damaging components during Round 2 circuit
+              building?
             </label>
             <div className="re_accordion-item-desc items-center">
-              SEO, or Search Engine Optimization, is the practice of optimizing
-              a website to improve its visibility on search engines like Google.
-              It involves various techniques to enhance a site's ranking in
-              search results. SEO is crucial for online businesses as it helps
-              drive organic traffic, increases visibility, and ultimately leads
-              to higher conversions.
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis sint accusantium reprehenderit magnam.   
+              In competitions where there is no penalty for destroying
+              components, it's crucial to note that any team found mishandling
+              components will face immediate disqualification. This policy aims
+              to maintain a fair and ethical playing field. Participants are
+              granted the freedom to explore and push limits, but responsible
+              conduct is paramount. Disqualification serves as a deterrent
+              against intentional damage, promoting sportsmanship and adherence
+              to competition rules. Striking a balance between innovation and
+              responsible behavior is essential to uphold the integrity of the
+              event.
             </div>
           </div>
 
@@ -49,20 +55,25 @@ function Faq() {
               onChange={() => handleCheckboxChange("accordion2")}
             />
             <label htmlFor="accordion2" className="re_accordion-item-title">
-              <span className="faq-icon"></span>How long does it take to see results
-              from SEO efforts?
+              <span className="faq-icon"></span>Can teams be consisted of
+              different year or different college students?
             </label>
             <div className="re_accordion-item-desc">
-              The timeline for seeing results from SEO can vary based on several
-              factors, such as the competitiveness of keywords, the current
-              state of the website, and the effectiveness of the SEO strategy.
-              Generally, it may take several weeks to months before noticeable
-              improvements occur. However, long-term commitment to SEO is
-              essential for sustained success.
+              Teams must be exclusively comprised of students from the same
+              college and of the same academic year. This stipulation ensures a
+              level playing field by fostering collaboration among peers who
+              share a common educational background. The requirement not only
+              promotes a sense of camaraderie within the team but also
+              encourages a fair representation of skills and knowledge among
+              participants. Restricting team formation to students from the same
+              college and year enhances the overall integrity of the
+              competition, preventing potential disparities in experience or
+              resources. This rule underscores the importance of creating an
+              equitable and cohesive environment for all participating teams.
             </div>
           </div>
 
-          <div className="re_accordion-item">
+          {/* <div className="re_accordion-item">
             <input
               type="checkbox"
               id="accordion3"
@@ -90,8 +101,8 @@ function Faq() {
               onChange={() => handleCheckboxChange("accordion4")}
             />
             <label htmlFor="accordion4" className="re_accordion-item-title">
-              <span className="faq-icon"></span>How does mobile optimization impact
-              SEO?
+              <span className="faq-icon"></span>How does mobile optimization
+              impact SEO?
             </label>
             <div className="re_accordion-item-desc">
               Mobile optimization is crucial for SEO because search engines
@@ -101,9 +112,9 @@ function Faq() {
               seamless experience on mobile devices are more likely to rank
               higher in search results.
             </div>
-          </div>
+          </div> */}
 
-          <div className="re_accordion-item">
+          {/* <div className="re_accordion-item">
             <input
               type="checkbox"
               id="accordion5"
@@ -124,7 +135,7 @@ function Faq() {
               community activities. It's important to focus on natural and
               ethical link-building practices.
             </div>
-          </div>
+          </div> */}
         </div>
       </section>
     </>

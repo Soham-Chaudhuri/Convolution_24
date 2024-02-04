@@ -7,6 +7,7 @@ function Re_timeline() {
       <section id="Re_timeline">
         <div className=" flex flex-col justify-center items-center gap-2 pb-5  pt-6 mt-6">
           <h1 className="text-center re_events_h1">TIMELINE</h1>
+        <span className="underline"></span>
         </div>
         <div className="Re_timeline flex flex-col py-4">
           <div className="Re_timeline_container">

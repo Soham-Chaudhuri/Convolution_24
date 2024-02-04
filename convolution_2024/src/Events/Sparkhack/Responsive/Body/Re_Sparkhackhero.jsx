@@ -21,7 +21,7 @@ import Re_judges from "./Re_judges";
 import Prizes from "../../Prizes";
 
 
-function Re_Sparkhackhero() {
+function Re_Sparkhackhero({user}) {
   const navigate = useNavigate();
   useEffect(() => {
     const scrollToTop = () => {
@@ -34,7 +34,7 @@ function Re_Sparkhackhero() {
   }, []);
   return (
     <>
-      <Re_eventhead />
+      <Re_eventhead user={user} />
 
 
       <div className="Re_hero_bg p-3">
@@ -43,7 +43,7 @@ function Re_Sparkhackhero() {
             <div className="flex flex-col-reverse Re_gapping gap-[0.8rem]">
               <div className="m-4 Re_hero_heading_1_div">
               <span className="Re_hero_heading_1 text-shadow-md">
-                  CONVOLUTION 9.0 PRESENTS
+              Convolution 9.0 Presents
                 </span>
                 <br />
                 <span className="Re_hero_heading_2 text-shadow-md block">
@@ -51,7 +51,7 @@ function Re_Sparkhackhero() {
                 </span>
                 <br />
                 <span className="Re_hero_heading_3">
-                  LET YOUR CODE SPEAK
+                Hack your brilliance. Code, Create, Conquer!
                 </span>
                 <div className="flex Re_hero_btn">
                 <button
@@ -62,7 +62,7 @@ function Re_Sparkhackhero() {
                         console.log(user.uid);
                       }
                       else{
-                        window.history.back();
+                        navigate("/");
                       }
                     }}
                   >

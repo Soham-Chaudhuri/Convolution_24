@@ -1,34 +1,34 @@
 import React from "react";
 import "./Re_teams.css";
 
-import picture4 from "../../../../components/assets/Parthib.png";
+import picture4 from "../../../../components/assets/leads/Swarnava_pix-fotor-20240130203426.png";
 
 import picture6 from "../../../../components/assets/leads/Srijita.jpeg";
 
 const peopleData = [
   {
     id: 1,
-    name: "Srijita",
-    heading: "Secretary",
-    description: "Student at JUEE",
+    name: "Srijita Pal",
+    heading: "",
+    description: "",
     imgSrc: picture6,
     socialMediaLinks: {
-      instagram: "https://www.instagram.com/dwaipayanhaldar15/",
-      linkedin: "https://www.linkedin.com/in/dwaipayan-haldar/",
-      facebook: "https://www.facebook.com/profile.php?id=100011133515951",
+      instagram: "https://www.instagram.com/_srijita03_?utm_source=qr&igsh=MXdyMHR6Y3ZlbXJyYg==",
+      linkedin: "https://www.linkedin.com/in/srijita-pal-19a478257?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      facebook: "https://www.facebook.com/profile.php?id=100077025027065&mibextid=ZbWKwL",
     },
     socialMediaavailable: { insta: true, linke: true, face: true },
   },
   {
     id: 2,
-    name: "Parthib",
-    heading: "Joint-Secretary",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+    name: "Swarnabha Pramanik",
+    heading: "",
+    description: "",
     imgSrc: picture4,
     socialMediaLinks: {
-      instagram: "https://www.instagram.com/parthib_not_parthiv/",
-      linkedin: "https://www.linkedin.com/in/parthib-roy-3a78b3224/",
-      facebook: "https://www.facebook.com/profile.php?id=100074521635711",
+      instagram: "https://www.instagram.com/s_ontohin?igsh=eTFqeHlmeXpsZmk4",
+      linkedin: "https://www.linkedin.com/in/swarnabha-pramanik-ba1354224?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      facebook: "https://www.facebook.com/swarnabha.pramanik.1",
     },
     socialMediaavailable: { insta: true, linke: true, face: true },
   },
