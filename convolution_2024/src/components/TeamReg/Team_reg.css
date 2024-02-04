@@ -78,6 +78,12 @@
 }
 
 
+.checkpara{
+  font-family: Poppins;
+  font-size: 19px;
+}
+
+
 /* .form_signup_body {
   background: url(../assets/back_signup.png), lightgray 1% / cover no-repeat;
 } */
@@ -96,8 +102,15 @@
     width: 57px;
   }
 
+  .checkpara{
+    font-family: Poppins;
+    font-size: 14px;
+  }
+
   input:active,
   input:focus {
     border: 2px solid black !important;
   }
 }
+
+

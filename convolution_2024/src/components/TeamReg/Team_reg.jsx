@@ -6,6 +6,7 @@ import "../TeamReg/Team_reg.css";
 import { app } from "../firebase";
 import { getDatabase, onValue, ref, set, update } from "firebase/database";
 import { v4 as uuid } from "uuid";
+import { Link } from "react-router-dom";
 const db = getDatabase(app);
 function Team_reg({ user }) {
   const navigate = useNavigate();
@@ -24,6 +25,8 @@ function Team_reg({ user }) {
   const [m3, setM3] = useState(false);
   const uid = uuid();
 
+  const [agreeTerms, setAgreeTerms] = useState(false);
+
   const eventName = useParams();
   // console.log(eventName.event);
   const scrollToTop = () => {
@@ -35,6 +38,14 @@ function Team_reg({ user }) {
   useEffect(() => {
     scrollToTop();
   }, []);
+
+  const hyperArr = [
+    {
+      id: 1,
+      hyper: "/events/:event",
+    },
+  ];
+
   const dataEntry = async () => {
     try {
       if (
@@ -45,7 +56,8 @@ function Team_reg({ user }) {
         member1 !== null &&
         member1 !== "" &&
         m1email !== null &&
-        m1email !== ""
+        m1email !== "" &&
+        agreeTerms !== false
       ) {
         const checkUser = async (userRef, errorMessage) => {
           return new Promise((resolve, reject) => {
@@ -69,8 +81,9 @@ function Team_reg({ user }) {
             });
           });
         };
-
-        // Check users one by one
+        if (!agreeTerms) {
+          toast.error("please agree");
+        }
         await checkUser(
           ref(db, `users/${tl1email.replace(/\./g, "_")}`),
           "Team Leader"
@@ -92,7 +105,6 @@ function Team_reg({ user }) {
           );
         }
 
-        // If all checks passed, continue with the rest of your logic
         console.log(m1);
 
         set(ref(db, `events/${eventName.event}/${uid}`), {
@@ -129,10 +141,13 @@ function Team_reg({ user }) {
           });
         }
       } else {
-        toast.error("Registration failed.", {
-          autoClose: 3200,
-          theme: "dark",
-        });
+        toast.error(
+          `Please affirm that you have read the rules and regulations of this event. `,
+          {
+            autoClose: 3200,
+            theme: "dark",
+          }
+        );
       }
     } catch (error) {
       console.log(error);
@@ -225,13 +240,29 @@ function Team_reg({ user }) {
               onChange={(e) => setM3email(e.target.value)}
               required
             />
-            <div className="py-5">
+
+            <div className="py-5 flex flex-col gap-6">
+              <div className="terms-checkbox">
+                <input
+                  type="checkbox"
+                  checked={agreeTerms}
+                  onChange={() => setAgreeTerms(!agreeTerms)}
+                  style={{ width: "19px", height: "19px" }}
+                />
+                <label className="checkpara px-3">
+                I affirm that I have read the rules and regulations of this event and want to proceed. 
+                </label>
+              </div>
+
               <button
-                className="form_button mx-auto "
+                className={`form_button mx-auto ${
+                  !agreeTerms ? "disabled" : ""
+                }`}
                 onClick={() => {
                   scrollToTop();
                   dataEntry();
                 }}
+                // disabled={!agreeTerms}
               >
                 Register
               </button>

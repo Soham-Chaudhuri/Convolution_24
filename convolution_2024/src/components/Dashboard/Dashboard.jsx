@@ -33,6 +33,7 @@ function Dashboard({ user }) {
   const [_frames, set_frames] = useState(false);
   const [userData, setUserData] = useState(null);
   const [boxesData, setBoxesData] = useState([]);
+  
   const [events, setEvents] = useState([
     false,
     false,
@@ -306,3 +307,13 @@ function Dashboard({ user }) {
 }
 
 export default Dashboard;
+
+
+
+
+
+
+
+
+
+
