@@ -35,9 +35,7 @@ function Faq() {
               In competitions where there is no penalty for destroying
               components, it's crucial to note that any team found mishandling
               components will face immediate disqualification. This policy aims
-              to maintain a fair and ethical playing field. Participants are
-              granted the freedom to explore and push limits, but responsible
-              conduct is paramount. Disqualification serves as a deterrent
+              to maintain a fair and ethical playing field. Disqualification serves as a deterrent
               against intentional damage, promoting sportsmanship and adherence
               to competition rules. Striking a balance between innovation and
               responsible behavior is essential to uphold the integrity of the
@@ -58,16 +56,13 @@ function Faq() {
             </label>
             <div className="accordion-item-desc">
               Teams must be exclusively comprised of students from the same
-              college and of the same academic year. This stipulation ensures a
-              level playing field by fostering collaboration among peers who
-              share a common educational background. The requirement not only
+              college and of the same academic year. The requirement not only
               promotes a sense of camaraderie within the team but also
               encourages a fair representation of skills and knowledge among
               participants. Restricting team formation to students from the same
               college and year enhances the overall integrity of the
               competition, preventing potential disparities in experience or
-              resources. This rule underscores the importance of creating an
-              equitable and cohesive environment for all participating teams.
+              resources. 
             </div>
           </div>
 

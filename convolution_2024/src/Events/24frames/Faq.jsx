@@ -12,7 +12,7 @@ function Faq() {
   };
   return (
     <>
-      <section id="faq">
+      <section id="faq" >
         <div className="accordion">
           <div className=" flex flex-col justify-center items-center gap-3 py-5">
             <h1 className="text-center teams_h1">FREQUENTLY ASKED QUESTIONS</h1>

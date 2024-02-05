@@ -98,6 +98,13 @@ function Signup() {
       return;
     }
 
+    if (password.length < 6) {
+      toast.error("Password must be at least 6 characters", {
+        theme: "dark",
+      });
+      return;
+    }
+
     if (phnumber.length < 10) {
       toast.error("Please enter the correct phone number", {
         theme: "dark",
