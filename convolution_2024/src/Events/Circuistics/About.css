@@ -1,12 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:wght@500&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
-.about_layer_bg,
-.about_layer_lines,
-.about {
+.cir_about_layer_bg,
+.cir_about_layer_lines,
+.cir_about {
   width: 1301px;
-  height: 500px;
+  height: 550px;
 }
-.about_layer_bg {
+.cir_about_layer_bg {
   position: relative;
   border-radius: 46px;
   box-shadow: 5px 5px 0px 0px #e9c462;
@@ -14,7 +14,7 @@
   background-color: black;
   z-index: 0;
 }
-.about_layer_lines {
+.cir_about_layer_lines {
   position: absolute;
   top: 0px;
   left: 0px;
@@ -22,7 +22,7 @@
   opacity: 0.1;
   z-index: 1;
 }
-.about {
+.cir_about {
   position: absolute;
   top: 0px;
   left: 0px;
@@ -40,11 +40,11 @@
   color: #e9c462;
 }
 
-.para {
+.cir_para {
   font-family: "Poppins", sans-serif;
   font-size: 24px;
   font-weight: 500;
-  line-height: 34px;
+  line-height: 40px;
   letter-spacing: 0.05em;
   text-align: center;
   color: white;
