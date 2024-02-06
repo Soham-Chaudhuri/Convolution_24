@@ -4,21 +4,21 @@ function About() {
   return (
     <>
       <section id="Re_about">
-        <div className="Re_about_layer_bg">
-          <div className="Re_about_layer_lines"></div>
-          <div className="Re_about flex text-center flex-col align-center justify-center gap-6 py-10 px-6">
+        <div className="Re_eu_about_layer_bg">
+          <div className="Re_eu_about_layer_lines"></div>
+          <div className="Re_eu_about flex text-center flex-col align-center justify-center gap-6 py-10 px-6">
             <span className="Re_heading">ABOUT EUREKA</span>
-            <span className="Re_para">
-              Convolution 9.0 is the ninth edition of the annual
-              techno-management fest organized by the Students' Forum of the
-              Department of Electrical Engineering, Jadavpur University. It
-              provides a dynamic hotspot to students pursuing STEM-related
-              programs, where they can apply their creativity and skills, and
-              test their mettle against the best. Convolution acts as an
-              umbrella event comprising of several student interaction events,
-              technical events, workshops, and has also hosted, in the past,
-              lectures by some of the most illustrious names in academia and
-              industry alike.
+            <span className="Re_eu_para text-justify">
+            &bull;Teams can consist of the same or different colleges and/or same or different streams. Teams must comprise 3-4 members.
+              <br />
+              <div className="h-[15px]"></div>
+              &bull;Round 1 will be a screening round based on mathematical,analytical and aptitude skills. It will consist of 60 questions which are to be done in 40 mins. Top 10 highest scoring teams qualify to the 2nd Round. 
+              <br />
+              <div className="h-[15px]"></div>
+              &bull;Round 2 will be the final round consisting of puzzle solving, Riddles, deciphering codes and many more. In the 2nd round there will be 6 stages. Each of 5 stages has 3 Questions and the 6 th one has a final question. Solving each stage will lead to the next one.
+              <br />
+              <div className="h-[15px]"></div>
+              &bull;Contestants will be allowed to browse the internet or use any software or program however they want to solve the puzzles. Contestants are required to carry at least one laptop, charger and as well mobile phones per team.
             </span>
           </div>
         </div>
