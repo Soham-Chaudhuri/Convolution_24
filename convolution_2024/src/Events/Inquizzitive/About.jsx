@@ -4,21 +4,25 @@ function About() {
   return (
     <>
       <section id="about">
-        <div className="about_layer_bg">
-          <div className="about_layer_lines"></div>
-          <div className="about flex text-center flex-col align-center justify-center gap-10">
-            <span className="heading">ABOUT INQUIZZITIVE</span>
-            <span className="para">
-              Convolution 9.0 is the ninth edition of the annual
-              techno-management fest organized by the Students' Forum of the
-              Department of Electrical Engineering, Jadavpur University. It
-              provides a dynamic hotspot to students pursuing STEM-related
-              programs, where they can apply their creativity and skills, and
-              test their mettle against the best. Convolution acts as an
-              umbrella event comprising of several student interaction events,
-              technical events, workshops, and has also hosted, in the past,
-              lectures by some of the most illustrious names in academia and
-              industry alike.
+        <div className="in_about_layer_bg">
+          <div className="in_about_layer_lines"></div>
+          <div className="in_about flex text-center flex-col align-center justify-center gap-10">
+          <span className="heading">RULES & REGULATIONS</span>
+            <span className="in_para text-justify">
+              &bull;There will be two rounds of this event- 
+              <br />
+              &emsp;a)1st round: On campus qualifying round. 10 teams will be shortlisted.
+              <br />
+              &emsp;b)2nd round: On campus final round. Top 3 teams will be rewarded.
+              <br />
+              <div className="h-[15px]"></div>
+              &bull;Team of 2- 3 people will be allowed.
+              <br />
+              <div className="h-[15px]"></div>
+              &bull;Cross department/college teams allowed. Cross year teams are not encouraged.
+              <br />
+              <div className="h-[15px]"></div>
+              &bull;On spot registration will be allowed.
             </span>
           </div>
         </div>
