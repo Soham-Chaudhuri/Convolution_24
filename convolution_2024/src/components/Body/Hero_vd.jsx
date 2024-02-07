@@ -1,7 +1,7 @@
 import React from "react";
 import "../Body/Hero_vd.css";
 // import video from "../assets/Coming Soon.mp4";
-import video from "../assets/Coming Soon (1).mp4"
+import video from "../assets/comingsoon2.mp4"
 function Hero_vd() {
   return (
     <>

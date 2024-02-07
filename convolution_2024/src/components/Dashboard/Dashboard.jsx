@@ -33,7 +33,7 @@ function Dashboard({ user }) {
   const [_frames, set_frames] = useState(false);
   const [userData, setUserData] = useState(null);
   const [boxesData, setBoxesData] = useState([]);
-  
+
   const [events, setEvents] = useState([
     false,
     false,
@@ -76,9 +76,9 @@ function Dashboard({ user }) {
           id: 1,
           type: "Register Now",
           image: pic1,
-          content: "Lorem ipsum content for box 1",
-          lastDate: "XX YY ZZZZ",
-          eventDate: "XX YY ZZZZ",
+          content: "Anything and Everything Under the Sun",
+          lastDate: "15-03-2024",
+          eventDate: "15-03-2024",
           registered: false,
           event: "inquizzitive",
           href: "/events/inquizzitive",
@@ -87,9 +87,9 @@ function Dashboard({ user }) {
           id: 2,
           type: data.decisia ? "Registered" : "Register Now",
           image: pic4,
-          content: "Lorem ipsum content for box 2",
+          content: "Impactful decisions, endless possibilities",
           lastDate: "XX YY ZZZZ",
-          eventDate: "XX YY ZZZZ",
+          eventDate: "16-03-2024",
           registered: data.decisia,
           event: "decisia",
           href: "/events/decisia",
@@ -98,9 +98,9 @@ function Dashboard({ user }) {
           id: 3,
           type: data.abol_tabol ? "Registered" : "Register Now",
           image: pic5,
-          content: "Lorem ipsum content for box 3",
+          content: "The Curious Case of Quirky Nonscience",
           lastDate: "XX YY ZZZZ",
-          eventDate: "XX YY ZZZZ",
+          eventDate: "16-03-2024",
           registered: data.abol_tabol,
           event: "abol_tabol",
           href: "/events/aboltabol",
@@ -109,9 +109,9 @@ function Dashboard({ user }) {
           id: 4,
           type: data.circuistics ? "Registered" : "Register Now",
           image: pic6,
-          content: "Lorem ipsum content for box 4",
+          content: "Let the wires determine it...",
           lastDate: "XX YY ZZZZ",
-          eventDate: "XX YY ZZZZ",
+          eventDate: "16-03-2024",
           registered: data.circuistics,
           event: "circuistics",
           href: "/events/circuistics",
@@ -120,9 +120,9 @@ function Dashboard({ user }) {
           id: 5,
           type: data.eureka ? "Registered" : "Register Now",
           image: pic7,
-          content: "Lorem ipsum content for box 5",
+          content: "Crack the Code, Claim the Crown!",
           lastDate: "XX YY ZZZZ",
-          eventDate: "XX YY ZZZZ",
+          eventDate: "16-03-2024",
           registered: data.eureka,
           event: "eureka",
           href: "/events/eureka",
@@ -131,9 +131,9 @@ function Dashboard({ user }) {
           id: 6,
           type: data.algomaniac ? "Registered" : "Register Now",
           image: pic8,
-          content: "Lorem ipsum content for box 6",
+          content: "Let your code speak",
           lastDate: "XX YY ZZZZ",
-          eventDate: "XX YY ZZZZ",
+          eventDate: "17-03-2024",
           registered: data.algomaniac,
           event: "algomaniac",
           href: "/events/algomaniac",
@@ -144,7 +144,7 @@ function Dashboard({ user }) {
           image: pic9,
           content: "Lorem ipsum content for box 7",
           lastDate: "XX YY ZZZZ",
-          eventDate: "XX YY ZZZZ",
+          eventDate: "17-03-2024",
           registered: data.papier,
           event: "papier",
           href: "/events/papier",
@@ -153,9 +153,9 @@ function Dashboard({ user }) {
           id: 8,
           type: data.spark_hack ? "Registered" : "Register Now",
           image: pic10,
-          content: "Lorem ipsum content for box 8",
+          content: "Hack your brilliance. Code, Create, Conquer!",
           lastDate: "XX YY ZZZZ",
-          eventDate: "XX YY ZZZZ",
+          eventDate: "16-03-2024",
           registered: data.spark_hack,
           event: "spark_hack",
           href: "/events/sparkhack",
@@ -164,9 +164,10 @@ function Dashboard({ user }) {
           id: 9,
           type: data._frames ? "Registered" : "Register Now",
           image: pic11,
-          content: "Lorem ipsum content for box 8",
+          content: `Photographers' Delight
+          `,
           lastDate: "XX YY ZZZZ",
-          eventDate: "XX YY ZZZZ",
+          eventDate: "17-03-2024",
           registered: data._frames,
           event: "_frames",
           href: "/events/24frames",
@@ -241,14 +242,15 @@ function Dashboard({ user }) {
                         : "register-now transition-all hover:cursor-pointer hover:text-[#e9c462] "
                     }
                     onClick={async () => {
-                      await setEvents((prevarray) => {
-                        const newarray = [...prevarray];
-                        if (!newarray[box.id - 1] && box.id === 6) {
-                          newarray[box.id - 1] = true;
-                          window.location.reload();
-                        }
-                        return newarray;
-                      });
+                      // await setEvents((prevarray) => {
+                      //   const newarray = [...prevarray];
+                      //   if (!newarray[box.id - 1] && box.id === 6) {
+                      //     newarray[box.id - 1] = true;
+                      //     window.location.reload();
+                      //   }
+                      //   return newarray;
+                      // });
+
                       // if (box.id === 6) {
                       //   algoupdate();
                       //   window.location.reload();
@@ -257,7 +259,6 @@ function Dashboard({ user }) {
                       if (!events[box.id - 1] && box.id !== 6 && box.id !== 1) {
                         navigate(`/reg/${box.event}`);
                       }
-                      
 
                       if (box.id === 1) {
                         toast.info(
@@ -267,11 +268,31 @@ function Dashboard({ user }) {
                           }
                         );
                       }
+
+                      if (box.id === 6) {
+                        toast.info(
+                          " Please proceed with registration on the following Google Form. Redirecting now.",
+                          {
+                            theme: "dark",
+                            autoClose: 4200,
+                          }
+                        );
+
+                        setTimeout(() => {
+                          // window.location.href = "https://forms.gle/y5p9jAkzhbQskSYd9";
+                          window.open(
+                            "https://forms.gle/y5p9jAkzhbQskSYd9",
+                            "_blank"
+                          );
+                        }, 3000);
+                      }
                     }}
                   >
                     {box.type} {!box.registered ? "\u2192" : "\u2714"}
                   </b>
-                  <img className="logo-1" alt="" src={box.image} />
+                  <Link to={box.href}>
+                    <img className="logo-1" alt="" src={box.image} />
+                  </Link>
                   <div className="line-div" />
                   <div className="lorem-dash">
                     <p>{box.content}</p>
@@ -307,13 +328,3 @@ function Dashboard({ user }) {
 }
 
 export default Dashboard;
-
-
-
-
-
-
-
-
-
-

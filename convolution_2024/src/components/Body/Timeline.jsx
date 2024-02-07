@@ -81,7 +81,7 @@ function Timeline() {
                     <p className="timeline_para">
                       - Decisia Finals
                       <br />
-                      - Papier Finals
+                      - Abol Tabol  Finals
                       <br />
                     </p>
                   </div>
@@ -113,7 +113,7 @@ function Timeline() {
                   <div>
                     <h3>Afternoon Session:</h3>
                     <p className="timeline_para">
-                      - Abol Tabol Final
+                      - JU Talks Final
                       <br />
                       - Prize Distribution
                       <br />
