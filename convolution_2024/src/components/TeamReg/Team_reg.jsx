@@ -7,6 +7,7 @@ import { app } from "../firebase";
 import { getDatabase, onValue, ref, set, update } from "firebase/database";
 import { v4 as uuid } from "uuid";
 import { Link } from "react-router-dom";
+import rules from "../../components/assets/rules.pdf";
 const db = getDatabase(app);
 function Team_reg({ user }) {
   const navigate = useNavigate();
@@ -250,7 +251,16 @@ function Team_reg({ user }) {
                   style={{ width: "19px", height: "19px" }}
                 />
                 <label className="checkpara px-3">
-                I affirm that I have read the rules and regulations of this event and want to proceed. 
+                  I affirm that I have read the
+                  <a
+                    href={rules}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="checkpara px-2 text-[#f76932] cursor-pointer"
+                  >
+                    rules and regulations
+                  </a>
+                  of this event and want to proceed.
                 </label>
               </div>
 
