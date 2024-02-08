@@ -13,6 +13,7 @@ import pic8 from "../assets/Algomaniac Light.png";
 import pic9 from "../assets/Papier_Light.png";
 import pic10 from "../assets/Sparkhack_Light.png";
 import pic11 from "../assets/24 Frames Light.png";
+import pic12 from "../assets/JU Talks Light.png"
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { motion } from "framer-motion";
@@ -141,12 +142,12 @@ function Dashboard({ user }) {
         {
           id: 7,
           type: data.papier ? "Registered" : "Register Now",
-          image: pic9,
+          image: pic12,
           content: "Lorem ipsum content for box 7",
           lastDate: "XX YY ZZZZ",
           eventDate: "17-03-2024",
           registered: data.papier,
-          event: "papier",
+          event: "JU Talks",
           href: "/events/papier",
         },
         {
@@ -256,7 +257,12 @@ function Dashboard({ user }) {
                       //   window.location.reload();
                       // }
 
-                      if (!events[box.id - 1] && box.id !== 6 && box.id !== 1) {
+                      if (
+                        !events[box.id - 1] &&
+                        box.id !== 6 &&
+                        box.id !== 1 &&
+                        box.id !== 7
+                      ) {
                         navigate(`/reg/${box.event}`);
                       }
 
@@ -265,6 +271,16 @@ function Dashboard({ user }) {
                           "On Day Registration at JU Electrical Engineering building",
                           {
                             theme: "dark",
+                          }
+                        );
+                      }
+
+                      if (box.id === 7) {
+                        toast.info(
+                          "You are all invited to attend JU Talks on Sunday 17th March in dept of EE jadavpur University",
+                          {
+                            theme: "dark",
+                          
                           }
                         );
                       }

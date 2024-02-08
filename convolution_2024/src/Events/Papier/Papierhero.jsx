@@ -45,7 +45,7 @@ function Algohero({user}) {
                   Convolution 9.0 Presents
                 </span>
                 <span className="hero_heading_2 text-shadow-md">
-                  PAPIER
+                  JU Talks
                 </span>
                 <span className="hero_heading_3">Let your code speak</span>
                 <div className="flex hero_btn mt-5">
@@ -76,7 +76,7 @@ function Algohero({user}) {
           <Timeline />
           <Prizes dat={"Gallery"}/>
           <Judges />
-          <Prizes dat={"Prizes"}/>
+          {/* <Prizes dat={"Prizes"}/> */}
           <Faq />
           <Teams />
           <Contact/>

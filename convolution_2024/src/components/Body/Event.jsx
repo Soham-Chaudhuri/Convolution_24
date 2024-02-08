@@ -5,7 +5,7 @@ import picture2 from "../assets/abol2nd.png";
 import picture3 from "../assets/Circuistics_Dark.png";
 import picture4 from "../assets/Eureka_Dark.png";
 import picture5 from "../assets/Inquizzitive_Dark.png";
-import picture6 from "../assets/Papier_Dark.png";
+import picture6 from "../assets/JU Talks Dark.png";
 import picture7 from "../assets/Sparkhack_Dark.png";
 import picture8 from "../assets/24 Frames Dark.png";
 import picture9 from "../assets/Algomaniac Dark.png";
@@ -49,7 +49,7 @@ const peopleData = [
   {
     id: 4,
     name: "Alice Williams",
-    description: "Papier",
+    description: "JU Talks",
     imgSrc: picture6,
     normalImg: picture6,
     href: "/events/papier",

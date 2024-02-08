@@ -8,7 +8,7 @@ function About() {
           <div className="about_layer_lines"></div>
           <div className="about flex text-center flex-col align-center justify-center gap-10">
             <span className="heading">ABOUT CONVOLUTION 9.0</span>
-            <span className="para">
+            <span className="para text-justify">
               Convolution 9.0 is the ninth edition of the annual
               techno-management fest organized by the Students' Forum of the
               Department of Electrical Engineering, Jadavpur University. It
