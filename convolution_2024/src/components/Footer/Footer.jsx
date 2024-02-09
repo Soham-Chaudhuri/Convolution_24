@@ -11,7 +11,14 @@ function Footer() {
             <h1 className="footer_h1">CONVOLUTION 9.0</h1>
             <br />
             <p className="footer_paragraph flex flex-col gap-[0px]">
-              <span>Department of Electrical Engineering</span>
+              <a
+                className="footer_paragraph transition-all hover:text-[#f76932]"
+                href="http://www.jaduniv.edu.in/view_department.php?deptid=58"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span>Department of Electrical Engineering</span>
+              </a>
               <br />
               <span>Jadavpur University</span>
               <br />
@@ -36,7 +43,7 @@ function Footer() {
             <p className="footer_icons ">Our Social Networks:</p>
 
             <div className="flex gap-2">
-              <a 
+              <a
                 href="https://www.instagram.com/convolution24/"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -44,15 +51,18 @@ function Footer() {
                 <i className="fa-brands fa-square-instagram fabicon"></i>
               </a>
               <a
-              href="https://www.linkedin.com/company/101543654/admin/feed/posts/?feedType=following
+                href="https://www.linkedin.com/company/101543654/admin/feed/posts/?feedType=following
               "
-              target="_blank"
-              rel="noopener noreferrer">
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <i className="fa-brands fa-linkedin fabicon"></i>
               </a>
-              <a href="https://www.facebook.com/profile.php?id=61555660919861"
+              <a
+                href="https://www.facebook.com/profile.php?id=61555660919861"
                 target="_blank"
-                rel="noopener noreferrer">
+                rel="noopener noreferrer"
+              >
                 <i className="fa-brands fa-square-facebook fabicon"></i>
               </a>
             </div>

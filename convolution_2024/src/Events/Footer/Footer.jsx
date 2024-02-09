@@ -11,7 +11,14 @@ function Footer() {
             <h1 className="footer_h1">CONVOLUTION 9.0</h1>
             <br />
             <p className="footer_paragraph flex flex-col gap-[0px]">
-              <span>Department of Electrical Engineering</span>
+              <a
+                className="footer_paragraph transition-all hover:text-[#f76932]"
+                href="http://www.jaduniv.edu.in/view_department.php?deptid=58"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span>Department of Electrical Engineering</span>
+              </a>
               <br />
               <span>Jadavpur University</span>
               <br />
@@ -34,7 +41,7 @@ function Footer() {
           </div>
           <div className="flex gap-3 flex-col mb-[160px]">
             <p className="footer_icons ">Our Social Networks:</p>
-            
+
             <div className="flex gap-2">
               <i className="fa-brands fa-square-instagram fabicon"></i>
               <i className="fa-brands fa-linkedin fabicon"></i>

@@ -3,7 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <!-- <link rel="icon" type="image/svg+xml" href="/src/components/assets/Arrow.svg" /> -->
-    <link rel="icon" type="image/svg+xml" href="/src/components/assets/tab.png" />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="/src/components/assets/tab.png"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script
       src="https://kit.fontawesome.com/e6078aee24.js"
@@ -20,5 +24,25 @@
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    
+    <script src="https://cdn.botpress.cloud/webchat/v1/inject.js"></script>
+    <script>
+      window.botpressWebChat.init({
+        composerPlaceholder: "Say Hi....",
+        botId: "daa9593e-6278-48fa-8386-0a0469432628",
+        hostUrl: "https://cdn.botpress.cloud/webchat/v1",
+        messagingUrl: "https://messaging.botpress.cloud",
+        clientId: "daa9593e-6278-48fa-8386-0a0469432628",
+        webhookId: "9621a8b4-bfc8-4863-ab5b-9628b37bd437",
+        lazySocket: true,
+        themeName: "prism",
+        botName: "Trinoyon",
+        stylesheet:
+          "https://webchat-styler-css.botpress.app/prod/code/7905f46a-209c-4577-b968-00adf776f23b/v9048/style.css",
+        frontendVersion: "v1",
+        theme: "prism",
+        themeColor: "#2563eb",
+      });
+    </script>
   </body>
 </html>

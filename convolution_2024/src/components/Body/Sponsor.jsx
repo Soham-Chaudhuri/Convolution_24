@@ -4,11 +4,17 @@ import { Link } from "react-router-dom";
 import sponsorpic1 from "../assets/sponsor/1.png";
 import sponsorpic2 from "../assets/sponsor/2.png";
 import sponsorpic3 from "../assets/sponsor/3.png";
-import sponsorpic4 from "../assets/CESC.png";
+import sponsorpic4 from "../assets/sponsor/4.png";
 import sponsorpic5 from "../assets/sponsor/5.png";
 import sponsorpic6 from "../assets/sponsor/6.png";
 import sponsorpic7 from "../assets/sponsor/7.png";
-import sponsorpic8 from "../assets/EXIDE.png";
+import sponsorpic8 from "../assets/sponsor/8.png";
+import sponsorpic9 from "../assets/sponsor/9.png";
+import sponsorpic10 from "../assets/sponsor/10.png";
+import sponsorpic11 from "../assets/sponsor/11.png";
+import sponsorpic12 from "../assets/sponsor/12.png";
+import sponsorpic13 from "../assets/sponsor/13.png";
+
 const slideData = [
   {
     index: 0,
@@ -21,37 +27,37 @@ const slideData = [
     index: 1,
     headline: "In The Wilderness",
     button: "Book travel",
-    src: sponsorpic2,
+    src: sponsorpic4,
   },
   {
     index: 2,
     headline: "For Your Current Mood",
     button: "Listen",
-    src: sponsorpic3,
+    src: sponsorpic9,
   },
   {
     index: 3,
     headline: "Focus On The Writing",
     button: "Get Focused",
-    src: sponsorpic7,
+    src: sponsorpic6,
   },
   {
     index: 4,
     headline: "Focus On The Writing",
     button: "Get Focused",
-    src: sponsorpic5,
+    src: sponsorpic13,
   },
   {
     index: 5,
     headline: "Focus On The Writing",
     button: "Get Focused",
-    src: sponsorpic6,
+    src: sponsorpic5,
   },
   {
     index: 6,
     headline: "Focus On The Writing",
     button: "Get Focused",
-    src: sponsorpic4,
+    src: sponsorpic10,
   },
   {
     index: 7,
@@ -59,12 +65,40 @@ const slideData = [
     button: "Get Focused",
     src: sponsorpic8,
   },
-  // {
-  //   index: 8,
-  //   headline: "Focus On The Writing",
-  //   button: "Get Focused",
-  //   src: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/225363/forest.jpg",
-  // },
+  {
+    index: 8,
+    headline: "Focus On The Writing",
+    button: "Get Focused",
+    src: sponsorpic7,
+  },
+
+  {
+    index: 9,
+    headline: "Focus On The Writing",
+    button: "Get Focused",
+    src: sponsorpic2,
+  },
+
+  {
+    index: 10,
+    headline: "Focus On The Writing",
+    button: "Get Focused",
+    src: sponsorpic11,
+  },
+
+  {
+    index: 11,
+    headline: "Focus On The Writing",
+    button: "Get Focused",
+    src: sponsorpic12,
+  },
+
+  {
+    index: 12,
+    headline: "Focus On The Writing",
+    button: "Get Focused",
+    src: sponsorpic3,
+  },
 ];
 
 // =========================
@@ -172,7 +206,7 @@ class Slider extends React.Component {
     this.handleSlideClick = this.handleSlideClick.bind(this);
   }
   componentDidMount() {
-    this.autoAdvanceInterval = setInterval(this.handleNextClick, 2000);
+    this.autoAdvanceInterval = setInterval(this.handleNextClick, 2800);
   }
 
   handlePreviousClick() {

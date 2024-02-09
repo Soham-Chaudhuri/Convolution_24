@@ -14,11 +14,11 @@ const peopleData = [
     imgSrc: picture6,
 
     socialMediaLinks: {
-      instagram: "#",
-      linkedin: "#",
-      facebook: "#",
+      instagram: "https://www.instagram.com/abhinaba.biswas.1232/",
+      linkedin: "",
+      facebook: "https://www.facebook.com/abhinaba.biswas.773",
     },
-    socialMediaavailable: { insta: true, linke: true, face: true },
+    socialMediaavailable: { insta: true, linke: false, face: true },
     desc: "",
   },
   {
@@ -27,11 +27,11 @@ const peopleData = [
     description: "Debashis Mondal",
     imgSrc: picture4,
     socialMediaLinks: {
-      instagram: "#",
-      linkedin: "#",
-      facebook: "#",
+      instagram: "https://www.instagram.com/debashis_711/",
+      linkedin: "",
+      facebook: "https://www.facebook.com/profile.php?id=100011148109062",
     },
-    socialMediaavailable: { insta: true, linke: true, face: true },
+    socialMediaavailable: { insta: true, linke: false, face: true },
     desc: "",
   },
 ];
