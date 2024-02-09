@@ -1,9 +1,7 @@
 import React from "react";
 import "./Judges.css";
 
-
-
-import picture6 from "../../components/assets/judges/Quizmaster.png";
+import picture6 from "../../components/assets/QuizMaster.png";
 
 const peopleData = [
   {
@@ -14,25 +12,13 @@ const peopleData = [
 
     socialMediaLinks: {
       instagram: "link",
-      linkedin: "https://www.linkedin.com/in/baneswar-sarker-59689587/?originalSubdomain=in",
+      linkedin:
+        "https://www.linkedin.com/in/baneswar-sarker-59689587/?originalSubdomain=in",
       facebook: "link",
     },
     socialMediaavailable: { insta: false, linke: true, face: false },
     desc: "Research Scholar (PhD) at IIT Kharagpur",
   },
-  // {
-  //   id: 2,
-  //   name: "Parthib",
-  //   description: "Joint-Secretary",
-  //   imgSrc: picture4,
-  //   socialMediaLinks: {
-  //     instagram: "https://www.instagram.com/parthib_not_parthiv/",
-  //     linkedin: "https://www.linkedin.com/in/parthib-roy-3a78b3224/",
-  //     facebook: "https://www.facebook.com/profile.php?id=100074521635711",
-  //   },
-  //   socialMediaavailable: { insta: true, linke: true, face: true },
-  //   desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-  // },
 ];
 
 function Judges() {
@@ -43,16 +29,17 @@ function Judges() {
           <h1 className="text-center teams_h1">QUIZ MASTER</h1>
           <span className="underline_teams"></span>
           <p className="paragraph_teams py-4">
-            Meet the representatives of JU EE Students' Forum making Convolution
-            9.0 possible!
-            <br />
-            We are ready to address all your queries!
+            Meet the Quiz Master of Inquizzitive!
+           
           </p>
         </div>
         <div className="px-[69px] py-5">
           <div className="flex flex-wrap items-center justify-center ">
             {peopleData.map((person) => (
-              <div key={person.id} className="boro-goal-teams flex flex-wrap items-center">
+              <div
+                key={person.id}
+                className="boro-goal-teams flex flex-wrap items-center"
+              >
                 <div className="group-child-img-teams">
                   <img src={person.imgSrc} alt={person.name} />
                 </div>

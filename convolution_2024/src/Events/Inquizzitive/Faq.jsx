@@ -27,17 +27,14 @@ function Faq() {
               onChange={() => handleCheckboxChange("accordion1")}
             />
             <label htmlFor="accordion1" className="accordion-item-title ">
-              <span className="faq-icon"></span>What is SEO, and why is it important
-              for online businesses?
+              <span className="faq-icon"></span>Will on-spot registration be
+              available?
             </label>
             <div className="accordion-item-desc items-center">
-              SEO, or Search Engine Optimization, is the practice of optimizing
-              a website to improve its visibility on search engines like Google.
-              It involves various techniques to enhance a site's ranking in
-              search results. SEO is crucial for online businesses as it helps
-              drive organic traffic, increases visibility, and ultimately leads
-              to higher conversions.
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis sint accusantium reprehenderit magnam.   
+              On-the-spot registration is welcome! Feel free to join us without
+              prior registration at the Electrical Engineering Department,
+              Jadavpur University. We look forward to your spontaneous
+              participation in this exciting event.
             </div>
           </div>
 
@@ -49,16 +46,14 @@ function Faq() {
               onChange={() => handleCheckboxChange("accordion2")}
             />
             <label htmlFor="accordion2" className="accordion-item-title">
-              <span className="faq-icon"></span>How long does it take to see results
-              from SEO efforts?
+              <span className="faq-icon"></span> When and where will the event
+              be held?
             </label>
             <div className="accordion-item-desc">
-              The timeline for seeing results from SEO can vary based on several
-              factors, such as the competitiveness of keywords, the current
-              state of the website, and the effectiveness of the SEO strategy.
-              Generally, it may take several weeks to months before noticeable
-              improvements occur. However, long-term commitment to SEO is
-              essential for sustained success.
+              Join us for an engaging event on March 15, 2024, at KCR Hall,
+              Electrical Engineering Department. Save the date for a day filled
+              with insightful discussions and valuable experiences in the heart
+              of Jadavpur University.
             </div>
           </div>
 
@@ -70,15 +65,16 @@ function Faq() {
               onChange={() => handleCheckboxChange("accordion3")}
             />
             <label htmlFor="accordion3" className="accordion-item-title">
-              <span className="faq-icon"></span>What are the key components of a
-              successful SEO strategy?
+              <span className="faq-icon"></span>How will the selection of
+              winners take place?
             </label>
             <div className="accordion-item-desc">
-              A successful SEO strategy involves various components, including
-              keyword research, on-page optimization, quality content creation,
-              link building, technical SEO, and user experience optimization.
-              These elements work together to improve a website's relevance and
-              authority in the eyes of search engines.
+              Advance to the final round by securing a spot in the top 10 teams
+              with the highest scores in the first round. The ultimate challenge
+              awaits as the top 3 teams with the highest scores in the final
+              round will be crowned the winners. May the competition bring out
+              the best in your team at the Electrical Engineering Department,
+              Jadavpur University.
             </div>
           </div>
 
@@ -90,20 +86,20 @@ function Faq() {
               onChange={() => handleCheckboxChange("accordion4")}
             />
             <label htmlFor="accordion4" className="accordion-item-title">
-              <span className="faq-icon"></span>How does mobile optimization impact
-              SEO?
+              <span className="faq-icon"></span> Are cross college teams
+              allowed?
             </label>
             <div className="accordion-item-desc">
-              Mobile optimization is crucial for SEO because search engines
-              prioritize mobile-friendly websites. With the increasing use of
-              smartphones, search engines like Google consider mobile
-              responsiveness as a ranking factor. Websites that provide a
-              seamless experience on mobile devices are more likely to rank
-              higher in search results.
+              Encourage collaboration across colleges and departments as teams
+              are welcome to comprise members from different academic
+              backgrounds. However, kindly note that cross-year teams are
+              discouraged. Join forces with peers from diverse disciplines to
+              make the most of this enriching experience at the Electrical
+              Engineering Department, Jadavpur University.
             </div>
           </div>
 
-          <div className="accordion-item">
+          {/* <div className="accordion-item">
             <input
               type="checkbox"
               id="accordion5"
@@ -124,7 +120,7 @@ function Faq() {
               community activities. It's important to focus on natural and
               ethical link-building practices.
             </div>
-          </div>
+          </div> */}
         </div>
       </section>
     </>
