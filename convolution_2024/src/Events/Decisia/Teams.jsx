@@ -4,7 +4,7 @@ import "./Teams.css";
 
 import picture4 from "../../components/assets/leads/aneesh.png";
 
-import picture6 from "../../components/assets/nojudge.png";
+import picture6 from "../../components/assets/tirtha.png";
 
 const peopleData = [
   {
@@ -14,9 +14,9 @@ const peopleData = [
     imgSrc: picture6,
 
     socialMediaLinks: {
-      instagram: "",
-      linkedin: "",
-      facebook: "",
+      instagram: "https://www.instagram.com/pratimtirtha.21?igsh=b2FvamtnbmJkMDg5",
+      linkedin: "https://www.linkedin.com/in/tirtha-pratim-ghosh-933b03277?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      facebook: "https://www.facebook.com/tirthapratim.ghosh?mibextid=ZbWKwL",
     },
     socialMediaavailable: { insta: true, linke: true, face: true },
     desc: "",
@@ -44,9 +44,7 @@ const Teams = () => {
           <h1 className="text-center teams_h1">EVENT LEADS</h1>
           <span className="underline_teams"></span>
           <p className="paragraph_teams py-4">
-            Meet the representatives of JU EE Students' Forum making Convolution
-            9.0 possible!
-            <br />
+            Meet the event leads of Decisia!
             We are ready to address all your queries!
           </p>
         </div>
