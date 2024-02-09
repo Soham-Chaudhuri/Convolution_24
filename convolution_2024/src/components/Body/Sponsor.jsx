@@ -14,6 +14,7 @@ import sponsorpic10 from "../assets/sponsor/10.png";
 import sponsorpic11 from "../assets/sponsor/11.png";
 import sponsorpic12 from "../assets/sponsor/12.png";
 import sponsorpic13 from "../assets/sponsor/13.png";
+import sponsorpic14 from "../assets/sponsor/14.png"; 
 
 const slideData = [
   {
@@ -95,6 +96,12 @@ const slideData = [
 
   {
     index: 12,
+    headline: "Focus On The Writing",
+    button: "Get Focused",
+    src: sponsorpic14,
+  },
+  {
+    index: 13,
     headline: "Focus On The Writing",
     button: "Get Focused",
     src: sponsorpic3,
