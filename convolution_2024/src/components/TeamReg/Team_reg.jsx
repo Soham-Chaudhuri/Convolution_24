@@ -256,7 +256,7 @@ function Team_reg({ user }) {
                     href={rules}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="checkpara px-2 text-[#f76932] cursor-pointer"
+                    className="checkpara px-2 text-[#ed6630] transition-all cursor-pointer hover:text-[#fb7d4c]"
                   >
                     rules and regulations
                   </a>

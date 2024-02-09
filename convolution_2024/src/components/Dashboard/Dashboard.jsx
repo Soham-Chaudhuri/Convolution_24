@@ -297,7 +297,7 @@ function Dashboard({ user }) {
                         setTimeout(() => {
                           // window.location.href = "https://forms.gle/y5p9jAkzhbQskSYd9";
                           window.open(
-                            "https://forms.gle/y5p9jAkzhbQskSYd9",
+                            "https://forms.gle/LwcPTZmtETVUNy2DA",
                             "_blank"
                           );
                         }, 3000);

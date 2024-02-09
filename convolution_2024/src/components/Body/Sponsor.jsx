@@ -125,12 +125,14 @@ class Slide extends React.Component {
         onMouseLeave={this.handleMouseLeave}
       >
         <div className="slide__image-wrapper">
+          
           <img
             className="slide__image"
             alt={headline}
             src={src}
             onLoad={this.imageLoaded}
           />
+        
         </div>
 
         {/* <article className="slide__content">
