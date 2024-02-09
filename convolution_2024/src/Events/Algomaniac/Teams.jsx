@@ -44,9 +44,8 @@ const Teams = () => {
           <h1 className="text-center teams_h1">EVENT LEADS</h1>
           <span className="underline_teams"></span>
           <p className="paragraph_teams py-4">
-            Meet the representatives of JU EE Students' Forum making Convolution
-            9.0 possible!
-            <br />
+            Meet the event leads of Algomaniac!
+            
             We are ready to address all your queries!
           </p>
         </div>
