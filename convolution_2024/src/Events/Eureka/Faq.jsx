@@ -27,17 +27,15 @@ function Faq() {
               onChange={() => handleCheckboxChange("accordion1")}
             />
             <label htmlFor="accordion1" className="accordion-item-title ">
-              <span className="faq-icon"></span>What is SEO, and why is it important
-              for online businesses?
+              <span className="faq-icon"></span>Can we use any AI tools for the
+              event?
             </label>
             <div className="accordion-item-desc items-center">
-              SEO, or Search Engine Optimization, is the practice of optimizing
-              a website to improve its visibility on search engines like Google.
-              It involves various techniques to enhance a site's ranking in
-              search results. SEO is crucial for online businesses as it helps
-              drive organic traffic, increases visibility, and ultimately leads
-              to higher conversions.
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis sint accusantium reprehenderit magnam.   
+              Feel free to utilize any AI tools of your choice for the event. We
+              encourage participants to explore a diverse range of AI tools to
+              enhance their experience and contribute to the innovative
+              atmosphere at the Electrical Engineering Department, Jadavpur
+              University.
             </div>
           </div>
 
@@ -49,16 +47,14 @@ function Faq() {
               onChange={() => handleCheckboxChange("accordion2")}
             />
             <label htmlFor="accordion2" className="accordion-item-title">
-              <span className="faq-icon"></span>How long does it take to see results
-              from SEO efforts?
+              <span className="faq-icon"></span>Will there be any charging
+              points and internet available?
             </label>
             <div className="accordion-item-desc">
-              The timeline for seeing results from SEO can vary based on several
-              factors, such as the competitiveness of keywords, the current
-              state of the website, and the effectiveness of the SEO strategy.
-              Generally, it may take several weeks to months before noticeable
-              improvements occur. However, long-term commitment to SEO is
-              essential for sustained success.
+              Charging points and internet access will be available for
+              participants at the event. Please remember to bring your own
+              laptops and chargers to ensure a seamless and productive
+              experience.
             </div>
           </div>
 
@@ -70,15 +66,16 @@ function Faq() {
               onChange={() => handleCheckboxChange("accordion3")}
             />
             <label htmlFor="accordion3" className="accordion-item-title">
-              <span className="faq-icon"></span>What are the key components of a
-              successful SEO strategy?
+              <span className="faq-icon"></span>Is it mandatory to form a team
+              with students of the same department?
             </label>
             <div className="accordion-item-desc">
-              A successful SEO strategy involves various components, including
-              keyword research, on-page optimization, quality content creation,
-              link building, technical SEO, and user experience optimization.
-              These elements work together to improve a website's relevance and
-              authority in the eyes of search engines.
+              Participation is entirely voluntary, and forming a team is open to
+              students from any department or college. Embrace the flexibility
+              to collaborate across disciplines and create diverse teams at your
+              convenience. Join us in this non-mandatory opportunity to foster
+              interdisciplinary connections and showcase your collective talents
+              at the Electrical Engineering Department, Jadavpur University.
             </div>
           </div>
 
@@ -90,16 +87,17 @@ function Faq() {
               onChange={() => handleCheckboxChange("accordion4")}
             />
             <label htmlFor="accordion4" className="accordion-item-title">
-              <span className="faq-icon"></span>How does mobile optimization impact
-              SEO?
+              <span className="faq-icon"></span>Who can participate in this
+              event?
             </label>
             <div className="accordion-item-desc">
-              Mobile optimization is crucial for SEO because search engines
-              prioritize mobile-friendly websites. With the increasing use of
-              smartphones, search engines like Google consider mobile
-              responsiveness as a ranking factor. Websites that provide a
-              seamless experience on mobile devices are more likely to rank
-              higher in search results.
+              All students, irrespective of their department or college, are
+              invited to participate in this inclusive event at the Electrical
+              Engineering Department, Jadavpur University. Join us for a
+              cross-disciplinary experience, fostering collaboration and
+              knowledge-sharing among students from diverse academic
+              backgrounds. Don't miss this opportunity to broaden your horizons
+              and connect with peers across the university.
             </div>
           </div>
 
@@ -111,18 +109,14 @@ function Faq() {
               onChange={() => handleCheckboxChange("accordion5")}
             />
             <label htmlFor="accordion5" className="accordion-item-title">
-              <span className="faq-icon"></span>What is the role of backlinks in
-              SEO, and how can they be acquired?
+              <span className="faq-icon"></span>Where will the event be held?
             </label>
             <div className="accordion-item-desc">
-              Backlinks, or inbound links from other websites to yours, play a
-              significant role in SEO. They are considered a vote of confidence
-              and can improve a site's authority. Quality over quantity is
-              crucial when acquiring backlinks. Strategies for obtaining
-              backlinks include creating high-quality content, guest posting,
-              reaching out to industry influencers, and participating in
-              community activities. It's important to focus on natural and
-              ethical link-building practices.
+              Join us for an exciting on-campus event at the Electrical
+              Engineering Department, Jadavpur University. Discover the latest
+              in electrical engineering and engage in enriching discussions with
+              fellow attendees. Save the date for an insightful gathering right
+              at the heart of academic innovation.
             </div>
           </div>
         </div>

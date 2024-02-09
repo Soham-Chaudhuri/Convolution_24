@@ -14,7 +14,8 @@ const peopleData = [
     imgSrc: picture6,
 
     socialMediaLinks: {
-      instagram: "https://www.instagram.com/hasirulsekh8?igsh=MW1mNm5nMmY2N2x1NA==",
+      instagram:
+        "https://www.instagram.com/hasirulsekh8?igsh=MW1mNm5nMmY2N2x1NA==",
       linkedin: "",
       facebook: "",
     },
@@ -27,7 +28,8 @@ const peopleData = [
     description: "Sugam Das",
     imgSrc: picture4,
     socialMediaLinks: {
-      instagram: "https://www.instagram.com/s_u_g_a_m_das?igsh=MWFuOHoxdmt0NXF1OA==",
+      instagram:
+        "https://www.instagram.com/s_u_g_a_m_das?igsh=MWFuOHoxdmt0NXF1OA==",
       linkedin: "https://www.linkedin.com/in/sugam-das-760213233/",
       facebook: "https://www.facebook.com/rinslor",
     },
@@ -44,10 +46,8 @@ const Teams = () => {
           <h1 className="text-center teams_h1">EVENT LEADS</h1>
           <span className="underline_teams"></span>
           <p className="paragraph_teams py-4">
-            Meet the representatives of JU EE Students' Forum making Convolution
-            9.0 possible!
-            <br />
-            We are ready to address all your queries!
+            Meet the event leads of Eureka! We are ready to address all your
+            queries!
           </p>
         </div>
         <div className="px-[69px] py-5">

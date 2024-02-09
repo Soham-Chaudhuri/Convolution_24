@@ -3,13 +3,13 @@ import "./Judges.css";
 
 import picture4 from "../../components/assets/AC.png";
 
-import picture6 from "../../components/assets/nojudge.png";
+import picture6 from "../../components/assets/Smita Sadhu.png";
 
 const peopleData = [
   {
     id: 1,
-    name: "anticipated",
-    description: "Anticipated...",
+    name: "smita sadhu",
+    description: "Smita Sadhu",
     imgSrc: picture6,
 
     socialMediaLinks: {
@@ -18,11 +18,11 @@ const peopleData = [
       facebook: "",
     },
     socialMediaavailable: { insta: true, linke: true, face: true },
-    desc: "",
+    desc: "Professor at Jadavpur University Electrical Engineering Department",
   },
   {
     id: 2,
-    name: "",
+    name: "amitava chatterjee",
     description: "Amitava Chatterjee",
     imgSrc: picture4,
     socialMediaLinks: {
