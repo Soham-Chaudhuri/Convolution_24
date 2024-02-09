@@ -111,9 +111,13 @@ function Team_reg({ user }) {
         set(ref(db, `events/${eventName.event}/${uid}`), {
           Team_Name: teamName,
           Team_Leader: team_leader,
+          Team_Leadermail: tl1email,
           Member1: member1,
+          Member1mail: m1email,
           Member2: member2,
+          Member2mail: m2email,
           Member3: member3,
+          Member3mail: m3email,
         });
 
         scrollToTop();
