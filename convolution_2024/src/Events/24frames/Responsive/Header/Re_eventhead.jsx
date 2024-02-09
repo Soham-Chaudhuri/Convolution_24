@@ -3,7 +3,7 @@ import "../Header/Re_eventhead.css";
 import convosvg from "../../../../components/assets/Convolution_Dark2nd.png";
 import { Link, animateScroll as scroll, scroller } from "react-scroll";
 
-function Re_eventhead({user}) {
+function Re_eventhead() {
   const [isOpen, setIsOpen] = useState(false);
 
   const handleToggle = () => {
