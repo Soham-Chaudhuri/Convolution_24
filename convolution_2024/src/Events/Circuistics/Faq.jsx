@@ -35,11 +35,11 @@ function Faq() {
               In competitions where there is no penalty for destroying
               components, it's crucial to note that any team found mishandling
               components will face immediate disqualification. This policy aims
-              to maintain a fair and ethical playing field. Disqualification serves as a deterrent
-              against intentional damage, promoting sportsmanship and adherence
-              to competition rules. Striking a balance between innovation and
-              responsible behavior is essential to uphold the integrity of the
-              event.
+              to maintain a fair and ethical playing field. Disqualification
+              serves as a deterrent against intentional damage, promoting
+              sportsmanship and adherence to competition rules. Striking a
+              balance between innovation and responsible behavior is essential
+              to uphold the integrity of the event.
             </div>
           </div>
 
@@ -62,11 +62,11 @@ function Faq() {
               participants. Restricting team formation to students from the same
               college and year enhances the overall integrity of the
               competition, preventing potential disparities in experience or
-              resources. 
+              resources.
             </div>
           </div>
 
-          {/* <div className="accordion-item">
+          <div className="accordion-item">
             <input
               type="checkbox"
               id="accordion3"
@@ -74,40 +74,19 @@ function Faq() {
               onChange={() => handleCheckboxChange("accordion3")}
             />
             <label htmlFor="accordion3" className="accordion-item-title">
-              <span className="faq-icon"></span>What are the key components of a
-              successful SEO strategy?
+              <span className="faq-icon"></span> What will be registration fees
+              per team for participation?
             </label>
             <div className="accordion-item-desc">
-              A successful SEO strategy involves various components, including
-              keyword research, on-page optimization, quality content creation,
-              link building, technical SEO, and user experience optimization.
-              These elements work together to improve a website's relevance and
-              authority in the eyes of search engines.
+              This event does not require any Registration Fees! Embrace the
+              opportunity to learn and grow without any financial burden. Join
+              us in fostering a community of knowledge enthusiasts. Your passion
+              for learning is the only ticket you need. No fees, no restrictions
+              just pure knowledge sharing.
             </div>
           </div>
 
-          <div className="accordion-item flex flex-col">
-            <input
-              type="checkbox"
-              id="accordion4"
-              checked={checkedState["accordion4"]}
-              onChange={() => handleCheckboxChange("accordion4")}
-            />
-            <label htmlFor="accordion4" className="accordion-item-title">
-              <span className="faq-icon"></span>How does mobile optimization
-              impact SEO?
-            </label>
-            <div className="accordion-item-desc">
-              Mobile optimization is crucial for SEO because search engines
-              prioritize mobile-friendly websites. With the increasing use of
-              smartphones, search engines like Google consider mobile
-              responsiveness as a ranking factor. Websites that provide a
-              seamless experience on mobile devices are more likely to rank
-              higher in search results.
-            </div>
-          </div>
-
-          <div className="accordion-item">
+          {/* <div className="accordion-item">
             <input
               type="checkbox"
               id="accordion5"

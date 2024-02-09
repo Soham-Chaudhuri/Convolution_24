@@ -39,7 +39,7 @@ function Header({ user }) {
                 offset={-100}
                 activeClass="active"
               >
-                About
+                Rules
                 <span className="mt-1 mr-2 block max-w-0 group-hover:max-w-full transition-all duration-500 h-1 bg-orange-500 rounded-full"></span>
               </Link>
               <Link

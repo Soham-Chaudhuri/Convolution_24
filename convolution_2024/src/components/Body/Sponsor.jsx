@@ -1,5 +1,6 @@
 import React from "react";
 import "./Sponsor.css";
+import { Link } from "react-router-dom";
 import sponsorpic1 from "../assets/sponsor/1.png";
 import sponsorpic2 from "../assets/sponsor/2.png";
 import sponsorpic3 from "../assets/sponsor/3.png";
@@ -14,6 +15,7 @@ const slideData = [
     headline: "New Fashion Apparel",
     button: "Shop now",
     src: sponsorpic1,
+    link: "https://www.techriskpartners.com/",
   },
   {
     index: 1,
@@ -125,14 +127,12 @@ class Slide extends React.Component {
         onMouseLeave={this.handleMouseLeave}
       >
         <div className="slide__image-wrapper">
-          
           <img
             className="slide__image"
             alt={headline}
             src={src}
             onLoad={this.imageLoaded}
           />
-        
         </div>
 
         {/* <article className="slide__content">
@@ -218,12 +218,19 @@ class Slider extends React.Component {
 
           {slides.map((slide) => {
             return (
-              <Slide
+              <a
                 key={slide.index}
-                slide={slide}
-                current={current}
-                handleSlideClick={this.handleSlideClick}
-              />
+                href={slide.link}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Slide
+                  key={slide.index}
+                  slide={slide}
+                  current={current}
+                  handleSlideClick={this.handleSlideClick}
+                />
+              </a>
             );
           })}
         </ul>

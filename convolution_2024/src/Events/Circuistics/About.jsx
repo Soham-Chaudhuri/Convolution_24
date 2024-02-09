@@ -9,7 +9,7 @@ function About() {
           <div className="cir_about flex text-center flex-col align-center justify-center gap-10">
             <span className="heading">RULES & REGULATIONS</span>
             <span className="cir_para text-justify">
-              &bull;Teams of 2-3 members.
+              &bull;Teams of 2-4 members.
               <br />
               <div className="h-[15px]"></div>
               &bull;The event is divided into two tiers: Tier-1 for UG 1 & 2 and
