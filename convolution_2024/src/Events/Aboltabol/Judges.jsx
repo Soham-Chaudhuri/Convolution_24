@@ -3,13 +3,13 @@ import "./Judges.css";
 
 import picture4 from "../../components/assets/SGM.png";
 
-import picture6 from "../../components/assets/nojudge.png";
+import picture6 from "../../components/assets/Arabinda Das.png";
 
 const peopleData = [
   {
     id: 1,
-    name: "Dwaipayan",
-    description: "Anticipated...",
+    name: "Arabinda",
+    description: "Arabinda Das",
     imgSrc: picture6,
 
     socialMediaLinks: {
@@ -18,7 +18,7 @@ const peopleData = [
       facebook: "",
     },
     socialMediaavailable: { insta: true, linke: true, face: true },
-    desc: "",
+    desc: "Professor at Jadavpur University Electrical Engineering Department",
   },
   {
     id: 2,

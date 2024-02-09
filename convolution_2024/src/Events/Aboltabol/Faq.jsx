@@ -50,6 +50,25 @@ function Faq() {
               onChange={() => handleCheckboxChange("accordion2")}
             />
             <label htmlFor="accordion2" className="accordion-item-title">
+              <span className="faq-icon"></span> What types of hypotheses are
+              accepted at Abol Tabol?
+            </label>
+            <div className="accordion-item-desc">
+              We welcome hypotheses from all fields of science, ranging from
+              physics and biology to psychology and beyond. The only requirement
+              is that your hypothesis is both scientifically plausible and
+              hilariously absurd!
+            </div>
+          </div>
+
+          <div className="accordion-item">
+            <input
+              type="checkbox"
+              id="accordion3"
+              checked={checkedState["accordion3"]}
+              onChange={() => handleCheckboxChange("accordion3")}
+            />
+            <label htmlFor="accordion3" className="accordion-item-title">
               <span className="faq-icon"></span>Do I need to be a science major
               to participate in Abol Tabol?
             </label>
@@ -67,11 +86,11 @@ function Faq() {
           <div className="accordion-item">
             <input
               type="checkbox"
-              id="accordion3"
-              checked={checkedState["accordion3"]}
-              onChange={() => handleCheckboxChange("accordion3")}
+              id="accordion4"
+              checked={checkedState["accordion4"]}
+              onChange={() => handleCheckboxChange("accordion4")}
             />
-            <label htmlFor="accordion3" className="accordion-item-title">
+            <label htmlFor="accordion4" className="accordion-item-title">
               <span className="faq-icon"></span>How can student participants
               contribute their ideas to the show?
             </label>
@@ -84,6 +103,26 @@ function Faq() {
               is on embracing creativity and showcasing the lighter side of
               intellectual pursuits, fostering a sense of community and
               shared laughter.
+            </div>
+          </div>
+
+          <div className="accordion-item">
+            <input
+              type="checkbox"
+              id="accordion5"
+              checked={checkedState["accordion5"]}
+              onChange={() => handleCheckboxChange("accordion5")}
+            />
+            <label htmlFor="accordion5" className="accordion-item-title">
+              <span className="faq-icon"></span>Can I attend Abol Tabol as an
+              audience member?
+            </label>
+            <div className="accordion-item-desc">
+              Absolutely! Abol Tabol is a public event, and we encourage science
+              enthusiasts and comedy lovers alike to join us for an evening of
+              laughter and scientific absurdity. There are no tickets or
+              monetary system and you can join us on 16th of March for
+              absolutely free.
             </div>
           </div>
         </div>
