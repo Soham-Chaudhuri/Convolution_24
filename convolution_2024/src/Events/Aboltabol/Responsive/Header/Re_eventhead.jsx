@@ -2,6 +2,13 @@ import React, { useState } from "react";
 import "../Header/Re_eventhead.css";
 import convosvg from "../../../../components/assets/Convolution_Dark2nd.png";
 import { Link, animateScroll as scroll, scroller } from "react-scroll";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Navigate,
+  useNavigate,
+} from "react-router-dom";
 
 function Re_eventhead({ user }) {
   const [isOpen, setIsOpen] = useState(false);
@@ -9,6 +16,8 @@ function Re_eventhead({ user }) {
   const handleToggle = () => {
     setIsOpen(!isOpen);
   };
+
+  const navigate = useNavigate();
   return (
     <>
       <div className="navbar flex flex-wrap justify-around bg-black text-white text-center sticky top-0 z-50">

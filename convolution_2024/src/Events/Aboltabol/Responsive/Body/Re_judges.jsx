@@ -1,13 +1,13 @@
 import React from "react";
-import picture6 from "../../../../components/assets/nojudge.png";
+import picture6 from "../../../../components/assets/Arabinda Das.png";
 import picture4 from "../../../../components/assets/SGM.png";
 
 const peopleData = [
   {
     id: 1,
     name: "",
-    heading: "Anticipated...",
-    description: "",
+    heading: "Arabinda Das",
+    description: "Professor at Jadavpur University Electrical Engineering Department",
     imgSrc: picture6,
     socialMediaLinks: {
       instagram: "",
