@@ -13,11 +13,11 @@ const peopleData = [
     description: "",
     imgSrc: picture6,
     socialMediaLinks: {
-      instagram: "#",
+      instagram: "https://www.instagram.com/abhinaba.biswas.1232/",
       linkedin: "#",
-      facebook: "#",
+      facebook: "https://www.facebook.com/abhinaba.biswas.773",
     },
-    socialMediaavailable: { insta: true, linke: true, face: true },
+    socialMediaavailable: { insta: true, linke: false, face: true },
   },
   {
     id: 2,
@@ -26,11 +26,11 @@ const peopleData = [
     description: "",
     imgSrc: picture4,
     socialMediaLinks: {
-      instagram: "#",
+      instagram: "https://www.instagram.com/debashis_711/",
       linkedin: "#",
-      facebook: "#",
+      facebook: "https://www.facebook.com/profile.php?id=100011148109062",
     },
-    socialMediaavailable: { insta: true, linke: true, face: true },
+    socialMediaavailable: { insta: true, linke: false, face: true },
   },
 ];
 
@@ -42,10 +42,8 @@ function Re_teams() {
           <h1 className="text-center re_teams_h1">EVENT LEADS</h1>
           <span className="re_teams_underline"></span>
           <p className="re_teams_paragraph py-4">
-            Meet the representatives of JU EE Students' Forum making Convolution
-            9.0 possible!
-            <br />
-            We are ready to address all your queries!
+            Meet the event leads of 24 Frames! We are ready to address all your
+            queries!
           </p>
         </div>
         <div className="">
