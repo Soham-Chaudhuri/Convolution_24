@@ -5,9 +5,9 @@ import picture4 from "../../../../components/assets/Parthib.png";
 const peopleData = [
   {
     id: 1,
-    name: "Dwaipayan",
-    heading: "Secretary",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+    name: "",
+    heading: "Anticipated...",
+    description: "",
     imgSrc: picture6,
     socialMediaLinks: {
       instagram: "https://www.instagram.com/dwaipayanhaldar15/",
@@ -39,13 +39,12 @@ function Re_judges() {
           <h1 className="text-center re_teams_h1">JUDGES</h1>
           <span className="re_teams_underline"></span>
           <p className="re_teams_paragraph py-4">
-            Meet the representatives of JU EE Students' Forum making Convolution
-            9.0 possible!
+          The judges for the event to be announced soon!
             <br />
-            We are ready to address all your queries!
+            {/* We are ready to address all your queries! */}
           </p>
         </div>
-        <div className="">
+        {/* <div className="">
           <div className="flex flex-col gap-5">
             {peopleData.map((people) => (
               <div
@@ -102,7 +101,7 @@ function Re_judges() {
               </div>
             ))}
           </div>
-        </div>
+        </div> */}
       </section>
     </>
   );

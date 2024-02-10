@@ -71,9 +71,9 @@ function Re_dashboard({ user }) {
           id: 1,
           type: "Register Now",
           image: pic1,
-          content: "Lorem ipsum content for box 1",
-          lastDate: "XX YY ZZZZ",
-          eventDate: "XX YY ZZZZ",
+          content: "Anything and Everything Under the Sun",
+          lastDate: "15-03-2024",
+          eventDate: "15-03-2024",
           registered: false,
           event: "inquizzitive",
           href: "/events/inquizzitive",
@@ -82,9 +82,9 @@ function Re_dashboard({ user }) {
           id: 2,
           type: data.decisia ? "Registered" : "Register Now",
           image: pic4,
-          content: "Lorem ipsum content for box 2",
-          lastDate: "XX YY ZZZZ",
-          eventDate: "XX YY ZZZZ",
+          content: "Impactful decisions, endless possibilities",
+          lastDate: "10-03-2024",
+          eventDate: "16-03-2024",
           registered: data.decisia,
           event: "decisia",
           href: "/events/decisia",
@@ -93,9 +93,9 @@ function Re_dashboard({ user }) {
           id: 3,
           type: data.abol_tabol ? "Registered" : "Register Now",
           image: pic5,
-          content: "Lorem ipsum content for box 3",
-          lastDate: "XX YY ZZZZ",
-          eventDate: "XX YY ZZZZ",
+          content: "The Curious Case of Quirky Nonscience",
+          lastDate: "10-03-2024",
+          eventDate: "16-03-2024",
           registered: data.abol_tabol,
           event: "abol_tabol",
           href: "/events/aboltabol",
@@ -104,9 +104,9 @@ function Re_dashboard({ user }) {
           id: 4,
           type: data.circuistics ? "Registered" : "Register Now",
           image: pic6,
-          content: "Lorem ipsum content for box 4",
-          lastDate: "XX YY ZZZZ",
-          eventDate: "XX YY ZZZZ",
+          content: "Let the wires determine it...",
+          lastDate: "13-03-2024",
+          eventDate: "16-03-2024",
           registered: data.circuistics,
           event: "circuistics",
           href: "/events/circuistics",
@@ -115,9 +115,9 @@ function Re_dashboard({ user }) {
           id: 5,
           type: data.eureka ? "Registered" : "Register Now",
           image: pic7,
-          content: "Lorem ipsum content for box 5",
-          lastDate: "XX YY ZZZZ",
-          eventDate: "XX YY ZZZZ",
+          content: "Crack the Code, Claim the Crown!",
+          lastDate: "13-03-2024",
+          eventDate: "16-03-2024",
           registered: data.eureka,
           event: "eureka",
           href: "/events/eureka",
@@ -126,9 +126,9 @@ function Re_dashboard({ user }) {
           id: 6,
           type: data.algomaniac ? "Registered" : "Register Now",
           image: pic8,
-          content: "Lorem ipsum content for box 6",
-          lastDate: "XX YY ZZZZ",
-          eventDate: "XX YY ZZZZ",
+          content: "Let your code speak",
+          lastDate: "27-02-2024",
+          eventDate: "17-03-2024",
           registered: data.algomaniac,
           event: "algomaniac",
           href: "/events/algomaniac",
@@ -136,21 +136,21 @@ function Re_dashboard({ user }) {
         {
           id: 7,
           type: data.papier ? "Registered" : "Register Now",
-          image: pic9,
+          image: pic12,
           content: "Lorem ipsum content for box 7",
-          lastDate: "XX YY ZZZZ",
-          eventDate: "XX YY ZZZZ",
+          lastDate: "On Day Event",
+          eventDate: "17-03-2024",
           registered: data.papier,
-          event: "papier",
+          event: "JU Talks",
           href: "/events/papier",
         },
         {
           id: 8,
           type: data.spark_hack ? "Registered" : "Register Now",
           image: pic10,
-          content: "Lorem ipsum content for box 8",
-          lastDate: "XX YY ZZZZ",
-          eventDate: "XX YY ZZZZ",
+          content: "Hack your brilliance. Code, Create, Conquer!",
+          lastDate: "03-03-2024",
+          eventDate: "16-03-2024",
           registered: data.spark_hack,
           event: "spark_hack",
           href: "/events/sparkhack",
@@ -159,9 +159,10 @@ function Re_dashboard({ user }) {
           id: 9,
           type: data._frames ? "Registered" : "Register Now",
           image: pic11,
-          content: "Lorem ipsum content for box 8",
-          lastDate: "XX YY ZZZZ",
-          eventDate: "XX YY ZZZZ",
+          content: `Photographers' Delight
+          `,
+          lastDate: "10-03-2024",
+          eventDate: "17-03-2024",
           registered: data._frames,
           event: "_frames",
           href: "/events/24frames",
@@ -231,7 +232,7 @@ function Re_dashboard({ user }) {
     
       <div className="body_main pt-8">
         <div className="flex flex-col items-center my-10 gap-2">
-          <p className="re_dashboard_heading">Dashboard</p>
+          <p className="re_dashboard_heading">DASHBOARD</p>
           <div className="re_dashboard_underline"></div>
         </div>
         <div className="swiper mySwiper">
@@ -281,20 +282,30 @@ function Re_dashboard({ user }) {
                         //   window.location.reload();
                         // }
 
-                        if (
-                          !events[dat.id - 1] &&
-                          dat.id !== 6 &&
-                          dat.id !== 1
-                        ) {
-                          navigate(`/reg/${dat.event}`);
-                        }
+                        // if (
+                        //   !events[box.id - 1] &&
+                        // box.id !== 6 &&
+                        // box.id !== 1 &&
+                        // box.id !== 7
+                        // ) {
+                        //   navigate(`/reg/${dat.event}`);
+                        // }
                         
 
                         if (dat.id === 1) {
                           toast.info(
-                            "On Day Registration at JU Electrical Engineering building",
+                            "On Day Registration at Jadavpur University Electrical Engineering building",
                             {
                               theme: "dark",
+                            }
+                          );
+                        }
+                        if (box.id === 7) {
+                          toast.info(
+                            "No registration required. You are all invited to attend JU Talks on Sunday 17th March in dept of Electrical Engineering Jadavpur University",
+                            {
+                              theme: "dark",
+                            
                             }
                           );
                         }
@@ -305,7 +316,25 @@ function Re_dashboard({ user }) {
                         ) {
                           navigate(`/reg/${dat.event}`);
                         }
-                      }}
+                        if (box.id === 6) {
+                          toast.info(
+                            " Please proceed with registration on the following Google Form. Redirecting now.",
+                            {
+                              theme: "dark",
+                              autoClose: 4200,
+                            }
+                          );
+  
+                          setTimeout(() => {
+                            // window.location.href = "https://forms.gle/y5p9jAkzhbQskSYd9";
+                            window.open(
+                              "https://forms.gle/LwcPTZmtETVUNy2DA ",
+                              "_blank"
+                            );
+                          }, 3000);
+                        }
+                      }
+                    }
                     >
                       {dat.type} {!dat.registered ? "\u2192" : "\u2714"}
                     </div>

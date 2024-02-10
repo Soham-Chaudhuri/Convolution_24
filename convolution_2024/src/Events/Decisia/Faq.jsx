@@ -70,7 +70,7 @@ function Faq() {
             />
             <label htmlFor="accordion3" className="accordion-item-title">
               <span className="faq-icon"></span>Are there intellectual property
-              or confidentiality issues to be considered
+              or confidentiality issues to be considered?
             </label>
             <div className="accordion-item-desc">
               Consider IP and confidentiality when sharing plans. Check event

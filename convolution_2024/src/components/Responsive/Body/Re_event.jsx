@@ -7,7 +7,7 @@ import picture2 from "../../assets/abol2nd.png";
 import picture3 from "../../assets/Circuistics_Dark.png";
 import picture4 from "../../assets/Eureka_Dark.png";
 import picture5 from "../../assets/Inquizzitive_Dark.png";
-import picture6 from "../../assets/Papier_Dark.png";
+import picture6 from "../../assets/JU Talks Dark.png";
 import picture7 from "../../assets/Sparkhack_Dark.png";
 import picture8 from "../../assets/24 Frames Dark.png";
 import picture9 from "../../assets/Algomaniac Dark.png";
@@ -40,9 +40,9 @@ const eventData = [
   },
   {
     id: 4,
-    heading: "Papier",
+    heading: "JU Talks",
     imgSrc: picture6,
-    href: "/events/papier",
+    href: "/events/JU_Talks",
     description:
       "The research paper submission event of Convolution '24, that provides the perfect platform to get your research papers reviewed by experienced academics who are veterans of their field, and also get the chance to win exciting prizes for the best research papers.",
   },

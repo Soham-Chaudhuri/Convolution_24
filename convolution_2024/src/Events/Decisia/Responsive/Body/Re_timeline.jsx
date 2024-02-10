@@ -19,7 +19,7 @@ function Re_timeline() {
                 </div>
               </div>
               <div className="Re_timeline_content">
-                <h3 className="Re_timeline_day">Abstract Submission Starts</h3>
+                <h3 className="Re_timeline_day pt-7">Abstract Submission Starts</h3>
                 <p className="Re_timeline_para">
                 - the participants will have to submit an abstract of their business ideas
                       <br />
@@ -40,7 +40,7 @@ function Re_timeline() {
                 </div>
               </div>
               <div className="Re_timeline_content">
-                <h3 className="Re_timeline_day">Abstract Submission Ends</h3>
+                <h3 className="Re_timeline_day pt-7">Abstract Submission Ends</h3>
                 <p className="Re_timeline_para">
                 - Participants will have to submit their abstracts by 11:59pm on 2nd March.
                       <br />
@@ -58,7 +58,7 @@ function Re_timeline() {
                 </div>
               </div>
               <div className="Re_timeline_content">
-                <h3 className="Re_timeline_day">Result Announcement of Prelims</h3>
+                <h3 className="Re_timeline_day pt-7">Result Announcement of Prelims</h3>
                 <p className="Re_timeline_para">
                 - Top 8 teams will be shortlisted for the 2nd round
                       <br />
@@ -76,7 +76,7 @@ function Re_timeline() {
                 </div>
               </div>
               <div className="Re_timeline_content">
-                <h3 className="Re_timeline_day">Finals</h3>
+                <h3 className="Re_timeline_day pt-7">Finals</h3>
                 <p className="Re_timeline_para">
                 - The shortlisted participants will have to pitch their ideas infront of the judges.
                       <br />

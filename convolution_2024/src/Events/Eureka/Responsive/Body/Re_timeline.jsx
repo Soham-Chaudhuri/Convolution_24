@@ -20,57 +20,37 @@ function Re_timeline() {
             <div className="Re_timeline_card">
               <div className="Re_timeline_image">
                 <div className="Re_timeline_box flex justify-center align-items-center text-center h-[200px] w-[790]">
-                  <h1 className="Re_timeline_heading">DAY 1</h1>
+                  <h1 className="Re_timeline_heading">
+                    15<sup>th</sup> Mar
+                  </h1>
                 </div>
               </div>
               <div className="Re_timeline_content">
-                <h3 className="Re_timeline_day">Morning Session:</h3>
+                <h3 className="Re_timeline_day pt-7">Preliminary Round</h3>
                 <p className="Re_timeline_para">
-                  Event 1
+                  - the participants will have to solve some aptitude based
+                  questions to proceed to the next round
                   <br />
-                  Event 2
-                  <br />
-                  Event 3
-                </p>
-
-                <h3 className="Re_timeline_day">Afternoon Session:</h3>
-                <p className="Re_timeline_para">
-                  Event 1
-                  <br />
-                  Event 2
-                  <br />
-                  Event 3
                 </p>
               </div>
             </div>
           </div>
 
-        
-
           <div className="Re_timeline_container">
             <div className="Re_timeline_card">
               <div className="Re_timeline_image">
                 <div className="Re_timeline_box flex justify-center align-items-center text-center h-[200px] w-[790]">
-                  <h1 className="Re_timeline_heading">DAY 3</h1>
+                  <h1 className="Re_timeline_heading">
+                    16<sup>th</sup> Mar
+                  </h1>
                 </div>
               </div>
               <div className="Re_timeline_content">
-                <h3 className="Re_timeline_day">Morning Session:</h3>
+                <h3 className="Re_timeline_day pt-7">Finals</h3>
                 <p className="Re_timeline_para">
-                  Event 1
+                  - top 8 shortlisted teams battle it out by solving puzzles,
+                  one step at a time
                   <br />
-                  Event 2
-                  <br />
-                  Event 3
-                </p>
-
-                <h3 className="Re_timeline_day">Afternoon Session:</h3>
-                <p className="Re_timeline_para">
-                  Event 1
-                  <br />
-                  Event 2
-                  <br />
-                  Event 3
                 </p>
               </div>
             </div>

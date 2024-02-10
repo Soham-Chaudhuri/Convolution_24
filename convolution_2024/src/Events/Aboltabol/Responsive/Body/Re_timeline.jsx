@@ -26,7 +26,7 @@ function Re_timeline() {
                 </div>
               </div>
               <div className="Re_timeline_content">
-                <h3 className="Re_timeline_day">Abstract Submission Starts</h3>
+                <h3 className="Re_timeline_day pt-7">Abstract Submission Starts</h3>
                 <p className="Re_timeline_para">
                   - The fray begins! All registered participants will be
                   submitting a presentation.
@@ -46,7 +46,7 @@ function Re_timeline() {
                 </div>
               </div>
               <div className="Re_timeline_content">
-                <h3 className="Re_timeline_day">Abstract Submission Ends</h3>
+                <h3 className="Re_timeline_day pt-7">Abstract Submission Ends</h3>
                 <p className="Re_timeline_para">
                   - all abstracts to be submitted by 11:59pm on 26th Feb
                   <br />
@@ -65,7 +65,7 @@ function Re_timeline() {
                 </div>
               </div>
               <div className="Re_timeline_content">
-                <h3 className="Re_timeline_day">
+                <h3 className="Re_timeline_day pt-7">
                   Final Round & Prize Distribution
                 </h3>
                 <p className="Re_timeline_para">

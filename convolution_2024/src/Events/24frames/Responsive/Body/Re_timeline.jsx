@@ -26,7 +26,7 @@ function Re_timeline() {
                 </div>
               </div>
               <div className="Re_timeline_content">
-                <h3 className="Re_timeline_day">Photo Submission Starts</h3>
+                <h3 className="Re_timeline_day pt-7">Photo Submission Starts</h3>
                 <p className="Re_timeline_para">
                   - send us the photos at "convolution2024@gmail.com" along with
                   screenshot of the meta data and the caption

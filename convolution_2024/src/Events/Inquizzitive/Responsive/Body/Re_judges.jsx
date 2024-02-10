@@ -1,5 +1,5 @@
 import React from "react";
-import picture6 from "../../../../components/assets/judges/Quizmaster.png";
+import picture6 from "../../../../components/assets/QuizMaster.png";
 import picture4 from "../../../../components/assets/Parthib.png";
 
 const peopleData = [
@@ -36,7 +36,7 @@ function Re_judges() {
     <>
       <section id="Re_judges">
         <div className=" flex flex-col justify-center items-center gap-2 pb-5  pt-6 mt-6">
-          <h1 className="text-center re_teams_h1">JUDGES</h1>
+          <h1 className="text-center re_teams_h1">QUIZ MASTER</h1>
           <span className="re_teams_underline"></span>
           
         </div>

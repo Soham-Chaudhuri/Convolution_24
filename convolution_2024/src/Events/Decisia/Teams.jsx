@@ -47,6 +47,7 @@ const Teams = () => {
             Meet the event leads of Decisia!
             We are ready to address all your queries!
           </p>
+          We are ready to address all your queries!
         </div>
         <div className="px-[69px] py-5">
           <div className="grid grid-cols-2 gap-[56px]">

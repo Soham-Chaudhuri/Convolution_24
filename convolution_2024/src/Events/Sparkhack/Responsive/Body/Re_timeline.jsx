@@ -26,7 +26,7 @@ function Re_timeline() {
                 </div>
               </div>
               <div className="Re_timeline_content">
-                <h3 className="Re_timeline_day">Abstract Submission Starts</h3>
+                <h3 className="Re_timeline_day pt-7">Abstract Submission Starts</h3>
                 <p className="Re_timeline_para">
                   - the participants will have to submit an abstract about the
                   idea they have chosen.
@@ -46,7 +46,7 @@ function Re_timeline() {
                 </div>
               </div>
               <div className="Re_timeline_content">
-                <h3 className="Re_timeline_day">Abstract Submission Ends</h3>
+                <h3 className="Re_timeline_day pt-7">Abstract Submission Ends</h3>
                 <p className="Re_timeline_para">
                   - participants will have to submit their abstracts by 11:59pm
                   of 29th Feb
@@ -65,7 +65,7 @@ function Re_timeline() {
                 </div>
               </div>
               <div className="Re_timeline_content">
-                <h3 className="Re_timeline_day">Online Pitching</h3>
+                <h3 className="Re_timeline_day pt-7">Online Pitching</h3>
                 <p className="Re_timeline_para">
                   - participants will have to pitch their ideas infront of the
                   panel of judges
@@ -84,7 +84,7 @@ function Re_timeline() {
                 </div>
               </div>
               <div className="Re_timeline_content">
-                <h3 className="Re_timeline_day">
+                <h3 className="Re_timeline_day pt-7">
                   Result Declaration of 1st Round
                 </h3>
                 <p className="Re_timeline_para">
@@ -105,7 +105,7 @@ function Re_timeline() {
                 </div>
               </div>
               <div className="Re_timeline_content">
-                <h3 className="Re_timeline_day">Prototype Submission Round</h3>
+                <h3 className="Re_timeline_day pt-7">Prototype Submission Round</h3>
                 <p className="Re_timeline_para">
                   - top 10 teams will have to present their prototypes before
                   the judges
@@ -124,7 +124,7 @@ function Re_timeline() {
                 </div>
               </div>
               <div className="Re_timeline_content">
-                <h3 className="Re_timeline_day">
+                <h3 className="Re_timeline_day pt-7">
                   Result Declaration of Final Round
                 </h3>
                 <p className="Re_timeline_para">

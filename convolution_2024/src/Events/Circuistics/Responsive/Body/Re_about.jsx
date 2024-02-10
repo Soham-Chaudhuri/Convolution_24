@@ -30,7 +30,7 @@ function About() {
               &emsp;round.
               <br />
               <div className="h-[15px]"></div>
-              &bull;Use of any electronic device except for calculators is not allowed._cir
+              &bull;Use of any electronic device except for calculators is not allowed.
             </span>
           </div>
         </div>

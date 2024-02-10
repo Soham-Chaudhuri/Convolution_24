@@ -112,7 +112,7 @@ function App() {
                     element={<Circuisticshero user={user}/>}
                   />
                   <Route path="/events/sparkhack" element={<Sparkhackhero user={user}/>} />
-                  <Route path="/events/papier" element={<Papierhero user={user}/>} />
+                  <Route path="/events/JU_Talks" element={<Papierhero user={user}/>} />
                   <Route path="/events/eureka" element={<Eurekahero user={user}/>} />
                   <Route path="/events/decisia" element={<Decisiahero user={user}/>} />
                   <Route
@@ -149,7 +149,7 @@ function App() {
                     element={<Re_Circuisticshero user={user}/>}
                   />
                   <Route path="/events/sparkhack" element={<Re_Sparkhackhero user={user}/>} />
-                  <Route path="/events/papier" element={<Re_Papierhero user={user}/>} />
+                  <Route path="/events/JU_Talks" element={<Re_Papierhero user={user}/>} />
                   <Route path="/events/eureka" element={<Re_Eurekahero user={user}/>} />
                   <Route path="/events/decisia" element={<Re_Decisiahero user={user}/>} />
                   <Route
