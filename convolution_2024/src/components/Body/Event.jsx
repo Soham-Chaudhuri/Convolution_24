@@ -52,7 +52,7 @@ const peopleData = [
     description: "JU Talks",
     imgSrc: picture6,
     normalImg: picture6,
-    href: "/events/papier",
+    href: "/events/JU_Talks",
     para: "The research paper submission event of Convolution '24, that provides the perfect platform to get your research papers reviewed by experienced academics who are veterans of their field, and also get the chance to win exciting prizes for the best research papers.",
   },
   {

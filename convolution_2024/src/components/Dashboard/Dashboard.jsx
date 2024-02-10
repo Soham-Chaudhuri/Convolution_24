@@ -148,7 +148,7 @@ function Dashboard({ user }) {
           eventDate: "17-03-2024",
           registered: data.papier,
           event: "JU Talks",
-          href: "/events/papier",
+          href: "/events/JU_Talks",
         },
         {
           id: 8,

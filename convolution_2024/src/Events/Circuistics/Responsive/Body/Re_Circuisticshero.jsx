@@ -34,7 +34,7 @@ function Re_Circuisticshero({user}) {
   }, []);
   return (
     <>
-      <Re_eventhead />
+      <Re_eventhead  user={user}/>
 
 
       <div className="Re_hero_bg p-3">

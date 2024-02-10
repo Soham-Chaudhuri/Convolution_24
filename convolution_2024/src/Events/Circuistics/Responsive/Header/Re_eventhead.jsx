@@ -2,13 +2,22 @@ import React, { useState } from "react";
 import "../Header/Re_eventhead.css";
 import convosvg from "../../../../components/assets/Convolution_Dark2nd.png";
 import { Link, animateScroll as scroll, scroller } from "react-scroll";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Navigate,
+  useNavigate,
+} from "react-router-dom";
 
-function Re_eventhead() {
+function Re_eventhead({user}) {
     const [isOpen, setIsOpen] = useState(false);
 
     const handleToggle = () => {
         setIsOpen(!isOpen);
       };
+
+      const navigate = useNavigate();  
   return (
     <>
 
@@ -17,7 +26,16 @@ function Re_eventhead() {
           {/* <Link to="Re_hero" smooth={true} duration={900}>
             <img className="w-[109px] h-[35px]" src={convosvg} />
           </Link> */}
-          <img className="w-[109px] h-[35px]" src={convosvg} />
+          <img className="w-[109px] h-[35px]" src={convosvg} 
+           onClick={() => {
+            if (user !== null) {
+              navigate(`/profile/${user.uid}`);
+            } else {
+              navigate("/");
+            }
+          }}
+          
+          />
         </div>
         <div className="toggle_btn mt-3 mb-4 p-3" onClick={handleToggle}>
           <i
