@@ -89,7 +89,7 @@ function Dashboard({ user }) {
           type: data.decisia ? "Registered" : "Register Now",
           image: pic4,
           content: "Impactful decisions, endless possibilities",
-          lastDate: "XX YY ZZZZ",
+          lastDate: "10-03-2024",
           eventDate: "16-03-2024",
           registered: data.decisia,
           event: "decisia",
@@ -100,7 +100,7 @@ function Dashboard({ user }) {
           type: data.abol_tabol ? "Registered" : "Register Now",
           image: pic5,
           content: "The Curious Case of Quirky Nonscience",
-          lastDate: "XX YY ZZZZ",
+          lastDate: "10-03-2024",
           eventDate: "16-03-2024",
           registered: data.abol_tabol,
           event: "abol_tabol",
@@ -111,7 +111,7 @@ function Dashboard({ user }) {
           type: data.circuistics ? "Registered" : "Register Now",
           image: pic6,
           content: "Let the wires determine it...",
-          lastDate: "XX YY ZZZZ",
+          lastDate: "13-03-2024",
           eventDate: "16-03-2024",
           registered: data.circuistics,
           event: "circuistics",
@@ -122,7 +122,7 @@ function Dashboard({ user }) {
           type: data.eureka ? "Registered" : "Register Now",
           image: pic7,
           content: "Crack the Code, Claim the Crown!",
-          lastDate: "XX YY ZZZZ",
+          lastDate: "13-03-2024",
           eventDate: "16-03-2024",
           registered: data.eureka,
           event: "eureka",
@@ -133,7 +133,7 @@ function Dashboard({ user }) {
           type: data.algomaniac ? "Registered" : "Register Now",
           image: pic8,
           content: "Let your code speak",
-          lastDate: "XX YY ZZZZ",
+          lastDate: "27-02-2024",
           eventDate: "17-03-2024",
           registered: data.algomaniac,
           event: "algomaniac",
@@ -144,7 +144,7 @@ function Dashboard({ user }) {
           type: data.papier ? "Registered" : "Register Now",
           image: pic12,
           content: "Lorem ipsum content for box 7",
-          lastDate: "XX YY ZZZZ",
+          lastDate: "On Day Event",
           eventDate: "17-03-2024",
           registered: data.papier,
           event: "JU Talks",
@@ -155,7 +155,7 @@ function Dashboard({ user }) {
           type: data.spark_hack ? "Registered" : "Register Now",
           image: pic10,
           content: "Hack your brilliance. Code, Create, Conquer!",
-          lastDate: "XX YY ZZZZ",
+          lastDate: "03-03-2024",
           eventDate: "16-03-2024",
           registered: data.spark_hack,
           event: "spark_hack",
@@ -167,7 +167,7 @@ function Dashboard({ user }) {
           image: pic11,
           content: `Photographers' Delight
           `,
-          lastDate: "XX YY ZZZZ",
+          lastDate: "10-03-2024",
           eventDate: "17-03-2024",
           registered: data._frames,
           event: "_frames",
@@ -268,7 +268,7 @@ function Dashboard({ user }) {
 
                       if (box.id === 1) {
                         toast.info(
-                          "On Day Registration at JU Electrical Engineering building",
+                          "On Day Registration at Jadavpur University Electrical Engineering building",
                           {
                             theme: "dark",
                           }
@@ -277,7 +277,7 @@ function Dashboard({ user }) {
 
                       if (box.id === 7) {
                         toast.info(
-                          "You are all invited to attend JU Talks on Sunday 17th March in dept of EE jadavpur University",
+                          "No registration required. You are all invited to attend JU Talks on Sunday 17th March in dept of Electrical Engineering Jadavpur University",
                           {
                             theme: "dark",
                           

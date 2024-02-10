@@ -27,17 +27,17 @@ function Faq() {
               onChange={() => handleCheckboxChange("accordion1")}
             />
             <label htmlFor="accordion1" className="accordion-item-title ">
-              <span className="faq-icon"></span>What is SEO, and why is it important
-              for online businesses?
+              <span className="faq-icon"></span>Will there be any opportunities
+              to showcase interdisciplinary projects?
             </label>
             <div className="accordion-item-desc items-center">
-              SEO, or Search Engine Optimization, is the practice of optimizing
-              a website to improve its visibility on search engines like Google.
-              It involves various techniques to enhance a site's ranking in
-              search results. SEO is crucial for online businesses as it helps
-              drive organic traffic, increases visibility, and ultimately leads
-              to higher conversions.
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis sint accusantium reprehenderit magnam.   
+              Indeed, inter-college events often highlight interdisciplinary
+              collaboration and innovation. It's worth inquiring about platforms
+              to showcase projects spanning multiple disciplines, which can be
+              advantageous for students seeking to explore cross-cutting themes
+              and tackle complex challenges. Organizers typically provide
+              details on participation in interdisciplinary showcases within the
+              event program or through designated communication channels.
             </div>
           </div>
 
@@ -49,16 +49,15 @@ function Faq() {
               onChange={() => handleCheckboxChange("accordion2")}
             />
             <label htmlFor="accordion2" className="accordion-item-title">
-              <span className="faq-icon"></span>How long does it take to see results
-              from SEO efforts?
+              <span className="faq-icon"></span>Can we bring prototypes, samples
+              to enhance our pitch presentations?
             </label>
             <div className="accordion-item-desc">
-              The timeline for seeing results from SEO can vary based on several
-              factors, such as the competitiveness of keywords, the current
-              state of the website, and the effectiveness of the SEO strategy.
-              Generally, it may take several weeks to months before noticeable
-              improvements occur. However, long-term commitment to SEO is
-              essential for sustained success.
+              Participants are encouraged to use prototypes or visual aids to
+              enhance pitch presentations, providing clarity and engagement.
+              However, it's crucial to ensure relevance, seamless integration,
+              and confirmation of logistical requirements for a successful
+              presentation.
             </div>
           </div>
 
@@ -70,19 +69,18 @@ function Faq() {
               onChange={() => handleCheckboxChange("accordion3")}
             />
             <label htmlFor="accordion3" className="accordion-item-title">
-              <span className="faq-icon"></span>What are the key components of a
-              successful SEO strategy?
+              <span className="faq-icon"></span>Are there intellectual property
+              or confidentiality issues to be considered
             </label>
             <div className="accordion-item-desc">
-              A successful SEO strategy involves various components, including
-              keyword research, on-page optimization, quality content creation,
-              link building, technical SEO, and user experience optimization.
-              These elements work together to improve a website's relevance and
-              authority in the eyes of search engines.
+              Consider IP and confidentiality when sharing plans. Check event
+              organizer agreements for information treatment. Mark materials as
+              confidential and limit information dissemination. Seek legal
+              counsel for IP protection if needed.
             </div>
           </div>
 
-          <div className="accordion-item flex flex-col">
+          {/* <div className="accordion-item flex flex-col">
             <input
               type="checkbox"
               id="accordion4"
@@ -90,8 +88,8 @@ function Faq() {
               onChange={() => handleCheckboxChange("accordion4")}
             />
             <label htmlFor="accordion4" className="accordion-item-title">
-              <span className="faq-icon"></span>How does mobile optimization impact
-              SEO?
+              <span className="faq-icon"></span>How does mobile optimization
+              impact SEO?
             </label>
             <div className="accordion-item-desc">
               Mobile optimization is crucial for SEO because search engines
@@ -101,9 +99,9 @@ function Faq() {
               seamless experience on mobile devices are more likely to rank
               higher in search results.
             </div>
-          </div>
+          </div> */}
 
-          <div className="accordion-item">
+          {/* <div className="accordion-item">
             <input
               type="checkbox"
               id="accordion5"
@@ -124,7 +122,7 @@ function Faq() {
               community activities. It's important to focus on natural and
               ethical link-building practices.
             </div>
-          </div>
+          </div> */}
         </div>
       </section>
     </>

@@ -41,7 +41,7 @@ function Timeline() {
               <div className="timeline_card">
                 <div className="timeline_imgBx">
                   <h1 className="timeline_day text-[34px]">
-                    29<sup>th</sup> Feb
+                    3<sup>rd</sup> Mar
                   </h1>
                 </div>
                 <div className="timeline_content1 ">
@@ -49,7 +49,7 @@ function Timeline() {
                     <h3>Abstract Submission Ends</h3>
                     <p className="timeline_para">
                       - participants will have to submit their abstracts by
-                      11:59pm of 29th Feb
+                      11:59pm of 3rd Mar
                       <br />
                     </p>
                   </div>
@@ -59,7 +59,7 @@ function Timeline() {
               <div className="timeline_card">
                 <div className="timeline_imgBx">
                   <h1 className="timeline_day text-[34px]">
-                    3<sup>rd</sup> Mar
+                    6<sup>th</sup> Mar
                   </h1>
                 </div>
                 <div className="timeline_content1">
@@ -77,14 +77,14 @@ function Timeline() {
               <div className="timeline_card">
                 <div className="timeline_imgBx">
                   <h1 className="timeline_day text-[34px]">
-                    7<sup>th</sup> Mar
+                    9<sup>th</sup> Mar
                   </h1>
                 </div>
                 <div className="timeline_content1">
                   <div>
                     <h3>Result Declaration of 1st Round</h3>
                     <p className="timeline_para">
-                      - results of the 1st round will be declared by 7th March
+                      - results of the 1st round will be declared by 9th March
                       and top 10 teams will be shortlisted
                       <br />
                     </p>
