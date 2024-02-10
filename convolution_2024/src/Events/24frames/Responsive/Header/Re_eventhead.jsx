@@ -49,7 +49,7 @@ function Re_eventhead({ user }) {
         </li>
         <li className="nav_link">
           <Link to="Re_about" smooth={true} duration={600} offset={-100}>
-            About
+            Rules
           </Link>
         </li>
         <li className="nav_link">

@@ -14,7 +14,11 @@ import sponsorpic10 from "../assets/sponsor/10.png";
 import sponsorpic11 from "../assets/sponsor/11.png";
 import sponsorpic12 from "../assets/sponsor/12.png";
 import sponsorpic13 from "../assets/sponsor/13.png";
-import sponsorpic14 from "../assets/sponsor/14.png"; 
+import sponsorpic14 from "../assets/sponsor/14.png";
+import sponsorpic15 from "../assets/sponsor/15.png";
+import sponsorpic16 from "../assets/sponsor/16.png";
+import sponsorpic17 from "../assets/sponsor/17.png";
+import sponsorpic18 from "../assets/sponsor/18.png";
 
 const slideData = [
   {
@@ -24,87 +28,123 @@ const slideData = [
     src: sponsorpic1,
     link: "https://www.techriskpartners.com/",
   },
+  // {
+  //   index: 1,
+  //   headline: "In The Wilderness",
+  //   button: "Book travel",
+  //   src: sponsorpic4,
+  // },
+  // {
+  //   index: 2,
+  //   headline: "For Your Current Mood",
+  //   button: "Listen",
+  //   src: sponsorpic9,
+  // },
   {
+    // index: 3,
     index: 1,
-    headline: "In The Wilderness",
-    button: "Book travel",
-    src: sponsorpic4,
-  },
-  {
-    index: 2,
-    headline: "For Your Current Mood",
-    button: "Listen",
-    src: sponsorpic9,
-  },
-  {
-    index: 3,
     headline: "Focus On The Writing",
     button: "Get Focused",
     src: sponsorpic6,
   },
   {
-    index: 4,
+    // index: 4,
+    index: 2,
     headline: "Focus On The Writing",
     button: "Get Focused",
     src: sponsorpic13,
   },
   {
-    index: 5,
+    // index: 5,
+    index: 3,
     headline: "Focus On The Writing",
     button: "Get Focused",
     src: sponsorpic5,
   },
+  // {
+  //   // index: 6,
+  //   index: 4,
+  //   headline: "Focus On The Writing",
+  //   button: "Get Focused",
+  //   src: sponsorpic10,
+  // },
   {
-    index: 6,
-    headline: "Focus On The Writing",
-    button: "Get Focused",
-    src: sponsorpic10,
-  },
-  {
-    index: 7,
+    // index: 7,
+    index: 4,
     headline: "Focus On The Writing",
     button: "Get Focused",
     src: sponsorpic8,
   },
   {
-    index: 8,
+    // index: 8,
+    index: 5,
     headline: "Focus On The Writing",
     button: "Get Focused",
     src: sponsorpic7,
   },
 
-  {
-    index: 9,
-    headline: "Focus On The Writing",
-    button: "Get Focused",
-    src: sponsorpic2,
-  },
+  // {
+  //   index: 9,
+  //   headline: "Focus On The Writing",
+  //   button: "Get Focused",
+  //   src: sponsorpic2,
+  // },
 
   {
-    index: 10,
+    // index: 10,
+    index: 6,
     headline: "Focus On The Writing",
     button: "Get Focused",
     src: sponsorpic11,
   },
 
   {
-    index: 11,
+    // index: 11,
+    index: 7,
     headline: "Focus On The Writing",
     button: "Get Focused",
     src: sponsorpic12,
   },
 
+  // {
+  //   index: 12,
+  //   headline: "Focus On The Writing",
+  //   button: "Get Focused",
+  //   src: sponsorpic14,
+  // },
+  // {
+  //   index: 13,
+  //   headline: "Focus On The Writing",
+  //   button: "Get Focused",
+  //   src: sponsorpic3,
+  // },
   {
-    index: 12,
+    // index: 14,
+    index :8,
     headline: "Focus On The Writing",
     button: "Get Focused",
-    src: sponsorpic14,
+    src: sponsorpic15,
   },
   {
-    index: 13,
+    // index: 15,
+    index: 9, 
     headline: "Focus On The Writing",
     button: "Get Focused",
-    src: sponsorpic3,
+    src: sponsorpic16,
+  },
+  {
+    // index: 16,
+    index: 10,
+    headline: "Focus On The Writing",
+    button: "Get Focused",
+    src: sponsorpic17,
+  },
+  {
+    // index: 17,
+    index: 11,
+    headline: "Focus On The Writing",
+    button: "Get Focused",
+    src: sponsorpic18,
   },
 ];
 
