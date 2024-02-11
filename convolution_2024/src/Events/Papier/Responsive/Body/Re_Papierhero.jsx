@@ -47,7 +47,7 @@ function Re_Papierhero({user}) {
                 </span>
                 <br />
                 <span className="Re_hero_heading_2 text-shadow-md block">
-                  PAPIER
+                  JU TALKS
                 </span>
                 <br />
                 <span className="Re_hero_heading_3">
