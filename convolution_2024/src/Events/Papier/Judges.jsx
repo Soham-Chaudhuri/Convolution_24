@@ -40,16 +40,14 @@ function Judges() {
     <>
       <section id="judges">
         <div className=" flex flex-col justify-center items-center gap-2 py-5">
-          <h1 className="text-center teams_h1">JUDGES</h1>
+          <h1 className="text-center teams_h1">PANELISTS</h1>
           <span className="underline_teams"></span>
           <p className="paragraph_teams py-4">
-            Meet the representatives of JU EE Students' Forum making Convolution
-            9.0 possible!
+          The Panelists for the event to be announced soon!
             <br />
-            We are ready to address all your queries!
           </p>
         </div>
-        <div className="px-[69px] py-5">
+        {/* <div className="px-[69px] py-5">
           <div className="grid grid-cols-2 gap-[56px]">
             {peopleData.map((person) => (
               <div key={person.id} className="boro-goal-teams flex flex-wrap">
@@ -102,7 +100,7 @@ function Judges() {
               </div>
             ))}
           </div>
-        </div>
+        </div> */}
       </section>
     </>
   );

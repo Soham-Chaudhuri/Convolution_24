@@ -12,7 +12,6 @@ function Re_timeline() {
             A plethora of events covering all your skills. So gear up for the
             showdown!
             <br />
-            Browse over the links to register
           </p>
         </div>
         <div className="Re_timeline flex flex-col py-4">
@@ -20,61 +19,25 @@ function Re_timeline() {
             <div className="Re_timeline_card">
               <div className="Re_timeline_image">
                 <div className="Re_timeline_box flex justify-center align-items-center text-center h-[200px] w-[790]">
-                  <h1 className="Re_timeline_heading">DAY 1</h1>
+                  <h1 className="Re_timeline_heading">17<sup>th</sup> Mar</h1>
                 </div>
               </div>
               <div className="Re_timeline_content">
-                <h3 className="Re_timeline_day">Morning Session:</h3>
+                <h3 className="Re_timeline_day pt-7">Main Event</h3>
                 <p className="Re_timeline_para">
-                  Event 1
+                JU Talks is a panel discussion where three panelists discuss about
+              a trending topic that concerns the present generations.
                   <br />
-                  Event 2
-                  <br />
-                  Event 3
                 </p>
 
-                <h3 className="Re_timeline_day">Afternoon Session:</h3>
-                <p className="Re_timeline_para">
-                  Event 1
-                  <br />
-                  Event 2
-                  <br />
-                  Event 3
-                </p>
+                
               </div>
             </div>
           </div>
 
         
 
-          <div className="Re_timeline_container">
-            <div className="Re_timeline_card">
-              <div className="Re_timeline_image">
-                <div className="Re_timeline_box flex justify-center align-items-center text-center h-[200px] w-[790]">
-                  <h1 className="Re_timeline_heading">DAY 3</h1>
-                </div>
-              </div>
-              <div className="Re_timeline_content">
-                <h3 className="Re_timeline_day">Morning Session:</h3>
-                <p className="Re_timeline_para">
-                  Event 1
-                  <br />
-                  Event 2
-                  <br />
-                  Event 3
-                </p>
 
-                <h3 className="Re_timeline_day">Afternoon Session:</h3>
-                <p className="Re_timeline_para">
-                  Event 1
-                  <br />
-                  Event 2
-                  <br />
-                  Event 3
-                </p>
-              </div>
-            </div>
-          </div>
         </div>
       </section>
     </>

@@ -53,7 +53,7 @@ const peopleData = [
     imgSrc: picture6,
     normalImg: picture6,
     href: "/events/JU_Talks",
-    para: "The research paper submission event of Convolution '24, that provides the perfect platform to get your research papers reviewed by experienced academics who are veterans of their field, and also get the chance to win exciting prizes for the best research papers.",
+    para: "JU Talks is a panel discussion where three panelists discuss about a trending topic that concerns the present generations. Join us for an amazing and insightful session comprising people who are stalwarts in their fields!",
   },
   {
     id: 5,

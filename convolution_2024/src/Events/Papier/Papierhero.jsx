@@ -45,9 +45,9 @@ function Algohero({user}) {
                   Convolution 9.0 Presents
                 </span>
                 <span className="hero_heading_2 text-shadow-md">
-                  JU Talks
+                  JU TALKS
                 </span>
-                <span className="hero_heading_3">Let your code speak</span>
+                <span className="hero_heading_3">Conversations, coffee, and free-flowing words!</span>
                 <div className="flex hero_btn mt-5">
                 <button
                     className="hero_btn_1"

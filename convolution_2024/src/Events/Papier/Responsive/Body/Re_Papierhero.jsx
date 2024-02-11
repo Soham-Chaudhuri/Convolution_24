@@ -43,7 +43,7 @@ function Re_Papierhero({user}) {
             <div className="flex flex-col-reverse Re_gapping gap-[0.8rem]">
               <div className="m-4 Re_hero_heading_1_div">
               <span className="Re_hero_heading_1 text-shadow-md">
-                  CONVOLUTION 9.0 PRESENTS
+              Convolution 9.0 Presents
                 </span>
                 <br />
                 <span className="Re_hero_heading_2 text-shadow-md block">
@@ -51,7 +51,7 @@ function Re_Papierhero({user}) {
                 </span>
                 <br />
                 <span className="Re_hero_heading_3">
-                  LET YOUR CODE SPEAK
+                Conversations, coffee, and free-flowing words!
                 </span>
                 <div className="flex Re_hero_btn">
                 <button
@@ -81,7 +81,7 @@ function Re_Papierhero({user}) {
           <Re_timeline />
           <Prizes dat={"Gallery"}/>
           <Re_judges/>
-          <Prizes dat={"Prizes"}/>
+          {/* <Prizes dat={"Prizes"}/> */}
           <Re_faq/>
           <Re_teams />
 

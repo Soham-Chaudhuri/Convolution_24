@@ -15,79 +15,29 @@ function Timeline() {
                 A plethora of events covering all your skills. So gear up for
                 the showdown!
                 <br />
-                Browse over the links to register
               </p>
             </div>
 
             <div className="timeline_container1">
               <div className="timeline_card">
                 <div className="timeline_imgBx flex flex-col ">
-                  <h1 className="timeline_day">DAY 1</h1>
+                  <h1 className="timeline_day text-[34px]">17<sup>th</sup> Mar</h1>
                 </div>
                 <div className="timeline_content1">
                   <div className="flex flex-col ">
-                    <h3>Morning Session:</h3>
+                    <h3>Main Event</h3>
                     <p className="timeline_para">
-                      - Event 1
+                    JU Talks is a panel discussion where three panelists discuss about
+              a trending topic that concerns the present generations.
                       <br />
-                      - Event 2
-                      <br />- Event 3
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <div className="timeline_card">
-                <div className="timeline_imgBx">
-                  <h1 className="timeline_day">DAY 1</h1>
-                </div>
-                <div className="timeline_content1 ">
-                  <div>
-                    <h3>Afternoon Session:</h3>
-                    <p className="timeline_para">
-                      - Event 1
-                      <br />
-                      - Event 2
-                      <br />- Event 3
                     </p>
                   </div>
                 </div>
               </div>
 
               
-              <div className="timeline_card">
-                <div className="timeline_imgBx">
-                  <h1 className="timeline_day">DAY 3</h1>
-                </div>
-                <div className="timeline_content1">
-                  <div>
-                    <h3>Morning Session:</h3>
-                    <p className="timeline_para">
-                      - Event 1
-                      <br />
-                      - Event 2
-                      <br />- Event 3
-                    </p>
-                  </div>
-                </div>
-              </div>
 
-              <div className="timeline_card">
-                <div className="timeline_imgBx">
-                  <h1 className="timeline_day">DAY 3</h1>
-                </div>
-                <div className="timeline_content1">
-                  <div>
-                    <h3>Afternoon Session:</h3>
-                    <p className="timeline_para">
-                      - Event 1
-                      <br />
-                      - Event 2
-                      <br />- Event 3
-                    </p>
-                  </div>
-                </div>
-              </div>
+              
             </div>
           </div>
         </section>
