@@ -13,6 +13,7 @@ import pic8 from "../../assets/Algomaniac Light.png";
 import pic9 from "../../assets/Papier_Light.png";
 import pic10 from "../../assets/Sparkhack_Light.png";
 import pic11 from "../../assets/24 Frames Light.png";
+import pic12 from "../../assets/JU Talks Light.png";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { useParams } from "react-router-dom";
@@ -142,7 +143,7 @@ function Re_dashboard({ user }) {
           eventDate: "17-03-2024",
           registered: data.papier,
           event: "JU Talks",
-          href: "/events/papier",
+          href: "/events/JU_Talks",
         },
         {
           id: 8,
@@ -220,7 +221,6 @@ function Re_dashboard({ user }) {
     };
   }, []);
 
-
   // const algoupdate = () => {
   //   update(ref(db, `users/${user.email.replace(/\./g, "_")}`), {
   //     algomaniac: true,
@@ -229,7 +229,6 @@ function Re_dashboard({ user }) {
 
   return (
     <>
-    
       <div className="body_main pt-8">
         <div className="flex flex-col items-center my-10 gap-2">
           <p className="re_dashboard_heading">DASHBOARD</p>
@@ -242,7 +241,9 @@ function Re_dashboard({ user }) {
                 <div className="card">
                   <div className="card_top">
                     <div className="card_img">
-                      <img src={dat.image} alt="Card Image" />
+                      <Link to={dat.href}>
+                        <img src={dat.image} alt="Card Image" />
+                      </Link>
                     </div>
                     <div className="card_top_para">
                       <p className="card_top_span"> Last Date to Apply: </p>
@@ -270,27 +271,22 @@ function Re_dashboard({ user }) {
                       onClick={async () => {
                         await useEvents((prevarray) => {
                           const newarray = [...prevarray];
-                          if (!newarray[dat.id - 1] && dat.id === 6) {
+                          if (!newarray[dat.id - 1] && dat.id === 9) {
                             newarray[dat.id - 1] = true;
                             window.location.reload();
                           }
                           return newarray;
                         });
 
-                        // if(dat.id === 6) {
-                        //   algoupdate();
-                        //   window.location.reload();
-                        // }
-
-                        // if (
-                        //   !events[box.id - 1] &&
-                        // box.id !== 6 &&
-                        // box.id !== 1 &&
-                        // box.id !== 7
-                        // ) {
-                        //   navigate(`/reg/${dat.event}`);
-                        // }
-                        
+                        if (
+                          !events[dat.id - 1] &&
+                          dat.id !== 6 &&
+                          dat.id !== 1 &&
+                          dat.id !== 7 &&
+                          dat.id !== 9
+                        ) {
+                          navigate(`/reg/${dat.event}`);
+                        }
 
                         if (dat.id === 1) {
                           toast.info(
@@ -300,23 +296,16 @@ function Re_dashboard({ user }) {
                             }
                           );
                         }
-                        if (box.id === 7) {
+                        if (dat.id === 7) {
                           toast.info(
                             "No registration required. You are all invited to attend JU Talks on Sunday 17th March in dept of Electrical Engineering Jadavpur University",
                             {
                               theme: "dark",
-                            
                             }
                           );
                         }
-                        if (
-                          !events[dat.id - 1] &&
-                          dat.id !== 6 &&
-                          dat.id !== 1
-                        ) {
-                          navigate(`/reg/${dat.event}`);
-                        }
-                        if (box.id === 6) {
+
+                        if (dat.id === 6) {
                           toast.info(
                             " Please proceed with registration on the following Google Form. Redirecting now.",
                             {
@@ -324,17 +313,15 @@ function Re_dashboard({ user }) {
                               autoClose: 4200,
                             }
                           );
-  
+
                           setTimeout(() => {
-                            // window.location.href = "https://forms.gle/y5p9jAkzhbQskSYd9";
                             window.open(
-                              "https://forms.gle/LwcPTZmtETVUNy2DA ",
+                              "https://forms.gle/LwcPTZmtETVUNy2DA",
                               "_blank"
                             );
                           }, 3000);
                         }
-                      }
-                    }
+                      }}
                     >
                       {dat.type} {!dat.registered ? "\u2192" : "\u2714"}
                     </div>

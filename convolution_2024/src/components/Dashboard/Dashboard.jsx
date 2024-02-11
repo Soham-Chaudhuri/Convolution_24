@@ -13,7 +13,7 @@ import pic8 from "../assets/Algomaniac Light.png";
 import pic9 from "../assets/Papier_Light.png";
 import pic10 from "../assets/Sparkhack_Light.png";
 import pic11 from "../assets/24 Frames Light.png";
-import pic12 from "../assets/JU Talks Light.png"
+import pic12 from "../assets/JU Talks Light.png";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { motion } from "framer-motion";
@@ -243,25 +243,21 @@ function Dashboard({ user }) {
                         : "register-now transition-all hover:cursor-pointer hover:text-[#e9c462] "
                     }
                     onClick={async () => {
-                      // await setEvents((prevarray) => {
-                      //   const newarray = [...prevarray];
-                      //   if (!newarray[box.id - 1] && box.id === 6) {
-                      //     newarray[box.id - 1] = true;
-                      //     window.location.reload();
-                      //   }
-                      //   return newarray;
-                      // });
-
-                      // if (box.id === 6) {
-                      //   algoupdate();
-                      //   window.location.reload();
-                      // }
+                      await setEvents((prevarray) => {
+                        const newarray = [...prevarray];
+                        if (!newarray[box.id - 1] && box.id === 9) {
+                          newarray[box.id - 1] = true;
+                          window.location.reload();
+                        }
+                        return newarray;
+                      });
 
                       if (
                         !events[box.id - 1] &&
                         box.id !== 6 &&
                         box.id !== 1 &&
-                        box.id !== 7
+                        box.id !== 7 &&
+                        box.id !== 9
                       ) {
                         navigate(`/reg/${box.event}`);
                       }
@@ -280,7 +276,6 @@ function Dashboard({ user }) {
                           "No registration required. You are all invited to attend JU Talks on Sunday 17th March in dept of Electrical Engineering Jadavpur University",
                           {
                             theme: "dark",
-                          
                           }
                         );
                       }
@@ -295,7 +290,6 @@ function Dashboard({ user }) {
                         );
 
                         setTimeout(() => {
-                          // window.location.href = "https://forms.gle/y5p9jAkzhbQskSYd9";
                           window.open(
                             "https://forms.gle/LwcPTZmtETVUNy2DA ",
                             "_blank"

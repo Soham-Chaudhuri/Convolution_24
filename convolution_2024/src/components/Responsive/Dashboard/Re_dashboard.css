@@ -60,10 +60,12 @@
   font-size: 18px;
   font-weight: bold;
   margin-top: 8px;
+  font-family: poppins;
 }
 
 .card-text {
   font-size: 14px;
+  font-family: poppins;
   /* color: #555; */
 }
 h1 {
@@ -136,6 +138,7 @@ h1 {
 .card_top_date{
   color: #E9C462;
   text-decoration: none;
+  font-family: poppins;
 }
 /* 
 .arrow{
