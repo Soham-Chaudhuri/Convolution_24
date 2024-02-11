@@ -6,6 +6,7 @@ import "../TeamReg/Team_reg.css";
 import { app } from "../firebase";
 import { getDatabase, onValue, ref, set, update } from "firebase/database";
 import { v4 as uuid } from "uuid";
+import emailjs from "emailjs-com";
 import { Link } from "react-router-dom";
 import rules from "../../components/assets/rules.pdf";
 const db = getDatabase(app);
@@ -24,11 +25,169 @@ function Team_reg({ user }) {
   const [m1, setM1] = useState(false);
   const [m2, setM2] = useState(false);
   const [m3, setM3] = useState(false);
+  // const [mailEvent, setMailEvent] = useState(null);
+  const eventName = useParams();
+  console.log(eventName.event);
   const uid = uuid();
 
   const [agreeTerms, setAgreeTerms] = useState(false);
+  /*if(eventName.event==='decisia'){
+    setMailEvent(["service_xvsw9ej",
+        "template_ju83qrd",
+        templateParams,
+        "IGbvuzMK9_y4lpaDb"])
+  }
+  else if(eventName.event==='circuistics'){
+    setMailEvent(["service_tpy2avm",
+        "template_61yi17j",
+        templateParams,
+        "PUkw79pWv5_JpHXX-"])
+  }
+  else if(eventName.event==='sparkhack'){
+    setMailEvent(["service_tpy2avm",
+        "template_61yi17j",
+        templateParams,
+        "PUkw79pWv5_JpHXX-"])
+  }
+  else if(eventName.event==='eureka'){
+    setMailEvent(["service_tpy2avm",
+        "template_61yi17j",
+        templateParams,
+        "PUkw79pWv5_JpHXX-"])
+  }
+  else if(eventName.event==='aboltabol'){
+    setMailEvent(["service_tpy2avm",
+        "template_61yi17j",
+        templateParams,
+        "PUkw79pWv5_JpHXX-"])
+  }
+  */
+  const sendWelcomeEmail_sparkhack = () => {
+    const templateParams = {
+      mail: tl1email,
+      name1: team_leader,
+      name2: member1,
+      name3: member2,
+      name4: member3,
+      event: eventName.event,
+    };
 
-  const eventName = useParams();
+    emailjs
+      .send(
+        "service_tpy2avm",
+        "template_61yi17j",
+        templateParams,
+        "PUkw79pWv5_JpHXX-"
+      )
+
+      .then((response) => {
+        console.log("Welcome email sent:", response);
+      })
+      .catch((error) => {
+        console.error("Error sending welcome email:", error);
+      });
+  };
+  const sendWelcomeEmail_circuistics = () => {
+    const templateParams = {
+      mail: tl1email,
+      name1: team_leader,
+      name2: member1,
+      name3: member2,
+      name4: member3,
+      event: eventName.event,
+    };
+
+    emailjs
+      .send(
+        "service_xvsw9ej",
+        "template_ju83qrd",
+        templateParams,
+        "IGbvuzMK9_y4lpaDb"
+      )
+
+      .then((response) => {
+        console.log("Welcome email sent:", response);
+      })
+      .catch((error) => {
+        console.error("Error sending welcome email:", error);
+      });
+  };
+  const sendWelcomeEmail_eureka = () => {
+    const templateParams = {
+      mail: tl1email,
+      name1: team_leader,
+      name2: member1,
+      name3: member2,
+      name4: member3,
+      event: eventName.event,
+    };
+
+    emailjs
+      .send(
+        "service_xvsw9ej",
+        "template_ju83qrd",
+        templateParams,
+        "IGbvuzMK9_y4lpaDb"
+      )
+
+      .then((response) => {
+        console.log("Welcome email sent:", response);
+      })
+      .catch((error) => {
+        console.error("Error sending welcome email:", error);
+      });
+  };
+  const sendWelcomeEmail_aboltabol = () => {
+    const templateParams = {
+      mail: tl1email,
+      name1: team_leader,
+      name2: member1,
+      name3: member2,
+      name4: member3,
+      event: eventName.event,
+    };
+
+    emailjs
+      .send(
+        "service_xvsw9ej",
+        "template_ju83qrd",
+        templateParams,
+        "IGbvuzMK9_y4lpaDb"
+      )
+
+      .then((response) => {
+        console.log("Welcome email sent:", response);
+      })
+      .catch((error) => {
+        console.error("Error sending welcome email:", error);
+      });
+  };
+  const sendWelcomeEmail_decisia = () => {
+    const templateParams = {
+      mail: tl1email,
+      name1: team_leader,
+      name2: member1,
+      name3: member2,
+      name4: member3,
+      event: eventName.event,
+    };
+
+    emailjs
+      .send(
+        "service_xvsw9ej",
+        "template_ju83qrd",
+        templateParams,
+        "IGbvuzMK9_y4lpaDb"
+      )
+
+      .then((response) => {
+        console.log("Welcome email sent:", response);
+      })
+      .catch((error) => {
+        console.error("Error sending welcome email:", error);
+      });
+  };
+
   // console.log(eventName.event);
   const scrollToTop = () => {
     window.scrollTo({
@@ -119,7 +278,21 @@ function Team_reg({ user }) {
           Member3: member3,
           Member3mail: m3email,
         });
-
+        if(eventName.event==="decisia"){
+          sendWelcomeEmail_decisia();
+        }
+        else if(eventName.event==="circuistics"){
+          sendWelcomeEmail_circuistics();
+        }
+        else if(eventName.event==="eureka"){
+          sendWelcomeEmail_eureka();
+        }
+        else if(eventName.event==="spark_hack"){
+          sendWelcomeEmail_sparkhack();
+        }
+        else if(eventName.event==="abol_tabol"){
+          sendWelcomeEmail_aboltabol();
+        }
         scrollToTop();
         toast.success("Registration successful!", {
           autoClose: 3200,
