@@ -3,8 +3,8 @@ import "./Prizes.css";
 import prize1 from "../../components/assets/convoprize/INQUIZZITIVE site prize/1-removebg-preview (1).png"
 import prize2 from "../../components/assets/convoprize/INQUIZZITIVE site prize/2-removebg-preview (1).png"
 import prize3 from "../../components/assets/convoprize/INQUIZZITIVE site prize/3-removebg-preview (1).png"
-import gal1 from "../../components/assets/gallery/inquizzitive.png"
-import gal2 from "../../components/assets/gallery/inquizzitive 2.png"
+import gal1 from "../../components/assets/gallery/inquizzitive.jpg"
+import gal2 from "../../components/assets/gallery/inquizzitive 2.jpg"
 const prizeData = [
   {
     index: 0,

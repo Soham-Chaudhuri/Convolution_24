@@ -1,13 +1,14 @@
 import React from "react";
 import "./Prizes.css";
-import prize1 from "../../components/assets/convoprize/CIRCUISTICS site prize/1-removebg-preview (1).png"
-import prize2 from "../../components/assets/convoprize/CIRCUISTICS site prize/2-removebg-preview (1).png"
-import prize3 from "../../components/assets/convoprize/CIRCUISTICS site prize/3-removebg-preview (1).png"
-import gal1 from "../../components/assets/gallery/circuistics 1.png"
-import gal2 from "../../components/assets/gallery/circuistics 2.png"
-import gal3 from "../../components/assets/gallery/circuistics 3.png"
-import gal4 from "../../components/assets/gallery/circuistics 4.png"
-import gal5 from "../../components/assets/gallery/circuistics 5.png"
+import prize1 from "../../components/assets/convoprize/CIRCUISTICS site prize/1-removebg-preview (1).png";
+import prize2 from "../../components/assets/convoprize/CIRCUISTICS site prize/2-removebg-preview (1).png";
+import prize3 from "../../components/assets/convoprize/CIRCUISTICS site prize/3-removebg-preview (1).png";
+import gal1 from "../../components/assets/gallery/circuistics 1.jpg";
+import gal2 from "../../components/assets/gallery/circuistics 2.jpg";
+import gal3 from "../../components/assets/gallery/circuistics 3.jpg";
+import gal4 from "../../components/assets/gallery/circuistics 4.jpg";
+import gal5 from "../../components/assets/gallery/circuistics 5.jpg";
+import gal6 from "../../components/assets/gallery/circuistics-min.jpg";
 const prizeData = [
   {
     index: 0,
@@ -27,7 +28,6 @@ const prizeData = [
     button: "Listen",
     src: prize3,
   },
-  
 ];
 const sponsorData = [
   {
@@ -59,6 +59,13 @@ const sponsorData = [
     headline: "Focus On The Writing",
     button: "Get Focused",
     src: gal5,
+  },
+
+  {
+    index: 5,
+    headline: "Focus On The Writing",
+    button: "Get Focused",
+    src: gal6,
   },
   // {
   //   index: 5,
@@ -261,15 +268,18 @@ class Slider extends React.Component {
   }
 }
 
-function Prizes({dat}) {
+function Prizes({ dat }) {
   return (
     <>
-    <section id={dat}></section>
+      <section id={dat}></section>
       <div className=" flex flex-col justify-center items-center gap-2 pb-3 pt-10">
         <h1 className="text-center teams_h1">{dat}</h1>
         <span className="underline_teams"></span>
         <div className="prizes_body">
-          <Slider heading="Example Slider" slides={(dat==="Prizes"?(prizeData):(sponsorData))} />
+          <Slider
+            heading="Example Slider"
+            slides={dat === "Prizes" ? prizeData : sponsorData}
+          />
         </div>
       </div>
     </>

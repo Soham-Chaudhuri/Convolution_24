@@ -4,11 +4,11 @@ import prize1 from "../../components/assets/convoprize/24 FRAMES site prize/1-re
 import prize2 from "../../components/assets/convoprize/24 FRAMES site prize/2-removebg-preview (1).png"
 import prize3 from "../../components/assets/convoprize/24 FRAMES site prize/3-removebg-preview (1).png"
 import prize4 from "../../components/assets/convoprize/24 FRAMES site prize/4-removebg-preview (1).png"
-import gal1 from "../../components/assets/gallery/24 frames.png"
-import gal2 from "../../components/assets/gallery/24 frames 2.png"
-import gal3 from "../../components/assets/gallery/24 frames 3.png"
-import gal4 from "../../components/assets/gallery/24 frames 21.png"
-import gal5 from "../../components/assets/gallery/frame22.png"
+import gal1 from "../../components/assets/gallery/24 frames.jpg"
+import gal2 from "../../components/assets/gallery/24 frames 2.jpg"
+import gal3 from "../../components/assets/gallery/24 frames 3.jpg"
+import gal4 from "../../components/assets/gallery/24 Frames 21.jpg"
+import gal5 from "../../components/assets/gallery/24 Frames 22.jpg"
 const prizeData = [
   {
     index: 0,

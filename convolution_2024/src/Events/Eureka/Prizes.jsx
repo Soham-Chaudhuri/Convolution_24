@@ -3,9 +3,9 @@ import "./Prizes.css";
 import prize1 from "../../components/assets/convoprize/EUREKA! site prize/1-removebg-preview (1).png"
 import prize2 from "../../components/assets/convoprize/EUREKA! site prize/2-removebg-preview (1).png"
 import prize3 from "../../components/assets/convoprize/EUREKA! site prize/3-removebg-preview (1).png"
-import gal1 from "../../components/assets/gallery/eureka 1.png"
-import gal2 from "../../components/assets/gallery/eureka 2.png"
-import gal3 from "../../components/assets/gallery/eureka 3.png"
+import gal1 from "../../components/assets/gallery/eureka 1.jpg"
+import gal2 from "../../components/assets/gallery/eureka 2.jpg"
+import gal3 from "../../components/assets/gallery/eureka 3.jpg"
 
 const prizeData = [
   {
