@@ -20,14 +20,19 @@ function About() {
               <br />
               &emsp;Round 1: Screening test (pen paper mode).
               <br />
-              &emsp;Question pattern: MCQ, MSQ and NAT type.
+              &emsp;Question pattern: MCQ(Multiple Choice Question),
+              MSQ(Multiple Select
+              <br/> 
+              &emsp;Question) and NAT(Numerical Answer Type)
+              type.
               <br />
               &emsp;Round 2: Hardware design Circuit must be fully operational
               and time taken &emsp;to design the circuit will be noted in this
               round.
               <br />
               <div className="h-[15px]"></div>
-              &bull;Use of any electronic device except for calculators is not allowed.
+              &bull;Use of any electronic device except for calculators is not
+              allowed.
             </span>
           </div>
         </div>

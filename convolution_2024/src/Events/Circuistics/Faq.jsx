@@ -32,14 +32,12 @@ function Faq() {
               building?
             </label>
             <div className="accordion-item-desc items-center">
-              In competitions where there is no penalty for destroying
-              components, it's crucial to note that any team found mishandling
-              components will face immediate disqualification. This policy aims
-              to maintain a fair and ethical playing field. Disqualification
-              serves as a deterrent against intentional damage, promoting
-              sportsmanship and adherence to competition rules. Striking a
-              balance between innovation and responsible behavior is essential
-              to uphold the integrity of the event.
+              It's crucial to note that any team found mishandling components
+              will face immediate disqualification. This rule aims to maintain a
+              fair and ethical playing field. Disqualification is a deterrent
+              against intentional damage, promoting sportsmanship and adherence
+              to competition rules. This balance between innovation and
+              responsible behavior is essential to uphold the event's integrity.
             </div>
           </div>
 
@@ -55,14 +53,7 @@ function Faq() {
               different year or different college students?
             </label>
             <div className="accordion-item-desc">
-              Teams must be exclusively comprised of students from the same
-              college and of the same academic year. The requirement not only
-              promotes a sense of camaraderie within the team but also
-              encourages a fair representation of skills and knowledge among
-              participants. Restricting team formation to students from the same
-              college and year enhances the overall integrity of the
-              competition, preventing potential disparities in experience or
-              resources.
+            Teams must comprise students from the same college and academic year to ensure a fair competition for all teams participating in the particular tier of competition. This rule also ensures that team members can contribute their best to their teams.
             </div>
           </div>
 
@@ -78,11 +69,8 @@ function Faq() {
               per team for participation?
             </label>
             <div className="accordion-item-desc">
-              This event does not require any Registration Fees! Embrace the
-              opportunity to learn and grow without any financial burden. Join
-              us in fostering a community of knowledge enthusiasts. Your passion
-              for learning is the only ticket you need. No fees, no restrictions
-              just pure knowledge sharing.
+            There is no registration fee for this or any other event of Convolution 2024. Your enthusiasm to build and learn something new is the only ticket you will need to participate in our events. 
+
             </div>
           </div>
 

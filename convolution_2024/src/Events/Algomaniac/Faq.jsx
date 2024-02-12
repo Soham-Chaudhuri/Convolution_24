@@ -78,8 +78,7 @@ function Faq() {
               laptops are equipped with the necessary software and
               configurations for the competition. Please be advised to bring any
               specific peripherals or adapters that may be required for your
-              devices. We appreciate your cooperation in ensuring a smooth and
-              efficient competition experience for all finalists.
+              devices. 
             </div>
           </div>
 

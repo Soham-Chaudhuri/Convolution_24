@@ -26,9 +26,9 @@ function Timeline() {
                 </div>
                 <div className="timeline_content1">
                   <div className="flex flex-col ">
-                    <h3>Announcement on CodeChef</h3>
+                    <h3>Announcement on CodeForces</h3>
                     <p className="timeline_para">
-                      - the particulars regarding the event to be announced on CodeChef
+                      - the particulars regarding the event to be announced on CodeForces
                       <br />
                       
                     </p>
@@ -42,10 +42,11 @@ function Timeline() {
                 </div>
                 <div className="timeline_content1 ">
                   <div>
-                    <h3>End of Registration</h3>
+                    <h3>End of Registration & Prelims</h3>
                     <p className="timeline_para">
-                      - all registration to be completed by 11:59pm of 28th February
+                      - all registration to be completed by 7:59P.M.
                       <br />
+                      - the contest begins at 8:00P.M. as per standard CodeChef contest timing
                       
                     </p>
                   </div>
@@ -59,9 +60,9 @@ function Timeline() {
                 </div>
                 <div className="timeline_content1">
                   <div>
-                    <h3>Online Prelims</h3>
+                    <h3>Preliminary Selection of Finalists</h3>
                     <p className="timeline_para">
-                      - the preliminary round to be held on CodeChef
+                      - All selected finalists will be emailed asking to confirm their presence following the merged ranklist published by Codechef
                       <br />
                       
                     </p>
@@ -75,9 +76,9 @@ function Timeline() {
                 </div>
                 <div className="timeline_content1">
                   <div>
-                    <h3>Result of Prelims</h3>
+                    <h3>Confirmation of Finalists</h3>
                     <p className="timeline_para">
-                      - the results will be communicated to the participants
+                      - Deadline for selected finalists to confirm their presence
                       <br />
                       
                     </p>
@@ -88,13 +89,13 @@ function Timeline() {
 
               <div className="timeline_card">
                 <div className="timeline_imgBx">
-                  <h1 className="timeline_day text-[34px]">17<sup>th</sup> Mar</h1>
+                  <h1 className="timeline_day text-[34px]">5<sup>th</sup> Mar</h1>
                 </div>
                 <div className="timeline_content1">
                   <div>
-                    <h3>Finals</h3>
+                    <h3>Publication of List of Finalists</h3>
                     <p className="timeline_para">
-                      - the final round of the event will be held at Jadavpur University dept of Electrical Engineering
+                      - The final list of selected finalists will be published on the announcement blog on Codeforces, and the finalists shall be sent a final email
                       <br />
                       
                     </p>
@@ -108,9 +109,9 @@ function Timeline() {
                 </div>
                 <div className="timeline_content1">
                   <div>
-                    <h3>Prize Distribution</h3>
+                    <h3>Offline Finals</h3>
                     <p className="timeline_para">
-                      - top 3 from the 2nd round will be awarded with exicting prizes
+                      - The offline finals will be held and the winners will be preseneted with their certificates
                       <br />
                       
                     </p>

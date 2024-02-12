@@ -9,29 +9,29 @@ const peopleData = [
   {
     id: 1,
     name: "Palash Kundu",
-    description: "Prof. Palash Kundu",
+    description: "Palash Kundu",
     imgSrc: picture6,
 
     socialMediaLinks: {
       instagram: "",
-      linkedin: "",
+      linkedin: "https://scholar.google.co.in/citations?user=GjQQ9BIAAAAJ&hl=en",
       facebook: "",
     },
-    socialMediaavailable: { insta: true, linke: true, face: true },
+    socialMediaavailable: { insta: false, linke: true, face: false },
     desc: "Professor at Jadavpur University Electrical Engineering Department",
   },
   {
     id: 2,
-    name: "anticipated",
-    description: "Anticipated...",
+    name: "Dipten",
+    description: "Dipten Maity",
     imgSrc: picture4,
     socialMediaLinks: {
       instagram: "",
-      linkedin: "",
+      linkedin: "https://scholar.google.co.in/citations?user=34JBou8AAAAJ&hl=en",
       facebook: "",
     },
-    socialMediaavailable: { insta: true, linke: true, face: true },
-    desc: "",
+    socialMediaavailable: { insta: false, linke: true, face: false },
+    desc: "Professor at Jadavpur University Electrical Engineering Department",
   },
 ];
 
@@ -43,9 +43,8 @@ function Judges() {
           <h1 className="text-center teams_h1">JUDGES</h1>
           <span className="underline_teams"></span>
           <p className="paragraph_teams py-4">
-          Meet the judges of Circuistics!
+            Meet the judges of Circuistics!
             <br />
-            
           </p>
         </div>
         <div className="px-[69px] py-5">
@@ -55,7 +54,9 @@ function Judges() {
                 <div className="group-child-img-teams">
                   <img src={person.imgSrc} alt={person.name} />
                 </div>
-                <div className="algomaniac-teams text-[25.2px]">{person.description}</div>
+                <div className="algomaniac-teams text-[25.2px]">
+                  {person.description}
+                </div>
                 <div className="lorem-ipsum-para-teams flex flex-col gap-2">
                   {person.desc}
                   <div className="flex gap-2">
@@ -77,7 +78,7 @@ function Judges() {
                         target="_blank"
                         rel="noopener noreferrer"
                       >
-                        <i className="fa-brands fa-linkedin fabicon"></i>
+                        <i className="fa-solid fa-circle-info fabicon"></i>
                       </a>
                     ) : (
                       ""
