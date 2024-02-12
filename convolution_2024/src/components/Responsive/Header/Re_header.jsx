@@ -1,7 +1,7 @@
 /* eslint-disable no-unused-vars */
 import React, { useState } from "react";
 import "../Header/Re_header.css";
-import convosvg from "../../assets/Convolution_Dark2nd.png";
+import convosvg from "../../assets/Convolution_Dark2nd.webp";
 import { Link, animateScroll as scroll, scroller } from "react-scroll";
 
 function Re_header() {

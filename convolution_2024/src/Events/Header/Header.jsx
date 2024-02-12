@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "../Header/Header.css";
-import convosvg from "../../components/assets/Convolution_Dark2nd.png";
+import convosvg from "../../components/assets/Convolution_Dark2nd.webp";
 import { Link, animateScroll as scroll, scroller } from "react-scroll";
 import {
   BrowserRouter as Router,

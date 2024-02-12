@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from "react";
 import "./Hero.css";
 import Hero_vd from "./Hero_vd";
-import thunder from "../assets/Thunder.png";
+import thunder from "../assets/Thunder.webp";
 import About from "./About";
 import Event from "./Event";
 import Timeline from "./Timeline";

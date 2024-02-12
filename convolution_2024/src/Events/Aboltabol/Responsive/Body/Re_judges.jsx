@@ -1,6 +1,6 @@
 import React from "react";
-import picture6 from "../../../../components/assets/Arabinda Das.png";
-import picture4 from "../../../../components/assets/SGM.png";
+import picture6 from "../../../../components/assets/Arabinda Das.webp";
+import picture4 from "../../../../components/assets/SGM.webp";
 
 const peopleData = [
   {

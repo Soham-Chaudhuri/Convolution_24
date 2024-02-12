@@ -7,6 +7,8 @@ import prize4 from "../../components/assets/convoprize/24 FRAMES site prize/4-re
 import gal1 from "../../components/assets/gallery/24 frames.webp"
 import gal2 from "../../components/assets/gallery/24 frames 2.webp"
 import gal3 from "../../components/assets/gallery/24 frames 3.webp"
+import gal4 from "../../components/assets/gallery/24 frames 4.webp"
+import gal5 from "../../components/assets/gallery/24 frames 5.webp"
 // import gal4 from "../../components/assets/gallery/24 Frames 21.webp"
 // import gal5 from "../../components/assets/gallery/24 Frames 22.webp"
 const prizeData = [
@@ -35,6 +37,7 @@ const prizeData = [
     src: prize4,
   },
   
+  
 ];
 const sponsorData = [
   {
@@ -55,18 +58,18 @@ const sponsorData = [
     button: "Listen",
     src: gal3,
   },
-  // {
-  //   index: 3,
-  //   headline: "For Your Current Mood",
-  //   button: "Listen",
-  //   src: gal4,
-  // },
-  // {
-  //   index: 4,
-  //   headline: "For Your Current Mood",
-  //   button: "Listen",
-  //   src: gal5,
-  // },
+  {
+    index: 3,
+    headline: "For Your Current Mood",
+    button: "Listen",
+    src: gal4,
+  },
+  {
+    index: 4,
+    headline: "For Your Current Mood",
+    button: "Listen",
+    src: gal5,
+  },
   
 ];
 // =========================
