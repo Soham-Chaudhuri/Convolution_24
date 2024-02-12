@@ -28,7 +28,7 @@ function Timeline() {
                   <div className="flex flex-col ">
                     <h3>Morning Session:</h3>
                     <p className="timeline_para">
-                      - Innauguration
+                      - Inauguration
                       <br />
                       - Eureka! Prelims
                       <br />

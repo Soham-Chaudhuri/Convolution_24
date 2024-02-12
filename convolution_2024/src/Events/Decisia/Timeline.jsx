@@ -22,7 +22,7 @@ function Timeline() {
             <div className="timeline_container1">
               <div className="timeline_card">
                 <div className="timeline_imgBx flex flex-col ">
-                  <h1 className="timeline_day text-[34px]">19<sup>th</sup> Feb</h1>
+                  <h1 className="timeline_day text-[34px]">15<sup>th</sup> Feb</h1>
                 </div>
                 <div className="timeline_content1">
                   <div className="flex flex-col ">
@@ -38,13 +38,13 @@ function Timeline() {
 
               <div className="timeline_card">
                 <div className="timeline_imgBx">
-                  <h1 className="timeline_day text-[34px]">2<sup>nd</sup> Mar</h1>
+                  <h1 className="timeline_day text-[34px]">10<sup>th</sup> Mar</h1>
                 </div>
                 <div className="timeline_content1 ">
                   <div>
                     <h3>Abstract Submission Ends</h3>
                     <p className="timeline_para">
-                      - Participants will have to submit their abstracts by 11:59pm on 2nd March.
+                      - Participants will have to submit their abstracts by 11:59pm on 10th March.
                       <br />
                      
                     </p>
@@ -55,13 +55,13 @@ function Timeline() {
               
               <div className="timeline_card">
                 <div className="timeline_imgBx">
-                  <h1 className="timeline_day text-[34px]">8<sup>th</sup> Mar</h1>
+                  <h1 className="timeline_day text-[34px]">13<sup>th</sup> Mar</h1>
                 </div>
                 <div className="timeline_content1">
                   <div>
                     <h3>Result Announcement of Prelims</h3>
                     <p className="timeline_para">
-                      - Top 8 teams will be shortlisted for the 2nd round
+                      - Top 8 teams will be shortlisted for the 2nd round after their online pitching
                       <br />
                       
                     </p>

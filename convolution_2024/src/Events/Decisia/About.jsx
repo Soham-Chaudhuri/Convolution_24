@@ -9,7 +9,7 @@ function About() {
           <div className="dec_about flex text-center flex-col align-center justify-center gap-10">
             <span className="heading">RULES & REGULATIONS</span>
             <span className="dec_para text-justify">
-              &bull;1-4 members cross-year cross-specialization teams from the
+              &bull;2-4 members cross-year cross-specialization teams from the
               same institution
               <br />
               <div className="h-[15px]"></div>

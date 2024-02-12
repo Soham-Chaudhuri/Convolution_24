@@ -23,7 +23,7 @@ function Timeline() {
               <div className="timeline_card">
                 <div className="timeline_imgBx flex flex-col ">
                   <h1 className="timeline_day text-[34px]">
-                    12<sup>th</sup> Feb
+                    15<sup>th</sup> Feb
                   </h1>
                 </div>
                 <div className="timeline_content1">
@@ -41,14 +41,14 @@ function Timeline() {
               <div className="timeline_card">
                 <div className="timeline_imgBx">
                   <h1 className="timeline_day text-[34px]">
-                    26<sup>th</sup> Feb
+                    10<sup>th</sup> Mar
                   </h1>
                 </div>
                 <div className="timeline_content1 ">
                   <div>
                     <h3>Abstract Submission Ends</h3>
                     <p className="timeline_para">
-                      - all abstracts to be submitted by 11:59pm on 26th Feb
+                      - all abstracts to be submitted by 11:59pm on 10th Mar
                       <br />
                     </p>
                   </div>
@@ -58,7 +58,7 @@ function Timeline() {
               <div className="timeline_card">
                 <div className="timeline_imgBx">
                   <h1 className="timeline_day text-[34px]">
-                    8<sup>th</sup> Mar
+                    13<sup>th</sup> Mar
                   </h1>
                 </div>
                 <div className="timeline_content1">
@@ -76,12 +76,12 @@ function Timeline() {
               <div className="timeline_card">
                 <div className="timeline_imgBx">
                   <h1 className="timeline_day text-[34px]">
-                    17<sup>th</sup> Mar
+                    16<sup>th</sup> Mar
                   </h1>
                 </div>
                 <div className="timeline_content1">
                   <div>
-                    <h3>Final Round & Prize Distribution</h3>
+                    <h3>Final Round</h3>
                     <p className="timeline_para">
                       - the shortlisted teams will have to pitch their concepts
                       before the judges and chief guest.

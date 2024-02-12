@@ -23,15 +23,15 @@ function Timeline() {
               <div className="timeline_card">
                 <div className="timeline_imgBx flex flex-col ">
                   <h1 className="timeline_day text-[34px]">
-                    28<sup>th</sup> Feb
+                    15<sup>th</sup> Feb
                   </h1>
                 </div>
                 <div className="timeline_content1">
                   <div className="flex flex-col ">
                     <h3>Photo Submission Starts</h3>
                     <p className="timeline_para">
-                      - send us the photos at "convolution2024@gmail.com" along
-                      with screenshot of the meta data and the caption
+                      - send us your photos along with screenshot of the meta
+                      data and the caption
                       <br />
                     </p>
                   </div>
@@ -41,14 +41,14 @@ function Timeline() {
               <div className="timeline_card">
                 <div className="timeline_imgBx">
                   <h1 className="timeline_day text-[34px]">
-                    3<sup>rd</sup> Mar
+                    10<sup>th</sup> Mar
                   </h1>
                 </div>
                 <div className="timeline_content1 ">
                   <div>
                     <h3>Final Date of Submission</h3>
                     <p className="timeline_para">
-                      - all photos to be submitted by 11:59pm on 3rd March.
+                      - all photos to be submitted by 11:59pm on 10th March.
                       <br />
                     </p>
                   </div>
@@ -58,7 +58,7 @@ function Timeline() {
               <div className="timeline_card">
                 <div className="timeline_imgBx">
                   <h1 className="timeline_day text-[34px]">
-                    8<sup>th</sup> Mar
+                    15<sup>th</sup> Mar
                   </h1>
                 </div>
                 <div className="timeline_content1">
@@ -83,7 +83,7 @@ function Timeline() {
                   <div>
                     <h3>Prize Distribution</h3>
                     <p className="timeline_para">
-                      - the top 3 photos of the 2nd round along with popular
+                      - the top photos of the 2nd round along with popular
                       choice photo to be declared
                       <br />
                     </p>

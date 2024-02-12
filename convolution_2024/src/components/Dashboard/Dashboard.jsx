@@ -9,11 +9,13 @@ import pic4 from "../assets/Decisia_Light.png";
 import pic5 from "../assets/Abol Tabol_Light.png";
 import pic6 from "../assets/Circuistics_Light.png";
 import pic7 from "../assets/Eureka_Light.png";
-import pic8 from "../assets/Algomaniac Light.png";
+import pic8 from "../assets/AlgomaniacLight.webp";
 import pic9 from "../assets/Papier_Light.png";
 import pic10 from "../assets/Sparkhack_Light.png";
 import pic11 from "../assets/24 Frames Light.png";
 import pic12 from "../assets/JU Talks Light.png";
+
+
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { motion } from "framer-motion";
@@ -143,7 +145,7 @@ function Dashboard({ user }) {
           id: 7,
           type: data.papier ? "Registered" : "Register Now",
           image: pic12,
-          content: "Lorem ipsum content for box 7",
+          content: "Conversations, coffee, and free-flowing words!",
           lastDate: "On Day Event",
           eventDate: "17-03-2024",
           registered: data.papier,

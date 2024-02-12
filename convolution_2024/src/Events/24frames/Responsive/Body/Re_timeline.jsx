@@ -21,14 +21,14 @@ function Re_timeline() {
               <div className="Re_timeline_image">
                 <div className="Re_timeline_box flex justify-center align-items-center text-center h-[200px] w-[790]">
                   <h1 className="Re_timeline_heading">
-                    28<sup>th</sup> Feb
+                    15<sup>th</sup> Feb
                   </h1>
                 </div>
               </div>
               <div className="Re_timeline_content">
                 <h3 className="Re_timeline_day pt-7">Photo Submission Starts</h3>
                 <p className="Re_timeline_para">
-                  - send us the photos at "convolution2024@gmail.com" along with
+                  - send us your photos along with
                   screenshot of the meta data and the caption
                 </p>
               </div>
@@ -40,14 +40,14 @@ function Re_timeline() {
               <div className="Re_timeline_image">
                 <div className="Re_timeline_box flex justify-center align-items-center text-center h-[200px] w-[790]">
                   <h1 className="Re_timeline_heading">
-                    3<sup>rd</sup> Mar
+                    10<sup>th</sup> Mar
                   </h1>
                 </div>
               </div>
               <div className="Re_timeline_content">
                 <h3 className="Re_timeline_day pt-7">Final Date of Submission</h3>
                 <p className="Re_timeline_para">
-                  - all photos to be submitted by 11:59pm on 3rd March.
+                  - all photos to be submitted by 11:59pm on 10th March.
                   <br />
                 </p>
               </div>
@@ -58,7 +58,7 @@ function Re_timeline() {
               <div className="Re_timeline_image">
                 <div className="Re_timeline_box flex justify-center align-items-center text-center h-[200px] w-[790]">
                   <h1 className="Re_timeline_heading">
-                    8<sup>th</sup> Mar
+                    15<sup>th</sup> Mar
                   </h1>
                 </div>
               </div>
@@ -86,7 +86,7 @@ function Re_timeline() {
               <div className="Re_timeline_content">
                 <h3 className="Re_timeline_day pt-7">Prize Distribution</h3>
                 <p className="Re_timeline_para">
-                  - the top 3 photos of the 2nd round along with popular choice
+                  - the top photos of the 2nd round along with popular choice
                   photo to be declared
                   <br />
                 </p>

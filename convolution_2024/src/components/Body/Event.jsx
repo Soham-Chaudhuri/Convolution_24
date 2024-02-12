@@ -8,7 +8,7 @@ import picture5 from "../assets/Inquizzitive_Dark.png";
 import picture6 from "../assets/JU Talks Dark.png";
 import picture7 from "../assets/Sparkhack_Dark.png";
 import picture8 from "../assets/24 Frames Dark.png";
-import picture9 from "../assets/Algomaniac Dark.png";
+import picture9 from "../assets/AlgomaniacDark.webp";
 import {
   BrowserRouter as Router,
   Routes,
@@ -26,7 +26,7 @@ const peopleData = [
     imgSrc: picture3,
     normalImg: picture3,
     href: "/events/circuistics",
-    para: "Do you fantasize about creating your own Atlas-like robot one day? Do you enjoy tinkering with Arduino kits? We're here with the perfect platform for you to test your skills! For those who enjoy designing circuits to solve real life problems, this is their stage!",
+    para: " Do you fantasize about creating your own Atlas-like robot one day? Do you enjoy tinkering with Arduino kits? We're here with the perfect platform for you to test your skills! For those who enjoy designing circuits to solve real-life problems, this is their stage!",
   },
   {
     id: 2,
@@ -35,7 +35,7 @@ const peopleData = [
     imgSrc: picture7,
     normalImg: picture7,
     href: "/events/sparkhack",
-    para: "Eastern India's BIGGEST hackathon, focused on engineering technological solutions where teams embark on building prototypes of products with notable social impact. The ideas will be judged by academics and industry experts.",
+    para: "Eastern India's BIGGEST hackathon, focused on engineering technological solutions where teams build prototypes of products with notable social impact. The ideas will be judged by academics and industry experts.",
   },
   {
     id: 3,
@@ -44,7 +44,7 @@ const peopleData = [
     imgSrc: picture9,
     normalImg: picture9,
     href: "/events/algomaniac",
-    para: "A competitive programming event exclusively for those who wish to tackle the most mind-boggling challenges with their prowess on a keyboard and creative power of their minds, through lines of code.",
+    para: "A competitive programming event exclusively for those who wish to tackle the most mind-boggling challenges with their prowess on a keyboard and the creative power of their minds through lines of code",
   },
   {
     id: 4,
@@ -62,7 +62,7 @@ const peopleData = [
     imgSrc: picture4,
     normalImg: picture4,
     href: "/events/eureka",
-    para: "An event where the participants traverse intellectually stimulating routes that lead them to the ultimate “treasure”, and solving each step is nothing short of a “Eureka!” moment, here is an opportunity for a real-time experience of decoding complex situations and their varied solutions. “Eureka!” will serve as an ideal chance for you if you're a never-give-up type of person, and are ready to channel all your wits to reach the final solution.",
+    para: `"Eureka!" is an event where participants navigate intellectually stimulating routes to discover the ultimate "treasure." Each step offers a "Eureka!" moment, providing a real-time experience in decoding complex situations and finding varied solutions. This opportunity is perfect for those who never give up, as it allows you to channel all your wits toward reaching the final solution. Join us for a chance to engage in this exciting challenge!`,
   },
   {
     id: 6,
@@ -72,7 +72,8 @@ const peopleData = [
     normalImg: picture1,
     href: "/events/decisia",
 
-    para: `Our own version of “Shark Tank”, Decisia is your platform to pitch the business idea that you have been dreaming about if you’re to start-up a business. Become the CEO of a company, formulate the product, present your calculated skyrocketing profit margins, and pitch them before the “sharks” to get an investment!"`,
+    para: `Decisia is like our version of "Shark Tank." It's your platform to pitch that dream business idea. You can be the CEO, create the product, showcase your profit margins, and pitch it to the "sharks'' for potential investment. Dive into the opportunity to turn your business dreams into reality!
+    `,
   },
   {
     id: 7,
@@ -81,7 +82,8 @@ const peopleData = [
     imgSrc: picture2,
     normalImg: picture2,
     href: "/events/aboltabol",
-    para: "Modeled on MIT’s popular BAHFEST, Abol Tabol is the stage to unleash your inner geeky stand-up comedian! Have some absurdist scientific theory about the inevitable evolution of humans to cats or a processor to block out babies crying on airplanes? Present such ideas in front of our judges and spectators!",
+    para: ` Inspired by MIT's BAHFEST, Abol Tabol is your chance to be a geeky stand-up comedian! Share absurd scientific theories like humans evolving into cats or creating a processor to block out babies crying on airplanes. Present your ideas in front of judges and spectators!
+    `,
   },
   {
     id: 8,
@@ -90,8 +92,7 @@ const peopleData = [
     imgSrc: picture5,
     normalImg: picture5,
     href: "/events/inquizzitive",
-    para: `The annual quiz of Convolution with its unique blend of business, technology, entertainment, sports, and practically “everything under the Sun”. 
-    "A quiz competition is a platform where curiosity and intelligence converges.” - Test out your IQ and knowledge base by participating in this quiz!`,
+    para: `Convolution's annual quiz is a unique blend of business, technology, entertainment, sports, and more. It's a platform where curiosity and intelligence converge. Test your IQ and knowledge by participating in this quiz! `,
   },
   {
     id: 9,
@@ -100,7 +101,8 @@ const peopleData = [
     imgSrc: picture8,
     normalImg: picture8,
     href: "/events/24frames",
-    para: `A collection of four and a half minute vignettes of 24 images, to bring before all the camera-wielding enthusiasts, the ones who could meander through the forgotten streets of a city only to lend a kaleidoscopic eye to all its dimensions. Grab this opportunity to be the best “moment-catcher”!`,
+    para: ` Experience a collection of four-and-a-half-minute vignettes featuring 24 images each. It's for camera enthusiasts who explore forgotten city streets, lending a kaleidoscopic view to all dimensions. Seize the opportunity to become the best "moment-catcher"!
+    `,
   },
 ];
 
@@ -124,19 +126,18 @@ const Event = () => {
           <div className="grid grid-cols-2 gap-[56px]">
             {peopleData.map((person) => (
               <div key={person.id} className="boro-goal flex flex-wrap hovered">
-                <div className="group-child-img" >
+                <div className="group-child-img">
                   <img
                     src={person.normalImg}
                     alt={person.name}
                     className="normal-image"
-                    
                   />
 
                   <img
                     src={person.imgSrc}
                     alt={person.name}
                     className="hover-image cursor-pointer"
-                    onClick={()=>navigate(person.href)}
+                    onClick={() => navigate(person.href)}
                   />
                 </div>
                 <Link to={person.href}>
