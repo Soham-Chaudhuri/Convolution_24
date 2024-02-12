@@ -1,16 +1,16 @@
 /* eslint-disable react/no-unescaped-entities */
 import React from "react";
 import "./Teams.css";
-import picture1 from "../assets/soham.png";
+import picture1 from "../assets/soham.webp";
 import picture2 from "../assets/uttam.png";
 
-import picture4 from "../assets/Parthib.png";
-import picture5 from "../assets/Ayan_per.png";
-import picture6 from "../assets/dwaipayan.png";
-import picture7 from "../assets/azfar.png";
-import picture8 from "../assets/supratim.png";
-import picture9 from "../assets/obaidulla.png";
-import picture10 from "../assets/avishek.png";
+import picture4 from "../assets/Parthib.webp";
+import picture5 from "../assets/Ayan_per.webp";
+import picture6 from "../assets/dwaipayan.webp";
+import picture7 from "../assets/azfar.webp";
+import picture8 from "../assets/supratim.webp";
+import picture9 from "../assets/obaidulla.webp";
+import picture10 from "../assets/avishek.webp";
 const peopleData = [
   {
     id: 1,

@@ -1,16 +1,16 @@
 /* eslint-disable react/jsx-key */
 import React from "react";
 import "./Re_event.css";
-import picture1 from "../../assets/Decisia_Dark.png";
+import picture1 from "../../assets/Decisia_Dark.webp";
 // import picture2 from "../assets/Abol Tabol_Dark.png";
-import picture2 from "../../assets/abol2nd.png";
-import picture3 from "../../assets/Circuistics_Dark.png";
-import picture4 from "../../assets/Eureka_Dark.png";
-import picture5 from "../../assets/Inquizzitive_Dark.png";
-import picture6 from "../../assets/JU Talks Dark.png";
-import picture7 from "../../assets/Sparkhack_Dark.png";
-import picture8 from "../../assets/24 Frames Dark.png";
-import picture9 from "../../assets/Algomaniac Dark.png";
+import picture2 from "../../assets/abol2nd.webp";
+import picture3 from "../../assets/Circuistics_Dark.webp";
+import picture4 from "../../assets/Eureka_Dark.webp";
+import picture5 from "../../assets/Inquizzitive_Dark.webp";
+import picture6 from "../../assets/JU-Talks-Dark.webp";
+import picture7 from "../../assets/Sparkhack_Dark.webp";
+import picture8 from "../../assets/24 Frames Dark.webp";
+import picture9 from "../../assets/AlgomaniacDark.webp";
 import { Link, useNavigate } from "react-router-dom";
 
 const eventData = [
