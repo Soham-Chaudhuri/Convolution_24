@@ -14,21 +14,21 @@ const peopleData = [
 
     socialMediaLinks: {
       instagram: "",
-      linkedin: "",
+      linkedin: "https://scholar.google.com/citations?user=Oxu-8WcAAAAJ&hl=en",
       facebook: "",
     },
-    socialMediaavailable: { insta: true, linke: true, face: true },
+    socialMediaavailable: { insta: false, linke: true, face: false },
     desc: "Professor at Jadavpur University Electrical Engineering Department",
   },
   {
     id: 2,
     name: "",
-    description:"Sugata Munshi",
+    description: "Sugata Munshi",
     imgSrc: picture4,
     socialMediaLinks: {
       // instagram: "https://www.instagram.com/parthib_not_parthiv/",
-      linkedin: "https://www.linkedin.com/in/sugata-munshi-ab791425/",
-      // facebook: "https://www.facebook.com/profile.php?id=100074521635711",
+      linkedin: "https://scholar.google.com/citations?user=4QDUROsAAAAJ&hl=en",
+      facebook: "",
     },
     socialMediaavailable: { insta: false, linke: true, face: false },
     desc: "Professor at Jadavpur University Electrical Engineering Department",
@@ -42,11 +42,7 @@ function Judges() {
         <div className=" flex flex-col justify-center items-center gap-2 py-5">
           <h1 className="text-center teams_h1">JUDGES</h1>
           <span className="underline_teams"></span>
-          <p className="paragraph_teams py-4">
-            Meet the judges of Abol Tabol!
-            
-            
-          </p>
+          <p className="paragraph_teams py-4">Meet the judges of Abol Tabol!</p>
         </div>
         <div className="px-[69px] py-5">
           <div className="grid grid-cols-2 gap-[56px]">
@@ -77,7 +73,7 @@ function Judges() {
                         target="_blank"
                         rel="noopener noreferrer"
                       >
-                        <i className="fa-brands fa-linkedin fabicon"></i>
+                        <i className="fa-solid fa-circle-info fabicon"></i>
                       </a>
                     ) : (
                       ""

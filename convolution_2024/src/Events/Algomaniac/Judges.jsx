@@ -14,10 +14,11 @@ const peopleData = [
 
     socialMediaLinks: {
       instagram: "",
-      linkedin: "",
+      linkedin:
+        "https://scholar.google.co.in/citations?user=IG1XQYkAAAAJ&hl=en",
       facebook: "",
     },
-    socialMediaavailable: { insta: true, linke: true, face: true },
+    socialMediaavailable: { insta: false, linke: true, face: false },
     desc: "Professor at Jadavpur University Electrical Engineering Department",
   },
   {
@@ -27,10 +28,11 @@ const peopleData = [
     imgSrc: picture4,
     socialMediaLinks: {
       instagram: "",
-      linkedin: "",
+      linkedin:
+        "https://scholar.google.co.in/citations?user=hs1L7A0AAAAJ&hl=en",
       facebook: "",
     },
-    socialMediaavailable: { insta: true, linke: true, face: true },
+    socialMediaavailable: { insta: false, linke: true, face: false },
     desc: "Professor at Jadavpur University Electrical Engineering Department",
   },
 ];
@@ -42,10 +44,7 @@ function Judges() {
         <div className=" flex flex-col justify-center items-center gap-2 py-5">
           <h1 className="text-center teams_h1">JUDGES</h1>
           <span className="underline_teams"></span>
-          <p className="paragraph_teams py-4">
-            Meet the judges of Algomaniac!
-
-          </p>
+          <p className="paragraph_teams py-4">Meet the judges of Algomaniac!</p>
         </div>
         <div className="px-[69px] py-5">
           <div className="grid grid-cols-2 gap-[56px]">
@@ -54,7 +53,9 @@ function Judges() {
                 <div className="group-child-img-teams">
                   <img src={person.imgSrc} alt={person.name} />
                 </div>
-                <div className="algomaniac-teams text-[23.8px]">{person.description}</div>
+                <div className="algomaniac-teams text-[23.8px]">
+                  {person.description}
+                </div>
                 <div className="lorem-ipsum-para-teams flex flex-col gap-2">
                   {person.desc}
                   <div className="flex gap-2">
@@ -76,7 +77,7 @@ function Judges() {
                         target="_blank"
                         rel="noopener noreferrer"
                       >
-                        <i className="fa-brands fa-linkedin fabicon"></i>
+                        <i className="fa-solid fa-circle-info fabicon"></i>
                       </a>
                     ) : (
                       ""
