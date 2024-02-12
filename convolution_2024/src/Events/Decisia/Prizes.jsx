@@ -3,9 +3,9 @@ import "./Prizes.css";
 import prize1 from "../../components/assets/convoprize/DECISIA site prize/1-removebg-preview (1).png"
 import prize2 from "../../components/assets/convoprize/DECISIA site prize/2-removebg-preview (1).png"
 import prize3 from "../../components/assets/convoprize/DECISIA site prize/3-removebg-preview (1).png"
-import dec1 from "../../components/assets/gallery/Decisia 1.jpg"
-import dec2 from "../../components/assets/gallery/Decisia 2.jpg"
-import dec3 from "../../components/assets/gallery/Decisia 3.jpg"
+import dec1 from "../../components/assets/gallery/Decisia 1.webp"
+import dec2 from "../../components/assets/gallery/Decisia 2.webp"
+import dec3 from "../../components/assets/gallery/Decisia 3.webp"
 const prizeData = [
   {
     index: 0,

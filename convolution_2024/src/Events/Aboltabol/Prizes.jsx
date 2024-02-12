@@ -3,9 +3,9 @@ import "./Prizes.css";
 import prize1 from "../../components/assets/convoprize/ABOL TABOL site prize/1-removebg-preview (1).png";
 import prize2 from "../../components/assets/convoprize/ABOL TABOL site prize/2-removebg-preview (1).png";
 import prize3 from "../../components/assets/convoprize/ABOL TABOL site prize/3-removebg-preview (1).png";
-import gal1 from "../../components/assets/gallery/abol tabol 1.jpg"
-import gal2 from "../../components/assets/gallery/abol tabol 2.jpg"
-import gal3 from "../../components/assets/gallery/abol tabol 3.jpg"
+import gal1 from "../../components/assets/gallery/abol tabol 1.webp"
+import gal2 from "../../components/assets/gallery/abol tabol 2.webp"
+import gal3 from "../../components/assets/gallery/abol tabol 3.webp"
 
 const prizeData = [
   {

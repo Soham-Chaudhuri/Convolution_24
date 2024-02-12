@@ -4,11 +4,11 @@ import prize1 from "../../components/assets/convoprize/24 FRAMES site prize/1-re
 import prize2 from "../../components/assets/convoprize/24 FRAMES site prize/2-removebg-preview (1).png"
 import prize3 from "../../components/assets/convoprize/24 FRAMES site prize/3-removebg-preview (1).png"
 import prize4 from "../../components/assets/convoprize/24 FRAMES site prize/4-removebg-preview (1).png"
-import gal1 from "../../components/assets/gallery/24 frames.jpg"
-import gal2 from "../../components/assets/gallery/24 frames 2.jpg"
-import gal3 from "../../components/assets/gallery/24 frames 3.jpg"
-import gal4 from "../../components/assets/gallery/24 Frames 21.jpg"
-import gal5 from "../../components/assets/gallery/24 Frames 22.jpg"
+import gal1 from "../../components/assets/gallery/24 frames.webp"
+import gal2 from "../../components/assets/gallery/24 frames 2.webp"
+import gal3 from "../../components/assets/gallery/24 frames 3.webp"
+// import gal4 from "../../components/assets/gallery/24 Frames 21.webp"
+// import gal5 from "../../components/assets/gallery/24 Frames 22.webp"
 const prizeData = [
   {
     index: 0,
@@ -55,18 +55,18 @@ const sponsorData = [
     button: "Listen",
     src: gal3,
   },
-  {
-    index: 3,
-    headline: "For Your Current Mood",
-    button: "Listen",
-    src: gal4,
-  },
-  {
-    index: 4,
-    headline: "For Your Current Mood",
-    button: "Listen",
-    src: gal5,
-  },
+  // {
+  //   index: 3,
+  //   headline: "For Your Current Mood",
+  //   button: "Listen",
+  //   src: gal4,
+  // },
+  // {
+  //   index: 4,
+  //   headline: "For Your Current Mood",
+  //   button: "Listen",
+  //   src: gal5,
+  // },
   
 ];
 // =========================

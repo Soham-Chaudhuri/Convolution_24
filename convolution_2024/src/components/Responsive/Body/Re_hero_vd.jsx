@@ -1,7 +1,7 @@
 import React from "react";
 // import Re_video from "../../assets/Coming Soon.mp4";
 import "../Body/Re_hero_vd.css";
-import Re_video from "../../assets/comingsoon2.mp4";
+import Re_video from "../../assets/comingsoon2.webm";
 
 function Re_hero_vd() {
   return (

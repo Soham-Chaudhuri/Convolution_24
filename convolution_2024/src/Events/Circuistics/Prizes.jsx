@@ -3,12 +3,12 @@ import "./Prizes.css";
 import prize1 from "../../components/assets/convoprize/CIRCUISTICS site prize/1-removebg-preview (1).png";
 import prize2 from "../../components/assets/convoprize/CIRCUISTICS site prize/2-removebg-preview (1).png";
 import prize3 from "../../components/assets/convoprize/CIRCUISTICS site prize/3-removebg-preview (1).png";
-import gal1 from "../../components/assets/gallery/circuistics 1.jpg";
-import gal2 from "../../components/assets/gallery/circuistics 2.jpg";
-import gal3 from "../../components/assets/gallery/circuistics 3.jpg";
-import gal4 from "../../components/assets/gallery/circuistics 4.jpg";
-import gal5 from "../../components/assets/gallery/circuistics 5.jpg";
-import gal6 from "../../components/assets/gallery/circuistics-min.jpg";
+import gal1 from "../../components/assets/gallery/circuistics 1.webp";
+import gal2 from "../../components/assets/gallery/circuistics 2.webp";
+import gal3 from "../../components/assets/gallery/circuistics 3.webp";
+import gal4 from "../../components/assets/gallery/circuistics 4.webp";
+import gal5 from "../../components/assets/gallery/circuistics 5.webp";
+import gal6 from "../../components/assets/gallery/circuistics-min.webp";
 const prizeData = [
   {
     index: 0,
