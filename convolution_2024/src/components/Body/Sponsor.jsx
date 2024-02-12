@@ -1,24 +1,24 @@
 import React from "react";
 import "./Sponsor.css";
 import { Link } from "react-router-dom";
-import sponsorpic1 from "../assets/sponsor/1.png";
-import sponsorpic2 from "../assets/sponsor/2.png";
-import sponsorpic3 from "../assets/sponsor/3.png";
-import sponsorpic4 from "../assets/sponsor/4.png";
-import sponsorpic5 from "../assets/sponsor/5.png";
-import sponsorpic6 from "../assets/sponsor/6.png";
-import sponsorpic7 from "../assets/sponsor/7.png";
-import sponsorpic8 from "../assets/sponsor/8.png";
-import sponsorpic9 from "../assets/sponsor/9.png";
-import sponsorpic10 from "../assets/sponsor/10.png";
-import sponsorpic11 from "../assets/sponsor/11.png";
-import sponsorpic12 from "../assets/sponsor/12.png";
-import sponsorpic13 from "../assets/sponsor/13.png";
-import sponsorpic14 from "../assets/sponsor/14.png";
-import sponsorpic15 from "../assets/sponsor/15.png";
-import sponsorpic16 from "../assets/sponsor/16.png";
-import sponsorpic17 from "../assets/sponsor/17.png";
-import sponsorpic18 from "../assets/sponsor/18.png";
+import sponsorpic1 from "../assets/sponsor/1.webp";
+import sponsorpic2 from "../assets/sponsor/2.webp";
+import sponsorpic3 from "../assets/sponsor/3.webp";
+import sponsorpic4 from "../assets/sponsor/4.webp";
+import sponsorpic5 from "../assets/sponsor/5.webp";
+import sponsorpic6 from "../assets/sponsor/6.webp";
+import sponsorpic7 from "../assets/sponsor/7.webp";
+import sponsorpic8 from "../assets/sponsor/8.webp";
+import sponsorpic9 from "../assets/sponsor/9.webp";
+import sponsorpic10 from "../assets/sponsor/10.webp";
+import sponsorpic11 from "../assets/sponsor/11.webp";
+import sponsorpic12 from "../assets/sponsor/12.webp";
+import sponsorpic13 from "../assets/sponsor/13.webp";
+import sponsorpic14 from "../assets/sponsor/14.webp";
+import sponsorpic15 from "../assets/sponsor/15.webp";
+import sponsorpic16 from "../assets/sponsor/16.webp";
+import sponsorpic17 from "../assets/sponsor/17.webp";
+import sponsorpic18 from "../assets/sponsor/18.webp";
 
 const slideData = [
   {
