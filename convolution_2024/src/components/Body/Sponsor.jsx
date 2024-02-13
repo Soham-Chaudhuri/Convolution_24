@@ -90,21 +90,21 @@ const slideData = [
   //   src: sponsorpic2,
   // },
 
-  {
-    // index: 10,
-    index: 6,
-    headline: "Focus On The Writing",
-    button: "Get Focused",
-    src: sponsorpic11,
-  },
+  // {
+  //   // index: 10,
+  //   index: 6,
+  //   headline: "Focus On The Writing",
+  //   button: "Get Focused",
+  //   src: sponsorpic11,
+  // },
 
-  {
-    // index: 11,
-    index: 7,
-    headline: "Focus On The Writing",
-    button: "Get Focused",
-    src: sponsorpic12,
-  },
+  // {
+  //   // index: 11,
+  //   index: 7,
+  //   headline: "Focus On The Writing",
+  //   button: "Get Focused",
+  //   src: sponsorpic12,
+  // },
 
   // {
   //   index: 12,
@@ -120,32 +120,32 @@ const slideData = [
   // },
   {
     // index: 14,
-    index :8,
+    index :6,
     headline: "Focus On The Writing",
     button: "Get Focused",
     src: sponsorpic15,
   },
-  {
-    // index: 15,
-    index: 9, 
-    headline: "Focus On The Writing",
-    button: "Get Focused",
-    src: sponsorpic16,
-  },
-  {
-    // index: 16,
-    index: 10,
-    headline: "Focus On The Writing",
-    button: "Get Focused",
-    src: sponsorpic17,
-  },
-  {
-    // index: 17,
-    index: 11,
-    headline: "Focus On The Writing",
-    button: "Get Focused",
-    src: sponsorpic18,
-  },
+  // {
+  //   // index: 15,
+  //   index: 9, 
+  //   headline: "Focus On The Writing",
+  //   button: "Get Focused",
+  //   src: sponsorpic16,
+  // },
+  // {
+  //   // index: 16,
+  //   index: 10,
+  //   headline: "Focus On The Writing",
+  //   button: "Get Focused",
+  //   src: sponsorpic17,
+  // },
+  // {
+  //   // index: 17,
+  //   index: 11,
+  //   headline: "Focus On The Writing",
+  //   button: "Get Focused",
+  //   src: sponsorpic18,
+  // },
 ];
 
 // =========================

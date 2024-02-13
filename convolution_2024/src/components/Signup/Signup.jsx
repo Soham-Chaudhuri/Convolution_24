@@ -136,7 +136,7 @@ function Signup() {
         setTimeout(() => {
           navigate(`/profile/${value.user.uid}`);
         }, 2000);
-        toast.info(" Please check your email(ckeck spam folder also) for the sign-up mail", {
+        toast.info("Heads up! Sign-up email sent. Check your inbox!", {
           autoClose: 3200,
           theme: "dark",
         });
@@ -194,7 +194,7 @@ function Signup() {
 
             <input
               type="text"
-              placeholder="Year..."
+              placeholder="Graduation Year..."
               value={year}
               className="form-input h-14  p-6 form_place form_text"
               onChange={(e) => setYear(e.target.value)}

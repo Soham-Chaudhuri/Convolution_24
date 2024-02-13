@@ -1,9 +1,9 @@
 import React from "react";
 import "./Prizes.css";
-import prize1 from "../../components/assets/convoprize/24 FRAMES site prize/1-removebg-preview (1).png"
-import prize2 from "../../components/assets/convoprize/24 FRAMES site prize/2-removebg-preview (1).png"
-import prize3 from "../../components/assets/convoprize/24 FRAMES site prize/3-removebg-preview (1).png"
-import prize4 from "../../components/assets/convoprize/24 FRAMES site prize/4-removebg-preview (1).png"
+import prize1 from "../../components/assets/convoprize/24 FRAMES site prize/1.webp"
+import prize2 from "../../components/assets/convoprize/24 FRAMES site prize/2.webp"
+import prize3 from "../../components/assets/convoprize/24 FRAMES site prize/3.webp"
+import prize4 from "../../components/assets/convoprize/24 FRAMES site prize/4.webp"
 import gal1 from "../../components/assets/gallery/24 frames.webp"
 import gal2 from "../../components/assets/gallery/24 frames 2.webp"
 import gal3 from "../../components/assets/gallery/24 frames 3.webp"
