@@ -42,10 +42,7 @@ function Re_teams() {
           <h1 className="text-center re_teams_h1">EVENT LEADS</h1>
           <span className="re_teams_underline"></span>
           <p className="re_teams_paragraph py-4">
-            Meet the representatives of JU EE Students' Forum making Convolution
-            9.0 possible!
-            <br />
-            We are ready to address all your queries!
+          Meet the Event Leads of Abol Tabol! <br /> We are ready to address all your queries!
           </p>
         </div>
         <div className="">

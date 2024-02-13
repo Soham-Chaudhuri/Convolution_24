@@ -44,7 +44,7 @@ function Frameshero({ user }) {
                 <span className="hero_heading_1 text-shadow-md">
                   Convolution 9.0 Presents
                 </span>
-                <span className="hero_heading_2 text-shadow-md">24 Frames</span>
+                <span className="hero_heading_2 text-shadow-md">24 FRAMES</span>
                 <span className="hero_heading_3">Photographers' Delight</span>
                 <div className="flex hero_btn mt-5">
                   <button

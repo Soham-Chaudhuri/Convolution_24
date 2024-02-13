@@ -6,19 +6,19 @@ function Timeline() {
   return (
     <>
       <section id="timeline">
-        <section className="timeline_body" id="timeline">
+        <section className="timeline_body min-h-min" id="timeline">
           <div className="reveal">
             <div className=" flex flex-col justify-center items-center gap-2 py-5">
               <h1 className="text-center event_h1">TIMELINE</h1>
               <span className="underline"></span>
-              <p className="paragraph py-4">
+              {/* <p className="paragraph py-4">
                 A plethora of events covering all your skills. So gear up for
                 the showdown!
                 <br />
-              </p>
+              </p> */}
             </div>
 
-            <div className="timeline_container1">
+            <div className="timeline_container1 justify-center">
               <div className="timeline_card">
                 <div className="timeline_imgBx flex flex-col ">
                   <h1 className="timeline_day text-[34px]">17<sup>th</sup> Mar</h1>

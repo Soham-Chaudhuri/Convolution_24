@@ -1,6 +1,6 @@
 import React from "react";
-import picture6 from "../../../../components/assets/QuizMaster.png";
-import picture4 from "../../../../components/assets/Parthib.png";
+import picture6 from "../../../../components/assets/QuizMaster.webp";
+// import picture4 from "../../../../components/assets/Parthib.webp";
 
 const peopleData = [
   {

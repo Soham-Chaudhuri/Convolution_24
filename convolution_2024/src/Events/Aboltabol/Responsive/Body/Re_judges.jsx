@@ -11,10 +11,10 @@ const peopleData = [
     imgSrc: picture6,
     socialMediaLinks: {
       instagram: "",
-      linkedin: "",
+      linkedin: "https://scholar.google.com/citations?user=Oxu-8WcAAAAJ&hl=en",
       facebook: "",
     },
-    socialMediaavailable: { insta: true, linke: true, face: true },
+    socialMediaavailable: { insta: false, linke: true, face: false },
   },
   {
     id: 2,
@@ -24,7 +24,7 @@ const peopleData = [
     imgSrc: picture4,
     socialMediaLinks: {
       // instagram: "https://www.instagram.com/parthib_not_parthiv/",
-      linkedin: "https://www.linkedin.com/in/sugata-munshi-ab791425/",
+      linkedin: "https://scholar.google.com/citations?user=4QDUROsAAAAJ&hl=en",
       // facebook: "https://www.facebook.com/profile.php?id=100074521635711",
     },
     socialMediaavailable: { insta: false, linke: true, face: false },
@@ -76,7 +76,7 @@ function Re_judges() {
                           target="_blank"
                           rel="noopener noreferrer"
                         >
-                          <i className="fa-brands fa-linkedin re_events_fabicon"></i>
+                          <i className="fa-solid fa-circle-info re_events_fabicon"></i>
                         </a>
                       ) : (
                         ""

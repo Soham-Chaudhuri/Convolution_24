@@ -46,7 +46,7 @@ function Aboltabolhero({user}) {
                   Convolution 9.0 Presents
                 </span>
                 <span className="hero_heading_2 text-shadow-md">
-                  Abol Tabol
+                  ABOL TABOL
                 </span>
                 <span className="hero_heading_3">The Curious Case of Quirky Nonscience</span>
                 <div className="flex hero_btn mt-5">

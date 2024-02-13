@@ -6,7 +6,7 @@ function Timeline() {
   return (
     <>
       <section id="timeline">
-        <section className="timeline_body" id="timeline">
+        <section className="timeline_body min-h-min" id="timeline">
           <div className="reveal">
             <div className=" flex flex-col justify-center items-center gap-2 py-5">
               <h1 className="text-center event_h1">TIMELINE</h1>

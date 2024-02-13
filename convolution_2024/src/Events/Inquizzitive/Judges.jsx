@@ -1,7 +1,7 @@
 import React from "react";
 import "./Judges.css";
 
-import picture6 from "../../components/assets/QuizMaster.png";
+import picture6 from "../../components/assets/QuizMaster.webp";
 
 const peopleData = [
   {

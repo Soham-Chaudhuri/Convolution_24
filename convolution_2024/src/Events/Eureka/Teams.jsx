@@ -2,9 +2,9 @@
 import React from "react";
 import "./Teams.css";
 
-import picture4 from "../../components/assets/sugam.png";
+import picture4 from "../../components/assets/sugam.webp";
 
-import picture6 from "../../components/assets/leads/hasirul.png";
+import picture6 from "../../components/assets/leads/hasirul.webp";
 
 const peopleData = [
   {

@@ -1,7 +1,7 @@
 import React from "react";
 import "./Re_teams.css";
 import picture1 from "../../assets/soham.webp";
-import picture2 from "../../assets/uttam.png";
+// import picture2 from "../../assets/uttam.png";
 import picture4 from "../../assets/Parthib.webp";
 import picture5 from "../../assets/Ayan_per.webp";
 import picture6 from "../../assets/dwaipayan.webp";

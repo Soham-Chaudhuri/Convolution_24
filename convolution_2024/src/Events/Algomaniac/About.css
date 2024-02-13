@@ -4,7 +4,7 @@
 .algo_about_layer_lines,
 .algo_about {
   width: 1301px;
-  height: 970px;
+  height: 1000px;
 }
 .algo_about_layer_bg {
   position: relative;
@@ -18,7 +18,7 @@
   position: absolute;
   top: 0px;
   left: 0px;
-  background-image: url(../../components/assets/wave2.png);
+  background-image: url(../../components/assets/wave2.webp);
   opacity: 0.1;
   z-index: 1;
 }

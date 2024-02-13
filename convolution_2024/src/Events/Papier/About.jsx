@@ -8,7 +8,7 @@ function About() {
           <div className="about_layer_lines"></div>
           <div className="about flex text-center flex-col align-center justify-center gap-10">
             <span className="heading">ABOUT JU TALKS</span>
-            <span className="para">
+            <span className="para text-justify">
               JU Talks is a panel discussion where three panelists discuss about
               a trending topic that concerns the present generations. Join us
               for an engaging and thought-provoking session as our esteemed

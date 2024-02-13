@@ -1,9 +1,9 @@
 import React from "react";
 import "./Judges.css";
 
-import picture4 from "../../components/assets/AC.png";
+import picture4 from "../../components/assets/AC.webp";
 
-import picture6 from "../../components/assets/Smita Sadhu.png";
+import picture6 from "../../components/assets/Smita Sadhu.webp";
 
 const peopleData = [
   {

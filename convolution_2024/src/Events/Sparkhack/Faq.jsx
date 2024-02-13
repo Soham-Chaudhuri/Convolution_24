@@ -27,17 +27,14 @@ function Faq() {
               onChange={() => handleCheckboxChange("accordion1")}
             />
             <label htmlFor="accordion1" className="accordion-item-title ">
-              <span className="faq-icon"></span>What is SEO, and why is it important
-              for online businesses?
+              <span className="faq-icon"></span>Is it an offline or online
+              event?
             </label>
             <div className="accordion-item-desc items-center">
-              SEO, or Search Engine Optimization, is the practice of optimizing
-              a website to improve its visibility on search engines like Google.
-              It involves various techniques to enhance a site's ranking in
-              search results. SEO is crucial for online businesses as it helps
-              drive organic traffic, increases visibility, and ultimately leads
-              to higher conversions.
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis sint accusantium reprehenderit magnam.   
+              This hackathon is a hybrid event, with the preliminary round
+              conducted online. The finale will take place offline at the
+              Electrical Engineering Department, Jadavpur University, offering
+              participants a blend of virtual and in-person collaboration.
             </div>
           </div>
 
@@ -49,16 +46,10 @@ function Faq() {
               onChange={() => handleCheckboxChange("accordion2")}
             />
             <label htmlFor="accordion2" className="accordion-item-title">
-              <span className="faq-icon"></span>How long does it take to see results
-              from SEO efforts?
+              <span className="faq-icon"></span>How are projects judged?
             </label>
             <div className="accordion-item-desc">
-              The timeline for seeing results from SEO can vary based on several
-              factors, such as the competitiveness of keywords, the current
-              state of the website, and the effectiveness of the SEO strategy.
-              Generally, it may take several weeks to months before noticeable
-              improvements occur. However, long-term commitment to SEO is
-              essential for sustained success.
+            Projects are typically judged based on criteria such as innovation, functionality, user experience, and presentation quality. Submitted solutions to Sparkhack will be judged on the above categories.
             </div>
           </div>
 
@@ -70,19 +61,16 @@ function Faq() {
               onChange={() => handleCheckboxChange("accordion3")}
             />
             <label htmlFor="accordion3" className="accordion-item-title">
-              <span className="faq-icon"></span>What are the key components of a
-              successful SEO strategy?
+              <span className="faq-icon"></span>Do I need to have coding experience to participate?
+
+
             </label>
             <div className="accordion-item-desc">
-              A successful SEO strategy involves various components, including
-              keyword research, on-page optimization, quality content creation,
-              link building, technical SEO, and user experience optimization.
-              These elements work together to improve a website's relevance and
-              authority in the eyes of search engines.
+            While coding experience is beneficial, hackathons often welcome participants with diverse skills, including designers, project managers, and domain experts. Teams usually benefit from a mix of skills. It is not mandatory to submit a code-solution , participants can also provide a IOT domain solution whatever they are comfortable in.
             </div>
           </div>
 
-          <div className="accordion-item flex flex-col">
+          {/* <div className="accordion-item flex flex-col">
             <input
               type="checkbox"
               id="accordion4"
@@ -90,8 +78,8 @@ function Faq() {
               onChange={() => handleCheckboxChange("accordion4")}
             />
             <label htmlFor="accordion4" className="accordion-item-title">
-              <span className="faq-icon"></span>How does mobile optimization impact
-              SEO?
+              <span className="faq-icon"></span>How does mobile optimization
+              impact SEO?
             </label>
             <div className="accordion-item-desc">
               Mobile optimization is crucial for SEO because search engines
@@ -124,7 +112,7 @@ function Faq() {
               community activities. It's important to focus on natural and
               ethical link-building practices.
             </div>
-          </div>
+          </div> */}
         </div>
       </section>
     </>

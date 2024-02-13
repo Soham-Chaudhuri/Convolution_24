@@ -55,7 +55,7 @@
 
   /* background: rgba(247, 255, 255, 0.1);
   backdrop-filter: blur(20px); */
-  background: url("../../../../components/assets/wave2-0.5.png")  black;
+  background: url("../../../../components/assets/wave2-0.5.webp")  black;
   display: flex;
   box-shadow: 5px 5px 0px 0px #f76932;
   justify-content: center;

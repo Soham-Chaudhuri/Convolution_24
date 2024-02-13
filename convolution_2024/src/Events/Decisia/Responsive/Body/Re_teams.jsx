@@ -1,9 +1,9 @@
 import React from "react";
 import "./Re_teams.css";
 
-import picture4 from "../../../../components/assets/leads/aneesh.png";
+import picture4 from "../../../../components/assets/leads/aneesh.webp";
 
-import picture6 from "../../../../components/assets/tirtha.png";
+import picture6 from "../../../../components/assets/tirtha.webp";
 
 const peopleData = [
   {
@@ -42,9 +42,8 @@ function Re_teams() {
           <h1 className="text-center re_teams_h1">EVENT LEADS</h1>
           <span className="re_teams_underline"></span>
           <p className="re_teams_paragraph py-4">
-            Meet the representatives of JU EE Students' Forum making Convolution
-            9.0 possible!
-            <br />
+          Meet the event leads of Decisia!
+          <br />
             We are ready to address all your queries!
           </p>
         </div>

@@ -45,7 +45,7 @@ function Re_Frameshero({ user }) {
                 </span>
                 <br />
                 <span className="Re_hero_heading_2 text-shadow-md block">
-                  24 Frames
+                  24 FRAMES
                 </span>
                 <br />
                 <span className="Re_hero_heading_3">

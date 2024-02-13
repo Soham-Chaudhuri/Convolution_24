@@ -95,8 +95,8 @@
   font-size: 14px;
   font-family: Poppins;
   display: flex;
-  width: 407px;
-  height: 120px;
+  width: 350px;
+  height: max-content;
   letter-spacing: 0.56px;
   line-height: 14px;
   font-feature-settings: 'clig' off, 'liga' off;

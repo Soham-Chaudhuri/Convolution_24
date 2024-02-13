@@ -1,9 +1,9 @@
 import React from "react";
 import "./Re_teams.css";
 
-import picture4 from "../../../../components/assets/arpan.png";
+import picture4 from "../../../../components/assets/arpan.webp";
 
-import picture6 from "../../../../components/assets/pradhan.png";
+import picture6 from "../../../../components/assets/pradhan.webp";
 
 const peopleData = [
   {
@@ -14,10 +14,11 @@ const peopleData = [
     imgSrc: picture6,
     socialMediaLinks: {
       // instagram: "https://www.instagram.com/dwaipayanhaldar15/",
-      // linkedin: "https://www.linkedin.com/in/dwaipayan-haldar/",
+      linkedin:
+        "https://www.linkedin.com/in/sayandeep-pradhan-a6b0b6230?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
       facebook: "https://www.facebook.com/sayandeep.pradhan.77?mibextid=ngobeXctTp5pD3Zm",
     },
-    socialMediaavailable: { insta: false, linke: false, face: true },
+    socialMediaavailable: { insta: false, linke: true, face: true },
   },
   {
     id: 2,
@@ -42,10 +43,8 @@ function Re_teams() {
           <h1 className="text-center re_teams_h1">EVENT LEADS</h1>
           <span className="re_teams_underline"></span>
           <p className="re_teams_paragraph py-4">
-            Meet the representatives of JU EE Students' Forum making Convolution
-            9.0 possible!
-            <br />
-            We are ready to address all your queries!
+          Meet the event leads of Circuistics!<br/> We are ready to address all
+            your queries!
           </p>
         </div>
         <div className="">

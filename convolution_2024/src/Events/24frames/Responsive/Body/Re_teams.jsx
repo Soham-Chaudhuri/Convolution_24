@@ -42,7 +42,7 @@ function Re_teams() {
           <h1 className="text-center re_teams_h1">EVENT LEADS</h1>
           <span className="re_teams_underline"></span>
           <p className="re_teams_paragraph py-4">
-            Meet the event leads of 24 Frames! We are ready to address all your
+            Meet the event leads of 24 Frames! <br />We are ready to address all your
             queries!
           </p>
         </div>

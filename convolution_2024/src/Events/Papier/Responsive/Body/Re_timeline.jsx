@@ -5,16 +5,12 @@ function Re_timeline() {
   return (
     <>
       <section id="Re_timeline">
-        <div className=" flex flex-col justify-center items-center gap-2 pb-5  pt-6 mt-6">
+        <div className=" flex flex-col justify-center items-center gap-2 pb-5  pt-6 mt-6 min-h-min">
           <h1 className="text-center re_events_h1">TIMELINE</h1>
           <span className="re_events_underline"></span>
-          <p className="re_events_paragraph py-4">
-            A plethora of events covering all your skills. So gear up for the
-            showdown!
-            <br />
-          </p>
+          
         </div>
-        <div className="Re_timeline flex flex-col py-4">
+        <div className="Re_timeline flex flex-col">
           <div className="Re_timeline_container">
             <div className="Re_timeline_card">
               <div className="Re_timeline_image">

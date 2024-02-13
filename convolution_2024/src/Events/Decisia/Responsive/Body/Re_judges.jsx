@@ -1,6 +1,6 @@
 import React from "react";
-import picture6 from "../../../../components/assets/nojudge.png";
-import picture4 from "../../../../components/assets/nojudge.png";
+import picture6 from "../../../../components/assets/nojudge.webp";
+import picture4 from "../../../../components/assets/nojudge.webp";
 
 const peopleData = [
   {

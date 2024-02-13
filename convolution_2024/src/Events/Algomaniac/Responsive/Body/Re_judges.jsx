@@ -1,6 +1,6 @@
 import React from "react";
-import picture6 from "../../../../components/assets/Smita Sadhu.png";
-import picture4 from "../../../../components/assets/AC.png";
+import picture6 from "../../../../components/assets/Smita Sadhu.webp";
+import picture4 from "../../../../components/assets/AC.webp";
 
 const peopleData = [
   {
@@ -11,10 +11,10 @@ const peopleData = [
     imgSrc: picture6,
     socialMediaLinks: {
       instagram: "",
-      linkedin: "",
+      linkedin: "https://scholar.google.co.in/citations?user=IG1XQYkAAAAJ&hl=en",
       facebook: "",
     },
-    socialMediaavailable: { insta: true, linke: true, face: true },
+    socialMediaavailable: { insta: false, linke: true, face: false },
   },
   {
     id: 2,
@@ -24,7 +24,7 @@ const peopleData = [
     imgSrc: picture4,
     socialMediaLinks: {
       instagram: "",
-      linkedin: "https://www.linkedin.com/in/parthib-roy-3a78b3224/",
+      linkedin: "https://scholar.google.co.in/citations?user=hs1L7A0AAAAJ&hl=en",
       facebook: "",
     },
     socialMediaavailable: { insta: false, linke: true, face: false },
@@ -77,7 +77,7 @@ function Re_judges() {
                           target="_blank"
                           rel="noopener noreferrer"
                         >
-                          <i className="fa-brands fa-linkedin re_events_fabicon"></i>
+                          <i className="fa-solid fa-circle-info re_events_fabicon"></i>
                         </a>
                       ) : (
                         ""

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./Hero.css";
 
-import thunder from "../../components/assets/9.png";
+import thunder from "../../components/assets/9.webp";
 import About from "./About";
 
 import Timeline from "./Timeline";

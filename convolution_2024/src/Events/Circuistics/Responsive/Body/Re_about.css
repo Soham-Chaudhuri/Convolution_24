@@ -4,7 +4,7 @@
 .Re_cir_about_layer_lines,
 .Re_cir_about {
   width: 85vw;
-  height: 350px;
+  height: 450px;
   
    
 }
@@ -21,7 +21,7 @@
   position: absolute;
   top: 0px;
   left: 0px;
-  background-image: url(../../../../components/assets/wave2.png);
+  background-image: url(../../../../components/assets/wave2.webp);
   /* width: 200px; */
   opacity: 0.1;
   z-index: 1;

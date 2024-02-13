@@ -52,7 +52,7 @@ const eventData = [
     imgSrc: picture4,
     href: "/events/eureka",
     description:
-      "An event where the participants traverse intellectually stimulating routes that lead them to the ultimate “treasure”, and solving each step is nothing short of a “Eureka!” moment, here is an opportunity for a real-time experience of decoding complex situations and their varied solutions. “Eureka!” will serve as an ideal chance for you if you're a never-give-up type of person, and are ready to channel all your wits to reach the final solution.",
+      `"Eureka!" is an exciting event where participants navigate intellectually stimulating challenges to uncover the ultimate destination. Each step brings a "Eureka!" moment, offering real-time experiences in problem-solving. Perfect for those who love a challenge! Join us for an exhilarating journey!`,
   },
   {
     id: 2,

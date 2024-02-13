@@ -47,7 +47,7 @@ function Re_Aboltabolhero({user}) {
                 </span>
                 <br />
                 <span className="Re_hero_heading_2 text-shadow-md block">
-                Abol Tabol
+                ABOL TABOL
                 </span>
                 <br />
                 <span className="Re_hero_heading_3">

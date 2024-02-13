@@ -13,7 +13,7 @@ function Faq() {
   return (
     <>
       <section id="faq">
-        <div className="accordion">
+        <div className="accordion min-h-[60vh] justify-center">
           <div className=" flex flex-col justify-center items-center gap-3 py-5">
             <h1 className="text-center teams_h1">FREQUENTLY ASKED QUESTIONS</h1>
             <span className="underline_teams"></span>
