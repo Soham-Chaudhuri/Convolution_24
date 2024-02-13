@@ -92,7 +92,7 @@ const peopleData = [
   {
     id: 7,
     name: "Avishek",
-    heading: "Public Reach",
+    heading: "Public Reach Lead",
     description: "Avishek Bandyopadhyay",
     imgSrc: picture10,
     socialMediaLinks: {

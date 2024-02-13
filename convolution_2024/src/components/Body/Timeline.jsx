@@ -113,7 +113,7 @@ function Timeline() {
                   <div>
                     <h3>Afternoon Session:</h3>
                     <p className="timeline_para">
-                      - JU Talks Final
+                      - JU Talks
                       <br />
                       - Prize Distribution
                       <br />

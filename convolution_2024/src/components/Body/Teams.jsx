@@ -95,7 +95,7 @@ const peopleData = [
   {
     id: 3,
     name: "Avishek",
-    description: "Public Reach",
+    description: "Public Reach Lead",
     imgSrc: picture10,
     socialMediaLinks: {
       instagram: "https://www.instagram.com/avishek_bandyopadhyay/",
@@ -141,7 +141,7 @@ const Teams = () => {
                 <div className="group-child-img-teams">
                   <img src={person.imgSrc} alt={person.name} />
                 </div>
-                <div className="algomaniac-teams">{person.description}</div>
+                <div className="algomaniac-teams w-[220px]">{person.description}</div>
                 <div className="lorem-ipsum-para-teams text-xl flex flex-col gap-2">
                   {person.desc}
                   <div className="flex gap-2">

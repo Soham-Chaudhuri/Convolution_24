@@ -35,6 +35,13 @@ function Signup() {
         "PUkw79pWv5_JpHXX-"
       )
 
+      // .send(
+      //   "service_xvsw9ej",
+      //   "template_ju83qrd",
+      //   templateParams,
+      //   "IGbvuzMK9_y4lpaDb"
+      // )
+
       .then((response) => {
         console.log("Welcome email sent:", response);
       })
@@ -129,10 +136,10 @@ function Signup() {
         setTimeout(() => {
           navigate(`/profile/${value.user.uid}`);
         }, 2000);
-        // toast.info("You are adviced to save your password", {
-        //   autoClose: 3200,
-        //   theme: "dark",
-        // });
+        toast.info(" Please check your email(ckeck spam folder also) for the sign-up mail", {
+          autoClose: 3200,
+          theme: "dark",
+        });
       })
       .catch((err) => {
         console.error("Signup failed", err);

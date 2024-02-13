@@ -58,7 +58,7 @@ function Re_timeline() {
                 <h3 className="Re_timeline_day">Afternoon Session:</h3>
                 <p className="Re_timeline_para">
                   - Decisia Finals
-                  <br />- Papier Finals
+                  <br />- Abol Tabol Finals
                 </p>
               </div>
             </div>
@@ -80,7 +80,7 @@ function Re_timeline() {
 
                 <h3 className="Re_timeline_day">Afternoon Session:</h3>
                 <p className="Re_timeline_para">
-                  - Abol Tabol Final
+                  - JU Talks
                   <br />
                   - Prize Distribution
                   <br />- Closing Ceremony
