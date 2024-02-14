@@ -1,13 +1,15 @@
 import { initializeApp } from "firebase/app";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyBDwZqkhELEbMHWJP-nUQx1JnEQbdvOML0",
-  authDomain: "convo1-542d5.firebaseapp.com",
-  projectId: "convo1-542d5",
-  storageBucket: "convo1-542d5.appspot.com",
-  messagingSenderId: "1069665287756",
-  appId: "1:1069665287756:web:2c2e7e49f6c72c335dbee9",
-  databaseURL: "https://convo1-542d5-default-rtdb.firebaseio.com",
+  apiKey: "AIzaSyCakcrIeMdyNFVdsHWRB9yrvRw7nsFz9JU",
+  authDomain: "convolution-2024.firebaseapp.com",
+  databaseURL: "https://convolution-2024-default-rtdb.firebaseio.com",
+  projectId: "convolution-2024",
+  storageBucket: "convolution-2024.appspot.com",
+  messagingSenderId: "675220674029",
+  appId: "1:675220674029:web:7d2b80a4f0ba1d9a2683e4",
+  measurementId: "G-5EL6FKX5DY",
+  databaseURL: "https://convolution-2024-default-rtdb.firebaseio.com",
 };
 
 export const app = initializeApp(firebaseConfig);

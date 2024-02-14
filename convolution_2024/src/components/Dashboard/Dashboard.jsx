@@ -77,14 +77,15 @@ function Dashboard({ user }) {
       setBoxesData([
         {
           id: 1,
-          type: "Register Now",
-          image: pic1,
-          content: "Anything and Everything Under the Sun",
-          lastDate: "15-03-2024",
-          eventDate: "15-03-2024",
-          registered: false,
-          event: "inquizzitive",
-          href: "/events/inquizzitive",
+          
+          type: data.spark_hack ? "Registered" : "Register Now",
+          image: pic10,
+          content: "Hack your brilliance. Code, Create, Conquer!",
+          lastDate: "03-03-2024",
+          eventDate: "16-03-2024",
+          registered: data.spark_hack,
+          event: "spark_hack",
+          href: "/events/sparkhack",
         },
         {
           id: 2,
@@ -154,14 +155,15 @@ function Dashboard({ user }) {
         },
         {
           id: 8,
-          type: data.spark_hack ? "Registered" : "Register Now",
-          image: pic10,
-          content: "Hack your brilliance. Code, Create, Conquer!",
-          lastDate: "03-03-2024",
-          eventDate: "16-03-2024",
-          registered: data.spark_hack,
-          event: "spark_hack",
-          href: "/events/sparkhack",
+          type: "Register Now",
+          image: pic1,
+          content: "Anything and Everything Under the Sun",
+          lastDate: "15-03-2024",
+          eventDate: "15-03-2024",
+          registered: false,
+          event: "inquizzitive",
+          href: "/events/inquizzitive",
+
         },
         {
           id: 9,
@@ -257,14 +259,14 @@ function Dashboard({ user }) {
                       if (
                         !events[box.id - 1] &&
                         box.id !== 6 &&
-                        box.id !== 1 &&
+                        box.id !== 8 &&
                         box.id !== 7 &&
                         box.id !== 9
                       ) {
                         navigate(`/reg/${box.event}`);
                       }
 
-                      if (box.id === 1) {
+                      if (box.id === 8) {
                         toast.info(
                           "On Day Registration at Jadavpur University Electrical Engineering building",
                           {
