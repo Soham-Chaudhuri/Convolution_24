@@ -75,7 +75,7 @@ function Team_reg({ user }) {
     emailjs
       .send(
         "service_tpy2avm",
-        "template_61yi17j",
+        "template_p0fsclb",
         templateParams,
         "PUkw79pWv5_JpHXX-"
       )
@@ -99,10 +99,10 @@ function Team_reg({ user }) {
 
     emailjs
       .send(
-        "service_xvsw9ej",
-        "template_ju83qrd",
+        "service_tpy2avm",
+        "template_7vqwq8w",
         templateParams,
-        "IGbvuzMK9_y4lpaDb"
+        "PUkw79pWv5_JpHXX-"
       )
 
       .then((response) => {
@@ -124,10 +124,10 @@ function Team_reg({ user }) {
 
     emailjs
       .send(
-        "service_xvsw9ej",
-        "template_ju83qrd",
+        "service_tpy2avm",
+        "template_uo1yhce",
         templateParams,
-        "IGbvuzMK9_y4lpaDb"
+        "IPUkw79pWv5_JpHXX-"
       )
 
       .then((response) => {
@@ -149,10 +149,10 @@ function Team_reg({ user }) {
 
     emailjs
       .send(
-        "service_xvsw9ej",
-        "template_ju83qrd",
+        "service_tpy2avm",
+        "template_n43ah4n",
         templateParams,
-        "IGbvuzMK9_y4lpaDb"
+        "PUkw79pWv5_JpHXX-"
       )
 
       .then((response) => {
@@ -174,10 +174,10 @@ function Team_reg({ user }) {
 
     emailjs
       .send(
-        "service_xvsw9ej",
-        "template_ju83qrd",
+        "service_tpy2avm",
+        "template_d5u6u3o",
         templateParams,
-        "IGbvuzMK9_y4lpaDb"
+        "PUkw79pWv5_JpHXX-"
       )
 
       .then((response) => {

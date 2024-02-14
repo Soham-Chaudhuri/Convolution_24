@@ -1,8 +1,8 @@
 import React from "react";
 import "./Prizes.css";
-import prize1 from "../../components/assets/convoprize/INQUIZZITIVE site prize/1-removebg-preview (1).png"
-import prize2 from "../../components/assets/convoprize/INQUIZZITIVE site prize/2-removebg-preview (1).png"
-import prize3 from "../../components/assets/convoprize/INQUIZZITIVE site prize/3-removebg-preview (1).png"
+import prize1 from "../../components/assets/convoprize/INQUIZZITIVE site prize/1-removebg-preview (1).webp"
+import prize2 from "../../components/assets/convoprize/INQUIZZITIVE site prize/2-removebg-preview (1).webp"
+import prize3 from "../../components/assets/convoprize/INQUIZZITIVE site prize/3-removebg-preview (1).webp"
 import gal1 from "../../components/assets/gallery/inquizzitive.webp"
 import gal2 from "../../components/assets/gallery/inquizzitive 2.webp"
 const prizeData = [

@@ -1,6 +1,7 @@
 /* eslint-disable no-unused-vars */
 import React, { useRef, useState, useEffect } from "react";
 import "../Dashboard/Dashboard.css";
+import emailjs from "emailjs-com";
 import pic3 from "../assets/vector@2x.png";
 import pic21 from "../assets/vector@2x@yellow.png";
 import pic2 from "../assets/inquizzitive-logo-1@2x.png";
@@ -268,7 +269,7 @@ function Dashboard({ user }) {
 
                       if (box.id === 8) {
                         toast.info(
-                          "On Day Registration at Jadavpur University Electrical Engineering building",
+                          "Registration for this event will start form 10th March, and onday registration are also allowed",
                           {
                             theme: "dark",
                           }
