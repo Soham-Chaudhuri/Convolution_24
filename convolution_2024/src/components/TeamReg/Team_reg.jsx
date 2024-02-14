@@ -127,7 +127,7 @@ function Team_reg({ user }) {
         "service_tpy2avm",
         "template_uo1yhce",
         templateParams,
-        "IPUkw79pWv5_JpHXX-"
+        "PUkw79pWv5_JpHXX-"
       )
 
       .then((response) => {
