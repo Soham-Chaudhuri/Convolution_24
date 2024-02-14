@@ -65,7 +65,7 @@ function Team_reg({ user }) {
   const sendWelcomeEmail_sparkhack = () => {
     const templateParams = {
       mail: tl1email,
-      teamname : teamName,
+      name5 : teamName,
       name1: team_leader,
       name2: member1,
       name3: member2,
@@ -91,7 +91,7 @@ function Team_reg({ user }) {
   const sendWelcomeEmail_circuistics = () => {
     const templateParams = {
       mail: tl1email,
-      teamname : teamName,
+      name5 : teamName,
       name1: team_leader,
       name2: member1,
       name3: member2,
@@ -117,7 +117,7 @@ function Team_reg({ user }) {
   const sendWelcomeEmail_eureka = () => {
     const templateParams = {
       mail: tl1email,
-      teamname : teamName,
+      name5 : teamName,
       name1: team_leader,
       name2: member1,
       name3: member2,
@@ -128,7 +128,7 @@ function Team_reg({ user }) {
     emailjs
       .send(
         "service_tpy2avm",
-        "template_uo1yhce",
+        "template_johaujq",
         templateParams,
         "PUkw79pWv5_JpHXX-"
       )
@@ -143,7 +143,7 @@ function Team_reg({ user }) {
   const sendWelcomeEmail_aboltabol = () => {
     const templateParams = {
       mail: tl1email,
-      teamname : teamName,
+      name5 : teamName,
       name1: team_leader,
       name2: member1,
       name3: member2,
@@ -169,7 +169,7 @@ function Team_reg({ user }) {
   const sendWelcomeEmail_decisia = () => {
     const templateParams = {
       mail: tl1email,
-      teamname : teamName,
+      name5 : teamName,
       name1: team_leader,
       name2: member1,
       name3: member2,
@@ -270,7 +270,7 @@ function Team_reg({ user }) {
           );
         }
 
-        console.log(m1);
+        console.log(eventName.event);
 
         set(ref(db, `events/${eventName.event}/${uid}`), {
           Team_Name: teamName,
@@ -290,6 +290,7 @@ function Team_reg({ user }) {
           sendWelcomeEmail_circuistics();
         }
         else if(eventName.event==="eureka"){
+          // console.log("lol")
           sendWelcomeEmail_eureka();
         }
         else if(eventName.event==="spark_hack"){
