@@ -112,15 +112,15 @@ const slideData = [
   //   button: "Get Focused",
   //   src: sponsorpic14,
   // },
-  // {
-  //   index: 13,
-  //   headline: "Focus On The Writing",
-  //   button: "Get Focused",
-  //   src: sponsorpic3,
-  // },
+  {
+    index: 6,
+    headline: "Focus On The Writing",
+    button: "Get Focused",
+    src: sponsorpic3,
+  },
   {
     // index: 14,
-    index :6,
+    index :7,
     headline: "Focus On The Writing",
     button: "Get Focused",
     src: sponsorpic15,

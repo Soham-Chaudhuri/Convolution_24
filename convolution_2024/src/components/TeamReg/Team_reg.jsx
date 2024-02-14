@@ -65,6 +65,7 @@ function Team_reg({ user }) {
   const sendWelcomeEmail_sparkhack = () => {
     const templateParams = {
       mail: tl1email,
+      teamname : teamName,
       name1: team_leader,
       name2: member1,
       name3: member2,
@@ -90,6 +91,7 @@ function Team_reg({ user }) {
   const sendWelcomeEmail_circuistics = () => {
     const templateParams = {
       mail: tl1email,
+      teamname : teamName,
       name1: team_leader,
       name2: member1,
       name3: member2,
@@ -115,6 +117,7 @@ function Team_reg({ user }) {
   const sendWelcomeEmail_eureka = () => {
     const templateParams = {
       mail: tl1email,
+      teamname : teamName,
       name1: team_leader,
       name2: member1,
       name3: member2,
@@ -140,6 +143,7 @@ function Team_reg({ user }) {
   const sendWelcomeEmail_aboltabol = () => {
     const templateParams = {
       mail: tl1email,
+      teamname : teamName,
       name1: team_leader,
       name2: member1,
       name3: member2,
@@ -165,6 +169,7 @@ function Team_reg({ user }) {
   const sendWelcomeEmail_decisia = () => {
     const templateParams = {
       mail: tl1email,
+      teamname : teamName,
       name1: team_leader,
       name2: member1,
       name3: member2,
