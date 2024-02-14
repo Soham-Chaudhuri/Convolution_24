@@ -43,15 +43,11 @@ function Dashboard({ user }) {
     };
 
     emailjs.send(
-      "service_xvsw9ej",
-      "template_ju83qrd",
+      "service_tpy2avm",
+      "template_6o8s7dm",
       templateParams,
-      "IGbvuzMK9_y4lpaDb"
+      "PUkw79pWv5_JpHXX-"
     );
-  };
-
-  const templateParams = {
-    mail: user.email,
   };
 
   const [events, setEvents] = useState([
