@@ -44,7 +44,7 @@ function Dashboard({ user }) {
 
     emailjs.send(
       "service_tpy2avm",
-      "template_6o8s7dm",
+      "template_q8f1qrp",
       templateParams,
       "PUkw79pWv5_JpHXX-"
     );
