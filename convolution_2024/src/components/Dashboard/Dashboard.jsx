@@ -16,7 +16,6 @@ import pic10 from "../assets/Sparkhack_Light.webp";
 import pic11 from "../assets/24 Frames Light.webp";
 import pic12 from "../assets/JU-Talks-Light.webp";
 
-
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { motion } from "framer-motion";
@@ -37,6 +36,23 @@ function Dashboard({ user }) {
   const [_frames, set_frames] = useState(false);
   const [userData, setUserData] = useState(null);
   const [boxesData, setBoxesData] = useState([]);
+
+  const framesMail = () => {
+    const templateParams = {
+      mail: user.email,
+    };
+
+    emailjs.send(
+      "service_xvsw9ej",
+      "template_ju83qrd",
+      templateParams,
+      "IGbvuzMK9_y4lpaDb"
+    );
+  };
+
+  const templateParams = {
+    mail: user.email,
+  };
 
   const [events, setEvents] = useState([
     false,
@@ -78,7 +94,7 @@ function Dashboard({ user }) {
       setBoxesData([
         {
           id: 1,
-          
+
           type: data.spark_hack ? "Registered" : "Register Now",
           image: pic10,
           content: "Hack your brilliance. Code, Create, Conquer!",
@@ -164,7 +180,6 @@ function Dashboard({ user }) {
           registered: false,
           event: "inquizzitive",
           href: "/events/inquizzitive",
-
         },
         {
           id: 9,
@@ -253,6 +268,21 @@ function Dashboard({ user }) {
                         if (!newarray[box.id - 1] && box.id === 9) {
                           newarray[box.id - 1] = true;
                           window.location.reload();
+                          // emailjs.send(
+                          //   "service_tpy2avm",
+                          //   "template_6o8s7dm",
+                          //   templateParams,
+                          //   "PUkw79pWv5_JpHXX-"
+                          // );
+
+                          // emailjs.send(
+                          //   "service_xvsw9ej",
+                          //   "template_ju83qrd",
+                          //   templateParams,
+                          //   "IGbvuzMK9_y4lpaDb"
+                          // );
+
+                          framesMail();
                         }
                         return newarray;
                       });
