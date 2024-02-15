@@ -26,10 +26,12 @@ function Re_timeline() {
                 </div>
               </div>
               <div className="Re_timeline_content">
-                <h3 className="Re_timeline_day pt-7">Announcement on CodeChef</h3>
+                <h3 className="Re_timeline_day pt-7">
+                  Announcement on CodeForces
+                </h3>
                 <p className="Re_timeline_para">
                   - the particulars regarding the event to be announced on
-                  CodeChef
+                  CodeForces
                   <br />
                 </p>
               </div>
@@ -46,9 +48,34 @@ function Re_timeline() {
                 </div>
               </div>
               <div className="Re_timeline_content">
-                <h3 className="Re_timeline_day pt-7">End of Registration</h3>
+                <h3 className="Re_timeline_day pt-7">
+                  End of Registration & Prelims
+                </h3>
                 <p className="Re_timeline_para">
-                  - all registration to be completed by 11:59pm of 28th February
+                  - all registration to be completed by 7:59P.M.
+                  <br />- the contest begins at 8:00P.M. as per standard
+                  CodeChef contest timing
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="Re_timeline_container">
+            <div className="Re_timeline_card">
+              <div className="Re_timeline_image">
+                <div className="Re_timeline_box flex justify-center align-items-center text-center h-[200px] w-[790]">
+                  <h1 className="Re_timeline_heading">
+                    2<sup>nd</sup> Mar
+                  </h1>
+                </div>
+              </div>
+              <div className="Re_timeline_content">
+                <h3 className="Re_timeline_day pt-7">
+                  Preliminary Selection of Finalists
+                </h3>
+                <p className="Re_timeline_para">
+                  - All selected finalists will be emailed asking to confirm
+                  their presence following the merged ranklist published by
+                  Codechef
                   <br />
                 </p>
               </div>
@@ -59,14 +86,16 @@ function Re_timeline() {
               <div className="Re_timeline_image">
                 <div className="Re_timeline_box flex justify-center align-items-center text-center h-[200px] w-[790]">
                   <h1 className="Re_timeline_heading">
-                  2<sup>nd</sup> Mar
+                    4<sup>th</sup> Mar
                   </h1>
                 </div>
               </div>
               <div className="Re_timeline_content">
-                <h3 className="Re_timeline_day pt-7">Online Prelims</h3>
+                <h3 className="Re_timeline_day pt-7">
+                  Confirmation of Finalists
+                </h3>
                 <p className="Re_timeline_para">
-                - the preliminary round to be held on CodeChef
+                  - Deadline for selected finalists to confirm their presence
                   <br />
                 </p>
               </div>
@@ -77,15 +106,19 @@ function Re_timeline() {
               <div className="Re_timeline_image">
                 <div className="Re_timeline_box flex justify-center align-items-center text-center h-[200px] w-[790]">
                   <h1 className="Re_timeline_heading">
-                  4<sup>th</sup> Mar
+                    5<sup>th</sup> Mar
                   </h1>
                 </div>
               </div>
               <div className="Re_timeline_content">
-                <h3 className="Re_timeline_day pt-7">Result of Prelims</h3>
+                <h3 className="Re_timeline_day pt-7">
+                  Publication of List of Finalists
+                </h3>
                 <p className="Re_timeline_para">
-                - the results will be communicated to the participants
-                      <br />
+                  - The final list of selected finalists will be published on
+                  the announcement blog on Codeforces, and the finalists shall
+                  be sent a final email
+                  <br />
                 </p>
               </div>
             </div>
@@ -95,33 +128,16 @@ function Re_timeline() {
               <div className="Re_timeline_image">
                 <div className="Re_timeline_box flex justify-center align-items-center text-center h-[200px] w-[790]">
                   <h1 className="Re_timeline_heading">
-                  17<sup>th</sup> Mar
+                    17<sup>th</sup> Mar
                   </h1>
                 </div>
               </div>
               <div className="Re_timeline_content">
-                <h3 className="Re_timeline_day pt-7">Finals</h3>
+                <h3 className="Re_timeline_day pt-7">Offline Finals</h3>
                 <p className="Re_timeline_para">
-                - the final round of the event will be held at Jadavpur University dept of Electrical Engineering
-                      <br />
-                </p>
-              </div>
-            </div>
-          </div>
-          <div className="Re_timeline_container">
-            <div className="Re_timeline_card">
-              <div className="Re_timeline_image">
-                <div className="Re_timeline_box flex justify-center align-items-center text-center h-[200px] w-[790]">
-                  <h1 className="Re_timeline_heading">
-                  17<sup>th</sup> Mar
-                  </h1>
-                </div>
-              </div>
-              <div className="Re_timeline_content">
-                <h3 className="Re_timeline_day pt-7">Prize Distribution</h3>
-                <p className="Re_timeline_para">
-                - top 3 from the 2nd round will be awarded with exicting prizes
-                      <br />
+                  - The offline finals will be held and the winners will be
+                  preseneted with their certificates
+                  <br />
                 </p>
               </div>
             </div>

@@ -25,8 +25,7 @@ function Re_contact() {
                 convolution2024@gmail.com
               </span>
               <span className="re_number mx-auto">
-                <i className="fa-solid fa-phone pr-3 scale-150"></i>+91 8017 388
-                918/+91 7866 827 719
+                <i className="fa-solid fa-phone pr-3 scale-150"></i>+91 9073 421 224/+91 9674 273 275
               </span>
             </div>
             <div className="contact_map">

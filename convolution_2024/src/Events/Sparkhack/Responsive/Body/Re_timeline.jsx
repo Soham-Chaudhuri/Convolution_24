@@ -41,7 +41,7 @@ function Re_timeline() {
               <div className="Re_timeline_image">
                 <div className="Re_timeline_box flex justify-center align-items-center text-center h-[200px] w-[790]">
                   <h1 className="Re_timeline_heading">
-                    29<sup>th</sup> Feb
+                    3<sup>rd</sup> Mar
                   </h1>
                 </div>
               </div>
@@ -49,7 +49,7 @@ function Re_timeline() {
                 <h3 className="Re_timeline_day pt-7">Abstract Submission Ends</h3>
                 <p className="Re_timeline_para">
                   - participants will have to submit their abstracts by 11:59pm
-                  of 29th Feb
+                  of 3rd Mar
                   <br />
                 </p>
               </div>
@@ -60,7 +60,7 @@ function Re_timeline() {
               <div className="Re_timeline_image">
                 <div className="Re_timeline_box flex justify-center align-items-center text-center h-[200px] w-[790]">
                   <h1 className="Re_timeline_heading">
-                    3<sup>rd</sup> Mar
+                    6<sup>th</sup> Mar
                   </h1>
                 </div>
               </div>
@@ -79,7 +79,7 @@ function Re_timeline() {
               <div className="Re_timeline_image">
                 <div className="Re_timeline_box flex justify-center align-items-center text-center h-[200px] w-[790]">
                   <h1 className="Re_timeline_heading">
-                    7<sup>th</sup> Mar{" "}
+                    9<sup>th</sup> Mar
                   </h1>
                 </div>
               </div>

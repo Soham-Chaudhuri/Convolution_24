@@ -20,7 +20,7 @@ function Re_footer() {
           </div>
           <div className="re_footer_contact py-6">
             <span className="re_footer_l">
-              Phone: +91 8017388918/+91 7866827719
+              Phone: +91 9073421224/+91 9674273275
             </span>
             <br />
             <span className="re_footer_l">
