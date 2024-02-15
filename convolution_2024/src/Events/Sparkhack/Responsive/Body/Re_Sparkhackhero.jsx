@@ -3,6 +3,9 @@ import "../Body/Re_hero.css";
 
 import Re_about from "./Re_about";
 
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
 import Re_teams from "./Re_teams";
 import Re_contact from "./Re_contact";
 import Re_faq from "./Re_faq";
@@ -62,7 +65,14 @@ function Re_Sparkhackhero({user}) {
                         console.log(user.uid);
                       }
                       else{
-                        navigate("/");
+                        toast.info("Please Login first ", {
+                          theme: "dark",
+                          autoClose: 4200,
+                        });
+
+                        setTimeout(() => {
+                          navigate("/");
+                        }, 3000);
                       }
                     }}
                   >
@@ -89,6 +99,7 @@ function Re_Sparkhackhero({user}) {
         </div>
       </div>
       <Re_footer />
+      <ToastContainer theme="dark" />
     </>
   );
 }

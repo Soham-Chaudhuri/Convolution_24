@@ -7,6 +7,9 @@ import About from "./About";
 import Timeline from "./Timeline";
 import Teams from "./Teams";
 
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
 import {
   BrowserRouter as Router,
   Routes,
@@ -35,7 +38,7 @@ function Frameshero({ user }) {
   }, []);
   return (
     <>
-      <Header user={user}/>
+      <Header user={user} />
       <div className="hero_bg p-7">
         <div className="flex flex-col">
           <section id="hero">
@@ -53,7 +56,14 @@ function Frameshero({ user }) {
                       if (user !== null) {
                         navigate(`/dashboard/${user.uid}`);
                       } else {
-                         navigate("/");
+                        toast.info("Please Login first ", {
+                          theme: "dark",
+                          autoClose: 4200,
+                        });
+
+                        setTimeout(() => {
+                          navigate("/");
+                        }, 3000);
                       }
                     }}
                   >
@@ -81,6 +91,7 @@ function Frameshero({ user }) {
         </div>
       </div>
       <Footer />
+      <ToastContainer theme="dark" />
     </>
   );
 }

@@ -6,6 +6,8 @@ import About from "./About";
 
 import Timeline from "./Timeline";
 import Teams from "./Teams";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 import {
   useNavigate,
@@ -22,7 +24,7 @@ import Faq from "./Faq";
 import Contact from "../../components/Body/Contact";
 import Prizes from "./Prizes";
 
-function Aboltabolhero({user}) {
+function Aboltabolhero({ user }) {
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -36,7 +38,7 @@ function Aboltabolhero({user}) {
   }, []);
   return (
     <>
-      <Header user={user}/>
+      <Header user={user} />
       <div className="hero_bg p-7">
         <div className="flex flex-col">
           <section id="hero">
@@ -48,17 +50,25 @@ function Aboltabolhero({user}) {
                 <span className="hero_heading_2 text-shadow-md">
                   ABOL TABOL
                 </span>
-                <span className="hero_heading_3">The Curious Case of Quirky Nonscience</span>
+                <span className="hero_heading_3">
+                  The Curious Case of Quirky Nonscience
+                </span>
                 <div className="flex hero_btn mt-5">
                   <button
                     className="hero_btn_1"
                     onClick={() => {
-                      if(user!==null){
+                      if (user !== null) {
                         navigate(`/dashboard/${user.uid}`);
                         console.log(user.uid);
-                      }
-                      else{
-                        navigate("/");
+                      } else {
+                        toast.info("Please Login first ", {
+                          theme: "dark",
+                          autoClose: 4200,
+                        });
+
+                        setTimeout(() => {
+                          navigate("/");
+                        }, 3000);
                       }
                     }}
                   >
@@ -86,6 +96,7 @@ function Aboltabolhero({user}) {
         </div>
       </div>
       <Footer />
+      <ToastContainer theme="dark" />
     </>
   );
 }

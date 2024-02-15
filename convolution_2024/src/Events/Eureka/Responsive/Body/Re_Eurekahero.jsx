@@ -6,6 +6,10 @@ import Re_about from "./Re_about";
 import Re_teams from "./Re_teams";
 import Re_contact from "./Re_contact";
 import Re_faq from "./Re_faq";
+
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
 import {
   BrowserRouter as Router,
   Routes,
@@ -20,7 +24,7 @@ import Re_eventhead from "../Header/Re_eventhead";
 import Re_judges from "./Re_judges";
 import Prizes from "../../Prizes";
 
-function Re_Eurekahero({user}) {
+function Re_Eurekahero({ user }) {
   const navigate = useNavigate();
   useEffect(() => {
     const scrollToTop = () => {
@@ -33,7 +37,7 @@ function Re_Eurekahero({user}) {
   }, []);
   return (
     <>
-      <Re_eventhead user={user}/>
+      <Re_eventhead user={user} />
 
       <div className="Re_hero_bg p-3">
         <div className="flex flex-col">
@@ -41,24 +45,32 @@ function Re_Eurekahero({user}) {
             <div className="flex flex-col-reverse Re_gapping gap-[0.8rem]">
               <div className="m-4 Re_hero_heading_1_div">
                 <span className="Re_hero_heading_1 text-shadow-md">
-                Convolution 9.0 Presents
+                  Convolution 9.0 Presents
                 </span>
                 <br />
                 <span className="Re_hero_heading_2 text-shadow-md block">
                   EUREKA
                 </span>
                 <br />
-                <span className="Re_hero_heading_3">Crack the Code, Claim the Crown!</span>
+                <span className="Re_hero_heading_3">
+                  Crack the Code, Claim the Crown!
+                </span>
                 <div className="flex Re_hero_btn">
                   <button
                     className="Re_hero_btn_1"
                     onClick={() => {
-                      if(user!==null){
+                      if (user !== null) {
                         navigate(`/dashboard/${user.uid}`);
                         console.log(user.uid);
-                      }
-                      else{
-                        navigate("/");
+                      } else {
+                        toast.info("Please Login first ", {
+                          theme: "dark",
+                          autoClose: 4200,
+                        });
+
+                        setTimeout(() => {
+                          navigate("/");
+                        }, 3000);
                       }
                     }}
                   >
@@ -83,6 +95,7 @@ function Re_Eurekahero({user}) {
         </div>
       </div>
       <Re_footer />
+      <ToastContainer theme="dark" />
     </>
   );
 }

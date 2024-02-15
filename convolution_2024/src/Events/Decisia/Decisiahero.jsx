@@ -7,6 +7,9 @@ import About from "./About";
 import Timeline from "./Timeline";
 import Teams from "./Teams";
 
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
 import {
   BrowserRouter as Router,
   Routes,
@@ -22,7 +25,7 @@ import Faq from "./Faq";
 import Contact from "../../components/Body/Contact";
 import Prizes from "./Prizes";
 
-function Algohero({user}) {
+function Algohero({ user }) {
   const navigate = useNavigate();
   useEffect(() => {
     const scrollToTop = () => {
@@ -35,7 +38,7 @@ function Algohero({user}) {
   }, []);
   return (
     <>
-      <Header user={user}/>
+      <Header user={user} />
       <div className="hero_bg p-7">
         <div className="flex flex-col">
           <section id="hero">
@@ -44,20 +47,26 @@ function Algohero({user}) {
                 <span className="hero_heading_1 text-shadow-md">
                   Convolution 9.0 Presents
                 </span>
-                <span className="hero_heading_2 text-shadow-md">
-                  DECISIA
+                <span className="hero_heading_2 text-shadow-md">DECISIA</span>
+                <span className="hero_heading_3">
+                  Impactful decisions, endless possibilities
                 </span>
-                <span className="hero_heading_3">Impactful decisions, endless possibilities</span>
                 <div className="flex hero_btn mt-5">
-                <button
+                  <button
                     className="hero_btn_1"
                     onClick={() => {
-                      if(user!==null){
+                      if (user !== null) {
                         navigate(`/dashboard/${user.uid}`);
                         console.log(user.uid);
-                      }
-                      else{
-                        navigate("/");
+                      } else {
+                        toast.info("Please Login first ", {
+                          theme: "dark",
+                          autoClose: 4200,
+                        });
+
+                        setTimeout(() => {
+                          navigate("/");
+                        }, 3000);
                       }
                     }}
                   >
@@ -74,17 +83,18 @@ function Algohero({user}) {
           <About />
 
           <Timeline />
-          <Prizes dat={"Gallery"}/>
+          <Prizes dat={"Gallery"} />
           <Judges />
-          <Prizes dat={"Prizes"}/>
+          <Prizes dat={"Prizes"} />
           <Faq />
           <Teams />
-          <Contact/>
+          <Contact />
 
           {/* <Sponsor /> */}
         </div>
       </div>
-      <Footer/>
+      <Footer />
+      <ToastContainer theme="dark" />
     </>
   );
 }

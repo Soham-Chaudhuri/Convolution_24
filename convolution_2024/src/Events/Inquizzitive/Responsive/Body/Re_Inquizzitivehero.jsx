@@ -15,6 +15,9 @@ import {
 } from "react-router-dom";
 import Re_timeline from "./Re_timeline";
 
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
 import Re_footer from "../Footer/Re_footer";
 import Re_eventhead from "../Header/Re_eventhead";
 import Re_judges from "./Re_judges";
@@ -58,7 +61,14 @@ function Re_Inquizzitivehero({user}) {
                         console.log(user.uid);
                       }
                       else{
-                        navigate("/");
+                        toast.info("Please Login first ", {
+                          theme: "dark",
+                          autoClose: 4200,
+                        });
+
+                        setTimeout(() => {
+                          navigate("/");
+                        }, 3000);
                       }
                     }}
                   >
@@ -83,6 +93,7 @@ function Re_Inquizzitivehero({user}) {
         </div>
       </div>
       <Re_footer />
+      <ToastContainer theme="dark" />
     </>
   );
 }

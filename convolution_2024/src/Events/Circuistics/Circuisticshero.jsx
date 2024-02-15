@@ -7,6 +7,9 @@ import About from "./About";
 import Timeline from "./Timeline";
 import Teams from "./Teams";
 
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
 import {
   BrowserRouter as Router,
   Routes,
@@ -57,7 +60,14 @@ function Algohero({user}) {
                         console.log(user.uid);
                       }
                       else{
-                        navigate("/");
+                        toast.info("Please Login first ", {
+                          theme: "dark",
+                          autoClose: 4200,
+                        });
+
+                        setTimeout(() => {
+                          navigate("/");
+                        }, 3000);
                       }
                     }}
                   >
@@ -85,6 +95,7 @@ function Algohero({user}) {
         </div>
       </div>
       <Footer/>
+      <ToastContainer theme="dark" />
     </>
   );
 }
