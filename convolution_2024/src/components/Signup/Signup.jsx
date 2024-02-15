@@ -130,14 +130,14 @@ function Signup() {
         console.log(value);
         dataEntry();
         scrollToTop();
-        toast.success("Signup successful!", { autoClose: 3200, theme: "dark" });
+        toast.success("Signup successful!", { autoClose: 4200, theme: "dark" });
 
         sendWelcomeEmail();
         setTimeout(() => {
           navigate(`/profile/${value.user.uid}`);
-        }, 2000);
+        }, 3000);
         toast.info("Heads up! Sign-up email sent. Check your inbox!", {
-          autoClose: 3200,
+          autoClose: 4200,
           theme: "dark",
         });
       })
