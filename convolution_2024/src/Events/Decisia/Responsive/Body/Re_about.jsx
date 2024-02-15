@@ -9,7 +9,7 @@ function About() {
           <div className="Re_decisia_about flex text-center flex-col align-center justify-center gap-6 py-10 px-6">
             <span className="Re_heading">RULES & REGULATIONS</span>
             <span className="Re_decisia_para text-justify">
-            &bull;1-4 members cross-year cross-specialization teams from the
+            &bull;2-4 members cross-year cross-specialization teams from the
               same institution
               <br />
               <div className="h-[15px]"></div>

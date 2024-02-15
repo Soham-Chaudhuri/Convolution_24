@@ -15,7 +15,7 @@ function Re_timeline() {
             <div className="Re_timeline_card">
               <div className="Re_timeline_image">
                 <div className="Re_timeline_box flex justify-center align-items-center text-center h-[200px] w-[790]">
-                  <h1 className="Re_timeline_heading">19<sup>th</sup> Feb</h1>
+                  <h1 className="Re_timeline_heading">15<sup>th</sup> Feb</h1>
                 </div>
               </div>
               <div className="Re_timeline_content">
@@ -36,13 +36,13 @@ function Re_timeline() {
             <div className="Re_timeline_card">
               <div className="Re_timeline_image">
                 <div className="Re_timeline_box flex justify-center align-items-center text-center h-[200px] w-[790]">
-                  <h1 className="Re_timeline_heading">2<sup>nd</sup> Mar</h1>
+                  <h1 className="Re_timeline_heading">10<sup>th</sup> Mar</h1>
                 </div>
               </div>
               <div className="Re_timeline_content">
                 <h3 className="Re_timeline_day pt-7">Abstract Submission Ends</h3>
                 <p className="Re_timeline_para">
-                - Participants will have to submit their abstracts by 11:59pm on 2nd March.
+                - Participants will have to submit their abstracts by 11:59pm on 10th March.
                       <br />
                 </p>
 
@@ -54,13 +54,13 @@ function Re_timeline() {
             <div className="Re_timeline_card">
               <div className="Re_timeline_image">
                 <div className="Re_timeline_box flex justify-center align-items-center text-center h-[200px] w-[790]">
-                  <h1 className="Re_timeline_heading">8<sup>th</sup> Mar</h1>
+                  <h1 className="Re_timeline_heading">13<sup>th</sup> Mar</h1>
                 </div>
               </div>
               <div className="Re_timeline_content">
                 <h3 className="Re_timeline_day pt-7">Result Announcement of Prelims</h3>
                 <p className="Re_timeline_para">
-                - Top 8 teams will be shortlisted for the 2nd round
+                - Top 8 teams will be shortlisted for the 2nd round after their online pitching
                       <br />
                 </p>
 

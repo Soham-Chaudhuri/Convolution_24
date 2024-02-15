@@ -9,7 +9,7 @@ function About() {
           <div className="Re_eu_about flex text-center flex-col align-center justify-center gap-6 py-10 px-6">
             <span className="Re_heading">ABOUT EUREKA</span>
             <span className="Re_eu_para text-justify">
-            &bull;Teams can consist of the same or different colleges and/or same or different streams. Teams must comprise 3-4 members.
+            &bull;Teams can consist of the same or different colleges and/or same or different streams. Teams must comprise 2-4 members.
               <br />
               <div className="h-[15px]"></div>
               &bull;Round 1 will be a screening round based on mathematical,analytical and aptitude skills. It will consist of 60 questions which are to be done in 40 mins. Top 10 highest scoring teams qualify to the 2nd Round. 
