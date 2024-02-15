@@ -140,7 +140,7 @@ function Re_dashboard({ user }) {
           id: 7,
           type: data.papier ? "Registered" : "Register Now",
           image: pic12,
-          content: "Lorem ipsum content for box 7",
+          content: "Conversations, coffee, and free-flowing words!",
           lastDate: "On Day Event",
           eventDate: "17-03-2024",
           registered: data.papier,
