@@ -292,7 +292,7 @@ function Re_dashboard({ user }) {
 
                         if (dat.id === 8) {
                           toast.info(
-                            "On Day Registration at Jadavpur University Electrical Engineering building",
+                            "Registration for this event will start form 10th March, and onday registration are also allowed",
                             {
                               theme: "dark",
                             }
