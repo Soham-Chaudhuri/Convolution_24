@@ -17,6 +17,10 @@ function About() {
               <br />
               &emsp;ii)Software - Machine Learning, Blockchain development, etc.
               <br />
+
+              <div className="h-[15px]"></div>
+              &bull;Upon event registration, participants will receive the problem statements via their email.
+              <br />
               <div className="h-[15px]"></div>
               &bull;<strong>Preliminary round:</strong> The teams have to
               present their ideas to the judges on a Google Meet. The judges

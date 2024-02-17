@@ -13,13 +13,13 @@ function About() {
               <br />
               &emsp;a)Online Screening round
               <br />
-              &emsp;b)Offline Presentation round. Each team can have at most 4
+              &emsp;b)Offline Presentation round. Each team can have 2-4
               members.
               <br />
               <div className="h-[15px]"></div>
               &bull;The teams have to submit an abstract for their ideas for the
-              first round. Top 12 teams will be shortlisted for the
-              offline presentation round.
+              first round. Top 12 teams will be shortlisted for the offline
+              presentation round.
               <br />
               <div className="h-[15px]"></div>
               &bull;Judging criteria are as follows:
@@ -31,8 +31,9 @@ function About() {
               &emsp;c)Relevance of the topic in case of a tie
               <br />
               <div className="h-[15px]"></div>
-              &bull;There will be a maximum of 30 slides and a minimum of 6 slides for the presentation. Each team will have to complete their presentation within 15 minutes.
-
+              &bull;There will be a maximum of 30 slides and a minimum of 6
+              slides for the presentation. Each team will have to complete their
+              presentation within 15 minutes.
             </span>
           </div>
         </div>

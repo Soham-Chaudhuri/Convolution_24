@@ -30,7 +30,6 @@ function Judges() {
           <span className="underline_teams"></span>
           <p className="paragraph_teams py-4">
             Meet the Quiz Master of Inquizzitive!
-           
           </p>
         </div>
         <div className="px-[69px] py-5">

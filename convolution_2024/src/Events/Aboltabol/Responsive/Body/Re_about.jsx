@@ -14,7 +14,7 @@ function About() {
               &emsp;a)Online Screening round
               <br />
               &emsp;b)Offline Presentation round. Each team <br />
-              &emsp;can have at most 4
+              &emsp;can have 2-4
               members.
               <br />
               <div className="h-[15px]"></div>

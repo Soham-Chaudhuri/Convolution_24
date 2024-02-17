@@ -12,12 +12,12 @@ function About() {
               &bull;The online round will be hosted on Codechef as an External
               Rated Contest on February 28, 2024. Aside from registering on
               Codechef and giving the contest, participants will have to
-              register separately through Google Forms if they are willing to
+              register separately through Google Forms if they want to
               participate in the onsite finals.
               <br />
               <div className="h-[15px]"></div>
-              &bull;Only participants who registered to be available for the
-              onsite finals separately through the Google Form will be
+              &bull;Only participants who have registered through the Google
+              Form and have opted to be available for the on-site finals will be
               considered for the onsite final round. Participants will have to
               bear their traveling costs.
               <br />

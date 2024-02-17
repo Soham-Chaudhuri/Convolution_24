@@ -1,34 +1,55 @@
 import React from "react";
-import picture6 from "../../../../components/assets/dwaipayan.webp";
-import picture4 from "../../../../components/assets/Parthib.webp";
+import picture4 from "../../../../components/assets/framehudge1.webp";
+import picture5 from "../../../../components/assets/framesjudge2.webp";
+import picture6 from "../../../../components/assets/STCSir.webp";
 
 const peopleData = [
+
+
   {
     id: 1,
-    name: "Dwaipayan",
-    heading: "Secretary",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+    name: "",
+    heading: "Sayantan Chakraborty",
+    description: "Professor at Jadavpur University Electrical Engineering Department",
     imgSrc: picture6,
     socialMediaLinks: {
-      instagram: "https://www.instagram.com/dwaipayanhaldar15/",
-      linkedin: "https://www.linkedin.com/in/dwaipayan-haldar/",
-      facebook: "https://www.facebook.com/profile.php?id=100011133515951",
+      instagram: "",
+      linkedin: "https://scholar.google.com/citations?hl=en&user=IuZ4rFMAAAAJ",
+      facebook: "https://www.facebook.com/sayantan.chakraborty1",
     },
-    socialMediaavailable: { insta: true, linke: true, face: true },
+    socialMediaavailable: { insta: false, linke: true, face: true },
   },
+
+
   {
     id: 2,
-    name: "Parthib",
-    heading: "Joint-Secretary",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+    name: "",
+    heading: "Soumyajit Saha",
+    description: "Jadavpur University, Department of Production, 2023 passout",
+    imgSrc: picture5,
+    socialMediaLinks: {
+      instagram:
+      "https://www.instagram.com/soumyajit_saha_sj?igsh=eWt2bmFqNHRvaHBq",
+      linkedin: "",
+      facebook: "https://www.facebook.com/soumyajit.saha.1422?mibextid=ZbWKwL",
+    },
+    socialMediaavailable: { insta: true, linke: false, face: true },
+  },
+  {
+    id: 3,
+    name: "",
+    heading: "Rai Chakraborti",
+    description: "Jadavpur University, Department of Architecture, 5th year",
     imgSrc: picture4,
     socialMediaLinks: {
-      instagram: "https://www.instagram.com/parthib_not_parthiv/",
-      linkedin: "https://www.linkedin.com/in/parthib-roy-3a78b3224/",
-      facebook: "https://www.facebook.com/profile.php?id=100074521635711",
+      instagram: "https://www.instagram.com/rai_chakrabarti",
+      linkedin: "https://in.linkedin.com/in/rai-chakrabarti-90a866180",
+      facebook: "https://www.facebook.com/rai.chakrabarti.1",
     },
     socialMediaavailable: { insta: true, linke: true, face: true },
   },
+  
+  
 ];
 
 function Re_judges() {
@@ -39,12 +60,11 @@ function Re_judges() {
           <h1 className="text-center re_teams_h1">JUDGES</h1>
           <span className="re_teams_underline"></span>
           <p className="re_teams_paragraph py-4">
-          The judges for the event to be announced soon!
+            Meet the judges of 24 Frames!
             <br />
-           
           </p>
         </div>
-        {/* <div className="">
+        <div className="">
           <div className="flex flex-col gap-5">
             {peopleData.map((people) => (
               <div
@@ -101,7 +121,7 @@ function Re_judges() {
               </div>
             ))}
           </div>
-        </div> */}
+        </div>
       </section>
     </>
   );
