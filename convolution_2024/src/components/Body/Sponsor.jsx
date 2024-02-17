@@ -98,13 +98,13 @@ const slideData = [
   //   src: sponsorpic11,
   // },
 
-  // {
-  //   // index: 11,
-  //   index: 7,
-  //   headline: "Focus On The Writing",
-  //   button: "Get Focused",
-  //   src: sponsorpic12,
-  // },
+  {
+    // index: 11,
+    index: 6,
+    headline: "Focus On The Writing",
+    button: "Get Focused",
+    src: sponsorpic12,
+  },
 
   // {
   //   index: 12,
@@ -113,14 +113,14 @@ const slideData = [
   //   src: sponsorpic14,
   // },
   {
-    index: 6,
+    index: 7,
     headline: "Focus On The Writing",
     button: "Get Focused",
     src: sponsorpic3,
   },
   {
     // index: 14,
-    index :7,
+    index :8,
     headline: "Focus On The Writing",
     button: "Get Focused",
     src: sponsorpic15,
