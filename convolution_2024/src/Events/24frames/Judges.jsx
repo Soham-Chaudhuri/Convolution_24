@@ -34,7 +34,8 @@ const peopleData = [
       facebook: "https://www.facebook.com/soumyajit.saha.1422?mibextid=ZbWKwL",
     },
     socialMediaavailable: { insta: true, linke: false, face: true },
-    desc: "Jadavpur University, Department of Architecture, 5th year",
+    desc: "Jadavpur University, Department of Production, 2023 passout",
+    
   },
   {
     id: 3,
@@ -48,7 +49,7 @@ const peopleData = [
       facebook: "https://www.facebook.com/rai.chakrabarti.1",
     },
     socialMediaavailable: { insta: true, linke: true, face: true },
-    desc: "Jadavpur University, Department of Production, 2023 passout",
+    desc: "Jadavpur University, Department of Architecture, 5th year",
   },
 ];
 

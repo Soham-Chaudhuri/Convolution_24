@@ -9,8 +9,9 @@ function About() {
           <div className="Re_decisia_about flex text-center flex-col align-center justify-center gap-6 py-10 px-6">
             <span className="Re_heading">RULES & REGULATIONS</span>
             <span className="Re_decisia_para text-justify">
-            &bull;2-4 members cross-year cross-specialization teams from the
-              same institution
+            &bull;A team may consist participants of same or different streams
+              and/or same or different years but not from different colleges.
+              Teams must comprise 2-4 members.
               <br />
               <div className="h-[15px]"></div>
               &bull;The rounds are as follows:

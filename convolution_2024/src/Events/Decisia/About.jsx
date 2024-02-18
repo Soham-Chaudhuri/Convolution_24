@@ -9,15 +9,16 @@ function About() {
           <div className="dec_about flex text-center flex-col align-center justify-center gap-10">
             <span className="heading">RULES & REGULATIONS</span>
             <span className="dec_para text-justify">
-              &bull;2-4 members cross-year cross-specialization teams from the
-              same institution
+              &bull;A team may consist participants of same or different streams
+              and/or same or different years but not from different colleges.
+              Teams must comprise 2-4 members.
               <br />
               <div className="h-[15px]"></div>
               &bull;The rounds are as follows:
               <br />
               &emsp;a)Prelims : Online; 2 minutes elevator pitch and 3-5 slides
-              presentation 
-              <br/>
+              presentation
+              <br />
               &emsp;about the B-plan
               <br />
               &emsp;b)Finals : Offline
