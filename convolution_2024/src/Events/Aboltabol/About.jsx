@@ -9,6 +9,17 @@ function About() {
           <div className="frames_about flex text-center flex-col align-center justify-center gap-10">
             <span className="heading">RULES & REGULATIONS</span>
             <span className="frames_para text-justify">
+              &bull;This event is based on 'Bahfest', for more clarification{" "}
+              <a
+                href="https://bahfest.com/submit-hypothesis/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="frames_para text-[#fb7d4c]  transition-all cursor-pointer hover:text-[#ed6630]"
+              >
+                click here.
+              </a>
+              <br />
+              <div className="h-[15px]"></div>
               &bull;Event comprises two rounds:
               <br />
               &emsp;a)Online Screening round
