@@ -9,7 +9,7 @@ function About() {
           <div className="Re_aboltabol_about flex text-center flex-col align-center justify-center gap-6 py-10 px-6">
             <span className="Re_heading">RULES & REGULATIONS</span>
             <span className="Re_aboltabol_para text-justify">
-              &bull;This event is based on 'Bahfest', for more clarification{" "}
+              &bull;This event is based on 'Bahfest', for more clarification
               <a
                 href="https://bahfest.com/submit-hypothesis/"
                 target="_blank"

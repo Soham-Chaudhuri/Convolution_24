@@ -37,18 +37,18 @@ function Dashboard({ user }) {
   const [userData, setUserData] = useState(null);
   const [boxesData, setBoxesData] = useState([]);
 
-  const framesMail = () => {
-    const templateParams = {
-      mail: user.email,
-    };
+  // const framesMail = () => {
+  //   const templateParams = {
+  //     mail: user.email,
+  //   };
 
-    emailjs.send(
-      "service_tpy2avm",
-      "template_q8f1qrp",
-      templateParams,
-      "PUkw79pWv5_JpHXX-"
-    );
-  };
+  //   emailjs.send(
+  //     "service_tpy2avm",
+  //     "template_q8f1qrp",
+  //     templateParams,
+  //     "PUkw79pWv5_JpHXX-"
+  //   );
+  // };
 
   const [events, setEvents] = useState([
     false,
@@ -264,21 +264,6 @@ function Dashboard({ user }) {
                         if (!newarray[box.id - 1] && box.id === 9) {
                           newarray[box.id - 1] = true;
                           window.location.reload();
-                          // emailjs.send(
-                          //   "service_tpy2avm",
-                          //   "template_6o8s7dm",
-                          //   templateParams,
-                          //   "PUkw79pWv5_JpHXX-"
-                          // );
-
-                          // emailjs.send(
-                          //   "service_xvsw9ej",
-                          //   "template_ju83qrd",
-                          //   templateParams,
-                          //   "IGbvuzMK9_y4lpaDb"
-                          // );
-
-                          framesMail();
                         }
                         return newarray;
                       });
