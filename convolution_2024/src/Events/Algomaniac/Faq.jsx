@@ -36,9 +36,7 @@ function Faq() {
               Hence for being eligible for being selected, registering with us
               is as important as giving the contest itself. Please note that the
               merged ranklist will be formed by merging all the individual
-              division ranklists together. However, we will be ignoring the
-              initial problems of Division 4 (which are not scoreable for the
-              higher divisions).
+              division ranklists together. For preparing the merged rank list, we will be considering only the Division 1 tasks.
             </div>
           </div>
 
