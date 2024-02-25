@@ -19,7 +19,7 @@ function About() {
               &bull;Team of 2- 4 people will be allowed.
               <br />
               <div className="h-[15px]"></div>
-              &bull;Cross department/college teams allowed. Cross year teams are not encouraged.
+              &bull;Cross department/college teams allowed. Cross year teams are also allowed.
               <br />
               <div className="h-[15px]"></div>
               &bull;On spot registration will be allowed.
