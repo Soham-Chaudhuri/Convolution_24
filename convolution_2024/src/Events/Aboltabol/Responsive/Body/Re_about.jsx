@@ -14,10 +14,7 @@ function About() {
                 href="https://bahfest.com/submit-hypothesis/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="Re_aboltabol_para text-[#fb7d4c]  transition-all cursor-pointer hover:text-[#ed6630]"
-                // onClick={() => {
-                //   window.open("https://bahfest.com/submit-hypothesis/")
-                // }}
+                className="Re_aboltabol_para text-[#fb7d4c]  transition-all cursor-pointer hover:text-[#ed6630] px-2"
               >
                 click here.
               </a>

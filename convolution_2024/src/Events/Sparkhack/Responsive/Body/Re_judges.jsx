@@ -1,33 +1,33 @@
 import React from "react";
-import picture6 from "../../../../components/assets/dwaipayan.webp";
-import picture4 from "../../../../components/assets/Parthib.webp";
+import picture6 from "../../../../components/assets/SDC.webp";
+import picture4 from "../../../../components/assets/dsd.webp";
 
 const peopleData = [
   {
     id: 1,
-    name: "Dwaipayan",
-    heading: "Secretary",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+    name: "",
+    heading: "Suddhasatwa Chakraborty",
+    description: "Professor at Jadavpur University Electrical Engineering Department",
     imgSrc: picture6,
     socialMediaLinks: {
-      instagram: "https://www.instagram.com/dwaipayanhaldar15/",
-      linkedin: "https://www.linkedin.com/in/dwaipayan-haldar/",
-      facebook: "https://www.facebook.com/profile.php?id=100011133515951",
+      instagram: "",
+      linkedin: "https://www.researchgate.net/profile/Suddhasatwa-Chakraborty",
+      facebook: "",
     },
-    socialMediaavailable: { insta: true, linke: true, face: true },
+    socialMediaavailable: { insta: false, linke: true, face: false },
   },
   {
     id: 2,
-    name: "Parthib",
-    heading: "Joint-Secretary",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+    name: "",
+    heading: "Debangshu Dey",
+    description: "Professor at Jadavpur University Electrical Engineering Department",
     imgSrc: picture4,
     socialMediaLinks: {
-      instagram: "https://www.instagram.com/parthib_not_parthiv/",
-      linkedin: "https://www.linkedin.com/in/parthib-roy-3a78b3224/",
-      facebook: "https://www.facebook.com/profile.php?id=100074521635711",
+      instagram: "",
+      linkedin: "https://scholar.google.com/citations?user=tlzV8CAAAAAJ&hl=en",
+      facebook: "",
     },
-    socialMediaavailable: { insta: true, linke: true, face: true },
+    socialMediaavailable: { insta: false, linke: true, face: false },
   },
 ];
 
@@ -39,11 +39,11 @@ function Re_judges() {
           <h1 className="text-center re_teams_h1">JUDGES</h1>
           <span className="re_teams_underline"></span>
           <p className="re_teams_paragraph py-4">
-            The judges for the event to be announced soon!
+          Meet the judges of Sparkhack!
             <br />
           </p>
         </div>
-        {/* <div className="">
+        <div className="">
           <div className="flex flex-col gap-5">
             {peopleData.map((people) => (
               <div
@@ -77,7 +77,7 @@ function Re_judges() {
                           target="_blank"
                           rel="noopener noreferrer"
                         >
-                          <i className="fa-brands fa-linkedin re_events_fabicon"></i>
+                          <i className="fa-solid fa-circle-info fabicon"></i>
                         </a>
                       ) : (
                         ""
@@ -100,7 +100,7 @@ function Re_judges() {
               </div>
             ))}
           </div>
-        </div> */}
+        </div>
       </section>
     </>
   );

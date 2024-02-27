@@ -1,37 +1,37 @@
 import React from "react";
 import "./Judges.css";
 
-import picture4 from "../../components/assets/nojudge.webp";
+import picture4 from "../../components/assets/SDC.webp";
 
-import picture6 from "../../components/assets/dwaipayan.webp";
+import picture6 from "../../components/assets/dsd.webp";
 
 const peopleData = [
   {
     id: 1,
     name: "",
-    description: "Anticipated...",
+    description: "Debangshu Dey",
     imgSrc: picture6,
 
     socialMediaLinks: {
       instagram: "",
-      linkedin: "",
+      linkedin: "https://scholar.google.com/citations?user=tlzV8CAAAAAJ&hl=en",
       facebook: "",
     },
-    socialMediaavailable: { insta: true, linke: true, face: true },
-    desc: "",
+    socialMediaavailable: { insta: false, linke: true, face: false },
+    desc: "Professor at Jadavpur University Electrical Engineering Department",
   },
   {
     id: 2,
     name: "",
-    description: "Anticipated...",
+    description: "Suddhasatwa Chakraborty",
     imgSrc: picture4,
     socialMediaLinks: {
       instagram: "",
-      linkedin: "",
+      linkedin: "https://www.researchgate.net/profile/Suddhasatwa-Chakraborty",
       facebook: "",
     },
-    socialMediaavailable: { insta: true, linke: true, face: true },
-    desc: "",
+    socialMediaavailable: { insta: false, linke: true, face: false },
+    desc: "Professor at Jadavpur University Electrical Engineering Department",
   },
 ];
 
@@ -43,17 +43,17 @@ function Judges() {
           <h1 className="text-center teams_h1">JUDGES</h1>
           <span className="underline_teams"></span>
           <p className="paragraph_teams py-4">
-            The judges for the event to be announced soon!
+          Meet the judges of Sparkhack!
           </p>
         </div>
-        {/* <div className="px-[69px] py-5">
+         <div className="px-[69px] py-5">
           <div className="grid grid-cols-2 gap-[56px]">
             {peopleData.map((person) => (
               <div key={person.id} className="boro-goal-teams flex flex-wrap">
                 <div className="group-child-img-teams">
                   <img src={person.imgSrc} alt={person.name} />
                 </div>
-                <div className="algomaniac-teams">{person.description}</div>
+                <div className="sparkhack-teams">{person.description}</div>
                 <div className="lorem-ipsum-para-teams flex flex-col gap-2">
                   {person.desc}
                   <div className="flex gap-2">
@@ -75,7 +75,7 @@ function Judges() {
                         target="_blank"
                         rel="noopener noreferrer"
                       >
-                        <i className="fa-brands fa-linkedin fabicon"></i>
+                       <i className="fa-solid fa-circle-info fabicon"></i>
                       </a>
                     ) : (
                       ""
@@ -99,7 +99,7 @@ function Judges() {
               </div>
             ))}
           </div>
-        </div> */}
+        </div> 
       </section>
     </>
   );

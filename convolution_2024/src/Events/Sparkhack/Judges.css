@@ -59,18 +59,18 @@
   box-shadow: 6px 3px 0px 0px #e9c462;
 
 }
-.algomaniac-teams,
+.sparkhack-teams,
 .lorem-ipsum-para-teams {
   position: absolute;
   left: 227px;
   
   
 }
-.algomaniac-teams {
+.sparkhack-teams {
   top: 22px;
   display: flex;
   align-items: center;
-  width: 200px;
+  /* width: 200px; */
   height: 45px;
   color: #000000;
   letter-spacing: 1.12px;

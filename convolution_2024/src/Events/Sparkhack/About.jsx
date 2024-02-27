@@ -31,6 +31,8 @@ function About() {
               will have to implement a prototype based on their ideation which
               will be held via offline mode in Jadavpur University Electrical
               Engineering Department.
+              <br/>
+              No PowerPoint presentations will be accepted in this round; each team must present their solution through a prototype or simulation.
               <br />
               <div className="h-[10px]"></div>
               <strong>Pitching round:</strong>Pitching round: The teams will
