@@ -19,6 +19,7 @@ import sponsorpic15 from "../assets/sponsor/15.webp";
 import sponsorpic16 from "../assets/sponsor/16.webp";
 import sponsorpic17 from "../assets/sponsor/17.webp";
 import sponsorpic18 from "../assets/sponsor/18.webp";
+import sponsorpic19 from "../assets/sponsor/19.webp";
 
 const slideData = [
   {
@@ -123,22 +124,22 @@ const slideData = [
     index :8,
     headline: "Focus On The Writing",
     button: "Get Focused",
+    src: sponsorpic19,
+  },
+  {
+    // index: 15,
+    index: 9, 
+    headline: "Focus On The Writing",
+    button: "Get Focused",
     src: sponsorpic15,
   },
-  // {
-  //   // index: 15,
-  //   index: 9, 
-  //   headline: "Focus On The Writing",
-  //   button: "Get Focused",
-  //   src: sponsorpic16,
-  // },
-  // {
-  //   // index: 16,
-  //   index: 10,
-  //   headline: "Focus On The Writing",
-  //   button: "Get Focused",
-  //   src: sponsorpic17,
-  // },
+  {
+    // index: 16,
+    index: 10,
+    headline: "Focus On The Writing",
+    button: "Get Focused",
+    src: sponsorpic18,
+  },
   // {
   //   // index: 17,
   //   index: 11,

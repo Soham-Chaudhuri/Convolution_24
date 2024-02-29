@@ -298,19 +298,19 @@ function Dashboard({ user }) {
 
                       if (box.id === 6) {
                         toast.info(
-                          " Please proceed with registration on the following Google Form. Redirecting now.",
+                          "Registrations closed for Algomaniac",
                           {
                             theme: "dark",
                             autoClose: 4200,
                           }
                         );
 
-                        setTimeout(() => {
-                          window.open(
-                            "https://forms.gle/LwcPTZmtETVUNy2DA ",
-                            "_blank"
-                          );
-                        }, 3000);
+                        // setTimeout(() => {
+                        //   window.open(
+                        //     "https://forms.gle/LwcPTZmtETVUNy2DA ",
+                        //     "_blank"
+                        //   );
+                        // }, 3000);
                       }
                     }}
                   >
