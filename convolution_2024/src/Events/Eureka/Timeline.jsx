@@ -48,7 +48,7 @@ function Timeline() {
                   <div>
                     <h3>Finals</h3>
                     <p className="timeline_para">
-                      - top 8 shortlisted teams battle it out by solving
+                      - top 10 shortlisted teams battle it out by solving
                       puzzles, one step at a time
                       <br />
                     </p>

@@ -30,7 +30,7 @@ function Timeline() {
                   <div className="flex flex-col ">
                     <h3>Prelims</h3>
                     <p className="timeline_para">
-                      - Shortlisting of the top 8 teams
+                      - Shortlisting of the top 10 teams
                       <br />
                     </p>
                   </div>

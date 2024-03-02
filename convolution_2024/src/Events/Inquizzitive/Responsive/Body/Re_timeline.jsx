@@ -127,7 +127,7 @@ function Re_timeline() {
               <div className="Re_timeline_content">
                 <h3 className="Re_timeline_day pt-7">Prelims</h3>
                 <p className="Re_timeline_para">
-                - Shortlisting of the top 8 teams
+                - Shortlisting of the top 10 teams
                   <br />
                 </p>
               </div>

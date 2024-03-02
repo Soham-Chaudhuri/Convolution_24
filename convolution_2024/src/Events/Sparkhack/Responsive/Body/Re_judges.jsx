@@ -2,12 +2,17 @@ import React from "react";
 import picture6 from "../../../../components/assets/SDC.webp";
 import picture4 from "../../../../components/assets/dsd.webp";
 
+import picture7 from "../../../../components/assets/Ram.webp";
+
+import picture8 from "../../../../components/assets/Sounak.webp";
+
 const peopleData = [
   {
     id: 1,
     name: "",
     heading: "Suddhasatwa Chakraborty",
-    description: "Professor at Jadavpur University Electrical Engineering Department",
+    description:
+      "Professor at Jadavpur University Electrical Engineering Department",
     imgSrc: picture6,
     socialMediaLinks: {
       instagram: "",
@@ -20,11 +25,43 @@ const peopleData = [
     id: 2,
     name: "",
     heading: "Debangshu Dey",
-    description: "Professor at Jadavpur University Electrical Engineering Department",
+    description:
+      "Professor at Jadavpur University Electrical Engineering Department",
     imgSrc: picture4,
     socialMediaLinks: {
       instagram: "",
       linkedin: "https://scholar.google.com/citations?user=tlzV8CAAAAAJ&hl=en",
+      facebook: "",
+    },
+    socialMediaavailable: { insta: false, linke: true, face: false },
+  },
+
+  {
+    id: 3,
+    name: "",
+    heading: "Ram Sarkar",
+    description:
+      "Professor at Department of Computer Science, Jadavpur University",
+    imgSrc: picture7,
+    socialMediaLinks: {
+      instagram: "",
+      linkedin:
+        "https://scholar.google.co.in/citations?user=bDj0BUEAAAAJ&hl=en",
+      facebook: "",
+    },
+    socialMediaavailable: { insta: false, linke: true, face: false },
+  },
+
+  {
+    id: 4,
+    name: "",
+    heading: "Sounak Dey",
+    description: "Senior Scientist at Tata Consultancy Services",
+    imgSrc: picture8,
+    socialMediaLinks: {
+      instagram: "",
+      linkedin:
+        "https://scholar.google.co.in/citations?user=s6EyYlUAAAAJ&hl=en",
       facebook: "",
     },
     socialMediaavailable: { insta: false, linke: true, face: false },
@@ -39,7 +76,7 @@ function Re_judges() {
           <h1 className="text-center re_teams_h1">JUDGES</h1>
           <span className="re_teams_underline"></span>
           <p className="re_teams_paragraph py-4">
-          Meet the judges of Sparkhack!
+            Meet the judges of Sparkhack!
             <br />
           </p>
         </div>

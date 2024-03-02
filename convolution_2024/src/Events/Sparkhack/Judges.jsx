@@ -5,6 +5,10 @@ import picture4 from "../../components/assets/SDC.webp";
 
 import picture6 from "../../components/assets/dsd.webp";
 
+import picture7 from "../../components/assets/Ram.webp";
+
+import picture8 from "../../components/assets/Sounak.webp";
+
 const peopleData = [
   {
     id: 1,
@@ -33,6 +37,36 @@ const peopleData = [
     socialMediaavailable: { insta: false, linke: true, face: false },
     desc: "Professor at Jadavpur University Electrical Engineering Department",
   },
+  {
+    id: 3,
+    name: "",
+    description: "Ram Sarkar",
+    imgSrc: picture7,
+
+    socialMediaLinks: {
+      instagram: "",
+      linkedin:
+        "https://scholar.google.co.in/citations?user=bDj0BUEAAAAJ&hl=en",
+      facebook: "",
+    },
+    socialMediaavailable: { insta: false, linke: true, face: false },
+    desc: "Professor at Department of Computer Science, Jadavpur University",
+  },
+  {
+    id: 4,
+    name: "",
+    description: "Sounak Dey",
+    imgSrc: picture8,
+
+    socialMediaLinks: {
+      instagram: "",
+      linkedin:
+        "https://scholar.google.co.in/citations?user=s6EyYlUAAAAJ&hl=en",
+      facebook: "",
+    },
+    socialMediaavailable: { insta: false, linke: true, face: false },
+    desc: "Senior Scientist at Tata Consultancy Services",
+  },
 ];
 
 function Judges() {
@@ -42,11 +76,9 @@ function Judges() {
         <div className=" flex flex-col justify-center items-center gap-2 py-5">
           <h1 className="text-center teams_h1">JUDGES</h1>
           <span className="underline_teams"></span>
-          <p className="paragraph_teams py-4">
-          Meet the judges of Sparkhack!
-          </p>
+          <p className="paragraph_teams py-4">Meet the judges of Sparkhack!</p>
         </div>
-         <div className="px-[69px] py-5">
+        <div className="px-[69px] py-5">
           <div className="grid grid-cols-2 gap-[56px]">
             {peopleData.map((person) => (
               <div key={person.id} className="boro-goal-teams flex flex-wrap">
@@ -75,7 +107,7 @@ function Judges() {
                         target="_blank"
                         rel="noopener noreferrer"
                       >
-                       <i className="fa-solid fa-circle-info fabicon"></i>
+                        <i className="fa-solid fa-circle-info fabicon"></i>
                       </a>
                     ) : (
                       ""
@@ -99,7 +131,7 @@ function Judges() {
               </div>
             ))}
           </div>
-        </div> 
+        </div>
       </section>
     </>
   );

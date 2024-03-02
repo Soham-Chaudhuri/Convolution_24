@@ -1,34 +1,34 @@
 import React from "react";
-import picture6 from "../../../../components/assets/nojudge.webp";
+import picture6 from "../../../../components/assets/Ritamay.webp";
 import picture4 from "../../../../components/assets/nojudge.webp";
 
 const peopleData = [
   {
     id: 1,
     name: "",
-    heading: "Anticipated...",
-    description: "",
+    heading: "Ritamay Jana",
+    description: "Consultant at Boston Consulting Group (BCG)",
     imgSrc: picture6,
     socialMediaLinks: {
       instagram: "",
-      linkedin: "",
+      linkedin: "https://www.linkedin.com/in/ritamay-jana/",
       facebook: "",
     },
-    socialMediaavailable: { insta: true, linke: true, face: true },
+    socialMediaavailable: { insta: false, linke: true, face: false },
   },
-  {
-    id: 2,
-    name: "",
-    heading: "Joint-Secretary",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-    imgSrc: picture4,
-    socialMediaLinks: {
-      instagram: "https://www.instagram.com/parthib_not_parthiv/",
-      linkedin: "https://www.linkedin.com/in/parthib-roy-3a78b3224/",
-      facebook: "https://www.facebook.com/profile.php?id=100074521635711",
-    },
-    socialMediaavailable: { insta: true, linke: true, face: true },
-  },
+  // {
+  //   id: 2,
+  //   name: "",
+  //   heading: "",
+  //   description: "",
+  //   imgSrc: picture4,
+  //   socialMediaLinks: {
+  //     instagram: "https://www.instagram.com/parthib_not_parthiv/",
+  //     linkedin: "https://www.linkedin.com/in/parthib-roy-3a78b3224/",
+  //     facebook: "https://www.facebook.com/profile.php?id=100074521635711",
+  //   },
+  //   socialMediaavailable: { insta: true, linke: true, face: true },
+  // },
 ];
 
 function Re_judges() {
@@ -39,10 +39,10 @@ function Re_judges() {
           <h1 className="text-center re_teams_h1">JUDGES</h1>
           <span className="re_teams_underline"></span>
           <p className="re_teams_paragraph py-4">
-          The judges for the event to be announced soon!
+          Meet the judges of Decisia!
           </p>
         </div>
-        {/* <div className="">
+        <div className="">
           <div className="flex flex-col gap-5">
             {peopleData.map((people) => (
               <div
@@ -99,7 +99,7 @@ function Re_judges() {
               </div>
             ))}
           </div>
-        </div> */}
+        </div>
       </section>
     </>
   );

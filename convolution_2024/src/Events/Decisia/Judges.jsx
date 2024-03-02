@@ -3,26 +3,26 @@ import "./Judges.css";
 
 import picture4 from "../../components/assets/nojudge.webp";
 
-import picture6 from "../../components/assets/nojudge.webp";
+import picture6 from "../../components/assets/Ritamay.webp";
 
 const peopleData = [
   {
     id: 1,
-    name: "Dwaipayan",
-    description: "Anticipated...",
+    name: "",
+    description: "Ritamay Jana",
     imgSrc: picture6,
 
     socialMediaLinks: {
       instagram: "",
-      linkedin: "",
+      linkedin: "https://www.linkedin.com/in/ritamay-jana/",
       facebook: "",
     },
-    socialMediaavailable: { insta: true, linke: true, face: true },
-    desc: "",
+    socialMediaavailable: { insta: false, linke: true, face: false },
+    desc: "Consultant at Boston Consulting Group (BCG)",
   },
   {
     id: 2,
-    name: "Parthib",
+    name: "",
     description: "Anticipated...",
     imgSrc: picture4,
     socialMediaLinks: {
@@ -43,10 +43,10 @@ function Judges() {
           <h1 className="text-center teams_h1">JUDGES</h1>
           <span className="underline_teams"></span>
           <p className="paragraph_teams py-4">
-          The judges for the event to be announced soon!
+          Meet the judges of Decisia!
           </p>
         </div>
-        {/* <div className="px-[69px] py-5">
+        <div className="px-[69px] py-5">
           <div className="grid grid-cols-2 gap-[56px]">
             {peopleData.map((person) => (
               <div key={person.id} className="boro-goal-teams flex flex-wrap">
@@ -99,7 +99,7 @@ function Judges() {
               </div>
             ))}
           </div>
-        </div> */}
+        </div>
       </section>
     </>
   );
