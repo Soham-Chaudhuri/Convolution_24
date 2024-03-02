@@ -27,36 +27,48 @@ function Re_header() {
         </div>
       </div>
       <div className={`dropdown_menu ${isOpen ? "open" : ""}`}>
-        <li className="nav_link">
-          <Link to="Re_hero" smooth={true} duration={500} offset={-100}>
-            Home
-          </Link>
-        </li>
-        <li className="nav_link">
-          <Link to="Re_about" smooth={true} duration={600} offset={-100}>
-            About
-          </Link>
-        </li>
-        <li className="nav_link">
-          <Link to="Re_events" smooth={true} duration={700} offset={-100}>
-            Events
-          </Link>
-        </li>
-        <li className="nav_link">
-          <Link to="Re_timeline" smooth={true} duration={800} offset={-100}>
-            Timeline
-          </Link>
-        </li>
-        <li className="nav_link">
-          <Link to="Re_team" smooth={true} duration={900} offset={-100}>
-            Team
-          </Link>
-        </li>
-        <li className="nav_link">
-          <Link to="Re_contacts" smooth={true} duration={1000} offset={-100}>
-            Contacts
-          </Link>
-        </li>
+        <Link to="Re_hero" smooth={true} duration={500} offset={-110}>
+          <li className="nav_link">
+            <Link to="Re_hero" smooth={true} duration={500} offset={-110}>
+              Home
+            </Link>
+          </li>
+        </Link>
+        <Link to="Re_about" smooth={true} duration={600} offset={-100}>
+          <li className="nav_link">
+            <Link to="Re_about" smooth={true} duration={600} offset={-100}>
+              About
+            </Link>
+          </li>
+        </Link>
+        <Link to="Re_events" smooth={true} duration={700} offset={-100}>
+          <li className="nav_link">
+            <Link to="Re_events" smooth={true} duration={700} offset={-100}>
+              Events
+            </Link>
+          </li>
+        </Link>
+        <Link to="Re_timeline" smooth={true} duration={800} offset={-100}>
+          <li className="nav_link">
+            <Link to="Re_timeline" smooth={true} duration={800} offset={-100}>
+              Timeline
+            </Link>
+          </li>
+        </Link>
+        <Link to="Re_team" smooth={true} duration={900} offset={-100}>
+          <li className="nav_link">
+            <Link to="Re_team" smooth={true} duration={900} offset={-100}>
+              Team
+            </Link>
+          </li>
+        </Link>
+        <Link to="Re_contacts" smooth={true} duration={1000} offset={-100}>
+          <li className="nav_link">
+            <Link to="Re_contacts" smooth={true} duration={1000} offset={-100}>
+              Contacts
+            </Link>
+          </li>
+        </Link>
       </div>
     </>
   );
