@@ -1,7 +1,7 @@
 import React from "react";
 import "./Judges.css";
 
-import picture4 from "../../components/assets/nojudge.webp";
+import picture4 from "../../components/assets/Shibasis.webp";
 
 import picture6 from "../../components/assets/Ritamay.webp";
 
@@ -23,15 +23,15 @@ const peopleData = [
   {
     id: 2,
     name: "",
-    description: "Anticipated...",
+    description: "Shibasis Dutt",
     imgSrc: picture4,
     socialMediaLinks: {
       instagram: "",
-      linkedin: "",
+      linkedin: "https://www.linkedin.com/in/shibasis-dutt-b2692913/?originalSubdomain=in",
       facebook: "",
     },
-    socialMediaavailable: { insta: true, linke: true, face: true },
-    desc: "",
+    socialMediaavailable: { insta: false, linke: true, face: false },
+    desc: "CEO and Managing Director of Nouvelle Automations",
   },
 ];
 

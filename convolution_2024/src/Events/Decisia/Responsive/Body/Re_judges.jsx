@@ -1,6 +1,6 @@
 import React from "react";
 import picture6 from "../../../../components/assets/Ritamay.webp";
-import picture4 from "../../../../components/assets/nojudge.webp";
+import picture4 from "../../../../components/assets/Shibasis.webp";
 
 const peopleData = [
   {
@@ -16,19 +16,19 @@ const peopleData = [
     },
     socialMediaavailable: { insta: false, linke: true, face: false },
   },
-  // {
-  //   id: 2,
-  //   name: "",
-  //   heading: "",
-  //   description: "",
-  //   imgSrc: picture4,
-  //   socialMediaLinks: {
-  //     instagram: "https://www.instagram.com/parthib_not_parthiv/",
-  //     linkedin: "https://www.linkedin.com/in/parthib-roy-3a78b3224/",
-  //     facebook: "https://www.facebook.com/profile.php?id=100074521635711",
-  //   },
-  //   socialMediaavailable: { insta: true, linke: true, face: true },
-  // },
+  {
+    id: 2,
+    name: "Shibasis Dutt",
+    heading: "Shibasis Dutt",
+    description: "CEO and Managing Director of Nouvelle Automations",
+    imgSrc: picture4,
+    socialMediaLinks: {
+      instagram: "",
+      linkedin: "https://www.linkedin.com/in/shibasis-dutt-b2692913/?originalSubdomain=in",
+      facebook: "",
+    },
+    socialMediaavailable: { insta: false, linke: true, face: false },
+  },
 ];
 
 function Re_judges() {
