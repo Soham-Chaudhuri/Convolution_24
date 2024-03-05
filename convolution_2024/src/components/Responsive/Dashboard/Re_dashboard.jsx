@@ -285,7 +285,8 @@ function Re_dashboard({ user }) {
                           dat.id !== 6 &&
                           dat.id !== 8 &&
                           dat.id !== 7 &&
-                          dat.id !== 9
+                          dat.id !== 9 &&
+                          dat.id !== 1
                         ) {
                           navigate(`/reg/${dat.event}`);
                         }
@@ -301,6 +302,16 @@ function Re_dashboard({ user }) {
                         if (dat.id === 7) {
                           toast.info(
                             "No registration required. You are all invited to attend JU Talks on Sunday 17th March in dept of Electrical Engineering Jadavpur University",
+                            {
+                              theme: "dark",
+                            }
+                          );
+                        }
+
+
+                        if (dat.id === 1) {
+                          toast.info(
+                            "Registrations closed for Sparkhack",
                             {
                               theme: "dark",
                             }

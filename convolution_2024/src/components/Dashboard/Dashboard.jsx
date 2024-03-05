@@ -273,7 +273,8 @@ function Dashboard({ user }) {
                         box.id !== 6 &&
                         box.id !== 8 &&
                         box.id !== 7 &&
-                        box.id !== 9
+                        box.id !== 9 &&
+                        box.id !== 1 
                       ) {
                         navigate(`/reg/${box.event}`);
                       }
@@ -295,6 +296,18 @@ function Dashboard({ user }) {
                           }
                         );
                       }
+
+
+                      if (box.id === 1) {
+                        toast.info(
+                          "Registrations closed for Sparkhack!",
+                          {
+                            theme: "dark",
+                          }
+                        );
+                      }
+
+
 
                       if (box.id === 6) {
                         toast.info(
