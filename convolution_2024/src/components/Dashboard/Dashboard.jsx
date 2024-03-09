@@ -173,7 +173,7 @@ function Dashboard({ user }) {
           content: "Anything and Everything Under the Sun",
           lastDate: "15-03-2024",
           eventDate: "15-03-2024",
-          registered: false,
+          registered: data.inquizzitive,
           event: "inquizzitive",
           href: "/events/inquizzitive",
         },
@@ -271,21 +271,11 @@ function Dashboard({ user }) {
                       if (
                         !events[box.id - 1] &&
                         box.id !== 6 &&
-                        box.id !== 8 &&
                         box.id !== 7 &&
                         box.id !== 9 &&
-                        box.id !== 1 
+                        box.id !== 1
                       ) {
                         navigate(`/reg/${box.event}`);
-                      }
-
-                      if (box.id === 8) {
-                        toast.info(
-                          "Registration for this event will start form 10th March, and onday registration are also allowed",
-                          {
-                            theme: "dark",
-                          }
-                        );
                       }
 
                       if (box.id === 7) {
@@ -297,33 +287,17 @@ function Dashboard({ user }) {
                         );
                       }
 
-
                       if (box.id === 1) {
-                        toast.info(
-                          "Registrations closed for Sparkhack!",
-                          {
-                            theme: "dark",
-                          }
-                        );
+                        toast.info("Registrations closed for Sparkhack!", {
+                          theme: "dark",
+                        });
                       }
 
-
-
                       if (box.id === 6) {
-                        toast.info(
-                          "Registrations closed for Algomaniac",
-                          {
-                            theme: "dark",
-                            autoClose: 4200,
-                          }
-                        );
-
-                        // setTimeout(() => {
-                        //   window.open(
-                        //     "https://forms.gle/LwcPTZmtETVUNy2DA ",
-                        //     "_blank"
-                        //   );
-                        // }, 3000);
+                        toast.info("Registrations closed for Algomaniac", {
+                          theme: "dark",
+                          autoClose: 4200,
+                        });
                       }
                     }}
                   >

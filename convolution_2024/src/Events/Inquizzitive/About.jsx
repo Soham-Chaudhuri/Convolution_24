@@ -22,6 +22,9 @@ function About() {
               &bull;Cross department/college teams allowed. Cross year teams are also allowed.
               <br />
               <div className="h-[15px]"></div>
+              &bull;Anyone not part of a college, but under 25 years are also eligible to register.
+              <br />
+              <div className="h-[15px]"></div>
               &bull;On spot registration will be allowed.
             </span>
           </div>

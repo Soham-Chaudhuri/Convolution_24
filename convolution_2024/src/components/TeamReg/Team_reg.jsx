@@ -65,7 +65,7 @@ function Team_reg({ user }) {
   const sendWelcomeEmail_sparkhack = () => {
     const templateParams = {
       mail: tl1email,
-      name5 : teamName,
+      name5: teamName,
       name1: team_leader,
       name2: member1,
       name3: member2,
@@ -91,7 +91,7 @@ function Team_reg({ user }) {
   const sendWelcomeEmail_circuistics = () => {
     const templateParams = {
       mail: tl1email,
-      name5 : teamName,
+      name5: teamName,
       name1: team_leader,
       name2: member1,
       name3: member2,
@@ -117,7 +117,7 @@ function Team_reg({ user }) {
   const sendWelcomeEmail_eureka = () => {
     const templateParams = {
       mail: tl1email,
-      name5 : teamName,
+      name5: teamName,
       name1: team_leader,
       name2: member1,
       name3: member2,
@@ -140,10 +140,38 @@ function Team_reg({ user }) {
         console.error("Error sending welcome email:", error);
       });
   };
+
+  const sendWelcomeEmail_inquizzitive = () => {
+    const templateParams = {
+      mail: tl1email,
+      name5: teamName,
+      name1: team_leader,
+      name2: member1,
+      name3: member2,
+      name4: member3,
+      event: eventName.event,
+    };
+
+    emailjs
+      .send(
+        "service_tpy2avm",
+        "template_4xqtuc2",
+        templateParams,
+        "PUkw79pWv5_JpHXX-"
+      )
+
+      .then((response) => {
+        console.log("Welcome email sent:", response);
+      })
+      .catch((error) => {
+        console.error("Error sending welcome email:", error);
+      });
+  };
+
   const sendWelcomeEmail_aboltabol = () => {
     const templateParams = {
       mail: tl1email,
-      name5 : teamName,
+      name5: teamName,
       name1: team_leader,
       name2: member1,
       name3: member2,
@@ -169,7 +197,7 @@ function Team_reg({ user }) {
   const sendWelcomeEmail_decisia = () => {
     const templateParams = {
       mail: tl1email,
-      name5 : teamName,
+      name5: teamName,
       name1: team_leader,
       name2: member1,
       name3: member2,
@@ -283,21 +311,18 @@ function Team_reg({ user }) {
           Member3: member3,
           Member3mail: m3email,
         });
-        if(eventName.event==="decisia"){
+        if (eventName.event === "decisia") {
           sendWelcomeEmail_decisia();
-        }
-        else if(eventName.event==="circuistics"){
+        } else if (eventName.event === "circuistics") {
           sendWelcomeEmail_circuistics();
-        }
-        else if(eventName.event==="eureka"){
-          // console.log("lol")
+        } else if (eventName.event === "eureka") {
           sendWelcomeEmail_eureka();
-        }
-        else if(eventName.event==="spark_hack"){
+        } else if (eventName.event === "spark_hack") {
           sendWelcomeEmail_sparkhack();
-        }
-        else if(eventName.event==="abol_tabol"){
+        } else if (eventName.event === "abol_tabol") {
           sendWelcomeEmail_aboltabol();
+        } else if (eventName.event === "inquizzitive") {
+          sendWelcomeEmail_inquizzitive();
         }
         scrollToTop();
         toast.success("Registration successful!", {
