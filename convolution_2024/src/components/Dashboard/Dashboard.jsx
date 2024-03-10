@@ -259,14 +259,16 @@ function Dashboard({ user }) {
                         : "register-now transition-all hover:cursor-pointer hover:text-[#e9c462] "
                     }
                     onClick={async () => {
-                      await setEvents((prevarray) => {
-                        const newarray = [...prevarray];
-                        if (!newarray[box.id - 1] && box.id === 9) {
-                          newarray[box.id - 1] = true;
-                          window.location.reload();
-                        }
-                        return newarray;
-                      });
+                      // await setEvents((prevarray) => {
+                      //   const newarray = [...prevarray];
+                      //   if (!newarray[box.id - 1] && box.id === 9) {
+                      //     newarray[box.id - 1] = true;
+                      //     window.location.reload();
+                      //   }
+                      //   return newarray;
+                      // });
+
+                      // fun. for single registration
 
                       if (
                         !events[box.id - 1] &&
@@ -289,6 +291,12 @@ function Dashboard({ user }) {
 
                       if (box.id === 1) {
                         toast.info("Registrations closed for Sparkhack!", {
+                          theme: "dark",
+                        });
+                      }
+
+                      if (box.id === 9) {
+                        toast.info("Registrations closed for 24 Frames!", {
                           theme: "dark",
                         });
                       }

@@ -270,14 +270,14 @@ function Re_dashboard({ user }) {
                           : "card-title"
                       }
                       onClick={async () => {
-                        await useEvents((prevarray) => {
-                          const newarray = [...prevarray];
-                          if (!newarray[dat.id - 1] && dat.id === 9) {
-                            newarray[dat.id - 1] = true;
-                            window.location.reload();
-                          }
-                          return newarray;
-                        });
+                        // await useEvents((prevarray) => {
+                        //   const newarray = [...prevarray];
+                        //   if (!newarray[dat.id - 1] && dat.id === 9) {
+                        //     newarray[dat.id - 1] = true;
+                        //     window.location.reload();
+                        //   }
+                        //   return newarray;
+                        // });
 
                         if (
                           !events[dat.id - 1] &&
@@ -300,6 +300,13 @@ function Re_dashboard({ user }) {
 
                         if (dat.id === 1) {
                           toast.info("Registrations closed for Sparkhack", {
+                            theme: "dark",
+                          });
+                        }
+
+
+                        if (dat.id === 9) {
+                          toast.info("Registrations closed for 24 Frames!", {
                             theme: "dark",
                           });
                         }
