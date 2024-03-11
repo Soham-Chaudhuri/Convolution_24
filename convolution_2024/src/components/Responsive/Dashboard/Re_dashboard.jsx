@@ -284,7 +284,9 @@ function Re_dashboard({ user }) {
                           dat.id !== 6 &&
                           dat.id !== 7 &&
                           dat.id !== 9 &&
-                          dat.id !== 1
+                          dat.id !== 1 &&
+                          dat.id !== 2 &&
+                          dat.id !== 3
                         ) {
                           navigate(`/reg/${dat.event}`);
                         }
@@ -298,12 +300,23 @@ function Re_dashboard({ user }) {
                           );
                         }
 
+                        if (dat.id === 2) {
+                          toast.info("Registrations closed for Decisia!", {
+                            theme: "dark",
+                          });
+                        }
+
+                        if (dat.id === 3) {
+                          toast.info("Registrations closed for AbolTabol!", {
+                            theme: "dark",
+                          });
+                        }
+
                         if (dat.id === 1) {
                           toast.info("Registrations closed for Sparkhack", {
                             theme: "dark",
                           });
                         }
-
 
                         if (dat.id === 9) {
                           toast.info("Registrations closed for 24 Frames!", {

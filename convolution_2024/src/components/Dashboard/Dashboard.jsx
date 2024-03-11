@@ -275,7 +275,9 @@ function Dashboard({ user }) {
                         box.id !== 6 &&
                         box.id !== 7 &&
                         box.id !== 9 &&
-                        box.id !== 1
+                        box.id !== 1 &&
+                        box.id !== 2 &&
+                        box.id !== 3 
                       ) {
                         navigate(`/reg/${box.event}`);
                       }
@@ -291,6 +293,18 @@ function Dashboard({ user }) {
 
                       if (box.id === 1) {
                         toast.info("Registrations closed for Sparkhack!", {
+                          theme: "dark",
+                        });
+                      }
+
+                      if (box.id === 2) {
+                        toast.info("Registrations closed for Decisia!", {
+                          theme: "dark",
+                        });
+                      }
+
+                      if (box.id === 3) {
+                        toast.info("Registrations closed for AbolTabol!", {
                           theme: "dark",
                         });
                       }
