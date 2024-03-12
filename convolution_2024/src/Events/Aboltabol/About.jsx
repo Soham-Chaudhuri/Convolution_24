@@ -29,7 +29,7 @@ function About() {
               <br />
               <div className="h-[15px]"></div>
               &bull;The teams have to submit an abstract for their ideas for the
-              first round. Top 12 teams will be shortlisted for the offline
+              first round. Top 8-12 teams will be shortlisted for the offline
               presentation round.
               <br />
               <div className="h-[15px]"></div>

@@ -73,7 +73,7 @@ function Re_timeline() {
                   Announcing Results of Prelims
                 </h3>
                 <p className="Re_timeline_para">
-                  - The top 8/10 teams will be shortlisted for the final round
+                  - The top 8-12 teams will be shortlisted for the final round
                   <br />
                 </p>
               </div>

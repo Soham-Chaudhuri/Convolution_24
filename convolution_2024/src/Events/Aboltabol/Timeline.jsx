@@ -65,7 +65,7 @@ function Timeline() {
                   <div>
                     <h3>Announcing Results of Prelims</h3>
                     <p className="timeline_para">
-                      - The top 8/10 teams will be shortlisted for the final
+                      - The top 8-12 teams will be shortlisted for the final
                       round
                       <br />
                     </p>
