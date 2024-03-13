@@ -286,7 +286,9 @@ function Re_dashboard({ user }) {
                           dat.id !== 9 &&
                           dat.id !== 1 &&
                           dat.id !== 2 &&
-                          dat.id !== 3
+                          dat.id !== 3 &&
+                          dat.id !== 4 &&
+                          dat.id !== 5 
                         ) {
                           navigate(`/reg/${dat.event}`);
                         }
@@ -308,6 +310,18 @@ function Re_dashboard({ user }) {
 
                         if (dat.id === 3) {
                           toast.info("Registrations closed for AbolTabol!", {
+                            theme: "dark",
+                          });
+                        }
+
+                        if (dat.id === 4) {
+                          toast.info("Registrations closed for Circuistics!", {
+                            theme: "dark",
+                          });
+                        }
+
+                        if (dat.id === 5) {
+                          toast.info("Registrations closed for Eureka!", {
                             theme: "dark",
                           });
                         }
