@@ -288,7 +288,8 @@ function Re_dashboard({ user }) {
                           dat.id !== 2 &&
                           dat.id !== 3 &&
                           dat.id !== 4 &&
-                          dat.id !== 5 
+                          dat.id !== 5 &&
+                          dat.id !== 8
                         ) {
                           navigate(`/reg/${dat.event}`);
                         }
@@ -310,6 +311,12 @@ function Re_dashboard({ user }) {
 
                         if (dat.id === 3) {
                           toast.info("Registrations closed for AbolTabol!", {
+                            theme: "dark",
+                          });
+                        }
+
+                        if (dat.id === 8) {
+                          toast.info("Online registrations closed for Inquizzitive!", {
                             theme: "dark",
                           });
                         }

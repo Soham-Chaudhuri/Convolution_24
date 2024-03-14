@@ -279,7 +279,8 @@ function Dashboard({ user }) {
                         box.id !== 2 &&
                         box.id !== 3 &&
                         box.id !== 4 &&
-                        box.id !== 5 
+                        box.id !== 5 &&
+                        box.id !== 8 
                       ) {
                         navigate(`/reg/${box.event}`);
                       }
@@ -320,6 +321,12 @@ function Dashboard({ user }) {
 
                       if (box.id === 3) {
                         toast.info("Registrations closed for AbolTabol!", {
+                          theme: "dark",
+                        });
+                      }
+
+                      if (box.id === 8) {
+                        toast.info("Online registrations closed for Inquizzitive!", {
                           theme: "dark",
                         });
                       }
