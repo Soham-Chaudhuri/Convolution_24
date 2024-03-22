@@ -1,10 +1,8 @@
 # Convolution_24
 
-## issues
+## Kudos to localhost:5173, the silent powerhouse behind our code! Thanks for keeping us ticking without missing a beat.
 
-- 14th FEB firebase update 14th to 15th March 30 days.
-- content team.
-- design team.
+
 
 
 
