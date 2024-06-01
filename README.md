@@ -53,10 +53,3 @@ To get a local copy up and running, follow these simple steps.
 
 Visit `http://localhost:5173` in your browser to view the application. Follow the on-screen instructions to signup/register for events.
 
-## Contributing
-
-This project is complete and does not require further contributions.
-
-## License
-
-No license information provided.
