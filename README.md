@@ -1,4 +1,4 @@
-# Convolution 9.0 2024
+# [Convolution 9.0 2024](https://convolutionjuee.co.in)
 
 Convolution 9.0 is a techno-management fest organized by the Electrical Engineering Department of Jadavpur University. This project serves as the main event signup and registration site for the fest.
 
